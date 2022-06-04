@@ -294,6 +294,7 @@
 <li class="toctree-l4"><a class="reference internal" href="Vec.html#comparison">Comparison</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Vec.html#type-cast">Type cast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Vec.html#misc">Misc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Vec.html#lib-helper-functions">Lib helper functions</a></li>
 </ul>
 </li>
 </ul>
@@ -342,6 +343,16 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="AFix.html">AFix</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#mathematical-operations">Mathematical Operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#inequality-operations">Inequality Operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#bitshifting">Bitshifting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#saturation-and-rounding">Saturation and Rounding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#assignment">Assignment</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
 </ul>
 </li>
@@ -377,6 +388,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/clock_domain.html#clock-domain-crossing">Clock domain crossing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/clock_domain.html#special-clocking-areas">Special clocking Areas</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#slow-area">Slow Area</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#bootreset">BootReset</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#resetarea">ResetArea</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#clockenablearea">ClockEnableArea</a></li>
 </ul>
@@ -458,6 +470,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#reset-value">Reset value</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#initialization-value-for-simulation-purposes">Initialization value for simulation purposes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#register-vectors">Register vectors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#transforming-a-wire-into-a-register">Transforming a wire into a register</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Sequential%20logic/memory.html">RAM/ROM</a><ul>
@@ -577,16 +590,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/assertion.html">Assertions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/report.html">Report</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/scope_property.html">ScopeProperty</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/formal.html">Formal</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#general">General</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#clocked-assertion-without-reset">Clocked assertion without reset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-the-initial-value-of-a-signal">Specifying the initial value of a signal</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-a-initial-assumption">Specifying a initial assumption</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-assertion-in-the-reset-scope">Specifying assertion in the reset scope</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#supported-features">Supported features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#limitations">Limitations</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/analog_inout.html">Analog and inout</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/analog_inout.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/analog_inout.html#analog">Analog</a></li>
@@ -648,6 +651,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/flow.html">Flow</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#specification">Specification</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#code-example">Code example</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/fragment.html">Fragment</a><ul>
@@ -694,7 +698,15 @@
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#automatic-allocation">Automatic allocation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#access-types">28 Access Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#automatic-documentation-generation">Automatic documentation generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#example">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#interrupt-factory">Interrupt Factory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Libraries/regIf.html#interrupt-design-spec">Interrupt Design Spec</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#ip-level-interrupt-factory">IP level interrupt Factory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#sys-level-interrupt-merge">SYS level interrupt merge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#spinal-factory">Spinal Factory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#id1">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#developers-area">Developers Area</a></li>
 </ul>
 </li>
@@ -859,6 +871,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#performance">Performance</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../Formal%20verification/index.html">Formal verification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#formal-backend">Formal backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#installing-requirements">Installing requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#example">Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#external-assertions">External assertions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#internal-assertions">Internal assertions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#external-stimulus">External stimulus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#more-assertions-past">More assertions / past</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#assuming-memory-content">Assuming memory content</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#utilities-and-primitives">Utilities and primitives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#assertions-clock-reset">Assertions / clock / reset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-the-initial-value-of-a-signal">Specifying the initial value of a signal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-a-initial-assumption">Specifying a initial assumption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#memory-content-mem">Memory content (Mem)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-assertion-in-the-reset-scope">Specifying assertion in the reset scope</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#formal-primitives">Formal primitives</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#limitations">Limitations</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../Examples/index.html">Examples</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Examples/Simple%20ones/index.html">Simple ones</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Simple%20ones/apb3.html">APB3 definition</a><ul>
@@ -1007,6 +1043,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#compilation-phases">Compilation Phases</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#modifying-a-netlist-as-a-user-without-plugins">Modifying a netlist as a user without plugins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#user-space-netlist-analysis">User space netlist analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#enumerating-every-clockdomain-used">Enumerating every ClockDomain used</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Developers%20area/types.html">Types</a><ul>
@@ -1147,12 +1184,12 @@
 </tr>
 </tbody>
 </table>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span> <span class="n">myBool_1</span> <span class="o">=</span> <span class="nc">Bool</span><span class="p">()</span>          <span class="c1">// Create a Bool</span>
-<span class="n">myBool_1</span> <span class="o">:=</span> <span class="nc">False</span>            <span class="c1">// := is the assignment operator</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">myBool_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bool</span><span class="p">()</span><span class="w">          </span><span class="c1">// Create a Bool</span>
+<span class="n">myBool_1</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">False</span><span class="w">            </span><span class="c1">// := is the assignment operator</span>
 
-<span class="kd">val</span> <span class="n">myBool_2</span> <span class="o">=</span> <span class="nc">False</span>         <span class="c1">// Equivalent to the code above</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">myBool_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">False</span><span class="w">         </span><span class="c1">// Equivalent to the code above</span>
 
-<span class="kd">val</span> <span class="n">myBool_3</span> <span class="o">=</span> <span class="nc">Bool</span><span class="p">(</span><span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">12</span><span class="p">)</span>  <span class="c1">// Use a Scala Boolean to create a Bool</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">myBool_3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bool</span><span class="p">(</span><span class="mi">5</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">12</span><span class="p">)</span><span class="w">  </span><span class="c1">// Use a Scala Boolean to create a Bool</span>
 </pre></div>
 </div>
 </div>
@@ -1224,27 +1261,27 @@
 </tr>
 </tbody>
 </table>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span> <span class="kd">val</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="nc">Bool</span><span class="p">()</span>
- <span class="kd">val</span> <span class="n">res</span> <span class="o">=</span> <span class="p">(</span><span class="o">!</span><span class="n">a</span> <span class="n">&amp;</span> <span class="n">b</span><span class="p">)</span> <span class="n">^</span> <span class="n">c</span>   <span class="c1">// ((NOT a) AND b) XOR c</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bool</span><span class="p">()</span><span class="w"></span>
+<span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">a</span><span class="w"> </span><span class="n">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="n">^</span><span class="w"> </span><span class="n">c</span><span class="w">   </span><span class="c1">// ((NOT a) AND b) XOR c</span>
 
- <span class="kd">val</span> <span class="n">d</span> <span class="o">=</span> <span class="nc">False</span>
- <span class="n">when</span><span class="p">(</span><span class="n">cond</span><span class="p">)</span> <span class="p">{</span>
-   <span class="n">d</span><span class="p">.</span><span class="n">set</span><span class="p">()</span>    <span class="c1">// equivalent to d := True</span>
- <span class="p">}</span>
+<span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">False</span><span class="w"></span>
+<span class="w"> </span><span class="n">when</span><span class="p">(</span><span class="n">cond</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="n">d</span><span class="p">.</span><span class="n">set</span><span class="p">()</span><span class="w">    </span><span class="c1">// equivalent to d := True</span>
+<span class="w"> </span><span class="p">}</span><span class="w"></span>
 
- <span class="kd">val</span> <span class="n">e</span> <span class="o">=</span> <span class="nc">False</span>
- <span class="n">e</span><span class="p">.</span><span class="n">setWhen</span><span class="p">(</span><span class="n">cond</span><span class="p">)</span> <span class="c1">// equivalent to when(cond) { d := True }</span>
+<span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">False</span><span class="w"></span>
+<span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">setWhen</span><span class="p">(</span><span class="n">cond</span><span class="p">)</span><span class="w"> </span><span class="c1">// equivalent to when(cond) { d := True }</span>
 
- <span class="kd">val</span> <span class="n">f</span> <span class="o">=</span> <span class="nc">RegInit</span><span class="p">(</span><span class="nc">False</span><span class="p">)</span> <span class="n">fallWhen</span><span class="p">(</span><span class="n">ack</span><span class="p">)</span> <span class="n">setWhen</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
- <span class="cm">/** equivalent to</span>
+<span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">RegInit</span><span class="p">(</span><span class="nc">False</span><span class="p">)</span><span class="w"> </span><span class="n">fallWhen</span><span class="p">(</span><span class="n">ack</span><span class="p">)</span><span class="w"> </span><span class="n">setWhen</span><span class="p">(</span><span class="n">req</span><span class="p">)</span><span class="w"></span>
+<span class="w"> </span><span class="cm">/** equivalent to</span>
 <span class="cm">  * when(f &amp;&amp; ack) { f := False }</span>
 <span class="cm">  * when(req) { f := True }</span>
 <span class="cm">  * or</span>
 <span class="cm">  * f := req || (f &amp;&amp; !ack)</span>
-<span class="cm">  */</span>
+<span class="cm">  */</span><span class="w"></span>
 
 <span class="c1">// mind the order of assignments!</span>
-<span class="kd">val</span> <span class="n">g</span> <span class="o">=</span> <span class="nc">RegInit</span><span class="p">(</span><span class="nc">False</span><span class="p">)</span> <span class="n">setWhen</span><span class="p">(</span><span class="n">req</span><span class="p">)</span> <span class="n">fallWhen</span><span class="p">(</span><span class="n">ack</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">RegInit</span><span class="p">(</span><span class="nc">False</span><span class="p">)</span><span class="w"> </span><span class="n">setWhen</span><span class="p">(</span><span class="n">req</span><span class="p">)</span><span class="w"> </span><span class="n">fallWhen</span><span class="p">(</span><span class="n">ack</span><span class="p">)</span><span class="w"></span>
 <span class="c1">// equivalent to g := ((!g) &amp;&amp; req) || (g &amp;&amp; !ack)</span>
 </pre></div>
 </div>
@@ -1298,21 +1335,21 @@
 </tr>
 </tbody>
 </table>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">when</span><span class="p">(</span><span class="n">myBool_1</span><span class="p">.</span><span class="n">rise</span><span class="p">(</span><span class="nc">False</span><span class="p">))</span> <span class="p">{</span>
-    <span class="c1">// do something when a rising edge is detected</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">when</span><span class="p">(</span><span class="n">myBool_1</span><span class="p">.</span><span class="n">rise</span><span class="p">(</span><span class="nc">False</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// do something when a rising edge is detected</span>
+<span class="p">}</span><span class="w"></span>
 
 
-<span class="kd">val</span> <span class="n">edgeBundle</span> <span class="o">=</span> <span class="n">myBool_2</span><span class="p">.</span><span class="n">edges</span><span class="p">(</span><span class="nc">False</span><span class="p">)</span>
-<span class="n">when</span><span class="p">(</span><span class="n">edgeBundle</span><span class="p">.</span><span class="n">rise</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// do something when a rising edge is detected</span>
-<span class="p">}</span>
-<span class="n">when</span><span class="p">(</span><span class="n">edgeBundle</span><span class="p">.</span><span class="n">fall</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// do something when a falling edge is detected</span>
-<span class="p">}</span>
-<span class="n">when</span><span class="p">(</span><span class="n">edgeBundle</span><span class="p">.</span><span class="n">toggle</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// do something at each edge</span>
-<span class="p">}</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">edgeBundle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myBool_2</span><span class="p">.</span><span class="n">edges</span><span class="p">(</span><span class="nc">False</span><span class="p">)</span><span class="w"></span>
+<span class="n">when</span><span class="p">(</span><span class="n">edgeBundle</span><span class="p">.</span><span class="n">rise</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// do something when a rising edge is detected</span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">when</span><span class="p">(</span><span class="n">edgeBundle</span><span class="p">.</span><span class="n">fall</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// do something when a falling edge is detected</span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">when</span><span class="p">(</span><span class="n">edgeBundle</span><span class="p">.</span><span class="n">toggle</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// do something at each edge</span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -1341,13 +1378,13 @@
 </tr>
 </tbody>
 </table>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">when</span><span class="p">(</span><span class="n">myBool</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// Equivalent to when(myBool === True)</span>
-    <span class="c1">// do something when myBool is True</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">when</span><span class="p">(</span><span class="n">myBool</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Equivalent to when(myBool === True)</span>
+<span class="w">    </span><span class="c1">// do something when myBool is True</span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="n">when</span><span class="p">(</span><span class="o">!</span><span class="n">myBool</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// Equivalent to when(myBool === False)</span>
-    <span class="c1">// do something when myBool is False</span>
-<span class="p">}</span>
+<span class="n">when</span><span class="p">(</span><span class="o">!</span><span class="n">myBool</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Equivalent to when(myBool === False)</span>
+<span class="w">    </span><span class="c1">// do something when myBool is False</span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -1389,8 +1426,8 @@
 </tbody>
 </table>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="c1">// Add the carry to an SInt value</span>
-<span class="kd">val</span> <span class="n">carry</span> <span class="o">=</span> <span class="nc">Bool</span><span class="p">()</span>
-<span class="kd">val</span> <span class="n">res</span> <span class="o">=</span> <span class="n">mySInt</span> <span class="o">+</span> <span class="n">carry</span><span class="p">.</span><span class="n">asSInt</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">carry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bool</span><span class="p">()</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mySInt</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">carry</span><span class="p">.</span><span class="n">asSInt</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -1415,10 +1452,10 @@
 </tr>
 </tbody>
 </table>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="nc">Bool</span><span class="p">()</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bool</span><span class="p">()</span><span class="w"></span>
 
 <span class="c1">// Concatenation of three Bool into a Bits</span>
-<span class="kd">val</span> <span class="n">myBits</span> <span class="o">=</span> <span class="n">a</span> <span class="o">##</span> <span class="n">b</span> <span class="o">##</span> <span class="n">c</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">myBits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">##</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">##</span><span class="w"> </span><span class="n">c</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -1427,7 +1464,7 @@
 <p>A masked boolean allows don’t care values. They are usually not used on their own but through <a class="reference internal" href="bits.html#maskedlitteral"><span class="std std-ref">MaskedLitteral</span></a>.</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="c1">// first argument: boolean value</span>
 <span class="c1">// second argument: do we care ?</span>
-<span class="kd">val</span> <span class="n">masked</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">MaskedBoolean</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">masked</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">MaskedBoolean</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 </div>

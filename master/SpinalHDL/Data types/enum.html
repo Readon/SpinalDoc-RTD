@@ -294,6 +294,7 @@
 <li class="toctree-l4"><a class="reference internal" href="Vec.html#comparison">Comparison</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Vec.html#type-cast">Type cast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Vec.html#misc">Misc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Vec.html#lib-helper-functions">Lib helper functions</a></li>
 </ul>
 </li>
 </ul>
@@ -342,6 +343,16 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="AFix.html">AFix</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#mathematical-operations">Mathematical Operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#inequality-operations">Inequality Operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#bitshifting">Bitshifting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#saturation-and-rounding">Saturation and Rounding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AFix.html#assignment">Assignment</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
 </ul>
 </li>
@@ -377,6 +388,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/clock_domain.html#clock-domain-crossing">Clock domain crossing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/clock_domain.html#special-clocking-areas">Special clocking Areas</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#slow-area">Slow Area</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#bootreset">BootReset</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#resetarea">ResetArea</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/clock_domain.html#clockenablearea">ClockEnableArea</a></li>
 </ul>
@@ -458,6 +470,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#reset-value">Reset value</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#initialization-value-for-simulation-purposes">Initialization value for simulation purposes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#register-vectors">Register vectors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#transforming-a-wire-into-a-register">Transforming a wire into a register</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Sequential%20logic/memory.html">RAM/ROM</a><ul>
@@ -577,16 +590,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/assertion.html">Assertions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/report.html">Report</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/scope_property.html">ScopeProperty</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/formal.html">Formal</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#general">General</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#clocked-assertion-without-reset">Clocked assertion without reset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-the-initial-value-of-a-signal">Specifying the initial value of a signal</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-a-initial-assumption">Specifying a initial assumption</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-assertion-in-the-reset-scope">Specifying assertion in the reset scope</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#supported-features">Supported features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#limitations">Limitations</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/analog_inout.html">Analog and inout</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/analog_inout.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/analog_inout.html#analog">Analog</a></li>
@@ -648,6 +651,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/flow.html">Flow</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#specification">Specification</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#code-example">Code example</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/fragment.html">Fragment</a><ul>
@@ -694,7 +698,15 @@
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#automatic-allocation">Automatic allocation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#access-types">28 Access Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#automatic-documentation-generation">Automatic documentation generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#example">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#interrupt-factory">Interrupt Factory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Libraries/regIf.html#interrupt-design-spec">Interrupt Design Spec</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#ip-level-interrupt-factory">IP level interrupt Factory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#sys-level-interrupt-merge">SYS level interrupt merge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#spinal-factory">Spinal Factory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#id1">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#developers-area">Developers Area</a></li>
 </ul>
 </li>
@@ -859,6 +871,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#performance">Performance</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../Formal%20verification/index.html">Formal verification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#formal-backend">Formal backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#installing-requirements">Installing requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#example">Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#external-assertions">External assertions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#internal-assertions">Internal assertions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#external-stimulus">External stimulus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#more-assertions-past">More assertions / past</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#assuming-memory-content">Assuming memory content</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#utilities-and-primitives">Utilities and primitives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#assertions-clock-reset">Assertions / clock / reset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-the-initial-value-of-a-signal">Specifying the initial value of a signal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-a-initial-assumption">Specifying a initial assumption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#memory-content-mem">Memory content (Mem)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-assertion-in-the-reset-scope">Specifying assertion in the reset scope</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#formal-primitives">Formal primitives</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#limitations">Limitations</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../Examples/index.html">Examples</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Examples/Simple%20ones/index.html">Simple ones</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Simple%20ones/apb3.html">APB3 definition</a><ul>
@@ -1007,6 +1043,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#compilation-phases">Compilation Phases</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#modifying-a-netlist-as-a-user-without-plugins">Modifying a netlist as a user without plugins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#user-space-netlist-analysis">User space netlist analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#enumerating-every-clockdomain-used">Enumerating every ClockDomain used</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Developers%20area/types.html">Types</a><ul>
@@ -1116,17 +1153,17 @@
 <div class="section" id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Permalink to this headline">¶</a></h2>
 <p>The declaration of an enumerated data type is as follows:</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">object</span> <span class="nc">Enumeration</span> <span class="k">extends</span> <span class="nc">SpinalEnum</span> <span class="p">{</span>
-  <span class="kd">val</span> <span class="n">element0</span><span class="p">,</span> <span class="n">element1</span><span class="p">,</span> <span class="p">...,</span> <span class="n">elementN</span> <span class="o">=</span> <span class="n">newElement</span><span class="p">()</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">object</span><span class="w"> </span><span class="nc">Enumeration</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">SpinalEnum</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">element0</span><span class="p">,</span><span class="w"> </span><span class="n">element1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="n">elementN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newElement</span><span class="p">()</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>For the example above, the default encoding is used.
 The native enumeration type is used for VHDL and a binary encoding is used for Verilog.</p>
 <p>The enumeration encoding can be forced by defining the enumeration as follows:</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">object</span> <span class="nc">Enumeration</span> <span class="k">extends</span> <span class="nc">SpinalEnum</span><span class="p">(</span><span class="n">defaultEncoding</span><span class="o">=</span><span class="n">encodingOfYourChoice</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kd">val</span> <span class="n">element0</span><span class="p">,</span> <span class="n">element1</span><span class="p">,</span> <span class="p">...,</span> <span class="n">elementN</span> <span class="o">=</span> <span class="n">newElement</span><span class="p">()</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">object</span><span class="w"> </span><span class="nc">Enumeration</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">SpinalEnum</span><span class="p">(</span><span class="n">defaultEncoding</span><span class="o">=</span><span class="n">encodingOfYourChoice</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">element0</span><span class="p">,</span><span class="w"> </span><span class="n">element1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="n">elementN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newElement</span><span class="p">()</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -1166,15 +1203,15 @@ The native enumeration type is used for VHDL and a binary encoding is used for V
 <p>Custom encodings can be performed in two different ways: static or dynamic.</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> * Static encoding</span>
-<span class="cm"> */</span>
-<span class="k">object</span> <span class="nc">MyEnumStatic</span> <span class="k">extends</span> <span class="nc">SpinalEnum</span> <span class="p">{</span>
-  <span class="kd">val</span> <span class="n">e0</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">,</span> <span class="n">e3</span> <span class="o">=</span> <span class="n">newElement</span><span class="p">()</span>
-  <span class="n">defaultEncoding</span> <span class="o">=</span> <span class="nc">SpinalEnumEncoding</span><span class="p">(</span><span class="s">&quot;staticEncoding&quot;</span><span class="p">)(</span>
-    <span class="n">e0</span> <span class="o">-&gt;</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="n">e1</span> <span class="o">-&gt;</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="n">e2</span> <span class="o">-&gt;</span> <span class="mi">3</span><span class="p">,</span>
-    <span class="n">e3</span> <span class="o">-&gt;</span> <span class="mi">7</span><span class="p">)</span>
-<span class="p">}</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="k">object</span><span class="w"> </span><span class="nc">MyEnumStatic</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">SpinalEnum</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">e0</span><span class="p">,</span><span class="w"> </span><span class="n">e1</span><span class="p">,</span><span class="w"> </span><span class="n">e2</span><span class="p">,</span><span class="w"> </span><span class="n">e3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newElement</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="n">defaultEncoding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SpinalEnumEncoding</span><span class="p">(</span><span class="s">&quot;staticEncoding&quot;</span><span class="p">)(</span><span class="w"></span>
+<span class="w">    </span><span class="n">e0</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">e1</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">e2</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">e3</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="mi">7</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
 <span class="cm">/*</span>
 <span class="cm"> * Dynamic encoding with the function :  _ * 2 + 1</span>
@@ -1182,28 +1219,28 @@ The native enumeration type is used for VHDL and a binary encoding is used for V
 <span class="cm"> *          e1 =&gt; 1 * 2 + 1 = 3</span>
 <span class="cm"> *          e2 =&gt; 2 * 2 + 1 = 5</span>
 <span class="cm"> *          e3 =&gt; 3 * 2 + 1 = 7</span>
-<span class="cm"> */</span>
-<span class="kd">val</span> <span class="n">encoding</span> <span class="o">=</span> <span class="nc">SpinalEnumEncoding</span><span class="p">(</span><span class="s">&quot;dynamicEncoding&quot;</span><span class="p">,</span> <span class="n">_</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">encoding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SpinalEnumEncoding</span><span class="p">(</span><span class="s">&quot;dynamicEncoding&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
 
-<span class="k">object</span> <span class="nc">MyEnumDynamic</span> <span class="k">extends</span> <span class="nc">SpinalEnum</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kd">val</span> <span class="n">e0</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">,</span> <span class="n">e3</span> <span class="o">=</span> <span class="n">newElement</span><span class="p">()</span>
-<span class="p">}</span>
+<span class="k">object</span><span class="w"> </span><span class="nc">MyEnumDynamic</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">SpinalEnum</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">e0</span><span class="p">,</span><span class="w"> </span><span class="n">e1</span><span class="p">,</span><span class="w"> </span><span class="n">e2</span><span class="p">,</span><span class="w"> </span><span class="n">e3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newElement</span><span class="p">()</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="example">
 <h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
 <p>Instantiate an enumerated signal and assign a value to it:</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">object</span> <span class="nc">UartCtrlTxState</span> <span class="k">extends</span> <span class="nc">SpinalEnum</span> <span class="p">{</span>
-  <span class="kd">val</span> <span class="n">sIdle</span><span class="p">,</span> <span class="n">sStart</span><span class="p">,</span> <span class="n">sData</span><span class="p">,</span> <span class="n">sParity</span><span class="p">,</span> <span class="n">sStop</span> <span class="o">=</span> <span class="n">newElement</span><span class="p">()</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">object</span><span class="w"> </span><span class="nc">UartCtrlTxState</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">SpinalEnum</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">sIdle</span><span class="p">,</span><span class="w"> </span><span class="n">sStart</span><span class="p">,</span><span class="w"> </span><span class="n">sData</span><span class="p">,</span><span class="w"> </span><span class="n">sParity</span><span class="p">,</span><span class="w"> </span><span class="n">sStop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newElement</span><span class="p">()</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kd">val</span> <span class="n">stateNext</span> <span class="o">=</span> <span class="nc">UartCtrlTxState</span><span class="p">()</span>
-<span class="n">stateNext</span> <span class="o">:=</span> <span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="n">sIdle</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">stateNext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UartCtrlTxState</span><span class="p">()</span><span class="w"></span>
+<span class="n">stateNext</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="n">sIdle</span><span class="w"></span>
 
 <span class="c1">// You can also import the enumeration to have visibility of its elements</span>
-<span class="k">import</span> <span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="n">_</span>
-<span class="n">stateNext</span> <span class="o">:=</span> <span class="n">sIdle</span>
+<span class="k">import</span><span class="w"> </span><span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="n">_</span>
+<span class="n">stateNext</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">sIdle</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -1236,24 +1273,24 @@ The native enumeration type is used for VHDL and a binary encoding is used for V
 </tr>
 </tbody>
 </table>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">import</span> <span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="n">_</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="n">_</span>
 
-<span class="kd">val</span> <span class="n">stateNext</span> <span class="o">=</span> <span class="nc">UartCtrlTxState</span><span class="p">()</span>
-<span class="n">stateNext</span> <span class="o">:=</span> <span class="n">sIdle</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">stateNext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UartCtrlTxState</span><span class="p">()</span><span class="w"></span>
+<span class="n">stateNext</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">sIdle</span><span class="w"></span>
 
-<span class="n">when</span><span class="p">(</span><span class="n">stateNext</span> <span class="o">===</span> <span class="n">sStart</span><span class="p">)</span> <span class="p">{</span>
-  <span class="p">...</span>
-<span class="p">}</span>
+<span class="n">when</span><span class="p">(</span><span class="n">stateNext</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="n">sStart</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="p">...</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="n">switch</span><span class="p">(</span><span class="n">stateNext</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">is</span><span class="p">(</span><span class="n">sIdle</span><span class="p">)</span> <span class="p">{</span>
-    <span class="p">...</span>
-  <span class="p">}</span>
-  <span class="n">is</span><span class="p">(</span><span class="n">sStart</span><span class="p">)</span> <span class="p">{</span>
-    <span class="p">...</span>
-  <span class="p">}</span>
-  <span class="p">...</span>
-<span class="p">}</span>
+<span class="n">switch</span><span class="p">(</span><span class="n">stateNext</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">is</span><span class="p">(</span><span class="n">sIdle</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">...</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">is</span><span class="p">(</span><span class="n">sStart</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">...</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">...</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -1261,19 +1298,19 @@ The native enumeration type is used for VHDL and a binary encoding is used for V
 <h3>Types<a class="headerlink" href="#types" title="Permalink to this headline">¶</a></h3>
 <p>In order to use your enums, for example in a function, you may need its type.</p>
 <p>The value type (e.g. sIdle’s type) is</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">spinal</span><span class="p">.</span><span class="n">core</span><span class="p">.</span><span class="nc">SpinalEnumElement</span><span class="p">[</span><span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="k">type</span><span class="p">]</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">spinal</span><span class="p">.</span><span class="n">core</span><span class="p">.</span><span class="nc">SpinalEnumElement</span><span class="p">[</span><span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="k">type</span><span class="p">]</span><span class="w"></span>
 </pre></div>
 </div>
 <p>or equivalently</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="nc">E</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="nc">E</span><span class="w"></span>
 </pre></div>
 </div>
 <p>The bundle type (e.g. stateNext’s type) is</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">spinal</span><span class="p">.</span><span class="n">core</span><span class="p">.</span><span class="nc">SpinalEnumCraft</span><span class="p">[</span><span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="k">type</span><span class="p">]</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">spinal</span><span class="p">.</span><span class="n">core</span><span class="p">.</span><span class="nc">SpinalEnumCraft</span><span class="p">[</span><span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="k">type</span><span class="p">]</span><span class="w"></span>
 </pre></div>
 </div>
 <p>or equivalently</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="nc">C</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="nc">C</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -1310,12 +1347,12 @@ The native enumeration type is used for VHDL and a binary encoding is used for V
 </tr>
 </tbody>
 </table>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">import</span> <span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="n">_</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="nc">UartCtrlTxState</span><span class="p">.</span><span class="n">_</span>
 
-<span class="kd">val</span> <span class="n">stateNext</span> <span class="o">=</span> <span class="nc">UartCtrlTxState</span><span class="p">()</span>
-<span class="n">myBits</span> <span class="o">:=</span> <span class="n">sIdle</span><span class="p">.</span><span class="n">asBits</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">stateNext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UartCtrlTxState</span><span class="p">()</span><span class="w"></span>
+<span class="n">myBits</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">sIdle</span><span class="p">.</span><span class="n">asBits</span><span class="w"></span>
 
-<span class="n">stateNext</span><span class="p">.</span><span class="n">assignFromBits</span><span class="p">(</span><span class="n">myBits</span><span class="p">)</span>
+<span class="n">stateNext</span><span class="p">.</span><span class="n">assignFromBits</span><span class="p">(</span><span class="n">myBits</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 </div>

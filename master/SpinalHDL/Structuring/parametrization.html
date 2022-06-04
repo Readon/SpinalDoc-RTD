@@ -294,6 +294,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/Vec.html#comparison">Comparison</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/Vec.html#type-cast">Type cast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Data%20types/Vec.html#misc">Misc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Data%20types/Vec.html#lib-helper-functions">Lib helper functions</a></li>
 </ul>
 </li>
 </ul>
@@ -342,6 +343,16 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../Data%20types/AFix.html">AFix</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#mathematical-operations">Mathematical Operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#inequality-operations">Inequality Operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#bitshifting">Bitshifting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#saturation-and-rounding">Saturation and Rounding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#assignment">Assignment</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Data%20types/index.html#introduction">Introduction</a></li>
 </ul>
 </li>
@@ -377,6 +388,7 @@
 <li class="toctree-l3"><a class="reference internal" href="clock_domain.html#clock-domain-crossing">Clock domain crossing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="clock_domain.html#special-clocking-areas">Special clocking Areas</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="clock_domain.html#slow-area">Slow Area</a></li>
+<li class="toctree-l4"><a class="reference internal" href="clock_domain.html#bootreset">BootReset</a></li>
 <li class="toctree-l4"><a class="reference internal" href="clock_domain.html#resetarea">ResetArea</a></li>
 <li class="toctree-l4"><a class="reference internal" href="clock_domain.html#clockenablearea">ClockEnableArea</a></li>
 </ul>
@@ -458,6 +470,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#reset-value">Reset value</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#initialization-value-for-simulation-purposes">Initialization value for simulation purposes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#register-vectors">Register vectors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#transforming-a-wire-into-a-register">Transforming a wire into a register</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Sequential%20logic/memory.html">RAM/ROM</a><ul>
@@ -577,16 +590,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/assertion.html">Assertions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/report.html">Report</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/scope_property.html">ScopeProperty</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/formal.html">Formal</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#general">General</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#clocked-assertion-without-reset">Clocked assertion without reset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-the-initial-value-of-a-signal">Specifying the initial value of a signal</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-a-initial-assumption">Specifying a initial assumption</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#specifying-assertion-in-the-reset-scope">Specifying assertion in the reset scope</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#supported-features">Supported features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/formal.html#limitations">Limitations</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/analog_inout.html">Analog and inout</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/analog_inout.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/analog_inout.html#analog">Analog</a></li>
@@ -648,6 +651,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/flow.html">Flow</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#specification">Specification</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/flow.html#code-example">Code example</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/fragment.html">Fragment</a><ul>
@@ -694,7 +698,15 @@
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#automatic-allocation">Automatic allocation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#access-types">28 Access Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#automatic-documentation-generation">Automatic documentation generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#example">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#interrupt-factory">Interrupt Factory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Libraries/regIf.html#interrupt-design-spec">Interrupt Design Spec</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#ip-level-interrupt-factory">IP level interrupt Factory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#sys-level-interrupt-merge">SYS level interrupt merge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#spinal-factory">Spinal Factory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#id1">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#developers-area">Developers Area</a></li>
 </ul>
 </li>
@@ -859,6 +871,30 @@
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#performance">Performance</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../Formal%20verification/index.html">Formal verification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#formal-backend">Formal backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#installing-requirements">Installing requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#example">Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#external-assertions">External assertions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#internal-assertions">Internal assertions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#external-stimulus">External stimulus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#more-assertions-past">More assertions / past</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#assuming-memory-content">Assuming memory content</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#utilities-and-primitives">Utilities and primitives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#assertions-clock-reset">Assertions / clock / reset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-the-initial-value-of-a-signal">Specifying the initial value of a signal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-a-initial-assumption">Specifying a initial assumption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#memory-content-mem">Memory content (Mem)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#specifying-assertion-in-the-reset-scope">Specifying assertion in the reset scope</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Formal%20verification/index.html#formal-primitives">Formal primitives</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Formal%20verification/index.html#limitations">Limitations</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../Examples/index.html">Examples</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Examples/Simple%20ones/index.html">Simple ones</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Simple%20ones/apb3.html">APB3 definition</a><ul>
@@ -1007,6 +1043,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#compilation-phases">Compilation Phases</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#modifying-a-netlist-as-a-user-without-plugins">Modifying a netlist as a user without plugins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#user-space-netlist-analysis">User space netlist analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#enumerating-every-clockdomain-used">Enumerating every ClockDomain used</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Developers%20area/types.html">Types</a><ul>
@@ -1121,14 +1158,14 @@
 <h2>Elaboration time parameters<a class="headerlink" href="#elaboration-time-parameters" title="Permalink to this headline">¶</a></h2>
 <p>You can use the whole scala syntax to provide elaboration time parameters.</p>
 <p>Here is an example of class parameters</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">csae</span> <span class="k">class</span> <span class="nc">MyBus</span><span class="p">(</span><span class="n">width</span> <span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="k">extends</span> <span class="nc">Bundle</span><span class="p">{</span>
-  <span class="kd">val</span> <span class="n">mySignal</span> <span class="o">=</span> <span class="nc">UInt</span><span class="p">(</span><span class="n">width</span> <span class="n">bits</span><span class="p">)</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">csae</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyBus</span><span class="p">(</span><span class="n">width</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Bundle</span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">mySignal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="n">width</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span> <span class="k">class</span> <span class="nc">MyComponent</span><span class="p">(</span><span class="n">width</span> <span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="k">extends</span> <span class="nc">Component</span><span class="p">{</span>
-  <span class="kd">val</span> <span class="n">bus</span> <span class="o">=</span> <span class="nc">MyBus</span><span class="p">(</span><span class="n">width</span><span class="p">)</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="p">(</span><span class="n">width</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">bus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyBus</span><span class="p">(</span><span class="n">width</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>You can also use global variable defined in scala object’s, but note that recently was added the ScopeProperty feature which improve on that solution.</p>
@@ -1137,27 +1174,27 @@
 <h2>Optional hardware<a class="headerlink" href="#optional-hardware" title="Permalink to this headline">¶</a></h2>
 <p>So here there is more possibilities.</p>
 <p>For optional signal :</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span> <span class="k">class</span> <span class="nc">MyComponent</span><span class="p">(</span><span class="n">flag</span> <span class="p">:</span> <span class="nc">Boolean</span><span class="p">)</span> <span class="k">extends</span> <span class="nc">Component</span><span class="p">{</span>
-  <span class="kd">val</span> <span class="n">mySignal</span> <span class="o">=</span> <span class="n">flag</span> <span class="n">generate</span> <span class="p">(</span><span class="nc">Bool</span><span class="p">())</span>  <span class="c1">//Equivalent to &quot;if (flag) in Bool() else null&quot;</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="p">(</span><span class="n">flag</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Boolean</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">mySignal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">flag</span><span class="w"> </span><span class="n">generate</span><span class="w"> </span><span class="p">(</span><span class="nc">Bool</span><span class="p">())</span><span class="w">  </span><span class="c1">//Equivalent to &quot;if (flag) in Bool() else null&quot;</span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>You can do the same in Bundle.</p>
 <p>Note that you can also use scala Option.</p>
 <p>If you want to disable the generation of a chunk of hardware :</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span> <span class="k">class</span> <span class="nc">MyComponent</span><span class="p">(</span><span class="n">flag</span> <span class="p">:</span> <span class="nc">Boolean</span><span class="p">)</span> <span class="k">extends</span> <span class="nc">Component</span><span class="p">{</span>
-  <span class="kd">val</span> <span class="n">myHardware</span> <span class="o">=</span> <span class="n">flag</span> <span class="n">generate</span> <span class="k">new</span> <span class="nc">Area</span><span class="p">{</span>
-    <span class="c1">//optional hardware here</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="p">(</span><span class="n">flag</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Boolean</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">myHardware</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">flag</span><span class="w"> </span><span class="n">generate</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">//optional hardware here</span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>You can also use scala for loops :</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span> <span class="k">class</span> <span class="nc">MyComponent</span><span class="p">(</span><span class="n">amount</span> <span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="k">extends</span> <span class="nc">Component</span><span class="p">{</span>
-  <span class="kd">val</span> <span class="n">myHardware</span> <span class="o">=</span> <span class="k">for</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;-</span> <span class="mi">0</span> <span class="n">until</span> <span class="n">amount</span><span class="p">)</span> <span class="k">yield</span> <span class="k">new</span> <span class="nc">Area</span><span class="p">{</span>
-    <span class="c1">// hardware here</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="p">(</span><span class="n">amount</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">myHardware</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">until</span><span class="w"> </span><span class="n">amount</span><span class="p">)</span><span class="w"> </span><span class="k">yield</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// hardware here</span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>So, you can extends those scala usages at elaboration time as much as you want, including using the whole scala collections (List, Set, Map, …)
