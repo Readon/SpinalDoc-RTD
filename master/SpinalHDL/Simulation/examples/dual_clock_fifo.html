@@ -225,7 +225,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Data%20types/bits.html#type-cast">Type cast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Data%20types/bits.html#bit-extraction">Bit extraction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Data%20types/bits.html#misc">Misc</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../Data%20types/bits.html#maskedlitteral">MaskedLitteral</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Data%20types/bits.html#maskedliteral">MaskedLiteral</a></li>
 </ul>
 </li>
 </ul>
@@ -522,6 +522,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../Design%20errors/latch_detected.html">Latch detected</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Design%20errors/latch_detected.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Design%20errors/latch_detected.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Design%20errors/latch_detected.html#due-to-mux">Due to mux</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Design%20errors/no_driver_on.html">No driver on</a><ul>
@@ -646,6 +647,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/stream.html#streamdispatchersequencial">StreamDispatcherSequencial</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/stream.html#simulation-support">Simulation support</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Libraries/flow.html">Flow</a><ul>
@@ -897,6 +899,11 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Formal%20verification/index.html#limitations">Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Formal%20verification/index.html#naming-polices">Naming polices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Formal%20verification/index.html#for-component">For Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Formal%20verification/index.html#for-interfaces-implement-imasterslave">For interfaces implement IMasterSlave</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Examples/index.html">Examples</a><ul>
@@ -1163,8 +1170,7 @@
 </div></blockquote>
 <p>The FIFO push thread randomizes the inputs.</p>
 <p>The FIFO pop thread handles checking the the <abbr title="Device Under Test">DUT</abbr>’s outputs against the reference model (an ordinary <code class="docutils literal notranslate"><span class="pre">scala.collection.mutable.Queue</span></code> instance).</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="nn">spinal</span><span class="p">.</span><span class="nn">sim</span><span class="p">.</span><span class="n">_</span>
-<span class="k">import</span><span class="w"> </span><span class="nn">spinal</span><span class="p">.</span><span class="nn">core</span><span class="p">.</span><span class="n">_</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="nn">spinal</span><span class="p">.</span><span class="nn">core</span><span class="p">.</span><span class="n">_</span>
 <span class="k">import</span><span class="w"> </span><span class="nn">spinal</span><span class="p">.</span><span class="nn">core</span><span class="p">.</span><span class="nn">sim</span><span class="p">.</span><span class="n">_</span>
 
 <span class="k">import</span><span class="w"> </span><span class="nn">scala</span><span class="p">.</span><span class="nn">collection</span><span class="p">.</span><span class="nn">mutable</span><span class="p">.</span><span class="nc">Queue</span>
