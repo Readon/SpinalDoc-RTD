@@ -35,7 +35,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js"></script>
     
@@ -644,6 +646,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamarbiter">StreamArbiter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamjoin">StreamJoin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamfork">StreamFork</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streammux">StreamMux</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamdemux">StreamDemux</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamdispatchersequencial">StreamDispatcherSequencial</a></li>
 </ul>
 </li>
@@ -1156,9 +1160,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="boot-a-simulation">
-<h1>Boot a simulation<a class="headerlink" href="#boot-a-simulation" title="Permalink to this headline">¶</a></h1>
+<h1>Boot a simulation<a class="headerlink" href="#boot-a-simulation" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
 <p>Below is an example hardware definition + testbench:</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="nn">spinal</span><span class="p">.</span><span class="nn">core</span><span class="p">.</span><span class="n">_</span>
 
@@ -1195,7 +1199,7 @@
 </div>
 </div>
 <div class="section" id="configuration">
-<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">SimConfig</span></code> will return a default simulation configuration instance on which you can call multiple functions to configure your simulation:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -1243,26 +1247,25 @@
 <p>Then you can call the <code class="docutils literal notranslate"><span class="pre">compile(rtl)</span></code> function to compile the hardware and warm up the simulator.
 This function will return a <code class="docutils literal notranslate"><span class="pre">SimCompiled</span></code> instance.</p>
 <p>On this <code class="docutils literal notranslate"><span class="pre">SimCompiled</span></code> instance you can run your simulation with the following functions:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Syntax</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">doSim[(simName[,</span> <span class="pre">seed])]{dut</span> <span class="pre">=&gt;</span> <span class="pre">...}</span></code></p></td>
-<td><p>Run the simulation until the main thread is done (doesn’t wait on forked threads) or until all threads are stuck</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">doSimUntilVoid[(simName[,</span> <span class="pre">seed])]{dut</span> <span class="pre">=&gt;</span> <span class="pre">...}</span></code></p></td>
-<td><p>Run the simulation until all threads are done or stuck</p></td>
-</tr>
-</tbody>
-</table>
-<p>For example :</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">doSim[(simName[,</span> <span class="pre">seed])]{dut</span> <span class="pre">=&gt;</span> <span class="pre">/*</span> <span class="pre">main</span> <span class="pre">stimulus</span> <span class="pre">code</span> <span class="pre">*/}</span></code></dt><dd><p>Run the simulation until the main thread runs to completion and exits/returns.
+It will detect and report an error if the simulation gets fully stuck. As long as
+e.g. a clock is running the simulation can continue forever, it is therefore recommended
+to use <code class="docutils literal notranslate"><span class="pre">SimTimeout(cycles)</span></code> to limit the possible runtime.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">doSimUntilVoid[(simName[,</span> <span class="pre">seed])]{dut</span> <span class="pre">=&gt;</span> <span class="pre">...}</span></code></dt><dd><p>Run the simulation until it is ended by calling either <code class="docutils literal notranslate"><span class="pre">simSuccess()</span></code> or <code class="docutils literal notranslate"><span class="pre">simFailure()</span></code>.
+The main stimulus thread can continue or exit early. As long as there are events to process,
+the simulation will continue. The simulation will report an error if it gets fully stuck.</p>
+</dd>
+</dl>
+<p>The following testbench template will use the following toplevel :</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">TopLevel</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kd">val</span><span class="w"> </span><span class="n">counter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out</span><span class="p">(</span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"> </span><span class="n">init</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">))</span><span class="w"></span>
+<span class="w">   </span><span class="n">counter</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">counter</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Here is a template with many simulation configurations:</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">spinalConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SpinalConfig</span><span class="p">(</span><span class="n">defaultClockDomainFrequency</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">FixedFrequency</span><span class="p">(</span><span class="mi">10</span><span class="w"> </span><span class="nc">MHz</span><span class="p">))</span><span class="w"></span>
 
 <span class="nc">SimConfig</span><span class="w"></span>
@@ -1272,14 +1275,49 @@ This function will return a <code class="docutils literal notranslate"><span cla
 <span class="w">  </span><span class="p">.</span><span class="n">workspacePath</span><span class="p">(</span><span class="s">&quot;~/tmp&quot;</span><span class="p">)</span><span class="w"></span>
 <span class="w">  </span><span class="p">.</span><span class="n">compile</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="nc">TopLevel</span><span class="p">)</span><span class="w"></span>
 <span class="w">  </span><span class="p">.</span><span class="n">doSim</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">dut</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="nc">SimTimeout</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// Simulation code here</span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Here is a template where the simulation ends by completing the simulation main thread execution:</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="nc">SimConfig</span><span class="p">.</span><span class="n">compile</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="nc">TopLevel</span><span class="p">).</span><span class="n">doSim</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">dut</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"></span>
+<span class="w">  </span><span class="nc">SimTimeout</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">.</span><span class="n">forkStimulus</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">.</span><span class="n">waitSamplingWhere</span><span class="p">(</span><span class="n">dut</span><span class="p">.</span><span class="n">counter</span><span class="p">.</span><span class="n">toInt</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">20</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;done&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Here is a template where the simulation ends by explicitly calling <cite>simSuccess()</cite>:</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="nc">SimConfig</span><span class="p">.</span><span class="n">compile</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="nc">TopLevel</span><span class="p">).</span><span class="n">doSimUntilVoid</span><span class="p">{</span><span class="w"> </span><span class="n">dut</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"></span>
+<span class="w">  </span><span class="nc">SimTimeout</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">.</span><span class="n">forkStimulus</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="n">fork</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">.</span><span class="n">waitSamplingWhere</span><span class="p">(</span><span class="n">dut</span><span class="p">.</span><span class="n">counter</span><span class="p">.</span><span class="n">toInt</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">20</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;done&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">simSuccess</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Note is it equivalent to:</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="nc">SimConfig</span><span class="p">.</span><span class="n">compile</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="nc">TopLevel</span><span class="p">).</span><span class="n">doSim</span><span class="p">{</span><span class="w"> </span><span class="n">dut</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"></span>
+<span class="w">  </span><span class="nc">SimTimeout</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">.</span><span class="n">forkStimulus</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="n">fork</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">.</span><span class="n">waitSamplingWhere</span><span class="p">(</span><span class="n">dut</span><span class="p">.</span><span class="n">counter</span><span class="p">.</span><span class="n">toInt</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">20</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;done&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">simSuccess</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">simThread</span><span class="p">.</span><span class="n">suspend</span><span class="p">()</span><span class="w"> </span><span class="c1">// Avoid the &quot;doSim&quot; completion</span>
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Note that by default, the simulation files will be placed into the <code class="docutils literal notranslate"><span class="pre">simWorkspace/xxx</span></code> folders. You can override the simWorkspace location by setting the <code class="docutils literal notranslate"><span class="pre">SPINALSIM_WORKSPACE</span></code> environnement variable.</p>
 </div>
 <div class="section" id="running-multiple-tests-on-the-same-hardware">
-<h2>Running multiple tests on the same hardware<a class="headerlink" href="#running-multiple-tests-on-the-same-hardware" title="Permalink to this headline">¶</a></h2>
+<h2>Running multiple tests on the same hardware<a class="headerlink" href="#running-multiple-tests-on-the-same-hardware" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">compiled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SimConfig</span><span class="p">.</span><span class="n">withWave</span><span class="p">.</span><span class="n">compile</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="nc">Dut</span><span class="p">)</span><span class="w"></span>
 
 <span class="n">compiled</span><span class="p">.</span><span class="n">doSim</span><span class="p">(</span><span class="s">&quot;testA&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">dut</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"></span>
@@ -1293,7 +1331,7 @@ This function will return a <code class="docutils literal notranslate"><span cla
 </div>
 </div>
 <div class="section" id="throw-success-or-failure-of-the-simulation-from-a-thread">
-<h2>Throw Success or Failure of the simulation from a thread<a class="headerlink" href="#throw-success-or-failure-of-the-simulation-from-a-thread" title="Permalink to this headline">¶</a></h2>
+<h2>Throw Success or Failure of the simulation from a thread<a class="headerlink" href="#throw-success-or-failure-of-the-simulation-from-a-thread" title="Permalink to this heading">¶</a></h2>
 <p>At any moment during a simulation you can call <code class="docutils literal notranslate"><span class="pre">simSuccess</span></code> or <code class="docutils literal notranslate"><span class="pre">simFailure</span></code> to end it.</p>
 <p>It is possible to make a simulation fail when it is too long, for instance because the test-bench is waiting for a condition which never occurs. To do so, call <code class="docutils literal notranslate"><span class="pre">SimTimeout(maxDuration)</span></code> where <code class="docutils literal notranslate"><span class="pre">maxDuration</span></code> is the time (in simulation units of time) after the which the simulation should be considered to have failed.</p>
 <p>For instance, to make the simulation fail after 1000 times the duration of a clock cycle:</p>
