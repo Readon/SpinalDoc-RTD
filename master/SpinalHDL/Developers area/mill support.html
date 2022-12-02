@@ -1077,8 +1077,8 @@
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Build through Mill</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#complie-the-library">Complie the library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#run-all-test-suite">Run all test suite</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#test-a-specified-suite">Test a specified suite</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-all-test-suites">Run all test suites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-a-specified-test-suite">Run a specified test suite</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-a-specified-app">Run a specified App</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#publish-locally">Publish locally</a></li>
 </ul>
@@ -1193,8 +1193,8 @@
             
   <div class="section" id="build-through-mill">
 <h1>Build through Mill<a class="headerlink" href="#build-through-mill" title="Permalink to this heading">¶</a></h1>
-<p>SpinalHDL itself can be built by Mill build tools, it could compile/test/publishLocal the existing modules.
-Build through mill can be much faster than sbt, which is useful while debugging.</p>
+<p>SpinalHDL itself can be built with Mill. It can compile/test/publishLocal the existing modules.
+Build through mill can be much faster than Sbt, which is useful while debugging.</p>
 <div class="section" id="complie-the-library">
 <h2>Complie the library<a class="headerlink" href="#complie-the-library" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mill __.compile
@@ -1202,15 +1202,15 @@ sbt compile <span class="c1"># equivalent alternatives</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="run-all-test-suite">
-<h2>Run all test suite<a class="headerlink" href="#run-all-test-suite" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="run-all-test-suites">
+<h2>Run all test suites<a class="headerlink" href="#run-all-test-suites" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mill __.test
 sbt <span class="nb">test</span> <span class="c1"># equivalent alternatives</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="test-a-specified-suite">
-<h2>Test a specified suite<a class="headerlink" href="#test-a-specified-suite" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="run-a-specified-test-suite">
+<h2>Run a specified test suite<a class="headerlink" href="#run-a-specified-test-suite" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mill tester.test.testOnly spinal.xxxxx.xxxxx
 sbt <span class="s2">&quot;tester/testOnly spinal.xxxxx.xxxxx&quot;</span> <span class="c1"># equivalent alternatives</span>
 </pre></div>
@@ -1225,7 +1225,7 @@ sbt <span class="s2">&quot;tester/runMain spinal.xxxxx.xxxxx&quot;</span> <span 
 </div>
 <div class="section" id="publish-locally">
 <h2>Publish locally<a class="headerlink" href="#publish-locally" title="Permalink to this heading">¶</a></h2>
-<p>it can also publish the library to local ivy2 repos as a <code class="docutils literal notranslate"><span class="pre">dev</span></code> version.</p>
+<p>Mill can also publish the library to the local ivy2 repository as a <code class="docutils literal notranslate"><span class="pre">dev</span></code> version.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mill __.publishLocal
 sbt publishLocal <span class="c1"># equivalent alternatives</span>
 </pre></div>
