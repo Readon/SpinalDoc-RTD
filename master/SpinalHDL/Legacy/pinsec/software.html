@@ -35,9 +35,7 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js"></script>
     
@@ -122,6 +120,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../Introduction/Projects%20using%20SpinalHDL.html">Projects using SpinalHDL</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Introduction/Projects%20using%20SpinalHDL.html#repositories">Repositories</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Introduction/Projects%20using%20SpinalHDL.html#companies">Companies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Introduction/Projects%20using%20SpinalHDL.html#universities">Universities</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Introduction/Getting%20in%20touch.html">Getting in touch</a></li>
@@ -563,6 +562,12 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../Design%20errors/out_of_range_constant.html">Out of Range Constant</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Design%20errors/out_of_range_constant.html#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Design%20errors/out_of_range_constant.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Design%20errors/out_of_range_constant.html#specifying-exceptions">Specifying exceptions</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../Design%20errors/register_defined_as_component_input.html">Register defined as component input</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Design%20errors/register_defined_as_component_input.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Design%20errors/register_defined_as_component_input.html#example">Example</a></li>
@@ -732,7 +737,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/regIf.html#automatic-allocation">Automatic allocation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/regIf.html#access-types">28 Access Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/regIf.html#automatic-documentation-generation">Automatic documentation generation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Libraries/regIf.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/regIf.html#special-access-usage">Special Access Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/regIf.html#byte-mask">Byte Mask</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/regIf.html#typical-example">Typical Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/regIf.html#interrupt-factory">Interrupt Factory</a></li>
 </ul>
 </li>
@@ -740,7 +747,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/regIf.html#ip-level-interrupt-factory">IP level interrupt Factory</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/regIf.html#sys-level-interrupt-merge">SYS level interrupt merge</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/regIf.html#spinal-factory">Spinal Factory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Libraries/regIf.html#id1">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/regIf.html#example">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/regIf.html#developers-area">Developers Area</a></li>
 </ul>
 </li>
@@ -1194,9 +1201,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="software">
-<h1>Software<a class="headerlink" href="#software" title="Permalink to this heading">¶</a></h1>
+<h1>Software<a class="headerlink" href="#software" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="riscv-tool-chain">
-<h2>RISCV tool-chain<a class="headerlink" href="#riscv-tool-chain" title="Permalink to this heading">¶</a></h2>
+<h2>RISCV tool-chain<a class="headerlink" href="#riscv-tool-chain" title="Permalink to this headline">¶</a></h2>
 <p>Binaries executed by the CPU can be defined in ASM/C/C++ and compiled by the GCC RISCV fork. Also, to load binaries and debug the CPU, an OpenOCD fork and RISCV GDB can be used.</p>
 <div class="line-block">
 <div class="line">RISCV tools : <a class="reference external" href="https://github.com/riscv/riscv-wiki/wiki/RISC-V-Software-Status">https://github.com/riscv/riscv-wiki/wiki/RISC-V-Software-Status</a></div>
@@ -1205,7 +1212,7 @@
 </div>
 </div>
 <div class="section" id="openocd-gdb-eclipse-configuration">
-<h2>OpenOCD/GDB/Eclipse  configuration<a class="headerlink" href="#openocd-gdb-eclipse-configuration" title="Permalink to this heading">¶</a></h2>
+<h2>OpenOCD/GDB/Eclipse  configuration<a class="headerlink" href="#openocd-gdb-eclipse-configuration" title="Permalink to this headline">¶</a></h2>
 <p>About the OpenOCD fork, there is the configuration file that could be used to connect the Pinsec SoC : <a class="reference external" href="https://github.com/Dolu1990/openocd_riscv/blob/riscv_spinal/tcl/target/riscv_spinal.cfg">https://github.com/Dolu1990/openocd_riscv/blob/riscv_spinal/tcl/target/riscv_spinal.cfg</a></p>
 <p>There is an example of arguments used to run the OpenOCD tool :</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>openocd -f ../tcl/interface/ftdi/ft2232h_breakout.cfg -f ../tcl/target/riscv_spinal.cfg -d 3
@@ -1277,11 +1284,6 @@ load
       <dt>Branches</dt>
       <dd><a href="../../../../dev/SpinalHDL/Legacy/pinsec/software.html">dev</a></dd>
       <dd><a href="software.html">master</a></dd>
-    </dl>
-    <dl>
-      <dt>Downloads</dt>
-      <dd><a href="../../../artefacts/SpinalHDL_docs-master.">HTML</a></dd>
-      <dd><a href="../../../artefacts/SpinalHDL_docs-master.pdf">PDF</a></dd>
     </dl>
   </div>
 </div>

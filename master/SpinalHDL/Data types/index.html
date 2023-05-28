@@ -35,9 +35,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js"></script>
     
@@ -122,6 +120,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Introduction/Projects%20using%20SpinalHDL.html">Projects using SpinalHDL</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Introduction/Projects%20using%20SpinalHDL.html#repositories">Repositories</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Introduction/Projects%20using%20SpinalHDL.html#companies">Companies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Introduction/Projects%20using%20SpinalHDL.html#universities">Universities</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Introduction/Getting%20in%20touch.html">Getting in touch</a></li>
@@ -563,6 +562,12 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../Design%20errors/out_of_range_constant.html">Out of Range Constant</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Design%20errors/out_of_range_constant.html#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Design%20errors/out_of_range_constant.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Design%20errors/out_of_range_constant.html#specifying-exceptions">Specifying exceptions</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Design%20errors/register_defined_as_component_input.html">Register defined as component input</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/register_defined_as_component_input.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/register_defined_as_component_input.html#example">Example</a></li>
@@ -732,7 +737,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#automatic-allocation">Automatic allocation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#access-types">28 Access Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#automatic-documentation-generation">Automatic documentation generation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#special-access-usage">Special Access Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#byte-mask">Byte Mask</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#typical-example">Typical Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#interrupt-factory">Interrupt Factory</a></li>
 </ul>
 </li>
@@ -740,7 +747,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#ip-level-interrupt-factory">IP level interrupt Factory</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#sys-level-interrupt-merge">SYS level interrupt merge</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#spinal-factory">Spinal Factory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#id1">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#example">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#developers-area">Developers Area</a></li>
 </ul>
 </li>
@@ -1190,11 +1197,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="data-types">
-<h1>Data types<a class="headerlink" href="#data-types" title="Permalink to this heading">¶</a></h1>
+<h1>Data types<a class="headerlink" href="#data-types" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <div class="section" id="introduction">
-<span id="type-introduction"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
+<span id="type-introduction"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>The language provides 5 base types, and 2 composite types that can be used.</p>
 <ul class="simple">
 <li><p>Base types: <a class="reference internal" href="bool.html#bool"><span class="std std-ref">Bool</span></a> , <a class="reference internal" href="bits.html#bits"><span class="std std-ref">Bits</span></a> , <a class="reference internal" href="Int.html#int"><span class="std std-ref">UInt</span></a> for unsigned integers, <a class="reference internal" href="Int.html#int"><span class="std std-ref">SInt</span></a> for signed integers and <a class="reference internal" href="enum.html#enum"><span class="std std-ref">Enum</span></a>.</p></li>
@@ -1208,7 +1215,7 @@
 <li><p><a class="reference internal" href="Floating.html#floating"><span class="std std-ref">Floating-point</span></a> numbers (experimental support)</p></li>
 </ul>
 <p>Finally, a special type is available for checking equality between a BitVector and a bits constant that contains holes (don’t care values). An example is shown below:</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">myBits</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">myBits</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
 <span class="kd">val</span><span class="w"> </span><span class="n">itMatch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myBits</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nc">M</span><span class="s">&quot;00--10--&quot;</span><span class="w"> </span><span class="c1">// - don&#39;t care value</span>
 </pre></div>
 </div>
@@ -1267,11 +1274,6 @@
       <dt>Branches</dt>
       <dd><a href="../../../dev/SpinalHDL/Data types/index.html">dev</a></dd>
       <dd><a href="index.html">master</a></dd>
-    </dl>
-    <dl>
-      <dt>Downloads</dt>
-      <dd><a href="../../artefacts/SpinalHDL_docs-master.">HTML</a></dd>
-      <dd><a href="../../artefacts/SpinalHDL_docs-master.pdf">PDF</a></dd>
     </dl>
   </div>
 </div>
