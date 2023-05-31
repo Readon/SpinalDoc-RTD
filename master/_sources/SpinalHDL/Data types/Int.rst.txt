@@ -235,8 +235,8 @@ Arithmetic
 
 .. note::
 
-   ``UInt`` signals support a wrapping comparison by ``wrap`` method, so that the value U"8'xff" can be smaller than U"8'x01".
-   The ``UInt`` variables ``x, y`` can be used as ``x.wrap < y``, this would return a ``Bool`` signal.
+   Notice how simulation assertions are made here (with ``===``), as opposed to elaboration
+   assertions in the previous example (with ``==``).
 
 Comparison
 ~~~~~~~~~~
@@ -284,8 +284,8 @@ Comparison
 
 .. note::
 
-   Notice how simulation assertions are made here (with ``===``), as opposed to elaboration
-   assertions in the previous example (with ``==``).
+   ``UInt`` signals support a wrapping comparison by ``wrap`` method, so that the value U"8'xff" can be smaller than U"8'x01".
+   The ``UInt`` variables ``x, y`` can be used as ``x.wrap < y``, this would return a ``Bool`` signal.
 
 Type cast
 ~~~~~~~~~
