@@ -1815,8 +1815,8 @@ For safe transaction, refer the notes above.</p>
 </section>
 <section id="streamtransactionextender">
 <h3>StreamTransactionExtender<a class="headerlink" href="#streamtransactionextender" title="Permalink to this heading"></a></h3>
-<p>This util helps to extend one input transaction with specified <code class="docutils literal notranslate"><span class="pre">count``+1</span> <span class="pre">times</span> <span class="pre">of</span> <span class="pre">output</span> <span class="pre">transactions</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">same</span> <span class="pre">payload.</span>
-<span class="pre">The</span> <span class="pre">``count</span></code> signal would be captured and registered while inputStream fire.</p>
+<p>This util helps to extend one input transaction with specified <code class="docutils literal notranslate"><span class="pre">count+1</span></code> times of output transactions with the same payload.
+The <code class="docutils literal notranslate"><span class="pre">count</span></code> signal would be captured and registered while inputStream fire.</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
 <span class="kd">val</span><span class="w"> </span><span class="n">outputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
 <span class="kd">val</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
@@ -1929,7 +1929,7 @@ For safe transaction, refer the notes above.</p>
     <!-- source/_templates/footer.html -->
     
     <div class="doc-footer-current-version"><p>
-    Version: master git~41523b1b5 2023-07-08
+    Version: master git~728592880 2023-07-08
     </p></div>
     
 
