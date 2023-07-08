@@ -1,97 +1,78 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>RegIf &mdash; SpinalHDL  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/gh-fork-ribbon.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/spinaldoc.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/logo3_32x32.png"/>
-  
-
-  
-  
-
-  
-
-  
+    <link rel="canonical" href="https://spinalhdl.github.io/SpinalDoc-RTD/master/SpinalHDL/Libraries/regIf.html" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
-    
+        <script src="../../_static/dialog.js"></script>
+    <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Bus" href="Bus/index.html" />
-    <link rel="prev" title="BinarySystem" href="binarySystem.html" /> 
+    <link rel="prev" title="BinarySystem" href="binarySystem.html" />
+     
+    <!-- source/_templates/layout.html -->
+    
+    
+    
+
 </head>
 
 <body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
+     
     
+    
+    
+    <div class="div-svg-github-corner github-corner-abs">
+    <a href="https://github.com/SpinalHDL/SpinalDoc-RTD/blob/master/source/SpinalHDL/Libraries/regIf.rst" class="github-corner github-fork-ribbon" aria-label="Edit on GitHub" data-ribbon="Edit on GitHub" title="Edit on GitHub">
+      <object id="svg-github-corner" data="../../_static/github-corner-right.svg" class="svg-github-corner github-corner-abs" width="80" height="80"></object>
+    </a>
+    </div>
+    
+    
+    
+
+  <div class="wy-grid-for-nav">
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../../index.html" class="icon icon-home"> SpinalHDL
           
-
-          
+          <a href="../../index.html" class="icon icon-home">
+            SpinalHDL
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Foreword/index.html">Foreword</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Foreword/index.html#why-moving-away-from-traditional-hdl">Why moving away from traditional HDL</a><ul>
@@ -378,24 +359,18 @@
 <li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#assignment">Assignment</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Data%20types/index.html#introduction">Introduction</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Structuring/index.html">Structuring</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Structuring/components_hierarchy.html">Component and hierarchy</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Structuring/components_hierarchy.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Structuring/components_hierarchy.html">Components and hierarchy</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/components_hierarchy.html#input-output-definition">Input / output definition</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/components_hierarchy.html#pruned-signals">Pruned signals</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/components_hierarchy.html#parametrized-hardware-generic-in-vhdl-parameter-in-verilog">Parametrized Hardware (“Generic” in VHDL, “Parameter” in Verilog)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/components_hierarchy.html#synthesized-component-names">Synthesized component names</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Structuring/area.html">Area</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Structuring/area.html#introduction">Introduction</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../Structuring/area.html">Area</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Structuring/function.html">Function</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Structuring/function.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/function.html#rgb-to-gray">RGB to gray</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/function.html#valid-ready-payload-bus">Valid Ready Payload bus</a></li>
 </ul>
@@ -433,7 +408,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Structuring/naming.html">Preserving names</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Structuring/naming.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/naming.html#nameable-base-class">Nameable base class</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/naming.html#name-extraction-from-scala">Name extraction from Scala</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/naming.html#area-in-a-component">Area in a Component</a></li>
@@ -451,7 +425,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Structuring/parametrization.html">Parametrization</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Structuring/parametrization.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/parametrization.html#elaboration-time-parameters">Elaboration time parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/parametrization.html#optional-hardware">Optional hardware</a></li>
 </ul>
@@ -460,7 +433,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Semantic/index.html">Semantic</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Semantic/assignments.html">Assignments</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Semantic/assignments.html#id1">Assignments</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/assignments.html#width-checking">Width checking</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/assignments.html#combinatorial-loops">Combinatorial loops</a></li>
 </ul>
@@ -481,7 +453,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Semantic/rules.html">Rules</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Semantic/rules.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/rules.html#concurrency">Concurrency</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/rules.html#last-valid-assignment-wins">Last valid assignment wins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/rules.html#signal-and-register-interactions-with-scala-oop-reference-functions">Signal and register interactions with Scala (OOP reference + Functions)</a></li>
@@ -491,7 +462,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Sequential%20logic/index.html">Sequential logic</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Sequential%20logic/registers.html">Registers</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#instantiation">Instantiation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#reset-value">Reset value</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#initialization-value-for-simulation-purposes">Initialization value for simulation purposes</a></li>
@@ -500,7 +470,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Sequential%20logic/memory.html">RAM/ROM</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#syntax">Syntax</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#synchronous-enable-quirk">Synchronous enable quirk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#read-under-write-policy">Read-under-write policy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#mixed-width-ram">Mixed-width ram</a></li>
@@ -523,7 +492,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#example">Example</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#crossclockdomain-tag">crossClockDomain tag</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#setsyncronouswith">setSyncronousWith</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#setsynchronouswith">setSynchronousWith</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#buffercc">BufferCC</a></li>
 </ul>
 </li>
@@ -540,7 +509,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/hierarchy_violation.html#example">Example</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Design%20errors/iobundle.html">Io bundle</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Design%20errors/iobundle.html">IO bundle</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/iobundle.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/iobundle.html#example">Example</a></li>
 </ul>
@@ -603,7 +572,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/width_mismatch.html#operator-example">Operator example</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Design%20errors/index.html#introduction">Introduction</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Other%20language%20features/index.html">Other language features</a><ul>
@@ -646,10 +614,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/vhdl_generation.html#vhdl-and-verilog-attributes">VHDL and Verilog attributes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/index.html#introduction">Introduction</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/index.html#id1">Introduction</a></li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Libraries</a><ul class="current">
@@ -679,6 +643,7 @@
 <li class="toctree-l4"><a class="reference internal" href="stream.html#streammux">StreamMux</a></li>
 <li class="toctree-l4"><a class="reference internal" href="stream.html#streamdemux">StreamDemux</a></li>
 <li class="toctree-l4"><a class="reference internal" href="stream.html#streamdispatchersequencial">StreamDispatcherSequencial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stream.html#streamtransactionextender">StreamTransactionExtender</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="stream.html#simulation-support">Simulation support</a></li>
@@ -743,14 +708,13 @@
 <li class="toctree-l3"><a class="reference internal" href="#special-access-usage">Special Access Usage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#byte-mask">Byte Mask</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#typical-example">Typical Example</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#interrupt-factory">Interrupt Factory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#interrupt-factory">Interrupt Factory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ip-level-interrupt-factory">IP level interrupt Factory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sys-level-interrupt-merge">SYS level interrupt merge</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#spinal-factory">Spinal Factory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example">Example</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#interrupt-design-spec">Interrupt Design Spec</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ip-level-interrupt-factory">IP level interrupt Factory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sys-level-interrupt-merge">SYS level interrupt merge</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#spinal-factory">Spinal Factory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#defaultreadvalue">DefaultReadValue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#developers-area">Developers Area</a></li>
 </ul>
@@ -762,20 +726,17 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Bus/amba3/apb3.html">Apb3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Bus/amba3/apb3.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Bus/amba3/apb3.html#configuration-and-instanciation">Configuration and instanciation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Bus/amba3/apb3.html#functions-and-operators">Functions and operators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Bus/amba4/axi4.html">Axi4</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Bus/amba4/axi4.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Bus/amba4/axi4.html#configuration-and-instanciation">Configuration and instanciation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Bus/amba4/axi4.html#variations">Variations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Bus/amba4/axi4.html#functions-and-operators">Functions and operators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Bus/avalon/avalonmm.html">AvalonMM</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Bus/avalon/avalonmm.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Bus/avalon/avalonmm.html#configuration-and-instanciation">Configuration and instanciation</a></li>
 </ul>
 </li>
@@ -783,13 +744,11 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Com/index.html">Com</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Com/uart.html">UART</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Com/uart.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Com/uart.html#bus-definition">Bus definition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Com/uart.html#uartctrl">UartCtrl</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Com/usb_device.html">USB device</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Com/usb_device.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Com/usb_device.html#architecture">Architecture</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Com/usb_device.html#registers">Registers</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Com/usb_device.html#descriptors">Descriptors</a></li>
@@ -797,19 +756,14 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Com/usb_ohci.html">USB OHCI</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Com/usb_ohci.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Com/usb_ohci.html#usage">Usage</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="IO/index.html">IO</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="IO/readableOpenDrain.html">ReadableOpenDrain</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="IO/readableOpenDrain.html#id1">ReadableOpenDrain</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="IO/readableOpenDrain.html">ReadableOpenDrain</a></li>
 <li class="toctree-l3"><a class="reference internal" href="IO/tristate.html">TriState</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="IO/tristate.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="IO/tristate.html#id1">TriState</a></li>
 <li class="toctree-l4"><a class="reference internal" href="IO/tristate.html#tristatearray">TriStateArray</a></li>
 </ul>
@@ -831,14 +785,12 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="EDA/index.html">EDA</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="EDA/altera/qsysify.html">QSysify</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="EDA/altera/qsysify.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="EDA/altera/qsysify.html#example">Example</a></li>
 <li class="toctree-l4"><a class="reference internal" href="EDA/altera/qsysify.html#tags">tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="EDA/altera/qsysify.html#adding-new-interface-support">Adding new interface support</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="EDA/altera/quartus_flow.html">QuartusFlow</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="EDA/altera/quartus_flow.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="EDA/altera/quartus_flow.html#for-a-single-rtl-file">For a single rtl file</a></li>
 <li class="toctree-l4"><a class="reference internal" href="EDA/altera/quartus_flow.html#for-an-existing-project">For an existing project</a></li>
 </ul>
@@ -852,10 +804,6 @@
 <li class="toctree-l4"><a class="reference internal" href="Misc/PLIC/plic_mapper.html#plicmapping-light"><code class="docutils literal notranslate"><span class="pre">PlicMapping.light</span></code></a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#introduction">Introduction</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id1">Introduction</a></li>
 </ul>
 </li>
 </ul>
@@ -899,6 +847,13 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/threadLess.html">Thread-less API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/sensitive.html">Sensitive API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Simulation/simulator_specifics.html">Simulator specific details</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Simulation/simulator_specifics.html#how-spinalhdl-simulates-the-hardware-with-verilator-backend">How SpinalHDL simulates the hardware with Verilator backend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Simulation/simulator_specifics.html#how-spinalhdl-simulates-the-hardware-with-ghdl-icarus-verilog-backend">How SpinalHDL simulates the hardware with GHDL/Icarus Verilog backend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Simulation/simulator_specifics.html#how-spinalhdl-simulates-the-hardware-with-synopsys-vcs-backend">How SpinalHDL simulates the hardware with Synopsys VCS backend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Simulation/simulator_specifics.html#performance">Performance</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/engine.html">Simulation engine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/examples/index.html">Examples</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Simulation/examples/asynchronous.html">Asynchronous adder</a></li>
@@ -909,11 +864,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Simulation/examples/uart_encoder.html">Uart encoder</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-verilator-backend">How SpinalHDL simulates the hardware with Verilator backend</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-ghdl-icarus-verilog-backend">How SpinalHDL simulates the hardware with GHDL/Icarus Verilog backend</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-synopsys-vcs-backend">How SpinalHDL simulates the hardware with Synopsys VCS backend</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#performance">Performance</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Formal%20verification/index.html">Formal verification</a><ul>
@@ -1032,6 +982,11 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Legacy/pinsec/index.html">pinsec</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Legacy/pinsec/introduction.html">Introduction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/introduction.html#id1">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/introduction.html#board-support">Board support</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../Legacy/pinsec/hardware.html">Hardware</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/hardware.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/hardware.html#riscv">RISCV</a></li>
@@ -1050,11 +1005,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/hardware_toplevel.html#misc">Misc</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../Legacy/pinsec/introduction.html">Introduction</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/introduction.html#id1">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/introduction.html#board-support">Board support</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="../Legacy/pinsec/software.html">Software</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/software.html#riscv-tool-chain">RISCV tool-chain</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/software.html#openocd-gdb-eclipse-configuration">OpenOCD/GDB/Eclipse  configuration</a></li>
@@ -1062,6 +1012,42 @@
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../miscelenea/index.html">Miscellaneous</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/frequent_errors.html">Frequent Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/frequent_errors.html#exception-in-thread-main-java-lang-nullpointerexception">Exception in thread “main” java.lang.NullPointerException</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/frequent_errors.html#hierarchy-violation">Hierarchy violation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/frequent_errors.html#signal-x-can-t-be-assigned-by-y">Signal X can’t be assigned by Y</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/frequent_errors.html#input-signal-x-can-t-be-assigned-by-y">Input signal X can’t be assigned by Y</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/frequent_errors.html#output-signal-x-can-t-be-assigned-by-y">Output signal X can’t be assigned by Y</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/core/core_components.html">The <code class="docutils literal notranslate"><span class="pre">spinal.core</span></code> components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#clock-domains-definitions">Clock domains definitions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#clock-domain-syntax">Clock domain syntax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#clock-configuration">Clock configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#external-clock">External clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#cross-clock-domain">Cross Clock Domain</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#assignments">Assignments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#when-switch">When / Switch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#component-hierarchy">Component/Hierarchy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#area">Area</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#function">Function</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#rgb-to-gray">RGB to gray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#valid-ready-payload-bus">Valid Ready Payload bus</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#vhdl-generation">VHDL generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#memory">Memory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#instantiate-vhdl-and-verilog-ip">Instantiate VHDL and Verilog IP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#utils">Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/core/elements.html">Element</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/core/elements.html#range">Range</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Developers%20area/index.html">Developers area</a><ul>
@@ -1087,7 +1073,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Developers%20area/mill%20support.html">Build through Mill</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#complie-the-library">Complie the library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#compile-the-library">Compile the library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-all-test-suites">Run all test suites</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-a-specified-test-suite">Run a specified test suite</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-a-specified-app">Run a specified App</a></li>
@@ -1129,89 +1115,66 @@
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/types.html#enum">Enum</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/types.html#data-bool-bits-uint-sint-enum-bundle-vec">Data (Bool, Bits, UInt, SInt, Enum, Bundle, Vec)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/types.html#literals-as-signal-declaration">Literals as signal declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/types.html#continuous-assignment-literals-as-signal-declaration">Continuous Assignment Literals as signal declaration</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">SpinalHDL</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="index.html">Libraries</a> &raquo;</li>
-        
-      <li>RegIf</li>
-    
-    
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Libraries</a></li>
+      <li class="breadcrumb-item active">RegIf</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
-            <a href="../../_sources/SpinalHDL/Libraries/regIf.rst.txt" rel="nofollow"> View page source</a>
-          
-        
+              <a href="https://github.com/SpinalHDL/SpinalDoc-RTD/blob/master/source/SpinalHDL/Libraries/regIf.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="regif">
-<h1>RegIf<a class="headerlink" href="#regif" title="Permalink to this heading">¶</a></h1>
+             <dialog id="doc-dialog-version" role="dialog" class="collapse-once" aria-modal="false" data-default-state="close" data-current-version="master" data-latest-version="master">
+<p class="doc-version-warning-banner">
+  <strong>
+    
+    You're reading an pre-release version of this documentation.<br/>
+    For the latest stable release version, please have a look at <a href="regIf.html">master</a>.
+    
+  </strong>
+  <div>
+    <form>
+      <button formmethod="dialog" type="submit" class="doc-dialog-dismiss" aria-label="close">Dismiss</button>
+    </form>
+  </div>
+</p>
+</dialog>
+
+
+
+
+  <section id="regif">
+<h1>RegIf<a class="headerlink" href="#regif" title="Permalink to this heading"></a></h1>
 <p>Register Interface Builder</p>
 <ul class="simple">
 <li><p>Automatic address, fields allocation and conflict detection</p></li>
 <li><p>28 Register Access types(Covering the 25 types defined by the UVM standard)</p></li>
 <li><p>Automatic documentation generation</p></li>
 </ul>
-<div class="section" id="automatic-allocation">
-<h2>Automatic allocation<a class="headerlink" href="#automatic-allocation" title="Permalink to this heading">¶</a></h2>
+<section id="automatic-allocation">
+<h2>Automatic allocation<a class="headerlink" href="#automatic-allocation" title="Permalink to this heading"></a></h2>
 <p>Automatic address allocation</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">RegBankExample</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">io</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Bundle</span><span class="p">{</span><span class="w"></span>
@@ -1259,16 +1222,11 @@
 <span class="n">cause</span><span class="w"> </span><span class="nc">Exception</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="access-types">
-<h2>28 Access Types<a class="headerlink" href="#access-types" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="access-types">
+<h2>28 Access Types<a class="headerlink" href="#access-types" title="Permalink to this heading"></a></h2>
 <p>Most of these come from UVM specification</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 85%" />
-<col style="width: 4%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>AccessType</p></th>
 <th class="head"><p>Description</p></th>
@@ -1406,16 +1364,11 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="automatic-documentation-generation">
-<h2>Automatic documentation generation<a class="headerlink" href="#automatic-documentation-generation" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="automatic-documentation-generation">
+<h2>Automatic documentation generation<a class="headerlink" href="#automatic-documentation-generation" title="Permalink to this heading"></a></h2>
 <p>Document Type</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 85%" />
-<col style="width: 6%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Document</p></th>
 <th class="head"><p>Usage</p></th>
@@ -1456,9 +1409,9 @@
 <p>HTML auto-doc is now complete, Example source Code:</p>
 <p>generated HTML document:</p>
 <img alt="../../_images/regif-html.png" src="../../_images/regif-html.png" />
-</div>
-<div class="section" id="special-access-usage">
-<h2>Special Access Usage<a class="headerlink" href="#special-access-usage" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="special-access-usage">
+<h2>Special Access Usage<a class="headerlink" href="#special-access-usage" title="Permalink to this heading"></a></h2>
 <p><strong>CASE1:</strong> <code class="docutils literal notranslate"><span class="pre">RO</span></code> usage</p>
 <p><code class="docutils literal notranslate"><span class="pre">RO</span></code> is different from other types. It does not create registers and requires an external signal to drive it,
 Attention, please don’t forget to drive it.</p>
@@ -1539,7 +1492,7 @@ CSTM is only used to generate software interfaces, and does not generate actual 
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<p>CASE5:  <code class="docutils literal notranslate"><span class="pre">parasiteField</span></code></p>
+<p><strong>CASE5:</strong> <code class="docutils literal notranslate"><span class="pre">parasiteField</span></code></p>
 <p>This is used for software to share the same register on multiple address instead of generating multiple register entities</p>
 <p>example1: clock gate software enable</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="nc">M_CG_ENS_SET</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">busif</span><span class="p">.</span><span class="n">newReg</span><span class="p">(</span><span class="n">doc</span><span class="o">=</span><span class="s">&quot;Clock Gate Enables&quot;</span><span class="p">)</span><span class="w">  </span><span class="c1">//0x0000</span>
@@ -1559,13 +1512,13 @@ CSTM is only used to generate software interfaces, and does not generate actual 
 <span class="w">             </span><span class="nc">FORCE</span><span class="p">.</span><span class="n">parasiteField</span><span class="p">(</span><span class="n">raw</span><span class="p">,</span><span class="w"> </span><span class="nc">AccessType</span><span class="p">.</span><span class="nc">W1S</span><span class="p">,</span><span class="w">   </span><span class="n">resetValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">doc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">s&quot;force, write 1 set, debug use&quot;</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="byte-mask">
-<h2>Byte Mask<a class="headerlink" href="#byte-mask" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="byte-mask">
+<h2>Byte Mask<a class="headerlink" href="#byte-mask" title="Permalink to this heading"></a></h2>
 <p>withStrb</p>
-</div>
-<div class="section" id="typical-example">
-<h2>Typical Example<a class="headerlink" href="#typical-example" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="typical-example">
+<h2>Typical Example<a class="headerlink" href="#typical-example" title="Permalink to this heading"></a></h2>
 <p>Batch creat REG-Address and fields register</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="nn">spinal</span><span class="p">.</span><span class="nn">lib</span><span class="p">.</span><span class="nn">bus</span><span class="p">.</span><span class="nn">regif</span><span class="p">.</span><span class="n">_</span>
 
@@ -1602,9 +1555,9 @@ CSTM is only used to generate software interfaces, and does not generate actual 
 <span class="nc">SpinalVerilog</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="nc">RegBank</span><span class="p">())</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="interrupt-factory">
-<h2>Interrupt Factory<a class="headerlink" href="#interrupt-factory" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="interrupt-factory">
+<h2>Interrupt Factory<a class="headerlink" href="#interrupt-factory" title="Permalink to this heading"></a></h2>
 <p>Manual writing interruption</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">cpInterruptExample</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">   </span><span class="kd">val</span><span class="w"> </span><span class="n">io</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Bundle</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1668,18 +1621,9 @@ CSTM is only used to generate software interfaces, and does not generate actual 
 </pre></div>
 </div>
 <img alt="../../_images/easy-intr.png" src="../../_images/easy-intr.png" />
-</div>
-</div>
-<div class="section" id="interrupt-design-spec">
-<h1>Interrupt Design Spec<a class="headerlink" href="#interrupt-design-spec" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="ip-level-interrupt-factory">
-<h2>IP level interrupt Factory<a class="headerlink" href="#ip-level-interrupt-factory" title="Permalink to this heading">¶</a></h2>
+<section id="ip-level-interrupt-factory">
+<h3>IP level interrupt Factory<a class="headerlink" href="#ip-level-interrupt-factory" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 78%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Register</p></th>
 <th class="head"><p>AccessType</p></th>
@@ -1709,15 +1653,10 @@ CSTM is only used to generate software interfaces, and does not generate actual 
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">busif</span><span class="p">.</span><span class="n">interruptFactory</span><span class="p">(</span><span class="s">&quot;T&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">c</span><span class="p">,</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">e</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="sys-level-interrupt-merge">
-<h2>SYS level interrupt merge<a class="headerlink" href="#sys-level-interrupt-merge" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="sys-level-interrupt-merge">
+<h3>SYS level interrupt merge<a class="headerlink" href="#sys-level-interrupt-merge" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 78%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Register</p></th>
 <th class="head"><p>AccessType</p></th>
@@ -1739,14 +1678,10 @@ CSTM is only used to generate software interfaces, and does not generate actual 
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">busif</span><span class="p">.</span><span class="n">interruptLevelFactory</span><span class="p">(</span><span class="s">&quot;T&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">sys_int0</span><span class="p">,</span><span class="w"> </span><span class="n">sys_int1</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="spinal-factory">
-<h2>Spinal Factory<a class="headerlink" href="#spinal-factory" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="spinal-factory">
+<h3>Spinal Factory<a class="headerlink" href="#spinal-factory" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 58%" />
-<col style="width: 42%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>BusInterface method</p></th>
 <th class="head"><p>Description</p></th>
@@ -1773,9 +1708,9 @@ CSTM is only used to generate software interfaces, and does not generate actual 
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this heading"></a></h3>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">RegFileIntrExample</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="p">{</span><span class="w"></span>
 <span class="w">   </span><span class="kd">val</span><span class="w"> </span><span class="n">io</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Bundle</span><span class="p">{</span><span class="w"></span>
 <span class="w">     </span><span class="kd">val</span><span class="w"> </span><span class="n">apb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">slave</span><span class="p">(</span><span class="nc">Apb3</span><span class="p">(</span><span class="nc">Apb3Config</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">32</span><span class="p">)))</span><span class="w"></span>
@@ -1803,9 +1738,10 @@ CSTM is only used to generate software interfaces, and does not generate actual 
 </pre></div>
 </div>
 <img alt="../../_images/intc.jpeg" src="../../_images/intc.jpeg" />
-</div>
-<div class="section" id="defaultreadvalue">
-<h2>DefaultReadValue<a class="headerlink" href="#defaultreadvalue" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+<section id="defaultreadvalue">
+<h2>DefaultReadValue<a class="headerlink" href="#defaultreadvalue" title="Permalink to this heading"></a></h2>
 <p>When the software reads a reserved address, the current policy is to return normally, readerror=0.
 In order to facilitate software debugging, the read back value can be configured, which is 0 by default</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">busif</span><span class="p">.</span><span class="n">setReservedAddressReadValue</span><span class="p">(</span><span class="mh">0x0000EF00</span><span class="p">)</span><span class="w"></span>
@@ -1817,9 +1753,9 @@ In order to facilitate software debugging, the read back value can be configured
 <span class="k">end</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="developers-area">
-<h2>Developers Area<a class="headerlink" href="#developers-area" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="developers-area">
+<h2>Developers Area<a class="headerlink" href="#developers-area" title="Permalink to this heading"></a></h2>
 <p>You can add your document Type by extending the <cite>BusIfVistor</cite> Trait</p>
 <p><code class="docutils literal notranslate"><span class="pre">case</span> <span class="pre">class</span> <span class="pre">Latex(fileName</span> <span class="pre">:</span> <span class="pre">String)</span> <span class="pre">extends</span> <span class="pre">BusIfVisitor{</span> <span class="pre">...</span> <span class="pre">}</span></code></p>
 <p>BusIfVistor give access BusIf.RegInsts to do what you want</p>
@@ -1833,8 +1769,8 @@ In order to facilitate software debugging, the read back value can be configured
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/javascript">
         function init() {
@@ -1843,38 +1779,37 @@ In order to facilitate software debugging, the read back value can be configured
         window.onload = init;
     </script>
 
+
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="Bus/index.html" class="btn btn-neutral float-right" title="Bus" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="binarySystem.html" class="btn btn-neutral float-left" title="BinarySystem" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Bus/index.html" class="btn btn-neutral float-right" title="Bus" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2022, SpinalHDL.
-
-    </p>
+    <p>&#169; Copyright 2018 - 2023, SpinalHDL.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+     
+    <!-- source/_templates/footer.html -->
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    <div class="doc-footer-current-version"><p>
+    Version: master git~41523b1b5 2023-07-08
+    </p></div>
+    
+
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
   
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
@@ -1885,6 +1820,15 @@ In order to facilitate software debugging, the read back value can be configured
   </span>
   <div class="rst-other-versions">
     <dl>
+       <dt>Languages</dt>
+       <dd class="rtd-current-item">
+         <a href="#">en</a>
+       </dd>
+       <dd>
+         <a href="https://thucgra.github.io/SpinalHDL_Chinese_Doc/">zh_CN</a>
+      </dd>
+    </dl>
+    <dl>
       <dt>Branches</dt>
       <dd><a href="../../../dev/SpinalHDL/Libraries/regIf.html">dev</a></dd>
       <dd><a href="regIf.html">master</a></dd>
@@ -1892,21 +1836,15 @@ In order to facilitate software debugging, the read back value can be configured
     <dl>
       <dt>Downloads</dt>
       <dd><a href="../../artefacts/SpinalHDL_docs-master.">HTML</a></dd>
+      <dd><a href="../../artefacts/SpinalHDL_docs-master-SingleHTML.zip">SingleHTML</a></dd>
       <dd><a href="../../artefacts/SpinalHDL_docs-master.pdf">PDF</a></dd>
     </dl>
   </div>
-</div>
-
-  <script type="text/javascript">
+</div><script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

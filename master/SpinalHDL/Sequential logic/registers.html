@@ -1,97 +1,78 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Registers &mdash; SpinalHDL  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/gh-fork-ribbon.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/spinaldoc.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/logo3_32x32.png"/>
-  
-
-  
-  
-
-  
-
-  
+    <link rel="canonical" href="https://spinalhdl.github.io/SpinalDoc-RTD/master/SpinalHDL/Sequential logic/registers.html" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
-    
+        <script src="../../_static/dialog.js"></script>
+    <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="RAM/ROM" href="memory.html" />
-    <link rel="prev" title="Sequential logic" href="index.html" /> 
+    <link rel="prev" title="Sequential logic" href="index.html" />
+     
+    <!-- source/_templates/layout.html -->
+    
+    
+    
+
 </head>
 
 <body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
+     
     
+    
+    
+    <div class="div-svg-github-corner github-corner-abs">
+    <a href="https://github.com/SpinalHDL/SpinalDoc-RTD/blob/master/source/SpinalHDL/Sequential logic/registers.rst" class="github-corner github-fork-ribbon" aria-label="Edit on GitHub" data-ribbon="Edit on GitHub" title="Edit on GitHub">
+      <object id="svg-github-corner" data="../../_static/github-corner-right.svg" class="svg-github-corner github-corner-abs" width="80" height="80"></object>
+    </a>
+    </div>
+    
+    
+    
+
+  <div class="wy-grid-for-nav">
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../../index.html" class="icon icon-home"> SpinalHDL
           
-
-          
+          <a href="../../index.html" class="icon icon-home">
+            SpinalHDL
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Foreword/index.html">Foreword</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Foreword/index.html#why-moving-away-from-traditional-hdl">Why moving away from traditional HDL</a><ul>
@@ -378,24 +359,18 @@
 <li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#assignment">Assignment</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Data%20types/index.html#introduction">Introduction</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Structuring/index.html">Structuring</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Structuring/components_hierarchy.html">Component and hierarchy</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Structuring/components_hierarchy.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Structuring/components_hierarchy.html">Components and hierarchy</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/components_hierarchy.html#input-output-definition">Input / output definition</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/components_hierarchy.html#pruned-signals">Pruned signals</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/components_hierarchy.html#parametrized-hardware-generic-in-vhdl-parameter-in-verilog">Parametrized Hardware (“Generic” in VHDL, “Parameter” in Verilog)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/components_hierarchy.html#synthesized-component-names">Synthesized component names</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Structuring/area.html">Area</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Structuring/area.html#introduction">Introduction</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../Structuring/area.html">Area</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Structuring/function.html">Function</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Structuring/function.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/function.html#rgb-to-gray">RGB to gray</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/function.html#valid-ready-payload-bus">Valid Ready Payload bus</a></li>
 </ul>
@@ -433,7 +408,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Structuring/naming.html">Preserving names</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Structuring/naming.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/naming.html#nameable-base-class">Nameable base class</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/naming.html#name-extraction-from-scala">Name extraction from Scala</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/naming.html#area-in-a-component">Area in a Component</a></li>
@@ -451,7 +425,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Structuring/parametrization.html">Parametrization</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Structuring/parametrization.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/parametrization.html#elaboration-time-parameters">Elaboration time parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/parametrization.html#optional-hardware">Optional hardware</a></li>
 </ul>
@@ -460,7 +433,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Semantic/index.html">Semantic</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Semantic/assignments.html">Assignments</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Semantic/assignments.html#id1">Assignments</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/assignments.html#width-checking">Width checking</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/assignments.html#combinatorial-loops">Combinatorial loops</a></li>
 </ul>
@@ -481,7 +453,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Semantic/rules.html">Rules</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Semantic/rules.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/rules.html#concurrency">Concurrency</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/rules.html#last-valid-assignment-wins">Last valid assignment wins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/rules.html#signal-and-register-interactions-with-scala-oop-reference-functions">Signal and register interactions with Scala (OOP reference + Functions)</a></li>
@@ -491,7 +462,6 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Sequential logic</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Registers</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#instantiation">Instantiation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#reset-value">Reset value</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#initialization-value-for-simulation-purposes">Initialization value for simulation purposes</a></li>
@@ -500,7 +470,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="memory.html">RAM/ROM</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="memory.html#syntax">Syntax</a></li>
 <li class="toctree-l3"><a class="reference internal" href="memory.html#synchronous-enable-quirk">Synchronous enable quirk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="memory.html#read-under-write-policy">Read-under-write policy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="memory.html#mixed-width-ram">Mixed-width ram</a></li>
@@ -523,7 +492,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#example">Example</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#crossclockdomain-tag">crossClockDomain tag</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#setsyncronouswith">setSyncronousWith</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#setsynchronouswith">setSynchronousWith</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#buffercc">BufferCC</a></li>
 </ul>
 </li>
@@ -540,7 +509,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/hierarchy_violation.html#example">Example</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Design%20errors/iobundle.html">Io bundle</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Design%20errors/iobundle.html">IO bundle</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/iobundle.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/iobundle.html#example">Example</a></li>
 </ul>
@@ -603,7 +572,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/width_mismatch.html#operator-example">Operator example</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Design%20errors/index.html#introduction">Introduction</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Other%20language%20features/index.html">Other language features</a><ul>
@@ -646,10 +614,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/vhdl_generation.html#vhdl-and-verilog-attributes">VHDL and Verilog attributes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/index.html#introduction">Introduction</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/index.html#id1">Introduction</a></li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Libraries/index.html">Libraries</a><ul>
@@ -679,6 +643,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streammux">StreamMux</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamdemux">StreamDemux</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamdispatchersequencial">StreamDispatcherSequencial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamtransactionextender">StreamTransactionExtender</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/stream.html#simulation-support">Simulation support</a></li>
@@ -743,14 +708,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#special-access-usage">Special Access Usage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#byte-mask">Byte Mask</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#typical-example">Typical Example</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#interrupt-factory">Interrupt Factory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#interrupt-factory">Interrupt Factory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/regIf.html#ip-level-interrupt-factory">IP level interrupt Factory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/regIf.html#sys-level-interrupt-merge">SYS level interrupt merge</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/regIf.html#spinal-factory">Spinal Factory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/regIf.html#example">Example</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Libraries/regIf.html#interrupt-design-spec">Interrupt Design Spec</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#ip-level-interrupt-factory">IP level interrupt Factory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#sys-level-interrupt-merge">SYS level interrupt merge</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#spinal-factory">Spinal Factory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#example">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#defaultreadvalue">DefaultReadValue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#developers-area">Developers Area</a></li>
 </ul>
@@ -762,20 +726,17 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/amba3/apb3.html">Apb3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba3/apb3.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba3/apb3.html#configuration-and-instanciation">Configuration and instanciation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba3/apb3.html#functions-and-operators">Functions and operators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html">Axi4</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html#configuration-and-instanciation">Configuration and instanciation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html#variations">Variations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html#functions-and-operators">Functions and operators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/avalon/avalonmm.html">AvalonMM</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/avalon/avalonmm.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/avalon/avalonmm.html#configuration-and-instanciation">Configuration and instanciation</a></li>
 </ul>
 </li>
@@ -783,13 +744,11 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/Com/index.html">Com</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Com/uart.html">UART</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/uart.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/uart.html#bus-definition">Bus definition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/uart.html#uartctrl">UartCtrl</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Com/usb_device.html">USB device</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#architecture">Architecture</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#registers">Registers</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#descriptors">Descriptors</a></li>
@@ -797,19 +756,14 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Com/usb_ohci.html">USB OHCI</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_ohci.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_ohci.html#usage">Usage</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/IO/index.html">IO</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/IO/readableOpenDrain.html">ReadableOpenDrain</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/IO/readableOpenDrain.html#id1">ReadableOpenDrain</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/IO/readableOpenDrain.html">ReadableOpenDrain</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/IO/tristate.html">TriState</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/IO/tristate.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/IO/tristate.html#id1">TriState</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/IO/tristate.html#tristatearray">TriStateArray</a></li>
 </ul>
@@ -831,14 +785,12 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/EDA/index.html">EDA</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/EDA/altera/qsysify.html">QSysify</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/EDA/altera/qsysify.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/EDA/altera/qsysify.html#example">Example</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/EDA/altera/qsysify.html#tags">tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/EDA/altera/qsysify.html#adding-new-interface-support">Adding new interface support</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/EDA/altera/quartus_flow.html">QuartusFlow</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/EDA/altera/quartus_flow.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/EDA/altera/quartus_flow.html#for-a-single-rtl-file">For a single rtl file</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/EDA/altera/quartus_flow.html#for-an-existing-project">For an existing project</a></li>
 </ul>
@@ -852,10 +804,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Misc/PLIC/plic_mapper.html#plicmapping-light"><code class="docutils literal notranslate"><span class="pre">PlicMapping.light</span></code></a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../Libraries/index.html#introduction">Introduction</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/index.html#id1">Introduction</a></li>
 </ul>
 </li>
 </ul>
@@ -899,6 +847,13 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/threadLess.html">Thread-less API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/sensitive.html">Sensitive API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Simulation/simulator_specifics.html">Simulator specific details</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Simulation/simulator_specifics.html#how-spinalhdl-simulates-the-hardware-with-verilator-backend">How SpinalHDL simulates the hardware with Verilator backend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Simulation/simulator_specifics.html#how-spinalhdl-simulates-the-hardware-with-ghdl-icarus-verilog-backend">How SpinalHDL simulates the hardware with GHDL/Icarus Verilog backend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Simulation/simulator_specifics.html#how-spinalhdl-simulates-the-hardware-with-synopsys-vcs-backend">How SpinalHDL simulates the hardware with Synopsys VCS backend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Simulation/simulator_specifics.html#performance">Performance</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/engine.html">Simulation engine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/examples/index.html">Examples</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Simulation/examples/asynchronous.html">Asynchronous adder</a></li>
@@ -909,11 +864,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Simulation/examples/uart_encoder.html">Uart encoder</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-verilator-backend">How SpinalHDL simulates the hardware with Verilator backend</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-ghdl-icarus-verilog-backend">How SpinalHDL simulates the hardware with GHDL/Icarus Verilog backend</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-synopsys-vcs-backend">How SpinalHDL simulates the hardware with Synopsys VCS backend</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#performance">Performance</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Formal%20verification/index.html">Formal verification</a><ul>
@@ -1032,6 +982,11 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Legacy/pinsec/index.html">pinsec</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Legacy/pinsec/introduction.html">Introduction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/introduction.html#id1">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/introduction.html#board-support">Board support</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../Legacy/pinsec/hardware.html">Hardware</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/hardware.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/hardware.html#riscv">RISCV</a></li>
@@ -1050,11 +1005,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/hardware_toplevel.html#misc">Misc</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../Legacy/pinsec/introduction.html">Introduction</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/introduction.html#id1">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/introduction.html#board-support">Board support</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="../Legacy/pinsec/software.html">Software</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/software.html#riscv-tool-chain">RISCV tool-chain</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/software.html#openocd-gdb-eclipse-configuration">OpenOCD/GDB/Eclipse  configuration</a></li>
@@ -1062,6 +1012,42 @@
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../miscelenea/index.html">Miscellaneous</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/frequent_errors.html">Frequent Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/frequent_errors.html#exception-in-thread-main-java-lang-nullpointerexception">Exception in thread “main” java.lang.NullPointerException</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/frequent_errors.html#hierarchy-violation">Hierarchy violation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/frequent_errors.html#signal-x-can-t-be-assigned-by-y">Signal X can’t be assigned by Y</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/frequent_errors.html#input-signal-x-can-t-be-assigned-by-y">Input signal X can’t be assigned by Y</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/frequent_errors.html#output-signal-x-can-t-be-assigned-by-y">Output signal X can’t be assigned by Y</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/core/core_components.html">The <code class="docutils literal notranslate"><span class="pre">spinal.core</span></code> components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#clock-domains-definitions">Clock domains definitions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#clock-domain-syntax">Clock domain syntax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#clock-configuration">Clock configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#external-clock">External clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#cross-clock-domain">Cross Clock Domain</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#assignments">Assignments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#when-switch">When / Switch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#component-hierarchy">Component/Hierarchy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#area">Area</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#function">Function</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#rgb-to-gray">RGB to gray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#valid-ready-payload-bus">Valid Ready Payload bus</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#vhdl-generation">VHDL generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#memory">Memory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#instantiate-vhdl-and-verilog-ip">Instantiate VHDL and Verilog IP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#utils">Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/core/elements.html">Element</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/core/elements.html#range">Range</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Developers%20area/index.html">Developers area</a><ul>
@@ -1087,7 +1073,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Developers%20area/mill%20support.html">Build through Mill</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#complie-the-library">Complie the library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#compile-the-library">Compile the library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-all-test-suites">Run all test suites</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-a-specified-test-suite">Run a specified test suite</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-a-specified-app">Run a specified App</a></li>
@@ -1129,83 +1115,58 @@
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/types.html#enum">Enum</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/types.html#data-bool-bits-uint-sint-enum-bundle-vec">Data (Bool, Bits, UInt, SInt, Enum, Bundle, Vec)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/types.html#literals-as-signal-declaration">Literals as signal declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/types.html#continuous-assignment-literals-as-signal-declaration">Continuous Assignment Literals as signal declaration</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">SpinalHDL</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="index.html">Sequential logic</a> &raquo;</li>
-        
-      <li>Registers</li>
-    
-    
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Sequential logic</a></li>
+      <li class="breadcrumb-item active">Registers</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
-            <a href="../../_sources/SpinalHDL/Sequential logic/registers.rst.txt" rel="nofollow"> View page source</a>
-          
-        
+              <a href="https://github.com/SpinalHDL/SpinalDoc-RTD/blob/master/source/SpinalHDL/Sequential logic/registers.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="registers">
-<span id="reg"></span><h1>Registers<a class="headerlink" href="#registers" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
+             <dialog id="doc-dialog-version" role="dialog" class="collapse-once" aria-modal="false" data-default-state="close" data-current-version="master" data-latest-version="master">
+<p class="doc-version-warning-banner">
+  <strong>
+    
+    You're reading an pre-release version of this documentation.<br/>
+    For the latest stable release version, please have a look at <a href="registers.html">master</a>.
+    
+  </strong>
+  <div>
+    <form>
+      <button formmethod="dialog" type="submit" class="doc-dialog-dismiss" aria-label="close">Dismiss</button>
+    </form>
+  </div>
+</p>
+</dialog>
+
+
+
+
+  <section id="registers">
+<span id="reg"></span><h1>Registers<a class="headerlink" href="#registers" title="Permalink to this heading"></a></h1>
 <p>Creating registers in SpinalHDL is very different than in VHDL or Verilog.</p>
 <p>In Spinal, there are no process/always blocks. Registers are explicitly defined at declaration.
 This difference from traditional event-driven HDL has a big impact:</p>
@@ -1214,11 +1175,10 @@ This difference from traditional event-driven HDL has a big impact:</p>
 <li><p>It make things much more flexible (see <a class="reference internal" href="../Structuring/function.html#function"><span class="std std-ref">Functions</span></a>)</p></li>
 </ul>
 <p>Clocks and resets are handled separately, see the <a class="reference internal" href="../Structuring/clock_domain.html#clock-domain"><span class="std std-ref">Clock domain</span></a> chapter for details.</p>
-</div>
-<div class="section" id="instantiation">
-<h2>Instantiation<a class="headerlink" href="#instantiation" title="Permalink to this heading">¶</a></h2>
+<section id="instantiation">
+<h2>Instantiation<a class="headerlink" href="#instantiation" title="Permalink to this heading"></a></h2>
 <p>There are 4 ways to instantiate a register:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
 <col style="width: 48%" />
 <col style="width: 52%" />
@@ -1247,7 +1207,7 @@ This difference from traditional event-driven HDL has a big impact:</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="c1">// UInt register of 4 bits</span>
 <span class="kd">val</span><span class="w"> </span><span class="n">reg1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="mi">4</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
 
-<span class="c1">// Register that samples reg1 each cycle</span>
+<span class="c1">// Register that updates itself every cycle with a sample of reg1 incremented by 1</span>
 <span class="kd">val</span><span class="w"> </span><span class="n">reg2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">RegNext</span><span class="p">(</span><span class="n">reg1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
 
 <span class="c1">// UInt register of 4 bits initialized with 0 when the reset occurs</span>
@@ -1266,9 +1226,10 @@ This difference from traditional event-driven HDL has a big impact:</p>
 <p class="admonition-title">Note</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">reg3</span></code> example above shows how you can assign the value of a <code class="docutils literal notranslate"><span class="pre">RegInit</span></code> register.
 It’s possible to use the same syntax to assign to the other register types as well (<code class="docutils literal notranslate"><span class="pre">Reg</span></code>, <code class="docutils literal notranslate"><span class="pre">RegNext</span></code>, <code class="docutils literal notranslate"><span class="pre">RegNextWhen</span></code>).
-Just like in combinational assignments, the rule is ‘Last assignment wins’, but if no assignment is done, the register keeps its value.</p>
+Just like in combinational assignments, the rule is ‘Last assignment wins’, but if no assignment is done, the register keeps its value.
+If the Reg is declared in a design and does not have suitable assignment and consumption it is likely to be pruned (removed from design) at some point by EDA flows after being deemed unnecessary.</p>
 </div>
-<p>Also, <code class="docutils literal notranslate"><span class="pre">RegNext</span></code> is an abstraction which is built over the <code class="docutils literal notranslate"><span class="pre">Reg</span></code> syntax. The two following sequences of code are strictly equivalent:</p>
+<p id="regnext">Also, <code class="docutils literal notranslate"><span class="pre">RegNext</span></code> is an abstraction which is built over the <code class="docutils literal notranslate"><span class="pre">Reg</span></code> syntax. The two following sequences of code are strictly equivalent:</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="c1">// Standard way</span>
 <span class="kd">val</span><span class="w"> </span><span class="n">something</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bool</span><span class="p">()</span><span class="w"></span>
 <span class="kd">val</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">Bool</span><span class="p">())</span><span class="w"></span>
@@ -1279,9 +1240,46 @@ Just like in combinational assignments, the rule is ‘Last assignment wins’, 
 <span class="kd">val</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">RegNext</span><span class="p">(</span><span class="n">something</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
+<p>It is possible to have multiple options at the same time in other ways and so
+slightly more advanced compositions built on top of the basic understand of
+the above:</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="c1">// UInt register of 6 bits (initialized with 42 when the reset occurs)</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">reg1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="mi">6</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"> </span><span class="n">init</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span><span class="w"></span>
+
+<span class="c1">// Register that samples reg1 each cycle (initialized with 0 when the reset occurs)</span>
+<span class="c1">// using Scala named parameter argument format</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">reg2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">RegNext</span><span class="p">(</span><span class="n">reg1</span><span class="p">,</span><span class="w"> </span><span class="n">init</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+
+<span class="c1">// Register that has multiple features combined</span>
+
+<span class="c1">// My register enable signal</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">reg3Enable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bool</span><span class="p">()</span><span class="w"></span>
+<span class="c1">// UInt register of 6 bits (inferred from reg1 type)</span>
+<span class="c1">//   assignment preconfigured to update from reg1</span>
+<span class="c1">//   only updated when reg3Enable is set</span>
+<span class="c1">//   initialized with 99 when the reset occurs</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">reg3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">RegNextWhen</span><span class="p">(</span><span class="n">reg1</span><span class="p">,</span><span class="w"> </span><span class="n">reg3Enable</span><span class="p">,</span><span class="w"> </span><span class="nc">U</span><span class="p">(</span><span class="mi">99</span><span class="p">))</span><span class="w"></span>
+<span class="c1">// when(reg3Enable) {</span>
+<span class="c1">//   reg3 := reg1; // this expression is implied in the constructor use case</span>
+<span class="c1">// }</span>
+
+<span class="n">when</span><span class="p">(</span><span class="n">cond2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">      </span><span class="c1">// this is a valid assignment, will take priority when executed</span>
+<span class="w">   </span><span class="n">reg3</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">U</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w">    </span><span class="c1">//  (due to last assignment wins rule), assignment does not require</span>
+<span class="p">}</span><span class="w">                  </span><span class="c1">//  reg3Enable condition, you would use `when(cond2 &amp; reg3Enable)` for that</span>
+
+<span class="c1">// UInt register of 8 bits, initialized with 99 when the reset occurs</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">reg4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">),</span><span class="w"> </span><span class="nc">U</span><span class="p">(</span><span class="mi">99</span><span class="p">))</span><span class="w"></span>
+<span class="c1">// My register enable signal</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">reg4Enable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bool</span><span class="p">()</span><span class="w"></span>
+<span class="c1">// no implied assignments exist, you must use enable explicitly as necessary</span>
+<span class="n">when</span><span class="p">(</span><span class="n">reg4Enable</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="n">reg4</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">newValue</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
 </div>
-<div class="section" id="reset-value">
-<h2>Reset value<a class="headerlink" href="#reset-value" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="reset-value">
+<h2>Reset value<a class="headerlink" href="#reset-value" title="Permalink to this heading"></a></h2>
 <p>In addition to the <code class="docutils literal notranslate"><span class="pre">RegInit(value</span> <span class="pre">:</span> <span class="pre">Data)</span></code> syntax which directly creates the register with a reset value,
 you can also set the reset value by calling the <code class="docutils literal notranslate"><span class="pre">init(value</span> <span class="pre">:</span> <span class="pre">Data)</span></code> function on the register.</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="c1">// UInt register of 4 bits initialized with 0 when the reset occurs</span>
@@ -1298,17 +1296,17 @@ you can also set the reset value by calling the <code class="docutils literal no
 <span class="n">reg</span><span class="p">.</span><span class="n">valid</span><span class="w"> </span><span class="n">init</span><span class="p">(</span><span class="nc">False</span><span class="p">)</span><span class="w">  </span><span class="c1">// Only the valid if that register bundle will have a reset value.</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="initialization-value-for-simulation-purposes">
-<h2>Initialization value for simulation purposes<a class="headerlink" href="#initialization-value-for-simulation-purposes" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="initialization-value-for-simulation-purposes">
+<h2>Initialization value for simulation purposes<a class="headerlink" href="#initialization-value-for-simulation-purposes" title="Permalink to this heading"></a></h2>
 <p>For registers that don’t need a reset value in RTL, but need an initialization value for simulation (to avoid x-propagation), you can ask for a random initialization value by calling the <code class="docutils literal notranslate"><span class="pre">randBoot()</span></code> function.</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="c1">// UInt register of 4 bits initialized with a random value</span>
 <span class="kd">val</span><span class="w"> </span><span class="n">reg1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="mi">4</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"> </span><span class="n">randBoot</span><span class="p">()</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="register-vectors">
-<h2>Register vectors<a class="headerlink" href="#register-vectors" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="register-vectors">
+<h2>Register vectors<a class="headerlink" href="#register-vectors" title="Permalink to this heading"></a></h2>
 <p>As for wires, it is possible to define a vector of registers with <code class="docutils literal notranslate"><span class="pre">Vec</span></code>.</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">vecReg1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Vec</span><span class="p">(</span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">)),</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
 <span class="kd">val</span><span class="w"> </span><span class="n">vecReg2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Vec</span><span class="p">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">8</span><span class="p">)(</span><span class="nc">Reg</span><span class="p">(</span><span class="nc">Bool</span><span class="p">()))</span><span class="w"></span>
@@ -1350,9 +1348,9 @@ you can also set the reset value by calling the <code class="docutils literal no
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="transforming-a-wire-into-a-register">
-<h2>Transforming a wire into a register<a class="headerlink" href="#transforming-a-wire-into-a-register" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="transforming-a-wire-into-a-register">
+<h2>Transforming a wire into a register<a class="headerlink" href="#transforming-a-wire-into-a-register" title="Permalink to this heading"></a></h2>
 <p>Sometimes it is useful to transform an existing wire into a register. For
 instance, when you are using a Bundle, if you want some outputs of the bundle to
 be registers, you might prefer to write <code class="docutils literal notranslate"><span class="pre">io.myBundle.PORT</span> <span class="pre">:=</span> <span class="pre">newValue</span></code> without
@@ -1364,7 +1362,7 @@ the port with <code class="docutils literal notranslate"><span class="pre">io.my
 <span class="p">}</span><span class="w"></span>
 
 <span class="n">io</span><span class="p">.</span><span class="n">apb</span><span class="p">.</span><span class="nc">PADDR</span><span class="p">.</span><span class="n">setAsReg</span><span class="p">()</span><span class="w"></span>
-<span class="n">io</span><span class="p">.</span><span class="n">apb</span><span class="p">.</span><span class="nc">PWRITE</span><span class="p">.</span><span class="n">setAsReg</span><span class="p">()</span><span class="w"> </span><span class="n">init</span><span class="w"> </span><span class="p">(</span><span class="nc">False</span><span class="p">)</span><span class="w"></span>
+<span class="n">io</span><span class="p">.</span><span class="n">apb</span><span class="p">.</span><span class="nc">PWRITE</span><span class="p">.</span><span class="n">setAsReg</span><span class="p">()</span><span class="w"> </span><span class="n">init</span><span class="p">(</span><span class="nc">False</span><span class="p">)</span><span class="w"></span>
 
 <span class="n">when</span><span class="p">(</span><span class="n">someCondition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">   </span><span class="n">io</span><span class="p">.</span><span class="n">apb</span><span class="p">.</span><span class="nc">PWRITE</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">True</span><span class="w"></span>
@@ -1382,8 +1380,8 @@ written in a <code class="docutils literal notranslate"><span class="pre">Clocki
 would use the clock domain of the component and not the one of the
 <code class="docutils literal notranslate"><span class="pre">ClockingArea</span></code>.</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/javascript">
         function init() {
@@ -1392,38 +1390,37 @@ would use the clock domain of the component and not the one of the
         window.onload = init;
     </script>
 
+
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="memory.html" class="btn btn-neutral float-right" title="RAM/ROM" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="index.html" class="btn btn-neutral float-left" title="Sequential logic" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="memory.html" class="btn btn-neutral float-right" title="RAM/ROM" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2022, SpinalHDL.
-
-    </p>
+    <p>&#169; Copyright 2018 - 2023, SpinalHDL.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+     
+    <!-- source/_templates/footer.html -->
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    <div class="doc-footer-current-version"><p>
+    Version: master git~41523b1b5 2023-07-08
+    </p></div>
+    
+
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
   
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
@@ -1434,6 +1431,15 @@ would use the clock domain of the component and not the one of the
   </span>
   <div class="rst-other-versions">
     <dl>
+       <dt>Languages</dt>
+       <dd class="rtd-current-item">
+         <a href="#">en</a>
+       </dd>
+       <dd>
+         <a href="https://thucgra.github.io/SpinalHDL_Chinese_Doc/">zh_CN</a>
+      </dd>
+    </dl>
+    <dl>
       <dt>Branches</dt>
       <dd><a href="../../../dev/SpinalHDL/Sequential logic/registers.html">dev</a></dd>
       <dd><a href="registers.html">master</a></dd>
@@ -1441,21 +1447,15 @@ would use the clock domain of the component and not the one of the
     <dl>
       <dt>Downloads</dt>
       <dd><a href="../../artefacts/SpinalHDL_docs-master.">HTML</a></dd>
+      <dd><a href="../../artefacts/SpinalHDL_docs-master-SingleHTML.zip">SingleHTML</a></dd>
       <dd><a href="../../artefacts/SpinalHDL_docs-master.pdf">PDF</a></dd>
     </dl>
   </div>
-</div>
-
-  <script type="text/javascript">
+</div><script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

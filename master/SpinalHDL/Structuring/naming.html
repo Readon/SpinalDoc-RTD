@@ -1,97 +1,78 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Preserving names &mdash; SpinalHDL  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/gh-fork-ribbon.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/spinaldoc.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/logo3_32x32.png"/>
-  
-
-  
-  
-
-  
-
-  
+    <link rel="canonical" href="https://spinalhdl.github.io/SpinalDoc-RTD/master/SpinalHDL/Structuring/naming.html" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
-    
+        <script src="../../_static/dialog.js"></script>
+    <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Parametrization" href="parametrization.html" />
-    <link rel="prev" title="Instantiate VHDL and Verilog IP" href="blackbox.html" /> 
+    <link rel="prev" title="Instantiate VHDL and Verilog IP" href="blackbox.html" />
+     
+    <!-- source/_templates/layout.html -->
+    
+    
+    
+
 </head>
 
 <body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
+     
     
+    
+    
+    <div class="div-svg-github-corner github-corner-abs">
+    <a href="https://github.com/SpinalHDL/SpinalDoc-RTD/blob/master/source/SpinalHDL/Structuring/naming.rst" class="github-corner github-fork-ribbon" aria-label="Edit on GitHub" data-ribbon="Edit on GitHub" title="Edit on GitHub">
+      <object id="svg-github-corner" data="../../_static/github-corner-right.svg" class="svg-github-corner github-corner-abs" width="80" height="80"></object>
+    </a>
+    </div>
+    
+    
+    
+
+  <div class="wy-grid-for-nav">
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../../index.html" class="icon icon-home"> SpinalHDL
           
-
-          
+          <a href="../../index.html" class="icon icon-home">
+            SpinalHDL
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Foreword/index.html">Foreword</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Foreword/index.html#why-moving-away-from-traditional-hdl">Why moving away from traditional HDL</a><ul>
@@ -378,24 +359,18 @@
 <li class="toctree-l3"><a class="reference internal" href="../Data%20types/AFix.html#assignment">Assignment</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Data%20types/index.html#introduction">Introduction</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Structuring</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="components_hierarchy.html">Component and hierarchy</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="components_hierarchy.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components_hierarchy.html">Components and hierarchy</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="components_hierarchy.html#input-output-definition">Input / output definition</a></li>
 <li class="toctree-l3"><a class="reference internal" href="components_hierarchy.html#pruned-signals">Pruned signals</a></li>
 <li class="toctree-l3"><a class="reference internal" href="components_hierarchy.html#parametrized-hardware-generic-in-vhdl-parameter-in-verilog">Parametrized Hardware (“Generic” in VHDL, “Parameter” in Verilog)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="components_hierarchy.html#synthesized-component-names">Synthesized component names</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="area.html">Area</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="area.html#introduction">Introduction</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="area.html">Area</a></li>
 <li class="toctree-l2"><a class="reference internal" href="function.html">Function</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="function.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="function.html#rgb-to-gray">RGB to gray</a></li>
 <li class="toctree-l3"><a class="reference internal" href="function.html#valid-ready-payload-bus">Valid Ready Payload bus</a></li>
 </ul>
@@ -433,7 +408,6 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Preserving names</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#nameable-base-class">Nameable base class</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#name-extraction-from-scala">Name extraction from Scala</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#area-in-a-component">Area in a Component</a></li>
@@ -451,7 +425,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="parametrization.html">Parametrization</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="parametrization.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="parametrization.html#elaboration-time-parameters">Elaboration time parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="parametrization.html#optional-hardware">Optional hardware</a></li>
 </ul>
@@ -460,7 +433,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Semantic/index.html">Semantic</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Semantic/assignments.html">Assignments</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Semantic/assignments.html#id1">Assignments</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/assignments.html#width-checking">Width checking</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/assignments.html#combinatorial-loops">Combinatorial loops</a></li>
 </ul>
@@ -481,7 +453,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Semantic/rules.html">Rules</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Semantic/rules.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/rules.html#concurrency">Concurrency</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/rules.html#last-valid-assignment-wins">Last valid assignment wins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/rules.html#signal-and-register-interactions-with-scala-oop-reference-functions">Signal and register interactions with Scala (OOP reference + Functions)</a></li>
@@ -491,7 +462,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Sequential%20logic/index.html">Sequential logic</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Sequential%20logic/registers.html">Registers</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#instantiation">Instantiation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#reset-value">Reset value</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#initialization-value-for-simulation-purposes">Initialization value for simulation purposes</a></li>
@@ -500,7 +470,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Sequential%20logic/memory.html">RAM/ROM</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#syntax">Syntax</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#synchronous-enable-quirk">Synchronous enable quirk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#read-under-write-policy">Read-under-write policy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#mixed-width-ram">Mixed-width ram</a></li>
@@ -523,7 +492,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#example">Example</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#crossclockdomain-tag">crossClockDomain tag</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#setsyncronouswith">setSyncronousWith</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#setsynchronouswith">setSynchronousWith</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Design%20errors/clock_crossing_violation.html#buffercc">BufferCC</a></li>
 </ul>
 </li>
@@ -540,7 +509,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/hierarchy_violation.html#example">Example</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Design%20errors/iobundle.html">Io bundle</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Design%20errors/iobundle.html">IO bundle</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/iobundle.html#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/iobundle.html#example">Example</a></li>
 </ul>
@@ -603,7 +572,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Design%20errors/width_mismatch.html#operator-example">Operator example</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Design%20errors/index.html#introduction">Introduction</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Other%20language%20features/index.html">Other language features</a><ul>
@@ -646,10 +614,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/vhdl_generation.html#vhdl-and-verilog-attributes">VHDL and Verilog attributes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/index.html#introduction">Introduction</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/index.html#id1">Introduction</a></li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Libraries/index.html">Libraries</a><ul>
@@ -679,6 +643,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streammux">StreamMux</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamdemux">StreamDemux</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamdispatchersequencial">StreamDispatcherSequencial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/stream.html#streamtransactionextender">StreamTransactionExtender</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/stream.html#simulation-support">Simulation support</a></li>
@@ -743,14 +708,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#special-access-usage">Special Access Usage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#byte-mask">Byte Mask</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#typical-example">Typical Example</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#interrupt-factory">Interrupt Factory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#interrupt-factory">Interrupt Factory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/regIf.html#ip-level-interrupt-factory">IP level interrupt Factory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/regIf.html#sys-level-interrupt-merge">SYS level interrupt merge</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/regIf.html#spinal-factory">Spinal Factory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/regIf.html#example">Example</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Libraries/regIf.html#interrupt-design-spec">Interrupt Design Spec</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#ip-level-interrupt-factory">IP level interrupt Factory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#sys-level-interrupt-merge">SYS level interrupt merge</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#spinal-factory">Spinal Factory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#example">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#defaultreadvalue">DefaultReadValue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/regIf.html#developers-area">Developers Area</a></li>
 </ul>
@@ -762,20 +726,17 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/amba3/apb3.html">Apb3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba3/apb3.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba3/apb3.html#configuration-and-instanciation">Configuration and instanciation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba3/apb3.html#functions-and-operators">Functions and operators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html">Axi4</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html#configuration-and-instanciation">Configuration and instanciation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html#variations">Variations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html#functions-and-operators">Functions and operators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/avalon/avalonmm.html">AvalonMM</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/avalon/avalonmm.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/avalon/avalonmm.html#configuration-and-instanciation">Configuration and instanciation</a></li>
 </ul>
 </li>
@@ -783,13 +744,11 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/Com/index.html">Com</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Com/uart.html">UART</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/uart.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/uart.html#bus-definition">Bus definition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/uart.html#uartctrl">UartCtrl</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Com/usb_device.html">USB device</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#architecture">Architecture</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#registers">Registers</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_device.html#descriptors">Descriptors</a></li>
@@ -797,19 +756,14 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Com/usb_ohci.html">USB OHCI</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_ohci.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Com/usb_ohci.html#usage">Usage</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/IO/index.html">IO</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/IO/readableOpenDrain.html">ReadableOpenDrain</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/IO/readableOpenDrain.html#id1">ReadableOpenDrain</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/IO/readableOpenDrain.html">ReadableOpenDrain</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/IO/tristate.html">TriState</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/IO/tristate.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/IO/tristate.html#id1">TriState</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/IO/tristate.html#tristatearray">TriStateArray</a></li>
 </ul>
@@ -831,14 +785,12 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/EDA/index.html">EDA</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/EDA/altera/qsysify.html">QSysify</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/EDA/altera/qsysify.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/EDA/altera/qsysify.html#example">Example</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/EDA/altera/qsysify.html#tags">tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/EDA/altera/qsysify.html#adding-new-interface-support">Adding new interface support</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/EDA/altera/quartus_flow.html">QuartusFlow</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/EDA/altera/quartus_flow.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/EDA/altera/quartus_flow.html#for-a-single-rtl-file">For a single rtl file</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/EDA/altera/quartus_flow.html#for-an-existing-project">For an existing project</a></li>
 </ul>
@@ -852,10 +804,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Misc/PLIC/plic_mapper.html#plicmapping-light"><code class="docutils literal notranslate"><span class="pre">PlicMapping.light</span></code></a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../Libraries/index.html#introduction">Introduction</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/index.html#id1">Introduction</a></li>
 </ul>
 </li>
 </ul>
@@ -899,6 +847,13 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/threadLess.html">Thread-less API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/sensitive.html">Sensitive API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Simulation/simulator_specifics.html">Simulator specific details</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Simulation/simulator_specifics.html#how-spinalhdl-simulates-the-hardware-with-verilator-backend">How SpinalHDL simulates the hardware with Verilator backend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Simulation/simulator_specifics.html#how-spinalhdl-simulates-the-hardware-with-ghdl-icarus-verilog-backend">How SpinalHDL simulates the hardware with GHDL/Icarus Verilog backend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Simulation/simulator_specifics.html#how-spinalhdl-simulates-the-hardware-with-synopsys-vcs-backend">How SpinalHDL simulates the hardware with Synopsys VCS backend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Simulation/simulator_specifics.html#performance">Performance</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/engine.html">Simulation engine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/examples/index.html">Examples</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Simulation/examples/asynchronous.html">Asynchronous adder</a></li>
@@ -909,11 +864,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Simulation/examples/uart_encoder.html">Uart encoder</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-verilator-backend">How SpinalHDL simulates the hardware with Verilator backend</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-ghdl-icarus-verilog-backend">How SpinalHDL simulates the hardware with GHDL/Icarus Verilog backend</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#how-spinalhdl-simulates-the-hardware-with-synopsys-vcs-backend">How SpinalHDL simulates the hardware with Synopsys VCS backend</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/index.html#performance">Performance</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Formal%20verification/index.html">Formal verification</a><ul>
@@ -1032,6 +982,11 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Legacy/pinsec/index.html">pinsec</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Legacy/pinsec/introduction.html">Introduction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/introduction.html#id1">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/introduction.html#board-support">Board support</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../Legacy/pinsec/hardware.html">Hardware</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/hardware.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/hardware.html#riscv">RISCV</a></li>
@@ -1050,11 +1005,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/hardware_toplevel.html#misc">Misc</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../Legacy/pinsec/introduction.html">Introduction</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/introduction.html#id1">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/introduction.html#board-support">Board support</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="../Legacy/pinsec/software.html">Software</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/software.html#riscv-tool-chain">RISCV tool-chain</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Legacy/pinsec/software.html#openocd-gdb-eclipse-configuration">OpenOCD/GDB/Eclipse  configuration</a></li>
@@ -1062,6 +1012,42 @@
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../miscelenea/index.html">Miscellaneous</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/frequent_errors.html">Frequent Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/frequent_errors.html#exception-in-thread-main-java-lang-nullpointerexception">Exception in thread “main” java.lang.NullPointerException</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/frequent_errors.html#hierarchy-violation">Hierarchy violation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/frequent_errors.html#signal-x-can-t-be-assigned-by-y">Signal X can’t be assigned by Y</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/frequent_errors.html#input-signal-x-can-t-be-assigned-by-y">Input signal X can’t be assigned by Y</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/frequent_errors.html#output-signal-x-can-t-be-assigned-by-y">Output signal X can’t be assigned by Y</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/core/core_components.html">The <code class="docutils literal notranslate"><span class="pre">spinal.core</span></code> components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#clock-domains-definitions">Clock domains definitions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#clock-domain-syntax">Clock domain syntax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#clock-configuration">Clock configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#external-clock">External clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#cross-clock-domain">Cross Clock Domain</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#assignments">Assignments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#when-switch">When / Switch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#component-hierarchy">Component/Hierarchy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#area">Area</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#function">Function</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#rgb-to-gray">RGB to gray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../miscelenea/core/core_components.html#valid-ready-payload-bus">Valid Ready Payload bus</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#vhdl-generation">VHDL generation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#memory">Memory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#instantiate-vhdl-and-verilog-ip">Instantiate VHDL and Verilog IP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#utils">Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/core/elements.html">Element</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../miscelenea/core/elements.html#range">Range</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Developers%20area/index.html">Developers area</a><ul>
@@ -1087,7 +1073,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Developers%20area/mill%20support.html">Build through Mill</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#complie-the-library">Complie the library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#compile-the-library">Compile the library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-all-test-suites">Run all test suites</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-a-specified-test-suite">Run a specified test suite</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/mill%20support.html#run-a-specified-app">Run a specified App</a></li>
@@ -1129,87 +1115,61 @@
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/types.html#enum">Enum</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/types.html#data-bool-bits-uint-sint-enum-bundle-vec">Data (Bool, Bits, UInt, SInt, Enum, Bundle, Vec)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/types.html#literals-as-signal-declaration">Literals as signal declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/types.html#continuous-assignment-literals-as-signal-declaration">Continuous Assignment Literals as signal declaration</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">SpinalHDL</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="index.html">Structuring</a> &raquo;</li>
-        
-      <li>Preserving names</li>
-    
-    
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Structuring</a></li>
+      <li class="breadcrumb-item active">Preserving names</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
-            <a href="../../_sources/SpinalHDL/Structuring/naming.rst.txt" rel="nofollow"> View page source</a>
-          
-        
+              <a href="https://github.com/SpinalHDL/SpinalDoc-RTD/blob/master/source/SpinalHDL/Structuring/naming.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="preserving-names">
-<h1>Preserving names<a class="headerlink" href="#preserving-names" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
+             <dialog id="doc-dialog-version" role="dialog" class="collapse-once" aria-modal="false" data-default-state="close" data-current-version="master" data-latest-version="master">
+<p class="doc-version-warning-banner">
+  <strong>
+    
+    You're reading an pre-release version of this documentation.<br/>
+    For the latest stable release version, please have a look at <a href="naming.html">master</a>.
+    
+  </strong>
+  <div>
+    <form>
+      <button formmethod="dialog" type="submit" class="doc-dialog-dismiss" aria-label="close">Dismiss</button>
+    </form>
+  </div>
+</p>
+</dialog>
+
+
+
+
+  <section id="preserving-names">
+<h1>Preserving names<a class="headerlink" href="#preserving-names" title="Permalink to this heading"></a></h1>
 <p>This page will describe how SpinalHDL propagate names from the scala code to the generated hardware. Knowing them should enable you to preserve those names as much as possible to generate understandable netlists.</p>
-</div>
-<div class="section" id="nameable-base-class">
-<h2>Nameable base class<a class="headerlink" href="#nameable-base-class" title="Permalink to this heading">¶</a></h2>
+<section id="nameable-base-class">
+<h2>Nameable base class<a class="headerlink" href="#nameable-base-class" title="Permalink to this heading"></a></h2>
 <p>All the things which can be named in SpinalHDL extends the Nameable base class which.</p>
 <p>So in practice, the following classes extends Nameable :</p>
 <ul class="simple">
@@ -1218,7 +1178,7 @@
 <li><p>Data (UInt, SInt, Bundle, …)</p></li>
 </ul>
 <p>There is a few example of that Nameable API</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="p">{</span><span class="w"></span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bool</span><span class="p">()</span><span class="w"></span>
 <span class="w">  </span><span class="n">b</span><span class="p">.</span><span class="n">setName</span><span class="p">(</span><span class="s">&quot;rawrr&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">// Force name</span>
 <span class="w">  </span><span class="n">c</span><span class="p">.</span><span class="n">setName</span><span class="p">(</span><span class="s">&quot;rawrr&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">weak</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="c1">// Propose a name, will not be applied if a stronger name is already applied</span>
@@ -1237,13 +1197,13 @@
 </pre></div>
 </div>
 <p>In general, you don’t realy need to access that API, unless you want to do tricky stuff for debug reasons or for elaboration purposes.</p>
-</div>
-<div class="section" id="name-extraction-from-scala">
-<h2>Name extraction from Scala<a class="headerlink" href="#name-extraction-from-scala" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="name-extraction-from-scala">
+<h2>Name extraction from Scala<a class="headerlink" href="#name-extraction-from-scala" title="Permalink to this heading"></a></h2>
 <p>First, since version 1.4.0, SpinalHDL use a scala compiler plugin which can provide a call back each time a new val is defined during the construction of an class.</p>
 <p>There is a example showing more or less how SpinalHDL itself is implemented :</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="c1">//spinal.idslplugin.ValCallback is the Scala compiler plugin feature which will provide the callbacks</span>
-<span class="k">class</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="n">spinal</span><span class="p">.</span><span class="n">idslplugin</span><span class="p">.</span><span class="nc">ValCallback</span><span class="p">{</span><span class="w"></span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="n">spinal</span><span class="p">.</span><span class="n">idslplugin</span><span class="p">.</span><span class="nc">ValCallback</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="k">override</span><span class="w"> </span><span class="k">def</span><span class="w"> </span><span class="nf">valCallback</span><span class="p">[</span><span class="nc">T</span><span class="p">](</span><span class="n">ref</span><span class="p">:</span><span class="w"> </span><span class="nc">T</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="nc">String</span><span class="p">)</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">T</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">s&quot;Got </span><span class="si">$</span><span class="n">ref</span><span class="s"> named </span><span class="si">$</span><span class="n">name</span><span class="s">&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">// Here we just print what we got as a demo.</span>
 <span class="w">    </span><span class="n">ref</span><span class="w"></span>
@@ -1252,14 +1212,14 @@
 
 <span class="k">class</span><span class="w"> </span><span class="nc">UInt</span><span class="w"></span>
 <span class="k">class</span><span class="w"> </span><span class="nc">Bits</span><span class="w"></span>
-<span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="p">{</span><span class="w"></span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">two</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"></span>
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">wuff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;miaou&quot;</span><span class="w"></span>
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">toto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">UInt</span><span class="w"></span>
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">rawrr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Bits</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="k">object</span><span class="w"> </span><span class="nc">Debug3</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">App</span><span class="p">{</span><span class="w"></span>
+<span class="k">object</span><span class="w"> </span><span class="nc">Debug3</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">App</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="k">new</span><span class="w"> </span><span class="nc">MyComponent</span><span class="p">()</span><span class="w"></span>
 <span class="w">  </span><span class="c1">// ^ This will print :</span>
 <span class="w">  </span><span class="c1">// Got 2 named two</span>
@@ -1269,7 +1229,7 @@
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<p>Using that ValCallback “introspection” feature, SpinalHDL’s Component classes are able to be aware of their content and its name.</p>
+<p>Using that ValCallback “introspection” feature, SpinalHDL’s Component classes are able to be aware of their content and the content’s name.</p>
 <p>But this also mean that if you want something to get a name, and you only rely on this automatic naming feature, the reference to your Data (UInt, SInt, …) instances should be stored somewhere in a Component val.</p>
 <p>For instance :</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1277,7 +1237,8 @@
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">toto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w">   </span><span class="c1">// same</span>
 
 <span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">doStuff</span><span class="p">():</span><span class="w"> </span><span class="nc">Unit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"> </span><span class="c1">// This will not be named, as it isn&#39;t stored anywhere in a component val (but there is a solution explained later)</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"> </span><span class="c1">// This will not be named, as it isn&#39;t stored anywhere in a</span>
+<span class="w">                           </span><span class="c1">// component val (but there is a solution explained later)</span>
 <span class="w">    </span><span class="n">tmp</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mh">0x20</span><span class="w"></span>
 <span class="w">    </span><span class="n">toto</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">tmp</span><span class="w"></span>
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
@@ -1291,19 +1252,20 @@
 <span class="w">  </span><span class="k">input</span><span class="w">      </span><span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span><span class="w">    </span><span class="n">b</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="k">output</span><span class="w">     </span><span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span><span class="w">    </span><span class="n">toto</span><span class="w"></span>
 <span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="c1">//Note that the tmp signal defined in scala was &quot;shortcuted&quot; by SpinalHDL, as it was unamed and technicaly &quot;shortcutable&quot;</span>
+<span class="w">  </span><span class="c1">// Note that the tmp signal defined in scala was &quot;shortcuted&quot; by SpinalHDL,</span>
+<span class="w">  </span><span class="c1">//  as it was unamed and technicaly &quot;shortcutable&quot;</span>
 <span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">toto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">8&#39;h20</span><span class="p">;</span><span class="w"></span>
 <span class="k">endmodule</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="area-in-a-component">
-<h2>Area in a Component<a class="headerlink" href="#area-in-a-component" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="area-in-a-component">
+<h2>Area in a Component<a class="headerlink" href="#area-in-a-component" title="Permalink to this heading"></a></h2>
 <p>One important aspect in the naming system is that you can define new namespaces inside components and manipulate</p>
 <p>For instance via Area :</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logicA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="p">{</span><span class="w">   </span><span class="c1">//This define a new namespace named &quot;logicA</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">toggle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">Bool</span><span class="p">())</span><span class="w"> </span><span class="c1">//This register will be named &quot;logicA_toggle&quot;</span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logicA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span><span class="w">    </span><span class="c1">// This define a new namespace named &quot;logicA</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">toggle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">Bool</span><span class="p">())</span><span class="w"> </span><span class="c1">// This register will be named &quot;logicA_toggle&quot;</span>
 <span class="w">    </span><span class="n">toggle</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="o">!</span><span class="n">toggle</span><span class="w"></span>
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
@@ -1321,9 +1283,9 @@
 <span class="k">endmodule</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="area-in-a-function">
-<h2>Area in a function<a class="headerlink" href="#area-in-a-function" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="area-in-a-function">
+<h2>Area in a function<a class="headerlink" href="#area-in-a-function" title="Permalink to this heading"></a></h2>
 <p>You can also define function which will create new Area which will provide a namespace for all its content :</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">isZero</span><span class="p">(</span><span class="n">value</span><span class="p">:</span><span class="w"> </span><span class="nc">UInt</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1351,15 +1313,16 @@
 <span class="k">endmodule</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="composite-in-a-function">
-<h2>Composite in a function<a class="headerlink" href="#composite-in-a-function" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="composite-in-a-function">
+<h2>Composite in a function<a class="headerlink" href="#composite-in-a-function" title="Permalink to this heading"></a></h2>
 <p>Added in SpinalHDL 1.5.0, Composite which allow you to create a scope which will use as prefix another Nameable:</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="c1">//Basicaly, a Composite is an Area that use its construction parameter as namespace prefix</span>
+<span class="w">  </span><span class="c1">// Basicaly, a Composite is an Area that use its construction parameter as namespace prefix</span>
 <span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">isZero</span><span class="p">(</span><span class="n">value</span><span class="p">:</span><span class="w"> </span><span class="nc">UInt</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Composite</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">comparator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
-<span class="w">  </span><span class="p">}.</span><span class="n">comparator</span><span class="w">  </span><span class="c1">//Note we don&#39;t return the Composite, but the element of the composite that we are interested in</span>
+<span class="w">  </span><span class="p">}.</span><span class="n">comparator</span><span class="w">  </span><span class="c1">// Note we don&#39;t return the Composite,</span>
+<span class="w">                </span><span class="c1">//  but the element of the composite that we are interested in</span>
 
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="nc">UInt</span><span class="w"> </span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="nc">Bool</span><span class="p">()</span><span class="w"></span>
@@ -1380,9 +1343,9 @@
 <span class="k">endmodule</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="composite-chains">
-<h2>Composite chains<a class="headerlink" href="#composite-chains" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="composite-chains">
+<h2>Composite chains<a class="headerlink" href="#composite-chains" title="Permalink to this heading"></a></h2>
 <p>You can also chain composites :</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">isZero</span><span class="p">(</span><span class="n">value</span><span class="p">:</span><span class="w"> </span><span class="nc">UInt</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Composite</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1415,18 +1378,19 @@
 <span class="k">endmodule</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="composite-in-a-bundle-s-function">
-<h2>Composite in a Bundle’s function<a class="headerlink" href="#composite-in-a-bundle-s-function" title="Permalink to this heading">¶</a></h2>
-<p>This behaviour can be very useful when implementing Bundles utilities. For instance in the spinal.lib.Stream class is defined the following :</p>
+</section>
+<section id="composite-in-a-bundle-s-function">
+<h2>Composite in a Bundle’s function<a class="headerlink" href="#composite-in-a-bundle-s-function" title="Permalink to this heading"></a></h2>
+<p>This behaviour can be very useful when implementing Bundle utilities. For instance in the spinal.lib.Stream class is defined the following :</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Stream</span><span class="p">[</span><span class="nc">T</span><span class="w"> </span><span class="o">&lt;:</span><span class="w"> </span><span class="nc">Data</span><span class="p">](</span><span class="kd">val</span><span class="w"> </span><span class="n">payloadType</span><span class="w"> </span><span class="p">:</span><span class="w">  </span><span class="nc">HardType</span><span class="p">[</span><span class="nc">T</span><span class="p">])</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Bundle</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">valid</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="nc">Bool</span><span class="p">()</span><span class="w"></span>
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">ready</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="nc">Bool</span><span class="p">()</span><span class="w"></span>
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">payload</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">payloadType</span><span class="p">()</span><span class="w"></span>
 
-<span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">queue</span><span class="p">(</span><span class="n">size</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">):</span><span class="w"> </span><span class="nc">Stream</span><span class="p">[</span><span class="nc">T</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Composite</span><span class="p">(</span><span class="bp">this</span><span class="p">){</span><span class="w"></span>
+<span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">queue</span><span class="p">(</span><span class="n">size</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">):</span><span class="w"> </span><span class="nc">Stream</span><span class="p">[</span><span class="nc">T</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Composite</span><span class="p">(</span><span class="bp">this</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">fifo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">StreamFifo</span><span class="p">(</span><span class="n">payloadType</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">fifo</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">push</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">self</span><span class="w">    </span><span class="c1">// &#39;self&#39; refer to the Composite construction argument (this in that example). It avoid having to do a boring &#39;Stream.this&#39;</span>
+<span class="w">    </span><span class="n">fifo</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">push</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">self</span><span class="w">    </span><span class="c1">// &#39;self&#39; refers to the Composite construction argument (&#39;this&#39; in</span>
+<span class="w">                            </span><span class="c1">//  the example). It avoids having to do a boring &#39;Stream.this&#39;</span>
 <span class="w">  </span><span class="p">}.</span><span class="n">fifo</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">pop</span><span class="w"></span>
 
 <span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">m2sPipe</span><span class="p">():</span><span class="w"> </span><span class="nc">Stream</span><span class="p">[</span><span class="nc">T</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Composite</span><span class="p">(</span><span class="bp">this</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1517,14 +1481,14 @@
 <span class="k">endmodule</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="unamed-signal-handling">
-<h2>Unamed signal handling<a class="headerlink" href="#unamed-signal-handling" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="unamed-signal-handling">
+<h2>Unamed signal handling<a class="headerlink" href="#unamed-signal-handling" title="Permalink to this heading"></a></h2>
 <p>Since 1.5.0, for signal which end up without name, SpinalHDL will find a signal which is driven by that unamed signal and propagate its name. This can produce useful results as long you don’t have too large island of unamed stuff.</p>
 <p>The name attributed to such unamed signal is : _zz_ + drivenSignal.getName()</p>
 <p>Note that this naming pattern is also used by the generation backend when they need to breakup some specific expressions or long chain of expression into multiple signals.</p>
-<div class="section" id="verilog-expression-splitting">
-<h3>Verilog expression splitting<a class="headerlink" href="#verilog-expression-splitting" title="Permalink to this heading">¶</a></h3>
+<section id="verilog-expression-splitting">
+<h3>Verilog expression splitting<a class="headerlink" href="#verilog-expression-splitting" title="Permalink to this heading"></a></h3>
 <p>There is an instance of expressions (ex : the + operator) that SpinalHDL need to express in dedicated signals to match the behaviour with the Scala API :</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
@@ -1550,13 +1514,16 @@
 <span class="k">endmodule</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="verilog-long-expression-splitting">
-<h3>Verilog long expression splitting<a class="headerlink" href="#verilog-long-expression-splitting" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="verilog-long-expression-splitting">
+<h3>Verilog long expression splitting<a class="headerlink" href="#verilog-long-expression-splitting" title="Permalink to this heading"></a></h3>
 <p>There is a instance of how a very long expression chain will be splited up by SpinalHDL :</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">conditions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="nc">Vec</span><span class="p">(</span><span class="nc">Bool</span><span class="p">(),</span><span class="w"> </span><span class="mi">64</span><span class="p">)</span><span class="w"></span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">conditions</span><span class="p">.</span><span class="n">reduce</span><span class="p">(</span><span class="n">_</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">_</span><span class="p">)</span><span class="w"> </span><span class="c1">// Do a logical or between all the conditions elements</span>
+<span class="w">  </span><span class="c1">// Perform a logical OR between all the condition elements</span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">conditions</span><span class="p">.</span><span class="n">reduce</span><span class="p">(</span><span class="n">_</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">_</span><span class="p">)</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// For Bits/UInt/SInt signals the &#39;orR&#39; methods implements this reduction operation</span>
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
@@ -1587,9 +1554,9 @@
 <span class="k">endmodule</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="when-statement-condition">
-<h3>When statement condition<a class="headerlink" href="#when-statement-condition" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="when-statement-condition">
+<h3>When statement condition<a class="headerlink" href="#when-statement-condition" title="Permalink to this heading"></a></h3>
 <p>The <cite>when(cond) { }</cite> statements condition are generated into separated signals named <cite>when_</cite> + fileName + line. A similar thing will also be done for switch statements.</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="c1">//In file Test.scala</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1598,7 +1565,7 @@
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">counter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out</span><span class="p">(</span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">)))</span><span class="w"></span>
 
 <span class="w">  </span><span class="n">isZero</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">False</span><span class="w"></span>
-<span class="w">  </span><span class="n">when</span><span class="p">(</span><span class="n">value</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mi">0</span><span class="p">){</span><span class="w"> </span><span class="c1">//At line 117</span>
+<span class="w">  </span><span class="n">when</span><span class="p">(</span><span class="n">value</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// At line 117</span>
 <span class="w">    </span><span class="n">isZero</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">True</span><span class="w"></span>
 <span class="w">    </span><span class="n">counter</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">counter</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
@@ -1631,9 +1598,9 @@
 <span class="k">endmodule</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="in-last-resort">
-<h3>In last resort<a class="headerlink" href="#in-last-resort" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="in-last-resort">
+<h3>In last resort<a class="headerlink" href="#in-last-resort" title="Permalink to this heading"></a></h3>
 <p>In last resort, if a signal has no name (anonymous signal), SpinalHDL will seek for a named signal which is driven by the anonymous signal, and use it as a name postfix :</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="nc">Bool</span><span class="p">()</span><span class="w"></span>
@@ -1641,7 +1608,7 @@
 
 <span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">count</span><span class="p">(</span><span class="n">cond</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Bool</span><span class="p">):</span><span class="w"> </span><span class="nc">UInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"> </span><span class="c1">// This register is not named (on purpose for the example)</span>
-<span class="w">    </span><span class="n">when</span><span class="p">(</span><span class="n">cond</span><span class="p">){</span><span class="w"></span>
+<span class="w">    </span><span class="n">when</span><span class="p">(</span><span class="n">cond</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">      </span><span class="n">ret</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">ret</span><span class="w"></span>
@@ -1658,7 +1625,8 @@
 <span class="w">  </span><span class="k">input</span><span class="w">               </span><span class="n">clk</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="k">input</span><span class="w">               </span><span class="n">reset</span><span class="w"></span>
 <span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="kt">reg</span><span class="w">        </span><span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span><span class="w">    </span><span class="n">_zz_value</span><span class="p">;</span><span class="w"> </span><span class="c1">//Name given to the register in last resort by looking what was driven by it</span>
+<span class="w">  </span><span class="c1">// Name given to the register in last resort by looking what was driven by it</span>
+<span class="w">  </span><span class="kt">reg</span><span class="w">        </span><span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span><span class="w">    </span><span class="n">_zz_value</span><span class="p">;</span><span class="w"></span>
 
 <span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_zz_value</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="k">always</span><span class="w"> </span><span class="p">@</span><span class="w"> </span><span class="p">(</span><span class="k">posedge</span><span class="w"> </span><span class="n">clk</span><span class="p">)</span><span class="w"> </span><span class="k">begin</span><span class="w"></span>
@@ -1671,9 +1639,9 @@
 </div>
 <p>This last resort naming skim isn’t ideal in all cases, but can help out.</p>
 <p>Note that signal starting with a underscore aren’t stored in the Verilator waves (on purpose)</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/javascript">
         function init() {
@@ -1682,38 +1650,37 @@
         window.onload = init;
     </script>
 
+
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="parametrization.html" class="btn btn-neutral float-right" title="Parametrization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="blackbox.html" class="btn btn-neutral float-left" title="Instantiate VHDL and Verilog IP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="parametrization.html" class="btn btn-neutral float-right" title="Parametrization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2022, SpinalHDL.
-
-    </p>
+    <p>&#169; Copyright 2018 - 2023, SpinalHDL.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+     
+    <!-- source/_templates/footer.html -->
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    <div class="doc-footer-current-version"><p>
+    Version: master git~41523b1b5 2023-07-08
+    </p></div>
+    
+
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
   
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
@@ -1724,6 +1691,15 @@
   </span>
   <div class="rst-other-versions">
     <dl>
+       <dt>Languages</dt>
+       <dd class="rtd-current-item">
+         <a href="#">en</a>
+       </dd>
+       <dd>
+         <a href="https://thucgra.github.io/SpinalHDL_Chinese_Doc/">zh_CN</a>
+      </dd>
+    </dl>
+    <dl>
       <dt>Branches</dt>
       <dd><a href="../../../dev/SpinalHDL/Structuring/naming.html">dev</a></dd>
       <dd><a href="naming.html">master</a></dd>
@@ -1731,21 +1707,15 @@
     <dl>
       <dt>Downloads</dt>
       <dd><a href="../../artefacts/SpinalHDL_docs-master.">HTML</a></dd>
+      <dd><a href="../../artefacts/SpinalHDL_docs-master-SingleHTML.zip">SingleHTML</a></dd>
       <dd><a href="../../artefacts/SpinalHDL_docs-master.pdf">PDF</a></dd>
     </dl>
   </div>
-</div>
-
-  <script type="text/javascript">
+</div><script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
