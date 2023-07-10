@@ -1826,6 +1826,21 @@ The <code class="docutils literal notranslate"><span class="pre">count</span></c
 </pre></div>
 </div>
 <p>This <code class="docutils literal notranslate"><span class="pre">extender</span></code> provides several status signals, such as <code class="docutils literal notranslate"><span class="pre">working</span></code>, <code class="docutils literal notranslate"><span class="pre">last</span></code>, <code class="docutils literal notranslate"><span class="pre">done</span></code> where <code class="docutils literal notranslate"><span class="pre">working</span></code> means there is one input transfer accepted and in-progress, <code class="docutils literal notranslate"><span class="pre">last</span></code> indicates the last output transfer is prepared and waiting to complete, <code class="docutils literal notranslate"><span class="pre">done</span></code> become valid represents the last output transfer is fireing and making the current input transaction process complete and ready to start another transaction.</p>
+
+<div style="overflow-x:auto">
+<script type="WaveDrom">
+{ "signal": [
+  { "name": "clk",         "wave": "p........." },
+  { "name": "input",        "wave": "x3x.....4x", "data": ["T1", "T2"] },
+  { "name": "count",        "wave": "x3x.....4x", "data": ["2", "4"] },
+  { "name": "output",       "wave": "x..2x2x.2x", "data": ["D1", "D2", "D3"] },
+  { "name": "working",      "wave": "0.1......."},
+  { "name": "done",      "wave": "0.......10"},
+  { "name": "first",      "wave": "0.1.0....."},
+  { "name": "last",      "wave": "0.....1..0"},
+]}
+</script>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If only count for output stream is required then use <code class="docutils literal notranslate"><span class="pre">StreamTransactionCounter</span></code> instead.</p>
@@ -1929,7 +1944,7 @@ The <code class="docutils literal notranslate"><span class="pre">count</span></c
     <!-- source/_templates/footer.html -->
     
     <div class="doc-footer-current-version"><p>
-    Version: master git~37af58657 2023-07-11
+    Version: master git~d5eaa2346 2023-07-11
     </p></div>
     
 
