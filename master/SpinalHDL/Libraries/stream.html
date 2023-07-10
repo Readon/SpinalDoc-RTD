@@ -1815,8 +1815,8 @@ For safe transaction, refer the notes above.</p>
 </section>
 <section id="streamtransactionextender">
 <h3>StreamTransactionExtender<a class="headerlink" href="#streamtransactionextender" title="Permalink to this heading"></a></h3>
-<p>This util helps to extend one input transaction with specified <code class="docutils literal notranslate"><span class="pre">count+1</span></code> times of output transactions with the same payload.
-The <code class="docutils literal notranslate"><span class="pre">count</span></code> signal would be captured and registered while inputStream fire.</p>
+<p>This utility will take one input transfer and generate serval output transfers, it provides the facility to repeat the payload value <code class="docutils literal notranslate"><span class="pre">count+1</span></code> times into output transfers.
+The <code class="docutils literal notranslate"><span class="pre">count</span></code> is captured and registered each time inputStream fires for an individual payload.</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
 <span class="kd">val</span><span class="w"> </span><span class="n">outputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
 <span class="kd">val</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
@@ -1825,7 +1825,7 @@ The <code class="docutils literal notranslate"><span class="pre">count</span></c
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<p>This <code class="docutils literal notranslate"><span class="pre">extender</span></code> have provided several status signals, such as <code class="docutils literal notranslate"><span class="pre">working</span></code>, <code class="docutils literal notranslate"><span class="pre">last</span></code>, <code class="docutils literal notranslate"><span class="pre">done</span></code> where <code class="docutils literal notranslate"><span class="pre">working</span></code> means there is one transaction accepted and on going, <code class="docutils literal notranslate"><span class="pre">last</span></code> stands for waiting the last output stream fire, <code class="docutils literal notranslate"><span class="pre">done</span></code> represent the last output stream fire and the current input transcation process is done.</p>
+<p>This <code class="docutils literal notranslate"><span class="pre">extender</span></code> provides several status signals, such as <code class="docutils literal notranslate"><span class="pre">working</span></code>, <code class="docutils literal notranslate"><span class="pre">last</span></code>, <code class="docutils literal notranslate"><span class="pre">done</span></code> where <code class="docutils literal notranslate"><span class="pre">working</span></code> means there is one input transfer accepted and in-progress, <code class="docutils literal notranslate"><span class="pre">last</span></code> indicates the last output transfer is prepared and waiting to complete, <code class="docutils literal notranslate"><span class="pre">done</span></code> become valid represents the last output transfer is fireing and making the current input transaction process complete and ready to start another transaction.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If only count for output stream is required then use <code class="docutils literal notranslate"><span class="pre">StreamTransactionCounter</span></code> instead.</p>
@@ -1929,7 +1929,7 @@ The <code class="docutils literal notranslate"><span class="pre">count</span></c
     <!-- source/_templates/footer.html -->
     
     <div class="doc-footer-current-version"><p>
-    Version: master git~728592880 2023-07-08
+    Version: master git~37af58657 2023-07-11
     </p></div>
     
 
