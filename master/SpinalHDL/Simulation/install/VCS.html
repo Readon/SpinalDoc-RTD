@@ -124,12 +124,19 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Getting%20Started/index.html">Getting Started</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html">Install and setup</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#mandatory-requirements">Mandatory requirements</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#installing-sbt-in-an-internet-free-environment">Installing SBT in an internet-free environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#required-recommended-tools">Required/Recommended tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#linux-installation">Linux Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#mac-os-x-installation">Mac OS X Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#windows-installation">Windows installation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#msys2-verilator-for-simulation">MSYS2 verilator for simulation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#msys2-for-formal-verification">MSYS2 for formal verification</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#recommended-requirements">Recommended requirements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#create-a-spinalhdl-project">Create a SpinalHDL project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#oci-container">OCI Container</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#installing-sbt-in-an-internet-free-linux-environment">Installing SBT in an internet-free Linux environment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#create-a-first-spinalhdl-project">Create a first SpinalHDL project</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#the-directory-structure-of-a-project">The directory structure of a project</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Getting%20Started/Install%20and%20setup.html#using-spinal-on-spinalhdl-code">Using Spinal on SpinalHDL code</a></li>
 </ul>
@@ -223,7 +230,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Data%20types/bits.html">Bits</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../Data%20types/bits.html#description">Description</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Data%20types/bits.html#declaration">Declaration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Data%20types/bits.html#operators">Operators</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../Data%20types/bits.html#logic">Logic</a></li>
@@ -231,13 +237,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Data%20types/bits.html#type-cast">Type cast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Data%20types/bits.html#bit-extraction">Bit extraction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Data%20types/bits.html#misc">Misc</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../Data%20types/bits.html#maskedliteral">MaskedLiteral</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../Data%20types/bits.html#maskedliteral">MaskedLiteral</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Data%20types/Int.html">UInt/SInt</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../Data%20types/Int.html#description">Description</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Data%20types/Int.html#declaration">Declaration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Data%20types/Int.html#operators">Operators</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../Data%20types/Int.html#logic">Logic</a></li>
@@ -469,7 +474,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Sequential%20logic/registers.html#transforming-a-wire-into-a-register">Transforming a wire into a register</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../Sequential%20logic/memory.html">RAM/ROM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Sequential%20logic/memory.html">RAM/ROM Memory</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Sequential%20logic/memory.html#synchronous-enable-quirk">Synchronous enable quirk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Sequential%20logic/memory.html#read-under-write-policy">Read-under-write policy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Sequential%20logic/memory.html#mixed-width-ram">Mixed-width ram</a></li>
@@ -576,7 +581,10 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Other%20language%20features/index.html">Other language features</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Other%20language%20features/utils.html">Utils</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../Other%20language%20features/utils.html#general">General</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Other%20language%20features/utils.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Other%20language%20features/utils.html#cat">Cat</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../Other%20language%20features/utils.html#cloning-hardware-datatypes">Cloning hardware datatypes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Other%20language%20features/utils.html#passing-a-datatype-as-construction-parameter">Passing a datatype as construction parameter</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../Other%20language%20features/utils.html#the-old-way">The old way</a></li>
@@ -740,6 +748,18 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/avalon/avalonmm.html#configuration-and-instanciation">Configuration and instanciation</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink.html">Tilelink</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink_fabric.html">tilelink.fabric.Node</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink_fabric.html#example-toplevel">Example Toplevel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink_fabric.html#example-gpiofiber">Example GpioFiber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink_fabric.html#example-ramfiber">Example RamFiber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink_fabric.html#example-cpufiber">Example CpuFiber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink_fabric.html#example-widthadapter">Example WidthAdapter</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Libraries/Com/index.html">Com</a><ul>
@@ -809,8 +829,7 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Simulation</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">Installation instructions</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="index.html#scala">Scala</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">SBT setup for simulation</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html#backend-dependent-installation-instructions">Backend-dependent installation instructions</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="GHDL.html">Setup and installation of GHDL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Icarus%20Verilog.html">Setup and installation of Icarus Verilog</a></li>
@@ -825,11 +844,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../bootstraps.html#configuration">Configuration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../bootstraps.html#running-multiple-tests-on-the-same-hardware">Running multiple tests on the same hardware</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../bootstraps.html#throw-success-or-failure-of-the-simulation-from-a-thread">Throw Success or Failure of the simulation from a thread</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../bootstraps.html#capturing-wave-for-a-given-window-before-failure">Capturing wave for a given window before failure</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../signal.html">Accessing signals of the simulation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../signal.html#read-and-write-signals">Read and write signals</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../signal.html#accessing-signals-inside-the-component-s-hierarchy">Accessing signals inside the component’s hierarchy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../signal.html#load-and-store-of-memory-in-simulation">Load and Store of Memory in Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../clock.html">Clock domains</a><ul>
@@ -960,6 +981,10 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Examples/Advanced%20ones/pinesec.html">Pinesec</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Examples/Advanced%20ones/slots.html">Slots</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Examples/Advanced%20ones/slots.html#introduction">Introduction</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../Examples/Advanced%20ones/timer.html">Timer</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../Examples/Advanced%20ones/timer.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Examples/Advanced%20ones/timer.html#id2">Timer</a></li>
@@ -968,7 +993,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../Examples/index.html#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Examples/index.html#getting-started">Getting started</a></li>
 </ul>
 </li>
@@ -1041,7 +1065,6 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../miscelenea/core/core_components.html#vhdl-generation">VHDL generation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../miscelenea/core/core_components.html#memory">Memory</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../miscelenea/core/core_components.html#instantiate-vhdl-and-verilog-ip">Instantiate VHDL and Verilog IP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../miscelenea/core/core_components.html#utils">Utils</a></li>
 </ul>
@@ -1087,7 +1110,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/spinalhdl_datamodel.html#compilation-phases">Compilation Phases</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/spinalhdl_datamodel.html#modifying-a-netlist-as-a-user-without-plugins">Modifying a netlist as a user without plugins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/spinalhdl_datamodel.html#user-space-netlist-analysis">User space netlist analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/spinalhdl_datamodel.html#enumerating-every-clockdomain-used">Enumerating every ClockDomain used</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/spinalhdl_datamodel.html#enumerating-every-clockdomain-in-use">Enumerating every ClockDomain in use</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Developers%20area/types.html">Types</a><ul>
@@ -1137,7 +1160,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Simulation</a></li>
-          <li class="breadcrumb-item"><a href="index.html">Installation instructions</a></li>
+          <li class="breadcrumb-item"><a href="index.html">SBT setup for simulation</a></li>
       <li class="breadcrumb-item active">VCS Simulation Configuration</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/SpinalHDL/SpinalDoc-RTD/blob/master/source/SpinalHDL/Simulation/install/VCS.rst" class="fa fa-github"> Edit on GitHub</a>
@@ -1293,7 +1316,7 @@ and run your scripts.</p>
 The integration can done by following two ways:</p>
 <ol class="arabic simple">
 <li><p>In a <code class="docutils literal notranslate"><span class="pre">Blackbox</span></code> definition, use <code class="docutils literal notranslate"><span class="pre">addRTLPath(path:</span> <span class="pre">String)</span></code> to assign a external Verilog/VHDL file to this blackbox.</p></li>
-<li><p>Use the method <code class="docutils literal notranslate"><span class="pre">mergeRTLSource(fileName:</span> <span class="pre">String=null)</span></code> of <code class="docutils literal notranslate"><span class="pre">SpinalConfig</span></code>.</p></li>
+<li><p>Use the method <code class="docutils literal notranslate"><span class="pre">mergeRTLSource(fileName:</span> <span class="pre">String=null)</span></code> of <code class="docutils literal notranslate"><span class="pre">SpinalReport</span></code>.</p></li>
 </ol>
 </section>
 </section>
@@ -1327,7 +1350,7 @@ The integration can done by following two ways:</p>
     <!-- source/_templates/footer.html -->
     
     <div class="doc-footer-current-version"><p>
-    Version: master git~2c38b53c6 2023-07-11
+    Version: master git~c1513e2c2 2023-11-08
     </p></div>
     
 

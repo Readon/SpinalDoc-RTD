@@ -124,12 +124,19 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Getting%20Started/index.html">Getting Started</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html">Install and setup</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#mandatory-requirements">Mandatory requirements</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#installing-sbt-in-an-internet-free-environment">Installing SBT in an internet-free environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#required-recommended-tools">Required/Recommended tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#linux-installation">Linux Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#mac-os-x-installation">Mac OS X Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#windows-installation">Windows installation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#msys2-verilator-for-simulation">MSYS2 verilator for simulation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#msys2-for-formal-verification">MSYS2 for formal verification</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#recommended-requirements">Recommended requirements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#create-a-spinalhdl-project">Create a SpinalHDL project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#oci-container">OCI Container</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#installing-sbt-in-an-internet-free-linux-environment">Installing SBT in an internet-free Linux environment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#create-a-first-spinalhdl-project">Create a first SpinalHDL project</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#the-directory-structure-of-a-project">The directory structure of a project</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Getting%20Started/Install%20and%20setup.html#using-spinal-on-spinalhdl-code">Using Spinal on SpinalHDL code</a></li>
 </ul>
@@ -223,7 +230,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="bits.html">Bits</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="bits.html#description">Description</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bits.html#declaration">Declaration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bits.html#operators">Operators</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="bits.html#logic">Logic</a></li>
@@ -231,13 +237,12 @@
 <li class="toctree-l4"><a class="reference internal" href="bits.html#type-cast">Type cast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="bits.html#bit-extraction">Bit extraction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="bits.html#misc">Misc</a></li>
-<li class="toctree-l4"><a class="reference internal" href="bits.html#maskedliteral">MaskedLiteral</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="bits.html#maskedliteral">MaskedLiteral</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">UInt/SInt</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#declaration">Declaration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#operators">Operators</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#logic">Logic</a></li>
@@ -469,7 +474,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/registers.html#transforming-a-wire-into-a-register">Transforming a wire into a register</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Sequential%20logic/memory.html">RAM/ROM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Sequential%20logic/memory.html">RAM/ROM Memory</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#synchronous-enable-quirk">Synchronous enable quirk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#read-under-write-policy">Read-under-write policy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Sequential%20logic/memory.html#mixed-width-ram">Mixed-width ram</a></li>
@@ -576,7 +581,10 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Other%20language%20features/index.html">Other language features</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Other%20language%20features/utils.html">Utils</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/utils.html#general">General</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/utils.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Other%20language%20features/utils.html#cat">Cat</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/utils.html#cloning-hardware-datatypes">Cloning hardware datatypes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Other%20language%20features/utils.html#passing-a-datatype-as-construction-parameter">Passing a datatype as construction parameter</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Other%20language%20features/utils.html#the-old-way">The old way</a></li>
@@ -740,6 +748,18 @@
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/avalon/avalonmm.html#configuration-and-instanciation">Configuration and instanciation</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/tilelink/tilelink.html">Tilelink</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/tilelink/tilelink.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/tilelink/tilelink_fabric.html">tilelink.fabric.Node</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/tilelink/tilelink_fabric.html#example-toplevel">Example Toplevel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/tilelink/tilelink_fabric.html#example-gpiofiber">Example GpioFiber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/tilelink/tilelink_fabric.html#example-ramfiber">Example RamFiber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/tilelink/tilelink_fabric.html#example-cpufiber">Example CpuFiber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/tilelink/tilelink_fabric.html#example-widthadapter">Example WidthAdapter</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/Com/index.html">Com</a><ul>
@@ -809,8 +829,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Simulation/index.html">Simulation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Simulation/install/index.html">Installation instructions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Simulation/install/index.html#scala">Scala</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Simulation/install/index.html">SBT setup for simulation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Simulation/install/index.html#backend-dependent-installation-instructions">Backend-dependent installation instructions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Simulation/install/GHDL.html">Setup and installation of GHDL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Simulation/install/Icarus%20Verilog.html">Setup and installation of Icarus Verilog</a></li>
@@ -825,11 +844,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../Simulation/bootstraps.html#configuration">Configuration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Simulation/bootstraps.html#running-multiple-tests-on-the-same-hardware">Running multiple tests on the same hardware</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Simulation/bootstraps.html#throw-success-or-failure-of-the-simulation-from-a-thread">Throw Success or Failure of the simulation from a thread</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Simulation/bootstraps.html#capturing-wave-for-a-given-window-before-failure">Capturing wave for a given window before failure</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/signal.html">Accessing signals of the simulation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Simulation/signal.html#read-and-write-signals">Read and write signals</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Simulation/signal.html#accessing-signals-inside-the-component-s-hierarchy">Accessing signals inside the component’s hierarchy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Simulation/signal.html#load-and-store-of-memory-in-simulation">Load and Store of Memory in Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Simulation/clock.html">Clock domains</a><ul>
@@ -960,6 +981,10 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Advanced%20ones/pinesec.html">Pinesec</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Advanced%20ones/slots.html">Slots</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Examples/Advanced%20ones/slots.html#introduction">Introduction</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Advanced%20ones/timer.html">Timer</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Examples/Advanced%20ones/timer.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Examples/Advanced%20ones/timer.html#id2">Timer</a></li>
@@ -968,7 +993,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Examples/index.html#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Examples/index.html#getting-started">Getting started</a></li>
 </ul>
 </li>
@@ -1041,7 +1065,6 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#vhdl-generation">VHDL generation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#memory">Memory</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#instantiate-vhdl-and-verilog-ip">Instantiate VHDL and Verilog IP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../miscelenea/core/core_components.html#utils">Utils</a></li>
 </ul>
@@ -1087,7 +1110,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#compilation-phases">Compilation Phases</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#modifying-a-netlist-as-a-user-without-plugins">Modifying a netlist as a user without plugins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#user-space-netlist-analysis">User space netlist analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#enumerating-every-clockdomain-used">Enumerating every ClockDomain used</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/spinalhdl_datamodel.html#enumerating-every-clockdomain-in-use">Enumerating every ClockDomain in use</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Developers%20area/types.html">Types</a><ul>
@@ -1167,23 +1190,19 @@
 
   <section id="uint-sint">
 <span id="int"></span><h1>UInt/SInt<a class="headerlink" href="#uint-sint" title="Permalink to this heading"></a></h1>
-<section id="description">
-<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading"></a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">UInt</span></code>/<code class="docutils literal notranslate"><span class="pre">SInt</span></code> type corresponds to a vector of bits that can be used for signed/unsigned integer arithmetic.</p>
-</section>
+<p>The <code class="docutils literal notranslate"><span class="pre">UInt</span></code>/<code class="docutils literal notranslate"><span class="pre">SInt</span></code> types are vectors of bits interpreted as two’s complement unsigned/signed integers.
+They can do what <code class="docutils literal notranslate"><span class="pre">Bits</span></code> can do, with the addition of unsigned/signed integer arithmetic and comparisons.</p>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Permalink to this heading"></a></h2>
 <p>The syntax to declare an integer is as follows:  (everything between [] is optional)</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 29%" />
-<col style="width: 59%" />
-<col style="width: 12%" />
+<col style="width: 33%" />
+<col style="width: 67%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Syntax</p></th>
 <th class="head"><p>Description</p></th>
-<th class="head"><p>Return</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1193,11 +1212,6 @@
 </div>
 </td>
 <td><p>Create an unsigned/signed integer, bits count is inferred</p></td>
-<td><div class="line-block">
-<div class="line">UInt</div>
-<div class="line">SInt</div>
-</div>
-</td>
 </tr>
 <tr class="row-odd"><td><div class="line-block">
 <div class="line">UInt(x bits)</div>
@@ -1205,11 +1219,6 @@
 </div>
 </td>
 <td><p>Create an unsigned/signed integer with x bits</p></td>
-<td><div class="line-block">
-<div class="line">UInt</div>
-<div class="line">SInt</div>
-</div>
-</td>
 </tr>
 <tr class="row-even"><td><div class="line-block">
 <div class="line">U(value: Int[,x bits])</div>
@@ -1219,40 +1228,29 @@
 </div>
 </td>
 <td><p>Create an unsigned/signed integer assigned with ‘value’</p></td>
-<td><div class="line-block">
-<div class="line">UInt</div>
-<div class="line">SInt</div>
-</div>
-</td>
 </tr>
 <tr class="row-odd"><td><div class="line-block">
 <div class="line">U”[[size’]base]value”</div>
 <div class="line">S”[[size’]base]value”</div>
 </div>
 </td>
-<td><p>Create an unsigned/signed integer assigned with ‘value’ (Base : ‘h’, ‘d’, ‘o’, ‘b’)</p></td>
 <td><div class="line-block">
-<div class="line">UInt</div>
-<div class="line">SInt</div>
+<div class="line">Create an unsigned/signed integer assigned with ‘value’</div>
+<div class="line">(base: ‘h’, ‘d’, ‘o’, ‘b’)</div>
 </div>
 </td>
 </tr>
 <tr class="row-even"><td><div class="line-block">
-<div class="line">U([x bits,] <a class="reference internal" href="../miscelenea/core/elements.html#element"><span class="std std-ref">element</span></a>, …)</div>
-<div class="line">S([x bits,] <a class="reference internal" href="../miscelenea/core/elements.html#element"><span class="std std-ref">element</span></a>, …)</div>
+<div class="line">U([x bits,] elements: Element*)</div>
+<div class="line">S([x bits,] elements: Element*)</div>
 </div>
 </td>
-<td><p>Create an unsigned integer assigned with the value specified by elements</p></td>
-<td><div class="line-block">
-<div class="line">UInt</div>
-<div class="line">SInt</div>
-</div>
-</td>
+<td><p>Create an unsigned integer assigned with the value specified by <a class="reference internal" href="../miscelenea/core/elements.html#element"><span class="std std-ref">elements</span></a></p></td>
 </tr>
 </tbody>
 </table>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">myUInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
-<span class="n">myUInt</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">U</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">myUInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bit</span><span class="p">)</span>
+<span class="n">myUInt</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">U</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="n">bit</span><span class="p">)</span>
 <span class="n">myUInt</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">U</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">myUInt</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">U</span><span class="s">&quot;0000_0101&quot;</span><span class="w">  </span><span class="c1">// Base per default is binary =&gt; 5</span>
 <span class="n">myUInt</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">U</span><span class="s">&quot;h1A&quot;</span><span class="w">        </span><span class="c1">// Base could be x (base 16)</span>
@@ -1264,10 +1262,12 @@
 <span class="n">myUInt</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mi">2</span><span class="w">             </span><span class="c1">// You can use a Scala Int as a literal value</span>
 
 <span class="kd">val</span><span class="w"> </span><span class="n">myBool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bool</span><span class="p">()</span>
-<span class="n">myBool</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">myUInt</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nc">U</span><span class="p">(</span><span class="mi">7</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kc">true</span><span class="p">,(</span><span class="mi">6</span><span class="w"> </span><span class="n">downto</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kc">false</span><span class="p">)</span>
+<span class="n">myBool</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">myUInt</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nc">U</span><span class="p">(</span><span class="mi">7</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="mi">6</span><span class="w"> </span><span class="n">downto</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kc">false</span><span class="p">)</span>
+<span class="n">myBool</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">myUInt</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nc">U</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bit</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="n">default</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kc">false</span><span class="p">)</span>
 <span class="n">myBool</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">myUInt</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nc">U</span><span class="p">(</span><span class="n">myUInt</span><span class="p">.</span><span class="n">range</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span>
 
-<span class="c1">// For assignment purposes, you can omit the U/S, which also allows the use of the [default -&gt; ???] feature</span>
+<span class="c1">// For assignment purposes, you can omit the U/S</span>
+<span class="c1">// which also allows the use of &quot;default -&gt; ???&quot;</span>
 <span class="n">myUInt</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="p">(</span><span class="n">default</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span><span class="w">                        </span><span class="c1">// Assign myUInt with &quot;11111111&quot;</span>
 <span class="n">myUInt</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="p">(</span><span class="n">myUInt</span><span class="p">.</span><span class="n">range</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span><span class="w">                   </span><span class="c1">// Assign myUInt with &quot;11111111&quot;</span>
 <span class="n">myUInt</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="p">(</span><span class="mi">7</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="n">default</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kc">false</span><span class="p">)</span><span class="w">            </span><span class="c1">// Assign myUInt with &quot;10000000&quot;</span>
@@ -1363,29 +1363,29 @@
 </tr>
 <tr class="row-odd"><td><p>x.clearAll[()]</p></td>
 <td><p>Clear all bits</p></td>
-<td></td>
+<td><p><em>modifies x</em></p></td>
 </tr>
 <tr class="row-even"><td><p>x.setAll[()]</p></td>
 <td><p>Set all bits</p></td>
-<td></td>
+<td><p><em>modifies x</em></p></td>
 </tr>
 <tr class="row-odd"><td><p>x.setAllTo(value : Boolean)</p></td>
 <td><p>Set all bits to the given Boolean value</p></td>
-<td></td>
+<td><p><em>modifies x</em></p></td>
 </tr>
 <tr class="row-even"><td><p>x.setAllTo(value : Bool)</p></td>
 <td><p>Set all bits to the given Bool value</p></td>
-<td></td>
+<td><p><em>modifies x</em></p></td>
 </tr>
 </tbody>
 </table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Notice the difference in behaviour between <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;&gt;</span> <span class="pre">2</span></code>:T(w(x)-2) and <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;&gt;</span> <span class="pre">U(2)</span></code>:T(w(x))
+<p>Notice the difference in behaviour between <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;&gt;</span> <span class="pre">2</span></code> (result 2 bit narrower than x) and <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;&gt;</span> <span class="pre">U(2)</span></code> (keeping width)
 due to the Scala type of <code class="code docutils literal notranslate"><span class="pre">y</span></code>.</p>
-<p>The difference is that in the first case 2 is an <code class="docutils literal notranslate"><span class="pre">Int</span></code> (which can be seen as an
+<p>In the first case “2” is an <code class="docutils literal notranslate"><span class="pre">Int</span></code> (which can be seen as an
 “elaboration integer constant”), and in the second case it is a hardware signal
-(type <code class="docutils literal notranslate"><span class="pre">UInt</span></code>) that may or may-not be a constant.</p>
+(type <code class="docutils literal notranslate"><span class="pre">UInt</span></code>) that may or may not be a constant.</p>
 </div>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SInt</span><span class="p">(</span><span class="mi">32</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
 <span class="n">a</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">S</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -1476,6 +1476,7 @@ due to the Scala type of <code class="code docutils literal notranslate"><span c
 <span class="kd">val</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+^</span><span class="w"> </span><span class="n">b</span>
 <span class="n">assert</span><span class="p">(</span><span class="n">d</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nc">U</span><span class="s">&quot;9&#39;x0ff&quot;</span><span class="p">)</span>
 
+<span class="c1">// 0xf0 + 0x20 would overflow, the result therefore saturates</span>
 <span class="kd">val</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+|</span><span class="w"> </span><span class="nc">U</span><span class="s">&quot;8&#39;x20&quot;</span>
 <span class="n">assert</span><span class="p">(</span><span class="n">e</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nc">U</span><span class="s">&quot;8&#39;xff&quot;</span><span class="p">)</span>
 </pre></div>
@@ -1585,6 +1586,22 @@ The <code class="docutils literal notranslate"><span class="pre">wrap</span></co
 <td><p>Convert to SInt expanding sign bit</p></td>
 <td><p>SInt(w(x) + 1 bits)</p></td>
 </tr>
+<tr class="row-even"><td><p>myUInt.twoComplement(en: Bool)</p></td>
+<td><p>Generate two’s complement of number if <code class="docutils literal notranslate"><span class="pre">en</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, unchanged otherwise. (<code class="docutils literal notranslate"><span class="pre">en</span></code> makes result negative)</p></td>
+<td><p>SInt(w(myUInt) + 1, bits)</p></td>
+</tr>
+<tr class="row-odd"><td><p>mySInt.abs</p></td>
+<td><p>Return the absolute value as a UInt value</p></td>
+<td><p>UInt(w(mySInt) bits)</p></td>
+</tr>
+<tr class="row-even"><td><p>mySInt.abs(en: Bool)</p></td>
+<td><p>Return the absolute value as a UInt value when <code class="docutils literal notranslate"><span class="pre">en</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, otherwise just reinterpret bits as unsigned</p></td>
+<td><p>UInt(w(mySInt) bits)</p></td>
+</tr>
+<tr class="row-odd"><td><p>mySInt.absWithSym</p></td>
+<td><p>Return the absolute value of the UInt value with symmetric, shrink 1 bit</p></td>
+<td><p>UInt(w(mySInt) - 1 bits)</p></td>
+</tr>
 </tbody>
 </table>
 <p>To cast a <code class="docutils literal notranslate"><span class="pre">Bool</span></code>, a <code class="docutils literal notranslate"><span class="pre">Bits</span></code>, or an <code class="docutils literal notranslate"><span class="pre">SInt</span></code> into a <code class="docutils literal notranslate"><span class="pre">UInt</span></code>, you can use <code class="docutils literal notranslate"><span class="pre">U(something)</span></code>. To cast things into an <code class="docutils literal notranslate"><span class="pre">SInt</span></code>, you can use <code class="docutils literal notranslate"><span class="pre">S(something)</span></code>.</p>
@@ -1596,16 +1613,40 @@ The <code class="docutils literal notranslate"><span class="pre">wrap</span></co
 
 <span class="c1">// Cast a Bits to SInt</span>
 <span class="kd">val</span><span class="w"> </span><span class="n">mySInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">S</span><span class="p">(</span><span class="n">myBits</span><span class="p">)</span>
+
+<span class="c1">// UInt to SInt conversion</span>
+<span class="kd">val</span><span class="w"> </span><span class="nc">UInt_30</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">U</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="n">bit</span><span class="p">)</span>
+
+<span class="kd">val</span><span class="w"> </span><span class="nc">SInt_30</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt_30</span><span class="p">.</span><span class="n">intoSInt</span>
+<span class="n">assert</span><span class="p">(</span><span class="nc">SInt_30</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nc">S</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="w"> </span><span class="n">bit</span><span class="p">))</span>
+
+<span class="n">mySInt</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">UInt_30</span><span class="p">.</span><span class="n">twoComplement</span><span class="p">(</span><span class="n">booleanDoInvert</span><span class="p">)</span>
+<span class="w">    </span><span class="c1">// if booleanDoInvert is True then we get S(-30, 9 bit)</span>
+<span class="w">    </span><span class="c1">// otherwise we get S(30, 9 bit)</span>
+
+<span class="c1">// absolute values</span>
+<span class="kd">val</span><span class="w"> </span><span class="nc">SInt_n_4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">S</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="n">bit</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">abs_en</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SInt_n_3</span><span class="p">.</span><span class="n">abs</span><span class="p">(</span><span class="n">booleanDoAbs</span><span class="p">)</span>
+<span class="w">    </span><span class="c1">// if booleanDoAbs is True we get U(3, 3 bit)</span>
+<span class="w">    </span><span class="c1">// otherwise we get U&quot;3&#39;b101&quot; or U(5, 3 bit) (raw bit pattern of -3)</span>
+
+<span class="kd">val</span><span class="w"> </span><span class="nc">SInt_n_128</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">S</span><span class="p">(</span><span class="o">-</span><span class="mi">128</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="n">bit</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">abs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SInt_n_128</span><span class="p">.</span><span class="n">abs</span>
+<span class="n">assert</span><span class="p">(</span><span class="n">abs</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nc">U</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="n">bit</span><span class="p">))</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">sym_abs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SInt_n_128</span><span class="p">.</span><span class="n">absWithSym</span>
+<span class="n">assert</span><span class="p">(</span><span class="n">sym_abs</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nc">U</span><span class="p">(</span><span class="mi">127</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="n">bit</span><span class="p">))</span>
 </pre></div>
 </div>
 </section>
 <section id="bit-extraction">
 <h3>Bit extraction<a class="headerlink" href="#bit-extraction" title="Permalink to this heading"></a></h3>
+<p>All of the bit extraction operations can be used to read a bit / group of bits. Like in other HDLs
+the extraction operators can also be used to assign a part of a <code class="docutils literal notranslate"><span class="pre">UInt</span></code> / <code class="docutils literal notranslate"><span class="pre">SInt</span></code> .</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 60%" />
-<col style="width: 20%" />
+<col style="width: 25%" />
+<col style="width: 50%" />
+<col style="width: 25%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Operator</p></th>
@@ -1614,49 +1655,105 @@ The <code class="docutils literal notranslate"><span class="pre">wrap</span></co
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>x(y)</p></td>
-<td><p>Readbit, y : Int/UInt</p></td>
+<tr class="row-even"><td><p>x(y: Int)</p></td>
+<td><p>Static bit access of y-th bit</p></td>
 <td><p>Bool</p></td>
 </tr>
-<tr class="row-odd"><td><p>x(offset, width)</p></td>
-<td><p>Read bitfield, offset: UInt, width: Int</p></td>
-<td><p>T(width bits)</p></td>
-</tr>
-<tr class="row-even"><td><p>x(<a class="reference internal" href="../miscelenea/core/elements.html#range"><span class="std std-ref">range</span></a>)</p></td>
-<td><p>Read a range of bits. Ex : myBits(4 downto 2)</p></td>
-<td><p>T(range bits)</p></td>
-</tr>
-<tr class="row-odd"><td><p>x(y) := z</p></td>
-<td><p>Assign bits, y : Int/UInt</p></td>
+<tr class="row-odd"><td><p>x(x: UInt)</p></td>
+<td><p>Variable bit access of y-th bit</p></td>
 <td><p>Bool</p></td>
 </tr>
-<tr class="row-even"><td><p>x(offset, width) := z</p></td>
-<td><p>Assign bitfield, offset: UInt, width: Int</p></td>
-<td><p>T(width bits)</p></td>
+<tr class="row-even"><td><p>x(offset: Int, width bits)</p></td>
+<td><p>Fixed part select of fixed width, offset is LSB index</p></td>
+<td><p>Bits(width bits)</p></td>
 </tr>
-<tr class="row-odd"><td><p>x(<a class="reference internal" href="../miscelenea/core/elements.html#range"><span class="std std-ref">range</span></a>) := z</p></td>
-<td><p>Assign a range of bit. Ex : myBits(4 downto 2) := U”010”</p></td>
-<td><p>T(range bits)</p></td>
+<tr class="row-odd"><td><p>x(offset: UInt, width bits)</p></td>
+<td><p>Variable part-select of fixed width, offset is LSB index</p></td>
+<td><p>Bits(width bits)</p></td>
+</tr>
+<tr class="row-even"><td><p>x(range: Range)</p></td>
+<td><p>Access a <a class="reference internal" href="../miscelenea/core/elements.html#range"><span class="std std-ref">range</span></a> of bits. Ex : myBits(4 downto 2)</p></td>
+<td><p>Bits(range.size bits)</p></td>
+</tr>
+<tr class="row-odd"><td><p>x.subdivideIn(y slices, [strict: Boolean])</p></td>
+<td><p>Subdivide x into y slices, y: Int</p></td>
+<td><p>Vec(Bits(…), y)</p></td>
+</tr>
+<tr class="row-even"><td><p>x.subdivideIn(y bits, [strict: Boolean])</p></td>
+<td><p>Subdivide x in multiple slices of y bits, y: Int</p></td>
+<td><p>Vec(Bits(y bit), …)</p></td>
+</tr>
+<tr class="row-odd"><td><p>x.msb</p></td>
+<td><p>Access most significant bit of x (highest index, sign bit for SInt)</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-even"><td><p>x.lsb</p></td>
+<td><p>Access lowest significant bit of x (index 0)</p></td>
+<td><p>Bool</p></td>
+</tr>
+<tr class="row-odd"><td><p>mySInt.sign</p></td>
+<td><p>Access most sign bit, only SInt</p></td>
+<td><p>Bool</p></td>
 </tr>
 </tbody>
 </table>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="c1">// get the bit at index 4</span>
+<p>Some basic examples:</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="c1">// get the element at the index 4</span>
 <span class="kd">val</span><span class="w"> </span><span class="n">myBool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myUInt</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="c1">// assign element 1</span>
+<span class="n">myUInt</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">True</span>
 
-<span class="c1">// assign bit 1 to True</span>
-<span class="n">mySInt</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">True</span>
+<span class="c1">// index dynamically</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="n">bit</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">indexed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myUInt</span><span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="n">bit</span><span class="p">)</span>
 
-<span class="c1">// Range</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">myUInt_8bits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myUInt_16bits</span><span class="p">(</span><span class="mi">7</span><span class="w"> </span><span class="n">downto</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">myUInt_7bits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myUInt_16bits</span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">myUInt_6bits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myUInt_16Bits</span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="n">until</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span>
+<span class="c1">// range index</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">myUInt_8bit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myUInt_16bit</span><span class="p">(</span><span class="mi">7</span><span class="w"> </span><span class="n">downto</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">myUInt_7bit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myUInt_16bit</span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">myUInt_6bit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myUInt_16bit</span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="n">until</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span>
+<span class="c1">// assign to myUInt_16bit(3 downto 0)</span>
+<span class="n">myUInt_8bit</span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="n">downto</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">myUInt_4bit</span>
 
-<span class="n">mySInt_8bits</span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="n">downto</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">mySInt_4bits</span>
+<span class="c1">// equivalent slices, no reversing occurs</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myUInt_16bit</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">downto</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myUInt_16bit</span><span class="p">(</span><span class="mi">4</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="mi">8</span><span class="p">)</span>
+
+<span class="c1">// read / assign the msb / leftmost bit / x.high bit</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">isNegative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mySInt_16bit</span><span class="p">.</span><span class="n">sign</span>
+<span class="n">myUInt_16bit</span><span class="p">.</span><span class="n">msb</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">False</span>
+</pre></div>
+</div>
+<section id="subdivide-details">
+<h4>Subdivide details<a class="headerlink" href="#subdivide-details" title="Permalink to this heading"></a></h4>
+<p>Both overloads of <code class="docutils literal notranslate"><span class="pre">subdivideIn</span></code> have an optional parameter <code class="docutils literal notranslate"><span class="pre">strict</span></code> (i.e. <code class="docutils literal notranslate"><span class="pre">subdivideIn(slices:</span> <span class="pre">SlicesCount,</span> <span class="pre">strict:</span> <span class="pre">Boolean</span> <span class="pre">=</span> <span class="pre">true)</span></code>).
+If <code class="docutils literal notranslate"><span class="pre">strict</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code> an error will be raised if the input could not be divided into equal parts. If set to <code class="docutils literal notranslate"><span class="pre">false</span></code> the last element may
+be smaller than the other (equal sized) elements.</p>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="c1">// Subdivide</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">sel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">myUIntWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myUInt_128bits</span><span class="p">.</span><span class="n">subdivideIn</span><span class="p">(</span><span class="mi">32</span><span class="w"> </span><span class="n">bits</span><span class="p">)(</span><span class="n">sel</span><span class="p">)</span>
+<span class="w">    </span><span class="c1">// sel = 3 =&gt; myUIntWord = myUInt_128bits(127 downto 96)</span>
+<span class="w">    </span><span class="c1">// sel = 2 =&gt; myUIntWord = myUInt_128bits( 95 downto 64)</span>
+<span class="w">    </span><span class="c1">// sel = 1 =&gt; myUIntWord = myUInt_128bits( 63 downto 32)</span>
+<span class="w">    </span><span class="c1">// sel = 0 =&gt; myUIntWord = myUInt_128bits( 31 downto  0)</span>
+
+<span class="w"> </span><span class="c1">// If you want to access in reverse order you can do:</span>
+<span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="n">myVector</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">myUInt_128bits</span><span class="p">.</span><span class="n">subdivideIn</span><span class="p">(</span><span class="mi">32</span><span class="w"> </span><span class="n">bits</span><span class="p">).</span><span class="n">reverse</span>
+<span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="n">myRevUIntWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myVector</span><span class="p">(</span><span class="n">sel</span><span class="p">)</span>
+
+<span class="w"> </span><span class="c1">// We can also assign through subdivides</span>
+<span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="n">output8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bit</span><span class="p">)</span>
+<span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="n">pieces</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">output8</span><span class="p">.</span><span class="n">subdivideIn</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="n">slices</span><span class="p">)</span>
+<span class="w"> </span><span class="c1">// assign to output8</span>
+<span class="w"> </span><span class="n">pieces</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mh">0xf</span>
+<span class="w"> </span><span class="n">pieces</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mh">0x5</span>
 </pre></div>
 </div>
 </section>
+</section>
 <section id="misc">
 <h3>Misc<a class="headerlink" href="#misc" title="Permalink to this heading"></a></h3>
+<p>In contrast to the bit extraction operations listed above it’s not possible
+to use the return values to assign to the original signal.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 25%" />
@@ -1673,14 +1770,6 @@ The <code class="docutils literal notranslate"><span class="pre">wrap</span></co
 <tr class="row-even"><td><p>x.getWidth</p></td>
 <td><p>Return bitcount</p></td>
 <td><p>Int</p></td>
-</tr>
-<tr class="row-odd"><td><p>x.msb</p></td>
-<td><p>Return the bit-field value of the most significant bit</p></td>
-<td><p>Bool</p></td>
-</tr>
-<tr class="row-even"><td><p>x.lsb</p></td>
-<td><p>Return the bit-field value of the least significant bit</p></td>
-<td><p>Bool</p></td>
 </tr>
 <tr class="row-odd"><td><p>x.high</p></td>
 <td><p>Return the index of the MSB (highest allowed index for Int)</p></td>
@@ -1706,19 +1795,15 @@ The <code class="docutils literal notranslate"><span class="pre">wrap</span></co
 <td><p>Concatenate, x-&gt;high, y-&gt;low</p></td>
 <td><p>Bits(w(x) + w(y) bits)</p></td>
 </tr>
-<tr class="row-odd"><td><p>x &#64;&#64; y</p></td>
+<tr class="row-odd"><td><p>x #* n</p></td>
+<td><p>Repeat x n-times</p></td>
+<td><p>Bits(w(x) * n bits)</p></td>
+</tr>
+<tr class="row-even"><td><p>x &#64;&#64; y</p></td>
 <td><p>Concatenate x:T with y:Bool/SInt/UInt</p></td>
 <td><p>T(w(x) + w(y) bits)</p></td>
 </tr>
-<tr class="row-even"><td><p>x.subdivideIn(y slices)</p></td>
-<td><p>Subdivide x into y slices, y: Int</p></td>
-<td><p>Vec(T,  y)</p></td>
-</tr>
-<tr class="row-odd"><td><p>x.subdivideIn(y bits)</p></td>
-<td><p>Subdivide x into multiple slices of y bits, y: Int</p></td>
-<td><p>Vec(T, w(x)/y)</p></td>
-</tr>
-<tr class="row-even"><td><p>x.resize(y)</p></td>
+<tr class="row-odd"><td><p>x.resize(y)</p></td>
 <td><div class="line-block">
 <div class="line">Return a resized copy of x, if enlarged, it is filled with zero</div>
 <div class="line">for UInt or filled with the sign for SInt, y: Int</div>
@@ -1726,7 +1811,7 @@ The <code class="docutils literal notranslate"><span class="pre">wrap</span></co
 </td>
 <td><p>T(y bits)</p></td>
 </tr>
-<tr class="row-odd"><td><p>x.resized</p></td>
+<tr class="row-even"><td><p>x.resized</p></td>
 <td><div class="line-block">
 <div class="line">Return a version of x which is allowed to be automatically</div>
 <div class="line">resized where needed</div>
@@ -1734,29 +1819,9 @@ The <code class="docutils literal notranslate"><span class="pre">wrap</span></co
 </td>
 <td><p>T(w(x) bits)</p></td>
 </tr>
-<tr class="row-even"><td><p>myUInt.twoComplement(en: Bool)</p></td>
-<td><p>Use the two’s complement to transform an UInt into an SInt</p></td>
-<td><p>SInt(w(myUInt) + 1, bits)</p></td>
-</tr>
-<tr class="row-odd"><td><p>mySInt.abs</p></td>
-<td><p>Return the absolute value as a UInt value</p></td>
-<td><p>UInt(w(mySInt), bits)</p></td>
-</tr>
-<tr class="row-even"><td><p>mySInt.abs(en: Bool)</p></td>
-<td><p>Return the absolute value as a UInt value when en is True</p></td>
-<td><p>UInt(w(mySInt), bits)</p></td>
-</tr>
-<tr class="row-odd"><td><p>mySInt.sign</p></td>
-<td><p>Return most significant bit</p></td>
-<td><p>Bool</p></td>
-</tr>
-<tr class="row-even"><td><p>x.expand</p></td>
+<tr class="row-odd"><td><p>x.expand</p></td>
 <td><p>Return x with 1 bit expand</p></td>
 <td><p>T(w(x)+1 bits)</p></td>
-</tr>
-<tr class="row-odd"><td><p>mySInt.absWithSym</p></td>
-<td><p>Return the absolute value of the UInt value with symmetric, shrink 1 bit</p></td>
-<td><p>UInt(w(mySInt) - 1 bits)</p></td>
 </tr>
 <tr class="row-even"><td><p>x.getZero</p></td>
 <td><p>Return a new instance of type T that is assigned a constant value of zeros the same width as x.</p></td>
@@ -1780,28 +1845,10 @@ type which uses <cite>Int</cite>)</p>
 <span class="kd">val</span><span class="w"> </span><span class="n">mySInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mySInt_1</span><span class="w"> </span><span class="o">@@</span><span class="w"> </span><span class="n">mySInt_1</span><span class="w"> </span><span class="o">@@</span><span class="w"> </span><span class="n">myBool</span>
 <span class="kd">val</span><span class="w"> </span><span class="n">myBits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mySInt_1</span><span class="w"> </span><span class="o">##</span><span class="w"> </span><span class="n">mySInt_1</span><span class="w"> </span><span class="o">##</span><span class="w"> </span><span class="n">myBool</span>
 
-<span class="c1">// Subdivide</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">sel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">mySIntWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mySInt_128bits</span><span class="p">.</span><span class="n">subdivideIn</span><span class="p">(</span><span class="mi">32</span><span class="w"> </span><span class="n">bits</span><span class="p">)(</span><span class="n">sel</span><span class="p">)</span>
-<span class="w">    </span><span class="c1">// sel = 3 =&gt; mySIntWord = mySInt_128bits(127 downto 96)</span>
-<span class="w">    </span><span class="c1">// sel = 2 =&gt; mySIntWord = mySInt_128bits( 95 downto 64)</span>
-<span class="w">    </span><span class="c1">// sel = 1 =&gt; mySIntWord = mySInt_128bits( 63 downto 32)</span>
-<span class="w">    </span><span class="c1">// sel = 0 =&gt; mySIntWord = mySInt_128bits( 31 downto  0)</span>
-
-<span class="w"> </span><span class="c1">// If you want to access in reverse order you can do:</span>
-<span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="n">myVector</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">mySInt_128bits</span><span class="p">.</span><span class="n">subdivideIn</span><span class="p">(</span><span class="mi">32</span><span class="w"> </span><span class="n">bits</span><span class="p">).</span><span class="n">reverse</span>
-<span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="n">mySIntWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myVector</span><span class="p">(</span><span class="n">sel</span><span class="p">)</span>
-
 <span class="c1">// Resize</span>
 <span class="n">myUInt_32bits</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">U</span><span class="s">&quot;32&#39;x112233344&quot;</span>
-<span class="n">myUInt_8bits</span><span class="w">  </span><span class="o">:=</span><span class="w"> </span><span class="n">myUInt_32bits</span><span class="p">.</span><span class="n">resized</span><span class="w">       </span><span class="c1">// automatic resize (myUInt_8bits = 0x44)</span>
+<span class="n">myUInt_8bits</span><span class="w">  </span><span class="o">:=</span><span class="w"> </span><span class="n">myUInt_32bits</span><span class="p">.</span><span class="n">resized</span><span class="w">      </span><span class="c1">// automatic resize (myUInt_8bits = 0x44)</span>
 <span class="kd">val</span><span class="w"> </span><span class="n">lowest_8bits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myUInt_32bits</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="w">  </span><span class="c1">// resize to 8 bits (myUInt_8bits = 0x44)</span>
-
-<span class="c1">// Two&#39;s complement</span>
-<span class="n">mySInt</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">myUInt</span><span class="p">.</span><span class="n">twoComplement</span><span class="p">(</span><span class="n">myBool</span><span class="p">)</span>
-
-<span class="c1">// Absolute value</span>
-<span class="n">mySInt_abs</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">mySInt</span><span class="p">.</span><span class="n">abs</span>
 </pre></div>
 </div>
 </section>
@@ -2145,7 +2192,7 @@ As a result, <code class="docutils literal notranslate"><span class="pre">roundU
     <!-- source/_templates/footer.html -->
     
     <div class="doc-footer-current-version"><p>
-    Version: master git~2c38b53c6 2023-07-11
+    Version: master git~c1513e2c2 2023-11-08
     </p></div>
     
 
