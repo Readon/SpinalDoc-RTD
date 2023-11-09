@@ -1310,6 +1310,15 @@ Download, unzip and run the <a class="reference external" href="https://github.c
 when asked agree to an update of your <code class="docutils literal notranslate"><span class="pre">PATH</span></code> variable. Reboot to force an update of <code class="docutils literal notranslate"><span class="pre">PATH</span></code>.</p>
 <p>This is sufficient for generating hardware. For simulation continue with either choice below.
 In case you want to build the tools yourself have a look at the legacy simulation tool <a class="reference internal" href="../Simulation/install/index.html#sim-backend-install"><span class="std std-ref">installation instructions</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An All-in-One solution is available to install and run SpinalHDL with Verilator simulation and formal verification via SymbiYosys.
+Download <a class="reference external" href="https://github.com/Readon/msys2-installer/releases">it</a> and install the environment anywhere on your disk.
+Start the build environment by clicking on the MSYS2-MINGW64 icon in the Start menu and use the MSYS2 default console.
+An alternative is to use the Windows Terminal or a Tabby-like application and use the startup command <code class="docutils literal notranslate"><span class="pre">%MSYS2_ROOT%\msys2_shell.cmd</span> <span class="pre">-defterm</span> <span class="pre">-here</span> <span class="pre">-no-start</span> <span class="pre">-mingw64</span></code>, where the <code class="docutils literal notranslate"><span class="pre">%MSYS2_ROOT%</span></code> is the location of the msys2 installation.
+It is worth noting that if you want to use it offline, you should carefully select the libraries that the project depends on, otherwise you will need to download the packages manually.
+See the README for the repos for more details.</p>
+</div>
 <section id="msys2-verilator-for-simulation">
 <h3>MSYS2 verilator for simulation<a class="headerlink" href="#msys2-verilator-for-simulation" title="Permalink to this heading"></a></h3>
 <p>We recommend to install compiler/verilator through <cite>MSYS2 &lt;https://www.msys2.org&gt;</cite>.
@@ -1502,7 +1511,7 @@ development environment:</p>
     <!-- source/_templates/footer.html -->
     
     <div class="doc-footer-current-version"><p>
-    Version: master git~c1513e2c2 2023-11-08
+    Version: master git~7a5fadaff 2023-11-09
     </p></div>
     
 
