@@ -250,3 +250,6 @@ smv_build_targets = {
 
 # Flag indicating whether the intermediate build directories should be removed after artefacts are produced
 smv_clean_intermediate_files = True
+
+locale_dirs = ['locale/']
+gettext_compact = False
