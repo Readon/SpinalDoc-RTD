@@ -52,7 +52,8 @@ This definition takes five parameters:
      - The goal of this signal is to disable the clock on the whole clock domain without having to manually implement that on each synchronous element
      - null
    * - ``frequency``
-     - Allows you to specify the frequency of the given clock domain and later read it in your design
+     - Allows you to specify the frequency of the given clock domain and later read it in your design.
+       This parameter does not generate and PLL or other hardware to control the frequency
      - UnknownFrequency
    * - ``config``
      - Specify the polarity of signals and the nature of the reset
@@ -86,6 +87,7 @@ When an `Area` is not needed, it is also possible to apply the clock domain dire
      val freeCounter = CounterFreeRun(16)
      io.freeCount := freeCounter.value
    
+     // In a real design consider using a glitch free single purpose CLKGATE primitive instead
      val gatedClk = ClockDomain.current.readClockWire && io.enable
      val gated = ClockDomain(gatedClk, ClockDomain.current.readResetWire)
    
@@ -247,6 +249,12 @@ Once created, you have to assign the ``ClockDomain``'s signals, as shown in the 
      }
    }
 
+.. warning::
+   In other components then the one you created the ClockDomain in, you must not use ``.clock`` and ``.reset``,
+   but ``.readClockWire`` and ``.readResetWire`` as listed below. For the global ClockDomain you must always
+   use those ``.readXXX`` functions.
+
+
 External clock
 ^^^^^^^^^^^^^^
 
@@ -272,7 +280,7 @@ The arguments to the ``ClockDomain.external`` function are exactly the same as i
        val result = out UInt (4 bits)
      }
 
-     // On the top level you have two signals  :
+     // On the top level you have two signals  :
      //     myClockName_clk and myClockName_reset
      val myClockDomain = ClockDomain.external("myClockName")
 
@@ -296,7 +304,7 @@ Here is an example:
 .. code-block:: scala
 
   val clockedArea = new ClockEnableArea(clockEnable) {
-    val reg = RegNext(io.input) init False
+    val reg = RegNext(io.input) init(False)
   }
 
 It will generate VerilogHDL codes like:
@@ -330,7 +338,8 @@ The returned ``ClockDomain`` instance has the following functions that can be ca
      - Description
      - Return
    * - frequency.getValue
-     - Return the frequency of the clock domain
+     - | Return the frequency of the clock domain.
+       | This being the arbitrary value you configured the domain with.
      - Double
    * - hasReset
      - Return if the clock domain has a reset signal
@@ -345,10 +354,10 @@ The returned ``ClockDomain`` instance has the following functions that can be ca
      - Return a signal derived from the clock signal
      - Bool
    * - readResetWire
-     - Return a signal derived from the soft reset signal
+     - Return a signal derived from the reset signal
      - Bool
    * - readSoftResetWire
-     - Return a signal derived from the reset signal
+     - Return a signal derived from the soft reset signal
      - Bool
    * - readClockEnableWire
      - Return a signal derived from the clock enable signal
@@ -362,7 +371,6 @@ The returned ``ClockDomain`` instance has the following functions that can be ca
    * - isClockEnableActive
      - Return True when the clock enable is active
      - Bool
-
 
 An example is included below where a UART controller uses the frequency specification to set its clock divider:
 
@@ -503,8 +511,8 @@ A ``SlowArea`` is used to create a new clock domain area which is slower than th
 BootReset
 ^^^^^^^^^
 
-`clockDomain.withBootReset()` could specify register's resetkinde as boot. 
-`clockDomain.withSyncReset()` could specify register's resetkinde as Sync-reset. 
+`clockDomain.withBootReset()` could specify register's resetKind as BOOT.
+`clockDomain.withSyncReset()` could specify register's resetKind as SYNC (sync-reset).
 
 .. code-block:: scala 
 

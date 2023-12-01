@@ -389,7 +389,7 @@ For example if you want to convert a Red/Green/Blue color into a gray one by usi
 Valid Ready Payload bus
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-For instance if you define a simple Valid Ready Payload bus, you can then define usefull function inside it.
+For instance if you define a simple Valid Ready Payload bus, you can then define useful function inside it.
 
 .. code-block:: scala
 
@@ -444,43 +444,10 @@ There is a small component and a ``main`` that generate the corresponding VHDL.
      }
    }
 
-Memory
-------
-
-.. list-table::
-   :header-rows: 1
-   :widths: 2 1
-
-   * - Syntax
-     - Description
-   * - Mem(type : Data,size : Int)
-     - Create a RAM
-   * - Mem(type : Data,initialContent : Array[Data])
-     - Create a ROM
-
-
-.. list-table::
-   :header-rows: 1
-   :widths: 3 2 1
-
-   * - Syntax
-     - Description
-     - Return
-   * - mem(x)
-     - Asynchronous read
-     - T
-   * - mem(x) := y
-     - Synchronous write
-     - 
-   * - mem.readSync(address,enable)
-     - Synchronous read
-     - T
-
-
-Instanciate VHDL and Verilog IP
+Instantiate VHDL and Verilog IP
 -------------------------------
 
- In some cases, it could be usefull to instanciate a VHDL or a Verilog component into a SpinalHDL design. To do that, you need to define BlackBox which is like a Component, but its internal implementation should be provided by a separate VHDL/Verilog file to the simulator/synthesis tool.
+ In some cases, it could be useful to instantiate a VHDL or a Verilog component into a SpinalHDL design. To do that, you need to define BlackBox which is like a Component, but its internal implementation should be provided by a separate VHDL/Verilog file to the simulator/synthesis tool.
 
 .. code-block:: scala
 

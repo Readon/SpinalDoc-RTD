@@ -13,7 +13,12 @@ RUN apt-get update \
  && apt-get clean \
  && rm -rf /var/lib/apb/lists/*
 
+RUN git config --global safe.directory '*'
+
 RUN npm i wavedrom-cli -g
+
+# source /docs/bin/setup_env.sh
+ENV PATH="$PATH:/docs/bin"
 
 ADD requirements.txt /docs
 RUN pip3 install -r requirements.txt
