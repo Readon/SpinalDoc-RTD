@@ -1293,7 +1293,7 @@ tar<span class="w"> </span>xzf<span class="w"> </span>&lt;file<span class="w"> <
 <h2>Windows安装<a class="headerlink" href="#windows-installation" title="此标题的永久链接"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>虽然可以进行本机安装，但更简单且目前推荐的方法是在 Windows 上使用 WSL。如果您想使用 WSL，请安装您选择的 <a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install">发行版</a>，并按照 Linux 安装说明进行操作。WSL 实例中的数据可以从Windows访问，在 <code class="docutils literal notranslate"><span class="pre">\\wsl$</span></code> 路径下。如果您想使用 IntelliJ，则必须将 Linux 版本下载到 WSL，如果您想使用 VSCode，则可以使用 Windows 版本远程编辑WSL中的数据。</p>
+<p>虽然可以进行本机安装，但更简单且目前推荐的方法是在 Windows 上使用 WSL。如果您想使用 WSL，请安装您选择的 <a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install">发行版</a> ，并按照 Linux 安装说明进行操作。WSL 实例中的数据可以从Windows访问，在 <code class="docutils literal notranslate"><span class="pre">\\wsl$</span></code> 路径下。如果您想使用 IntelliJ，则必须将 Linux 版本下载到 WSL，如果您想使用 VSCode，则可以使用 Windows 版本远程编辑WSL中的数据。</p>
 </div>
 <p>在撰写本文时，推荐的安装 Scala 和 SBT 方法是通过 <a class="reference external" href="https://get-coursier.io/docs/cli-installation">Coursier</a>。除了 scala 工具之外，Coursier 还能够安装 Java JDK 来使用，在下面的示例中我们手动安装 Java。由于 Scala 兼容性原因，我们建议安装 JDK 17 (LTS)。</p>
 <p>首先，下载并安装 <a class="reference external" href="https://adoptium.net/temurin/releases/?os=windows&amp;version=17">Adoptium JDK 17</a>。下载、解压并运行 <a class="reference external" href="https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-win32.zip">Coursier 安装程序</a>，当询问是否更新您的 <code class="docutils literal notranslate"><span class="pre">PATH</span></code> 变量时，选择同意。重新启动以强制更新 <code class="docutils literal notranslate"><span class="pre">PATH</span></code>。</p>
