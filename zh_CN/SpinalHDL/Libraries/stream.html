@@ -446,6 +446,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Semantic/when_switch.html">When/Switch/Mux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/when_switch.html#when">When</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Semantic/when_switch.html#whenbuilder">WhenBuilder</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/when_switch.html#switch">Switch</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Semantic/when_switch.html#example">示例</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Semantic/when_switch.html#additional-options">其他选项</a></li>
@@ -1436,6 +1437,24 @@
 <td><div class="line-block">
 <div class="line">返回连接到x的反压流</div>
 <div class="line">当cond为true时，传输数据将被抛弃</div>
+</div>
+</td>
+<td><p>Stream[T]</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>x.translateWith(that : T2)</p></td>
+<td><div class="line-block">
+<div class="line">Return a Stream with payload <cite>that</cite></div>
+<div class="line">Modify the payload of the <cite>x</cite> stream, while preserving the <cite>valid</cite> and <cite>ready</cite> signals</div>
+</div>
+</td>
+<td><p>Stream[T]</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>x.translateBy(drive: (T) =&gt; T2)</p></td>
+<td><div class="line-block">
+<div class="line">Return a Stream with payload calculated by drive function</div>
+<div class="line">Modify the payload of the <cite>x</cite> stream by the <cite>drive</cite> function, while preserving the <cite>valid</cite> and <cite>ready</cite> signals</div>
 </div>
 </td>
 <td><p>Stream[T]</p></td>

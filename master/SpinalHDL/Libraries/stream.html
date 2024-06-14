@@ -445,6 +445,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Semantic/when_switch.html">When/Switch/Mux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/when_switch.html#when">When</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Semantic/when_switch.html#whenbuilder">WhenBuilder</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Semantic/when_switch.html#switch">Switch</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Semantic/when_switch.html#example">Example</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Semantic/when_switch.html#additional-options">Additional options</a></li>
@@ -1457,6 +1458,24 @@ Be careful with that.</p></li>
 <td><p>Stream[T]</p></td>
 <td><p>0</p></td>
 </tr>
+<tr class="row-even"><td><p>x.translateWith(that : T2)</p></td>
+<td><div class="line-block">
+<div class="line">Return a Stream with payload <cite>that</cite></div>
+<div class="line">Modify the payload of the <cite>x</cite> stream, while preserving the <cite>valid</cite> and <cite>ready</cite> signals</div>
+</div>
+</td>
+<td><p>Stream[T]</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>x.translateBy(drive: (T) =&gt; T2)</p></td>
+<td><div class="line-block">
+<div class="line">Return a Stream with payload calculated by drive function</div>
+<div class="line">Modify the payload of the <cite>x</cite> stream by the <cite>drive</cite> function, while preserving the <cite>valid</cite> and <cite>ready</cite> signals</div>
+</div>
+</td>
+<td><p>Stream[T]</p></td>
+<td><p>0</p></td>
+</tr>
 </tbody>
 </table>
 <p>The following code will create this logic :</p>
@@ -2006,7 +2025,7 @@ The <code class="docutils literal notranslate"><span class="pre">count</span></c
     <!-- source/_templates/footer.html -->
     
     <div class="doc-footer-current-version"><p>
-    Version: master git~34f0af53e 2024-04-26
+    Version: master git~3205beda0 2024-06-14
     </p></div>
     
 
