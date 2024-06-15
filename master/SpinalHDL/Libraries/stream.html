@@ -1464,16 +1464,16 @@ Be careful with that.</p></li>
 <div class="line">Modify the payload of the <cite>x</cite> stream, while preserving the <cite>valid</cite> and <cite>ready</cite> signals</div>
 </div>
 </td>
-<td><p>Stream[T]</p></td>
+<td><p>Stream[T2]</p></td>
 <td><p>0</p></td>
 </tr>
-<tr class="row-odd"><td><p>x.translateBy(drive: (T) =&gt; T2)</p></td>
+<tr class="row-odd"><td><p>x.map(translate: (T) =&gt; T2)</p></td>
 <td><div class="line-block">
-<div class="line">Return a Stream with payload calculated by drive function</div>
-<div class="line">Modify the payload of the <cite>x</cite> stream by the <cite>drive</cite> function, while preserving the <cite>valid</cite> and <cite>ready</cite> signals</div>
+<div class="line">Return a Stream with payload calculated by translate function</div>
+<div class="line">Modify the payload of the <cite>x</cite> stream, while preserving the <cite>valid</cite> and <cite>ready</cite> signals</div>
 </div>
 </td>
-<td><p>Stream[T]</p></td>
+<td><p>Stream[T2]</p></td>
 <td><p>0</p></td>
 </tr>
 </tbody>
@@ -2025,7 +2025,7 @@ The <code class="docutils literal notranslate"><span class="pre">count</span></c
     <!-- source/_templates/footer.html -->
     
     <div class="doc-footer-current-version"><p>
-    Version: master git~3205beda0 2024-06-14
+    Version: master git~c46473076 2024-06-15
     </p></div>
     
 
