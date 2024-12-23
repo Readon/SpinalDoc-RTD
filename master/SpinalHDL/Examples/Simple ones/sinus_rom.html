@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sinus rom &mdash; SpinalHDL  documentation</title>
+  <title>Sinus ROM &mdash; SpinalHDL  documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
@@ -420,7 +420,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-in-a-function">Composite in a function</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-chains">Composite chains</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-in-a-bundle-s-function">Composite in a Bundle’s function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#unamed-signal-handling">Unamed signal handling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#unnamed-signal-handling">Unnamed signal handling</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#verilog-expression-splitting">Verilog expression splitting</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#verilog-long-expression-splitting">Verilog long expression splitting</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#when-statement-condition">When statement condition</a></li>
@@ -684,6 +684,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#statefsm">StateFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#stateparallelfsm">StateParallelFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#notes-about-the-entry-state">Notes about the entry state</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#notes-about-using-state-value">Notes about using state value</a></li>
 </ul>
 </li>
 </ul>
@@ -731,27 +732,27 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Libraries/Bus/index.html">Bus</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html">AHB-Lite3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html#variations">Variations</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html">Apb3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html#functions-and-operators">Functions and operators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html">Axi4</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#variations">Variations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#functions-and-operators">Functions and operators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/avalon/avalonmm.html">AvalonMM</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/avalon/avalonmm.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/avalon/avalonmm.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink.html">Tilelink</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink_fabric.html">tilelink.fabric.Node</a><ul>
@@ -840,9 +841,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#your-custom-link">Your custom Link</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#builder">Builder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#builders">Builders</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#stagepipeline">StagePipeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#stagectrlpipeline">StageCtrlPipeline</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#composability">Composability</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#retiming-variable-lenth">Retiming / Variable lenth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#retiming-variable-length">Retiming / Variable length</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#simple-cpu-example">Simple CPU example</a></li>
 </ul>
 </li>
@@ -971,7 +976,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="rgb_to_gray.html">RGB to gray</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Sinus rom</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sinus ROM</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Intermediates%20ones/index.html">Intermediates ones</a><ul>
@@ -1123,6 +1128,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/bus_slave_factory_impl.html#conclusion">Conclusion</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html">How to use a local SpinalHDL clone as project dependency</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#create-local-git-clone-of-spinalhdl">Create local git clone of SpinalHDL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-buildsystem">Configure buildsystem</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-sbt-update-build-sbt">Configure sbt (update <code class="docutils literal notranslate"><span class="pre">build.sbt</span></code>)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-mill-update-build-sc">Configure mill (update <code class="docutils literal notranslate"><span class="pre">build.sc</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#done">Done</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../Developers%20area/howtodocument.html">How to HACK this documentation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howtodocument.html#title-convention">Title convention</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howtodocument.html#wavedrom-integration">Wavedrom integration</a></li>
@@ -1198,7 +1213,7 @@
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Examples</a></li>
           <li class="breadcrumb-item"><a href="index.html">Simple ones</a></li>
-      <li class="breadcrumb-item active">Sinus rom</li>
+      <li class="breadcrumb-item active">Sinus ROM</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/SpinalHDL/SpinalDoc-RTD/blob/master/source/SpinalHDL/Examples/Simple ones/sinus_rom.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -1227,8 +1242,8 @@
 
 
   <section id="sinus-rom">
-<span id="id1"></span><h1>Sinus rom<a class="headerlink" href="#sinus-rom" title="Permalink to this heading"></a></h1>
-<p>Let’s imagine that you want to generate a sine wave and also have a filtered version of it (which is completely useless in practical, but let’s do it as an example).</p>
+<span id="id1"></span><h1>Sinus ROM<a class="headerlink" href="#sinus-rom" title="Permalink to this heading"></a></h1>
+<p>Let’s imagine that you want to generate a sine wave and also have a filtered version of it (which is completely useless in practice, but let’s do it as an example).</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 25%" />
@@ -1280,54 +1295,54 @@
 </tbody>
 </table>
 <p>So let’s define the <code class="docutils literal notranslate"><span class="pre">Component</span></code>:</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">SineRom</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">,</span><span class="w"> </span><span class="n">sampleCount</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">io</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Bundle</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">sin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="nc">SInt</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">sinFiltered</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="nc">SInt</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">...</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">SineRom</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">,</span><span class="w"> </span><span class="n">sampleCount</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">io</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Bundle</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">sin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="nc">SInt</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">sinFiltered</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="nc">SInt</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">...</span><span class="w"></span>
 </pre></div>
 </div>
 <p>To play the sine wave on the <code class="docutils literal notranslate"><span class="pre">sin</span></code> output, you can define a ROM which contain all samples of a sine period (it could be just a quarter, but let’s do things the most simple way).
 Then you can read that ROM with an phase counter and this will generate your sine wave.</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="c1">// Calculate values for the lookup table</span>
-<span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">sinTable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">for</span><span class="p">(</span><span class="n">sampleIndex</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">until</span><span class="w"> </span><span class="n">sampleCount</span><span class="p">)</span><span class="w"> </span><span class="k">yield</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">sinValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Math</span><span class="p">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nc">Math</span><span class="p">.</span><span class="nc">PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sampleIndex</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">sampleCount</span><span class="p">)</span>
-<span class="w">    </span><span class="nc">S</span><span class="p">((</span><span class="n">sinValue</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">((</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">resolutionWidth</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">)).</span><span class="n">toInt</span><span class="p">,</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
-<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">sinTable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">for</span><span class="p">(</span><span class="n">sampleIndex</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">until</span><span class="w"> </span><span class="n">sampleCount</span><span class="p">)</span><span class="w"> </span><span class="k">yield</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">sinValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Math</span><span class="p">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nc">Math</span><span class="p">.</span><span class="nc">PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sampleIndex</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">sampleCount</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nc">S</span><span class="p">((</span><span class="n">sinValue</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">((</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">resolutionWidth</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">)).</span><span class="n">toInt</span><span class="p">,</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">rom</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="nc">Mem</span><span class="p">(</span><span class="nc">SInt</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">),</span><span class="n">initialContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sinTable</span><span class="p">)</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="n">log2Up</span><span class="p">(</span><span class="n">sampleCount</span><span class="p">)</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"> </span><span class="n">init</span><span class="w"> </span><span class="mi">0</span>
-<span class="w">  </span><span class="n">phase</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">rom</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="nc">Mem</span><span class="p">(</span><span class="nc">SInt</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">),</span><span class="n">initialContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sinTable</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="n">log2Up</span><span class="p">(</span><span class="n">sampleCount</span><span class="p">)</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"> </span><span class="n">init</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">  </span><span class="n">phase</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
 
-<span class="w">  </span><span class="n">io</span><span class="p">.</span><span class="n">sin</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">rom</span><span class="p">.</span><span class="n">readSync</span><span class="p">(</span><span class="n">phase</span><span class="p">)</span>
+<span class="w">  </span><span class="n">io</span><span class="p">.</span><span class="n">sin</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">rom</span><span class="p">.</span><span class="n">readSync</span><span class="p">(</span><span class="n">phase</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Then to generate <code class="docutils literal notranslate"><span class="pre">sinFiltered</span></code>, you can for example use a first order low pass filter implementation:</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="n">io</span><span class="p">.</span><span class="n">sinFiltered</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">RegNext</span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">sinFiltered</span><span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">sinFiltered</span><span class="w">  </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">sin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"> </span><span class="n">init</span><span class="w"> </span><span class="mi">0</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="n">io</span><span class="p">.</span><span class="n">sinFiltered</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">RegNext</span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">sinFiltered</span><span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">sinFiltered</span><span class="w">  </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">sin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"> </span><span class="n">init</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Here is the complete code:</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">SineRom</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">,</span><span class="w"> </span><span class="n">sampleCount</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">io</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Bundle</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">sin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="nc">SInt</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">sinFiltered</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="nc">SInt</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
-<span class="w">  </span><span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">SineRom</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">,</span><span class="w"> </span><span class="n">sampleCount</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">io</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Bundle</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">sin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="nc">SInt</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">sinFiltered</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="nc">SInt</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
 <span class="w">  </span><span class="c1">// Calculate values for the lookup table</span>
-<span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">sinTable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">for</span><span class="p">(</span><span class="n">sampleIndex</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">until</span><span class="w"> </span><span class="n">sampleCount</span><span class="p">)</span><span class="w"> </span><span class="k">yield</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">sinValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Math</span><span class="p">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nc">Math</span><span class="p">.</span><span class="nc">PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sampleIndex</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">sampleCount</span><span class="p">)</span>
-<span class="w">    </span><span class="nc">S</span><span class="p">((</span><span class="n">sinValue</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">((</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">resolutionWidth</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">)).</span><span class="n">toInt</span><span class="p">,</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
-<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">sinTable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">for</span><span class="p">(</span><span class="n">sampleIndex</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">until</span><span class="w"> </span><span class="n">sampleCount</span><span class="p">)</span><span class="w"> </span><span class="k">yield</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">sinValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Math</span><span class="p">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nc">Math</span><span class="p">.</span><span class="nc">PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sampleIndex</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">sampleCount</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nc">S</span><span class="p">((</span><span class="n">sinValue</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">((</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">resolutionWidth</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">)).</span><span class="n">toInt</span><span class="p">,</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">rom</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="nc">Mem</span><span class="p">(</span><span class="nc">SInt</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">),</span><span class="n">initialContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sinTable</span><span class="p">)</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="n">log2Up</span><span class="p">(</span><span class="n">sampleCount</span><span class="p">)</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"> </span><span class="n">init</span><span class="w"> </span><span class="mi">0</span>
-<span class="w">  </span><span class="n">phase</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">rom</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="nc">Mem</span><span class="p">(</span><span class="nc">SInt</span><span class="p">(</span><span class="n">resolutionWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">),</span><span class="n">initialContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sinTable</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="n">log2Up</span><span class="p">(</span><span class="n">sampleCount</span><span class="p">)</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"> </span><span class="n">init</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">  </span><span class="n">phase</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
 
-<span class="w">  </span><span class="n">io</span><span class="p">.</span><span class="n">sin</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">rom</span><span class="p">.</span><span class="n">readSync</span><span class="p">(</span><span class="n">phase</span><span class="p">)</span>
+<span class="w">  </span><span class="n">io</span><span class="p">.</span><span class="n">sin</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">rom</span><span class="p">.</span><span class="n">readSync</span><span class="p">(</span><span class="n">phase</span><span class="p">)</span><span class="w"></span>
 
-<span class="w">  </span><span class="n">io</span><span class="p">.</span><span class="n">sinFiltered</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">RegNext</span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">sinFiltered</span><span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">sinFiltered</span><span class="w">  </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">sin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"> </span><span class="n">init</span><span class="w"> </span><span class="mi">0</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="n">io</span><span class="p">.</span><span class="n">sinFiltered</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nc">RegNext</span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">sinFiltered</span><span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">sinFiltered</span><span class="w">  </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">sin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"> </span><span class="n">init</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -1361,7 +1376,7 @@ Then you can read that ROM with an phase counter and this will generate your sin
     <!-- source/_templates/footer.html -->
     
     <div class="doc-footer-current-version"><p>
-    Version: master git~c46473076 2024-06-15
+    Version: master git~1c16da1b5 2024-12-23
     </p></div>
     
 

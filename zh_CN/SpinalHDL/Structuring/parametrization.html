@@ -421,7 +421,7 @@
 <li class="toctree-l3"><a class="reference internal" href="naming.html#composite-in-a-function">函数中的复合区（Composite）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="naming.html#composite-chains">复合区级联链</a></li>
 <li class="toctree-l3"><a class="reference internal" href="naming.html#composite-in-a-bundle-s-function">在一个线束（Bundle）的函数中的复合区</a></li>
-<li class="toctree-l3"><a class="reference internal" href="naming.html#unamed-signal-handling">未命名信号处理</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="naming.html#unnamed-signal-handling">Unnamed signal handling</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="naming.html#verilog-expression-splitting">Verilog 表达式分割</a></li>
 <li class="toctree-l4"><a class="reference internal" href="naming.html#verilog-long-expression-splitting">Verilog 长表达式分割</a></li>
 <li class="toctree-l4"><a class="reference internal" href="naming.html#when-statement-condition">When 语句条件</a></li>
@@ -685,6 +685,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#statefsm">StateFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#stateparallelfsm">StateParallelFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#notes-about-the-entry-state">关于入口状态的注释</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/fsm.html#notes-about-using-state-value">使用状态值的注意事项</a></li>
 </ul>
 </li>
 </ul>
@@ -732,27 +733,27 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Libraries/Bus/index.html">总线</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/amba3/ahblite3.html">AHB-Lite3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba3/ahblite3.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba3/ahblite3.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba3/ahblite3.html#variations">变体</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/amba3/apb3.html">Apb3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba3/apb3.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba3/apb3.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba3/apb3.html#functions-and-operators">函数和运算符</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html">Axi4</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html#variations">变体</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/amba4/axi4.html#functions-and-operators">函数和运算符</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/avalon/avalonmm.html">AvalonMM</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/avalon/avalonmm.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/avalon/avalonmm.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/tilelink/tilelink.html">Tilelink</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/tilelink/tilelink.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Bus/tilelink/tilelink.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Bus/tilelink/tilelink_fabric.html">tilelink.fabric.Node</a><ul>
@@ -841,9 +842,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../Libraries/Pipeline/introduction.html#your-custom-link">您的自定义链接</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/Pipeline/introduction.html#builder">Builder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Pipeline/introduction.html#builders">Builders</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Pipeline/introduction.html#stagepipeline">StagePipeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Libraries/Pipeline/introduction.html#stagectrlpipeline">StageCtrlPipeline</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Pipeline/introduction.html#composability">组合能力（Composability）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Libraries/Pipeline/introduction.html#retiming-variable-lenth">重定时/可变长度</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Libraries/Pipeline/introduction.html#retiming-variable-length">重定时/可变长度</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Libraries/Pipeline/introduction.html#simple-cpu-example">简单的CPU示例</a></li>
 </ul>
 </li>
@@ -972,7 +977,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Simple%20ones/rgb_to_gray.html">RGB信号转灰度信号</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Examples/Simple%20ones/sinus_rom.html">正弦rom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Simple%20ones/sinus_rom.html">正弦 ROM</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Examples/Intermediates%20ones/index.html">中级示例</a><ul>
@@ -1124,6 +1129,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/bus_slave_factory_impl.html#conclusion">结论</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../Developers%20area/howotuselocalspinalclone.html">项目中如何使用本地的SpinalHDL克隆作为依赖</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/howotuselocalspinalclone.html#create-local-git-clone-of-spinalhdl">创建本地的SpinalHDL git 克隆</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/howotuselocalspinalclone.html#configure-buildsystem">配置构建系统</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Developers%20area/howotuselocalspinalclone.html#configure-sbt-update-build-sbt">配置 sbt (更新 <code class="docutils literal notranslate"><span class="pre">build.sbt</span></code>)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Developers%20area/howotuselocalspinalclone.html#configure-mill-update-build-sc">配置 mill (更新 <code class="docutils literal notranslate"><span class="pre">build.sc</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/howotuselocalspinalclone.html#done">完成</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Developers%20area/howtodocument.html">如何修改本文档</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/howtodocument.html#title-convention">标题约定</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/howtodocument.html#wavedrom-integration">Wavedrom 的集成</a></li>
@@ -1228,7 +1243,9 @@
 <p>以下是一些示例和可能的想法：</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>硬连线代码和常量（突出最基本的机制，而不是严格的参数管理，代码上的变更，而不是数据上的变更）</p></li>
+<li><p>Hardwired code and constants (not strictly parameter management at all
+but serves to highlight the most basic mechanism, a code change, not a
+parameter data change)</p></li>
 <li><p>由伴随对象提供的常量值在 Scala 中是静态常量。</p></li>
 <li><p>提供给 Scala 类构造函数的值，通常一个 <code class="docutils literal notranslate"><span class="pre">case</span> <span class="pre">class</span></code> 会导致 Scala 将这些构造函数的参数值捕获为常量。</p></li>
 <li><p>常规 Scala 流程控制语法，包括但不限于条件、循环、lambda/monad 等。</p></li>
@@ -1241,14 +1258,14 @@
 <p>所有机制都会导致实力细化生成的 HDL 输出发生变化。</p>
 <p>这可以仅仅使用 Scala 编程就完成设计，支持单个常数值到整个 SoC 的所有总线和互连架构描述的参数化。</p>
 <p>这是一个类参数的示例</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyBus</span><span class="p">(</span><span class="n">width</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Bundle</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">mySignal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="n">width</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyBus</span><span class="p">(</span><span class="n">width</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Bundle</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">mySignal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="n">width</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="p">(</span><span class="n">width</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">bus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyBus</span><span class="p">(</span><span class="n">width</span><span class="p">)</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="p">(</span><span class="n">width</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">bus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyBus</span><span class="p">(</span><span class="n">width</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>您还可以使用 Scala 对象（伴随对象模式）中定义的全局变量。</p>
@@ -1258,31 +1275,37 @@
 <h2>可选硬件<a class="headerlink" href="#optional-hardware" title="此标题的永久链接"></a></h2>
 <p>所以这里还有更多的可能性。</p>
 <p id="generate">对于可选信号：</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="p">(</span><span class="n">flag</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Boolean</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">mySignal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">flag</span><span class="w"> </span><span class="n">generate</span><span class="w"> </span><span class="p">(</span><span class="nc">Bool</span><span class="p">())</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="p">(</span><span class="n">flag</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Boolean</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">mySignal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">flag</span><span class="w"> </span><span class="n">generate</span><span class="w"> </span><span class="p">(</span><span class="nc">Bool</span><span class="p">())</span><span class="w"></span>
 <span class="w">  </span><span class="c1">// equivalent to &quot;val mySignal = if (flag) Bool() else null&quot;</span>
-<span class="p">}</span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">generate</span></code> 函数是一种实现具有可选值的表达式机制。如果谓词为 true，generate 将计算给定表达式并返回结果，否则返回 null。</p>
-<p>使用实例细化时条件表达式有助于参数化 SpinalHDL 硬件描述。导致 HDL 结构在生成的 HDL 中存在或不存在。generate函数可以看作是 SpinalHDL 语法糖，减少语言混乱。</p>
-<p>SpinalHDL 代码中引用 <code class="docutils literal notranslate"><span class="pre">mySignal</span></code> 信号将需要确保它优雅地处理 null 的可能性。这通常不是问题，因为实际设计中的这些部分也会根据 <code class="docutils literal notranslate"><span class="pre">flag</span></code> 值省略。从而达到了该组件参数化的目的。</p>
+<p>This may be used in cases to help parameterize the SpinalHDL hardware
+description using an elaboration-time conditional expression.  Causing HDL
+constructs to be emitted or not-emitted in the resulting HDL. The generate
+method can be seen as SpinalHDL syntactic sugar reducing language clutter.</p>
+<p>Project SpinalHDL code referencing <code class="docutils literal notranslate"><span class="pre">mySignal</span></code> would need to ensure it
+handles the possibility of null gracefully.  This is usually not a problem
+as those parts of the design can also be omitted dependant on the <code class="docutils literal notranslate"><span class="pre">flag</span></code>
+value.  Thus the feature of parameterizing this component is demonstrated.</p>
 <p>您也可以在线束（Bundle）中做相同的事。</p>
 <p>请注意，您还可以使用 scala 选项类（Option）。</p>
 <p>如果你想禁用某个硬件块的生成：</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="p">(</span><span class="n">flag</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Boolean</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">myHardware</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">flag</span><span class="w"> </span><span class="n">generate</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">//optional hardware here</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="p">(</span><span class="n">flag</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Boolean</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">myHardware</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">flag</span><span class="w"> </span><span class="n">generate</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// optional hardware here</span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>您还可以使用 scala 中的 for 循环：</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="p">(</span><span class="n">amount</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">myHardware</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">until</span><span class="w"> </span><span class="n">amount</span><span class="p">)</span><span class="w"> </span><span class="k">yield</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyComponent</span><span class="p">(</span><span class="n">amount</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">myHardware</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">until</span><span class="w"> </span><span class="n">amount</span><span class="p">)</span><span class="w"> </span><span class="k">yield</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// hardware here</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>因此，您可以在实例细化时根据需要扩展这些 scala 用法，包括使用整个 scala 集合（List、Set、Map…）来构建一些数据模型，然后以程序方式将它们转换为硬件（例如，迭代这些列表中的元素）。</p>

@@ -420,7 +420,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-in-a-function">Composite in a function</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-chains">Composite chains</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-in-a-bundle-s-function">Composite in a Bundle’s function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#unamed-signal-handling">Unamed signal handling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#unnamed-signal-handling">Unnamed signal handling</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#verilog-expression-splitting">Verilog expression splitting</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#verilog-long-expression-splitting">Verilog long expression splitting</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#when-statement-condition">When statement condition</a></li>
@@ -684,6 +684,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#statefsm">StateFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#stateparallelfsm">StateParallelFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#notes-about-the-entry-state">Notes about the entry state</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#notes-about-using-state-value">Notes about using state value</a></li>
 </ul>
 </li>
 </ul>
@@ -731,27 +732,27 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Libraries/Bus/index.html">Bus</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html">AHB-Lite3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html#variations">Variations</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html">Apb3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html#functions-and-operators">Functions and operators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html">Axi4</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#variations">Variations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#functions-and-operators">Functions and operators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/avalon/avalonmm.html">AvalonMM</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/avalon/avalonmm.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/avalon/avalonmm.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink.html">Tilelink</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink_fabric.html">tilelink.fabric.Node</a><ul>
@@ -840,9 +841,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#your-custom-link">Your custom Link</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#builder">Builder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#builders">Builders</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#stagepipeline">StagePipeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#stagectrlpipeline">StageCtrlPipeline</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#composability">Composability</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#retiming-variable-lenth">Retiming / Variable lenth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#retiming-variable-length">Retiming / Variable length</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#simple-cpu-example">Simple CPU example</a></li>
 </ul>
 </li>
@@ -971,7 +976,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Examples/Simple%20ones/rgb_to_gray.html">RGB to gray</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Examples/Simple%20ones/sinus_rom.html">Sinus rom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Examples/Simple%20ones/sinus_rom.html">Sinus ROM</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Examples/Intermediates%20ones/index.html">Intermediates ones</a><ul>
@@ -1123,6 +1128,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/bus_slave_factory_impl.html#conclusion">Conclusion</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html">How to use a local SpinalHDL clone as project dependency</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#create-local-git-clone-of-spinalhdl">Create local git clone of SpinalHDL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-buildsystem">Configure buildsystem</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-sbt-update-build-sbt">Configure sbt (update <code class="docutils literal notranslate"><span class="pre">build.sbt</span></code>)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-mill-update-build-sc">Configure mill (update <code class="docutils literal notranslate"><span class="pre">build.sc</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#done">Done</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../Developers%20area/howtodocument.html">How to HACK this documentation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howtodocument.html#title-convention">Title convention</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howtodocument.html#wavedrom-integration">Wavedrom integration</a></li>
@@ -1243,7 +1258,7 @@ with any issues you have.</p>
 <section id="scala">
 <h2>Scala<a class="headerlink" href="#scala" title="Permalink to this heading"></a></h2>
 <p>Don’t forget to add the following in your <code class="docutils literal notranslate"><span class="pre">build.sbt</span></code> file:</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">fork</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="kc">true</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">fork</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
 <p>And you will always need the following imports in your Scala testbench:</p>
@@ -1255,18 +1270,18 @@ with any issues you have.</p>
 <section id="linux">
 <h2>Linux<a class="headerlink" href="#linux" title="Permalink to this heading"></a></h2>
 <p>You will also need a recent version of Verilator installed :</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>make<span class="w"> </span>autoconf<span class="w"> </span>g++<span class="w"> </span>flex<span class="w"> </span>bison<span class="w">  </span><span class="c1"># First time prerequisites</span>
-git<span class="w"> </span>clone<span class="w"> </span>http://git.veripool.org/git/verilator<span class="w">   </span><span class="c1"># Only first time</span>
-unsetenv<span class="w"> </span>VERILATOR_ROOT<span class="w">  </span><span class="c1"># For csh; ignore error if on bash</span>
-<span class="nb">unset</span><span class="w"> </span>VERILATOR_ROOT<span class="w">  </span><span class="c1"># For bash</span>
-<span class="nb">cd</span><span class="w"> </span>verilator
-git<span class="w"> </span>pull<span class="w">             </span><span class="c1"># Make sure we&#39;re up-to-date</span>
-git<span class="w"> </span>checkout<span class="w"> </span>v4.218<span class="w">  </span><span class="c1"># Can use newer v4.228 and v5.xxx</span>
-autoconf<span class="w">             </span><span class="c1"># Create ./configure script</span>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo apt-get install git make autoconf g++ flex bison  <span class="c1"># First time prerequisites</span>
+git clone http://git.veripool.org/git/verilator   <span class="c1"># Only first time</span>
+unsetenv VERILATOR_ROOT  <span class="c1"># For csh; ignore error if on bash</span>
+<span class="nb">unset</span> VERILATOR_ROOT  <span class="c1"># For bash</span>
+<span class="nb">cd</span> verilator
+git pull             <span class="c1"># Make sure we&#39;re up-to-date</span>
+git checkout v4.218  <span class="c1"># Can use newer v4.228 and v5.xxx</span>
+autoconf             <span class="c1"># Create ./configure script</span>
 ./configure
-make<span class="w"> </span>-j<span class="k">$(</span>nproc<span class="k">)</span>
-sudo<span class="w"> </span>make<span class="w"> </span>install
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;DONE&quot;</span>
+make -j<span class="k">$(</span>nproc<span class="k">)</span>
+sudo make install
+<span class="nb">echo</span> <span class="s2">&quot;DONE&quot;</span>
 </pre></div>
 </div>
 </section>
@@ -1283,14 +1298,14 @@ sudo<span class="w"> </span>make<span class="w"> </span>install
 <p>From a fresh install of MSYS2 MinGW 64-bit, you will have to run the following commands inside the MSYS2 MinGW 64-bits shell (enter commands one by one):</p>
 <section id="from-the-mingw-package-manager">
 <h3>From the MinGW package manager<a class="headerlink" href="#from-the-mingw-package-manager" title="Permalink to this heading"></a></h3>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pacman<span class="w"> </span>-Syuu
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pacman -Syuu
 <span class="c1"># Close the MSYS2 shell once you&#39;re asked to</span>
-pacman<span class="w"> </span>-Syuu
-pacman<span class="w"> </span>-S<span class="w"> </span>--needed<span class="w"> </span>base-devel<span class="w"> </span>mingw-w64-x86_64-toolchain<span class="w"> </span><span class="se">\</span>
-<span class="w">                   </span>git<span class="w"> </span>flex<span class="se">\</span>
-<span class="w">                   </span>mingw-w64-x86_64-cmake
+pacman -Syuu
+pacman -S --needed base-devel mingw-w64-x86_64-toolchain <span class="se">\</span>
+                   git flex<span class="se">\</span>
+                   mingw-w64-x86_64-cmake
 
-pacman<span class="w"> </span>-U<span class="w"> </span>http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-verilator-4.032-1-any.pkg.tar.xz
+pacman -U http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-verilator-4.032-1-any.pkg.tar.xz
 
 <span class="c1"># Add C:\msys64\usr\bin;C:\msys64\mingw64\bin to your Windows PATH</span>
 </pre></div>
@@ -1298,27 +1313,27 @@ pacman<span class="w"> </span>-U<span class="w"> </span>http://repo.msys2.org/mi
 </section>
 <section id="from-source">
 <h3>From source<a class="headerlink" href="#from-source" title="Permalink to this heading"></a></h3>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pacman<span class="w"> </span>-Syuu
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pacman -Syuu
 <span class="c1"># Close the MSYS2 shell once you&#39;re asked to</span>
-pacman<span class="w"> </span>-Syuu
-pacman<span class="w"> </span>-S<span class="w"> </span>--needed<span class="w"> </span>base-devel<span class="w"> </span>mingw-w64-x86_64-toolchain<span class="w"> </span><span class="se">\</span>
-<span class="w">                   </span>git<span class="w"> </span>flex<span class="se">\</span>
-<span class="w">                   </span>mingw-w64-x86_64-cmake
+pacman -Syuu
+pacman -S --needed base-devel mingw-w64-x86_64-toolchain <span class="se">\</span>
+                   git flex<span class="se">\</span>
+                   mingw-w64-x86_64-cmake
 
-git<span class="w"> </span>clone<span class="w"> </span>http://git.veripool.org/git/verilator
-<span class="nb">unset</span><span class="w"> </span>VERILATOR_ROOT
-<span class="nb">cd</span><span class="w"> </span>verilator
-git<span class="w"> </span>pull
-git<span class="w"> </span>checkout<span class="w"> </span>v4.218<span class="w">   </span><span class="c1"># Can use newer v4.228 and v5.xxx</span>
+git clone http://git.veripool.org/git/verilator
+<span class="nb">unset</span> VERILATOR_ROOT
+<span class="nb">cd</span> verilator
+git pull
+git checkout v4.218   <span class="c1"># Can use newer v4.228 and v5.xxx</span>
 autoconf
 ./configure
-<span class="nb">export</span><span class="w"> </span><span class="nv">CPLUS_INCLUDE_PATH</span><span class="o">=</span>/usr/include:<span class="nv">$CPLUS_INCLUDE_PATH</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>/usr/bin/core_perl:<span class="nv">$PATH</span>
-cp<span class="w"> </span>/usr/include/FlexLexer.h<span class="w"> </span>./src
+<span class="nb">export</span> <span class="nv">CPLUS_INCLUDE_PATH</span><span class="o">=</span>/usr/include:<span class="nv">$CPLUS_INCLUDE_PATH</span>
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>/usr/bin/core_perl:<span class="nv">$PATH</span>
+cp /usr/include/FlexLexer.h ./src
 
-make<span class="w"> </span>-j<span class="k">$(</span>nproc<span class="k">)</span>
-make<span class="w"> </span>install
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;DONE&quot;</span>
+make -j<span class="k">$(</span>nproc<span class="k">)</span>
+make install
+<span class="nb">echo</span> <span class="s2">&quot;DONE&quot;</span>
 <span class="c1"># Add C:\msys64\usr\bin;C:\msys64\mingw64\bin to your Windows PATH</span>
 </pre></div>
 </div>
@@ -1328,7 +1343,7 @@ make<span class="w"> </span>install
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Adding the MSYS2 <code class="docutils literal notranslate"><span class="pre">bin</span></code> folders into your windows <code class="docutils literal notranslate"><span class="pre">PATH</span></code> could potentialy have some side effects.
+<p>Adding the MSYS2 <code class="docutils literal notranslate"><span class="pre">bin</span></code> folders into your windows <code class="docutils literal notranslate"><span class="pre">PATH</span></code> could potentially have some side effects.
 This is why it is safer to add them as the last elements of the <code class="docutils literal notranslate"><span class="pre">PATH</span></code> to reduce their priority.</p>
 </div>
 </section>
@@ -1364,7 +1379,7 @@ This is why it is safer to add them as the last elements of the <code class="doc
     <!-- source/_templates/footer.html -->
     
     <div class="doc-footer-current-version"><p>
-    Version: master git~c46473076 2024-06-15
+    Version: master git~1c16da1b5 2024-12-23
     </p></div>
     
 

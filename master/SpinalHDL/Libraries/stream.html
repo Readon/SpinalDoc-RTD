@@ -420,7 +420,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/naming.html#composite-in-a-function">Composite in a function</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/naming.html#composite-chains">Composite chains</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Structuring/naming.html#composite-in-a-bundle-s-function">Composite in a Bundle’s function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Structuring/naming.html#unamed-signal-handling">Unamed signal handling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Structuring/naming.html#unnamed-signal-handling">Unnamed signal handling</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/naming.html#verilog-expression-splitting">Verilog expression splitting</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/naming.html#verilog-long-expression-splitting">Verilog long expression splitting</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Structuring/naming.html#when-statement-condition">When statement condition</a></li>
@@ -684,6 +684,7 @@
 <li class="toctree-l4"><a class="reference internal" href="fsm.html#statefsm">StateFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="fsm.html#stateparallelfsm">StateParallelFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="fsm.html#notes-about-the-entry-state">Notes about the entry state</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fsm.html#notes-about-using-state-value">Notes about using state value</a></li>
 </ul>
 </li>
 </ul>
@@ -731,27 +732,27 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Bus/index.html">Bus</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Bus/amba3/ahblite3.html">AHB-Lite3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Bus/amba3/ahblite3.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Bus/amba3/ahblite3.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Bus/amba3/ahblite3.html#variations">Variations</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Bus/amba3/apb3.html">Apb3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Bus/amba3/apb3.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Bus/amba3/apb3.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Bus/amba3/apb3.html#functions-and-operators">Functions and operators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Bus/amba4/axi4.html">Axi4</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Bus/amba4/axi4.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Bus/amba4/axi4.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Bus/amba4/axi4.html#variations">Variations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Bus/amba4/axi4.html#functions-and-operators">Functions and operators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Bus/avalon/avalonmm.html">AvalonMM</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Bus/avalon/avalonmm.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Bus/avalon/avalonmm.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Bus/tilelink/tilelink.html">Tilelink</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Bus/tilelink/tilelink.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Bus/tilelink/tilelink.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Bus/tilelink/tilelink_fabric.html">tilelink.fabric.Node</a><ul>
@@ -840,9 +841,13 @@
 <li class="toctree-l4"><a class="reference internal" href="Pipeline/introduction.html#your-custom-link">Your custom Link</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="Pipeline/introduction.html#builder">Builder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Pipeline/introduction.html#builders">Builders</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Pipeline/introduction.html#stagepipeline">StagePipeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Pipeline/introduction.html#stagectrlpipeline">StageCtrlPipeline</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="Pipeline/introduction.html#composability">Composability</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Pipeline/introduction.html#retiming-variable-lenth">Retiming / Variable lenth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Pipeline/introduction.html#retiming-variable-length">Retiming / Variable length</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Pipeline/introduction.html#simple-cpu-example">Simple CPU example</a></li>
 </ul>
 </li>
@@ -971,7 +976,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Simple%20ones/rgb_to_gray.html">RGB to gray</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Examples/Simple%20ones/sinus_rom.html">Sinus rom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Simple%20ones/sinus_rom.html">Sinus ROM</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Examples/Intermediates%20ones/index.html">Intermediates ones</a><ul>
@@ -1121,6 +1126,16 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Developers%20area/bus_slave_factory_impl.html#conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Developers%20area/howotuselocalspinalclone.html">How to use a local SpinalHDL clone as project dependency</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/howotuselocalspinalclone.html#create-local-git-clone-of-spinalhdl">Create local git clone of SpinalHDL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/howotuselocalspinalclone.html#configure-buildsystem">Configure buildsystem</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Developers%20area/howotuselocalspinalclone.html#configure-sbt-update-build-sbt">Configure sbt (update <code class="docutils literal notranslate"><span class="pre">build.sbt</span></code>)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Developers%20area/howotuselocalspinalclone.html#configure-mill-update-build-sc">Configure mill (update <code class="docutils literal notranslate"><span class="pre">build.sc</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Developers%20area/howotuselocalspinalclone.html#done">Done</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Developers%20area/howtodocument.html">How to HACK this documentation</a><ul>
@@ -1282,21 +1297,21 @@
 </script>
 </div>
 <p>There is some examples of usage in SpinalHDL :</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">StreamFifo</span><span class="p">[</span><span class="nc">T</span><span class="w"> </span><span class="o">&lt;:</span><span class="w"> </span><span class="nc">Data</span><span class="p">](</span><span class="n">dataType</span><span class="p">:</span><span class="w"> </span><span class="nc">T</span><span class="p">,</span><span class="w"> </span><span class="n">depth</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">io</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Bundle</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">push</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">slave</span><span class="w"> </span><span class="nc">Stream</span><span class="w"> </span><span class="p">(</span><span class="n">dataType</span><span class="p">)</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">pop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">master</span><span class="w"> </span><span class="nc">Stream</span><span class="w"> </span><span class="p">(</span><span class="n">dataType</span><span class="p">)</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="p">...</span>
-<span class="p">}</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">StreamFifo</span><span class="p">[</span><span class="nc">T</span><span class="w"> </span><span class="o">&lt;:</span><span class="w"> </span><span class="nc">Data</span><span class="p">](</span><span class="n">dataType</span><span class="p">:</span><span class="w"> </span><span class="nc">T</span><span class="p">,</span><span class="w"> </span><span class="n">depth</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">io</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Bundle</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">push</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">slave</span><span class="w"> </span><span class="nc">Stream</span><span class="w"> </span><span class="p">(</span><span class="n">dataType</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">pop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">master</span><span class="w"> </span><span class="nc">Stream</span><span class="w"> </span><span class="p">(</span><span class="n">dataType</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">...</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="k">class</span><span class="w"> </span><span class="nc">StreamArbiter</span><span class="p">[</span><span class="nc">T</span><span class="w"> </span><span class="o">&lt;:</span><span class="w"> </span><span class="nc">Data</span><span class="p">](</span><span class="n">dataType</span><span class="p">:</span><span class="w"> </span><span class="nc">T</span><span class="p">,</span><span class="n">portCount</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">io</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Bundle</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">inputs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Vec</span><span class="p">(</span><span class="n">slave</span><span class="w"> </span><span class="nc">Stream</span><span class="w"> </span><span class="p">(</span><span class="n">dataType</span><span class="p">),</span><span class="n">portCount</span><span class="p">)</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">master</span><span class="w"> </span><span class="nc">Stream</span><span class="w"> </span><span class="p">(</span><span class="n">dataType</span><span class="p">)</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="p">...</span>
-<span class="p">}</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">StreamArbiter</span><span class="p">[</span><span class="nc">T</span><span class="w"> </span><span class="o">&lt;:</span><span class="w"> </span><span class="nc">Data</span><span class="p">](</span><span class="n">dataType</span><span class="p">:</span><span class="w"> </span><span class="nc">T</span><span class="p">,</span><span class="n">portCount</span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">io</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Bundle</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">inputs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Vec</span><span class="p">(</span><span class="n">slave</span><span class="w"> </span><span class="nc">Stream</span><span class="w"> </span><span class="p">(</span><span class="n">dataType</span><span class="p">),</span><span class="n">portCount</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">master</span><span class="w"> </span><span class="nc">Stream</span><span class="w"> </span><span class="p">(</span><span class="n">dataType</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">...</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -1313,7 +1328,7 @@ Be careful with that.</p></li>
 <h2>Semantics<a class="headerlink" href="#semantics" title="Permalink to this heading"></a></h2>
 <p>When manually reading/driving the signals of a Stream keep in mind that:</p>
 <ul class="simple">
-<li><p>After being asserted, <code class="docutils literal notranslate"><span class="pre">valid</span></code> may only be deasserted once the current payload was acknowleged. This means <code class="docutils literal notranslate"><span class="pre">valid</span></code> can only toggle to 0 the cycle after a the slave did a read by asserting <code class="docutils literal notranslate"><span class="pre">ready</span></code>.</p></li>
+<li><p>After being asserted, <code class="docutils literal notranslate"><span class="pre">valid</span></code> may only be deasserted once the current payload was acknowledged. This means <code class="docutils literal notranslate"><span class="pre">valid</span></code> can only toggle to 0 the cycle after a the slave did a read by asserting <code class="docutils literal notranslate"><span class="pre">ready</span></code>.</p></li>
 <li><p>In contrast to that <code class="docutils literal notranslate"><span class="pre">ready</span></code> may change at any time.</p></li>
 <li><p>A transfer is only done on cycles where both <code class="docutils literal notranslate"><span class="pre">valid</span></code> and <code class="docutils literal notranslate"><span class="pre">ready</span></code> are asserted.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">valid</span></code> of a Stream must not depend on <code class="docutils literal notranslate"><span class="pre">ready</span></code> in a combinatorial way and any path between the two must be registered.</p></li>
@@ -1372,7 +1387,7 @@ Be careful with that.</p></li>
 </div>
 </td>
 <td><div class="line-block">
-<div class="line">Return a Stream drived by x</div>
+<div class="line">Return a Stream driven by x</div>
 <div class="line">through a register stage that cut valid/payload paths</div>
 <div class="line">Cost = (payload width + 1) flop flop</div>
 </div>
@@ -1382,7 +1397,7 @@ Be careful with that.</p></li>
 </tr>
 <tr class="row-even"><td><p>x.s2mPipe()</p></td>
 <td><div class="line-block">
-<div class="line">Return a Stream drived by x</div>
+<div class="line">Return a Stream driven by x</div>
 <div class="line">ready paths is cut by a register stage</div>
 <div class="line">Cost = payload width * (mux2 + 1 flip flop)</div>
 </div>
@@ -1392,7 +1407,7 @@ Be careful with that.</p></li>
 </tr>
 <tr class="row-odd"><td><p>x.halfPipe()</p></td>
 <td><div class="line-block">
-<div class="line">Return a Stream drived by x</div>
+<div class="line">Return a Stream driven by x</div>
 <div class="line">valid/ready/payload paths are cut by some register</div>
 <div class="line">Cost = (payload width + 2) flip flop, bandwidth divided by two</div>
 </div>
@@ -1479,17 +1494,17 @@ Be careful with that.</p></li>
 </tbody>
 </table>
 <p>The following code will create this logic :</p>
-<img alt="../../_images/stream_throw_m2spipe.svg" class="align-center" src="../../_images/stream_throw_m2spipe.svg" /><div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">RGB</span><span class="p">(</span><span class="n">channelWidth</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Bundle</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">red</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="n">channelWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">green</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="n">channelWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">blue</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="n">channelWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
+<img alt="../../_images/stream_throw_m2spipe.svg" class="align-center" src="../../_images/stream_throw_m2spipe.svg" /><div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">case</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">RGB</span><span class="p">(</span><span class="n">channelWidth</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Int</span><span class="p">)</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Bundle</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">red</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="n">channelWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">green</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="n">channelWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">blue</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="n">channelWidth</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
 
-<span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">isBlack</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Bool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">red</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">green</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">blue</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mi">0</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">isBlack</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">Bool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">red</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">green</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">blue</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kd">val</span><span class="w"> </span><span class="n">source</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">RGB</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">sink</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">RGB</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
-<span class="n">sink</span><span class="w"> </span><span class="o">&lt;-&lt;</span><span class="w"> </span><span class="n">source</span><span class="p">.</span><span class="n">throwWhen</span><span class="p">(</span><span class="n">source</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">isBlack</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">source</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">RGB</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">sink</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">RGB</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span><span class="w"></span>
+<span class="n">sink</span><span class="w"> </span><span class="o">&lt;-&lt;</span><span class="w"> </span><span class="n">source</span><span class="p">.</span><span class="n">throwWhen</span><span class="p">(</span><span class="n">source</span><span class="p">.</span><span class="n">payload</span><span class="p">.</span><span class="n">isBlack</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -1499,14 +1514,14 @@ Be careful with that.</p></li>
 <section id="streamfifo">
 <h3>StreamFifo<a class="headerlink" href="#streamfifo" title="Permalink to this heading"></a></h3>
 <p>On each stream you can call the .queue(size) to get a buffered stream. But you can also instantiate the FIFO component itself :</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">streamA</span><span class="p">,</span><span class="n">streamB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="c1">//...</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">myFifo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamFifo</span><span class="p">(</span>
-<span class="w">  </span><span class="n">dataType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">),</span>
-<span class="w">  </span><span class="n">depth</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="mi">128</span>
-<span class="p">)</span>
-<span class="n">myFifo</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">push</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">streamA</span>
-<span class="n">myFifo</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">pop</span><span class="w">  </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">streamB</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">streamA</span><span class="p">,</span><span class="n">streamB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="c1">// ...</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">myFifo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamFifo</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dataType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">),</span><span class="w"></span>
+<span class="w">  </span><span class="n">depth</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="mi">128</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+<span class="n">myFifo</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">push</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">streamA</span><span class="w"></span>
+<span class="n">myFifo</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">pop</span><span class="w">  </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">streamB</span><span class="w"></span>
 </pre></div>
 </div>
 <table class="docutils align-default">
@@ -1567,18 +1582,18 @@ Be careful with that.</p></li>
 <section id="streamfifocc">
 <h3>StreamFifoCC<a class="headerlink" href="#streamfifocc" title="Permalink to this heading"></a></h3>
 <p>You can instantiate the dual clock domain version of the fifo the following way :</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">clockA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ClockDomain</span><span class="p">(</span><span class="o">???</span><span class="p">)</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">clockB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ClockDomain</span><span class="p">(</span><span class="o">???</span><span class="p">)</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">streamA</span><span class="p">,</span><span class="n">streamB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="c1">//...</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">myFifo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamFifoCC</span><span class="p">(</span>
-<span class="w">  </span><span class="n">dataType</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">),</span>
-<span class="w">  </span><span class="n">depth</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="mi">128</span><span class="p">,</span>
-<span class="w">  </span><span class="n">pushClock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">clockA</span><span class="p">,</span>
-<span class="w">  </span><span class="n">popClock</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">clockB</span>
-<span class="p">)</span>
-<span class="n">myFifo</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">push</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">streamA</span>
-<span class="n">myFifo</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">pop</span><span class="w">  </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">streamB</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">clockA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ClockDomain</span><span class="p">(</span><span class="o">???</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">clockB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ClockDomain</span><span class="p">(</span><span class="o">???</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">streamA</span><span class="p">,</span><span class="n">streamB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="c1">// ...</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">myFifo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamFifoCC</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dataType</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">),</span><span class="w"></span>
+<span class="w">  </span><span class="n">depth</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="mi">128</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">pushClock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">clockA</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">popClock</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">clockB</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+<span class="n">myFifo</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">push</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">streamA</span><span class="w"></span>
+<span class="n">myFifo</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">pop</span><span class="w">  </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">streamB</span><span class="w"></span>
 </pre></div>
 </div>
 <table class="docutils align-default">
@@ -1650,17 +1665,17 @@ Be careful with that.</p></li>
 <div class="line">Component that connects Streams across clock domains based on toggling signals.</div>
 <div class="line">This way of implementing a cross clock domain bridge is characterized by a small area usage but also a low bandwidth.</div>
 </div>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">clockA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ClockDomain</span><span class="p">(</span><span class="o">???</span><span class="p">)</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">clockB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ClockDomain</span><span class="p">(</span><span class="o">???</span><span class="p">)</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">streamA</span><span class="p">,</span><span class="n">streamB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="c1">//...</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">bridge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamCCByToggle</span><span class="p">(</span>
-<span class="w">  </span><span class="n">dataType</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">),</span>
-<span class="w">  </span><span class="n">inputClock</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">clockA</span><span class="p">,</span>
-<span class="w">  </span><span class="n">outputClock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">clockB</span>
-<span class="p">)</span>
-<span class="n">bridge</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">input</span><span class="w">  </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">streamA</span>
-<span class="n">bridge</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">output</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">streamB</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">clockA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ClockDomain</span><span class="p">(</span><span class="o">???</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">clockB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ClockDomain</span><span class="p">(</span><span class="o">???</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">streamA</span><span class="p">,</span><span class="n">streamB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="c1">// ...</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">bridge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamCCByToggle</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dataType</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">),</span><span class="w"></span>
+<span class="w">  </span><span class="n">inputClock</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">clockA</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">outputClock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">clockB</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+<span class="n">bridge</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">input</span><span class="w">  </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">streamA</span><span class="w"></span>
+<span class="n">bridge</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">output</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">streamB</span><span class="w"></span>
 </pre></div>
 </div>
 <table class="docutils align-default">
@@ -1714,14 +1729,14 @@ Be careful with that.</p></li>
 </tbody>
 </table>
 <p>Alternatively you can also use a this shorter syntax which directly return you the cross clocked stream:</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">clockA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ClockDomain</span><span class="p">(</span><span class="o">???</span><span class="p">)</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">clockB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ClockDomain</span><span class="p">(</span><span class="o">???</span><span class="p">)</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">streamA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">streamB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamCCByToggle</span><span class="p">(</span>
-<span class="w">  </span><span class="n">input</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="n">streamA</span><span class="p">,</span>
-<span class="w">  </span><span class="n">inputClock</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">clockA</span><span class="p">,</span>
-<span class="w">  </span><span class="n">outputClock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">clockB</span>
-<span class="p">)</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">clockA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ClockDomain</span><span class="p">(</span><span class="o">???</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">clockB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ClockDomain</span><span class="p">(</span><span class="o">???</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">streamA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">streamB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamCCByToggle</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">input</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="n">streamA</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">inputClock</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">clockA</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">outputClock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">clockB</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -1730,16 +1745,16 @@ Be careful with that.</p></li>
 <p>This component adapts the width of the input stream to the output stream.
 When the width of the <code class="docutils literal notranslate"><span class="pre">outStream</span></code> payload is greater than the <code class="docutils literal notranslate"><span class="pre">inStream</span></code>, by combining the payloads of several input transactions into one; conversely, if the payload width of the <code class="docutils literal notranslate"><span class="pre">outStream</span></code> is less than the <code class="docutils literal notranslate"><span class="pre">inStream</span></code>, one input transaction will be split into several output transactions.</p>
 <p>In the best case, the width of the payload of the <code class="docutils literal notranslate"><span class="pre">inStream</span></code> should be an integer multiple of the <code class="docutils literal notranslate"><span class="pre">outStream</span></code> as shown below.</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">outStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">16</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">adapter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamWidthAdapter</span><span class="p">(</span><span class="n">inStream</span><span class="p">,</span><span class="w"> </span><span class="n">outStream</span><span class="p">)</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">outStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">16</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">adapter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamWidthAdapter</span><span class="p">(</span><span class="n">inStream</span><span class="p">,</span><span class="w"> </span><span class="n">outStream</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 <p>As in the example above, the two <code class="docutils literal notranslate"><span class="pre">inStream</span></code> transactions will be merged into one <code class="docutils literal notranslate"><span class="pre">outStream</span></code> transaction, and the payload of the first input transaction will be placed on the lower bits of the output payload by default.</p>
 <p>If the expected order of input transaction payload placement is different from the default setting, here is an example.</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">outStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">16</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">adapter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamWidthAdapter</span><span class="p">(</span><span class="n">inStream</span><span class="p">,</span><span class="w"> </span><span class="n">outStream</span><span class="p">,</span><span class="w"> </span><span class="n">order</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SlicesOrder</span><span class="p">.</span><span class="nc">HIGHER_FIRST</span><span class="p">)</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">outStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">16</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">adapter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamWidthAdapter</span><span class="p">(</span><span class="n">inStream</span><span class="p">,</span><span class="w"> </span><span class="n">outStream</span><span class="p">,</span><span class="w"> </span><span class="n">order</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SlicesOrder</span><span class="p">.</span><span class="nc">HIGHER_FIRST</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 <p>There is also a traditional parameter called <code class="docutils literal notranslate"><span class="pre">endianness</span></code>, which has the same effect as <code class="docutils literal notranslate"><span class="pre">ORDER</span></code>.
@@ -1749,11 +1764,11 @@ The <code class="docutils literal notranslate"><span class="pre">padding</span><
 <section id="streamarbiter">
 <h3>StreamArbiter<a class="headerlink" href="#streamarbiter" title="Permalink to this heading"></a></h3>
 <p>When you have multiple Streams and you want to arbitrate them to drive a single one, you can use the StreamArbiterFactory.</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">streamA</span><span class="p">,</span><span class="w"> </span><span class="n">streamB</span><span class="p">,</span><span class="w"> </span><span class="n">streamC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">arbitredABC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamArbiterFactory</span><span class="p">.</span><span class="n">roundRobin</span><span class="p">.</span><span class="n">onArgs</span><span class="p">(</span><span class="n">streamA</span><span class="p">,</span><span class="w"> </span><span class="n">streamB</span><span class="p">,</span><span class="w"> </span><span class="n">streamC</span><span class="p">)</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">streamA</span><span class="p">,</span><span class="w"> </span><span class="n">streamB</span><span class="p">,</span><span class="w"> </span><span class="n">streamC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">arbitredABC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamArbiterFactory</span><span class="p">.</span><span class="n">roundRobin</span><span class="p">.</span><span class="n">onArgs</span><span class="p">(</span><span class="n">streamA</span><span class="p">,</span><span class="w"> </span><span class="n">streamB</span><span class="p">,</span><span class="w"> </span><span class="n">streamC</span><span class="p">)</span><span class="w"></span>
 
-<span class="kd">val</span><span class="w"> </span><span class="n">streamD</span><span class="p">,</span><span class="w"> </span><span class="n">streamE</span><span class="p">,</span><span class="w"> </span><span class="n">streamF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">arbitredDEF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamArbiterFactory</span><span class="p">.</span><span class="n">lowerFirst</span><span class="p">.</span><span class="n">noLock</span><span class="p">.</span><span class="n">onArgs</span><span class="p">(</span><span class="n">streamD</span><span class="p">,</span><span class="w"> </span><span class="n">streamE</span><span class="p">,</span><span class="w"> </span><span class="n">streamF</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">streamD</span><span class="p">,</span><span class="w"> </span><span class="n">streamE</span><span class="p">,</span><span class="w"> </span><span class="n">streamF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">arbitredDEF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamArbiterFactory</span><span class="p">.</span><span class="n">lowerFirst</span><span class="p">.</span><span class="n">noLock</span><span class="p">.</span><span class="n">onArgs</span><span class="p">(</span><span class="n">streamD</span><span class="p">,</span><span class="w"> </span><span class="n">streamE</span><span class="p">,</span><span class="w"> </span><span class="n">streamF</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 <table class="docutils align-default">
@@ -1775,7 +1790,7 @@ The <code class="docutils literal notranslate"><span class="pre">padding</span><
 </tr>
 <tr class="row-even"><td><p>sequentialOrder</p></td>
 <td><div class="line-block">
-<div class="line">Could be used to retrieve transaction in a sequancial order</div>
+<div class="line">Could be used to retrieve transaction in a sequential order</div>
 <div class="line">First transaction should come from port zero, then from port one, …</div>
 </div>
 </td>
@@ -1831,8 +1846,8 @@ The <code class="docutils literal notranslate"><span class="pre">padding</span><
 <section id="streamjoin">
 <h3>StreamJoin<a class="headerlink" href="#streamjoin" title="Permalink to this heading"></a></h3>
 <p>This utility takes multiple input streams and waits until all of them fire <cite>valid</cite> before letting all of them through by providing <cite>ready</cite>.</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">cmdJoin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Cmd</span><span class="p">())</span>
-<span class="n">cmdJoin</span><span class="p">.</span><span class="n">arbitrationFrom</span><span class="p">(</span><span class="nc">StreamJoin</span><span class="p">.</span><span class="n">arg</span><span class="p">(</span><span class="n">cmdABuffer</span><span class="p">,</span><span class="w"> </span><span class="n">cmdBBuffer</span><span class="p">))</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">cmdJoin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Cmd</span><span class="p">())</span><span class="w"></span>
+<span class="n">cmdJoin</span><span class="p">.</span><span class="n">arbitrationFrom</span><span class="p">(</span><span class="nc">StreamJoin</span><span class="p">.</span><span class="n">arg</span><span class="p">(</span><span class="n">cmdABuffer</span><span class="p">,</span><span class="w"> </span><span class="n">cmdBBuffer</span><span class="p">))</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -1843,13 +1858,13 @@ all output streams will always fire together, which means that the stream will h
 If synchronous is false, output streams may be ready one at a time,
 at the cost of an additional flip flop (1 bit per output). The input stream will block until
 all output streams have processed each item regardlessly.</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="kd">val</span><span class="w"> </span><span class="p">(</span><span class="n">outputstream1</span><span class="p">,</span><span class="w"> </span><span class="n">outputstream2</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamFork2</span><span class="p">(</span><span class="n">inputStream</span><span class="p">,</span><span class="w"> </span><span class="n">synchronous</span><span class="o">=</span><span class="kc">false</span><span class="p">)</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="p">(</span><span class="n">outputstream1</span><span class="p">,</span><span class="w"> </span><span class="n">outputstream2</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamFork2</span><span class="p">(</span><span class="n">inputStream</span><span class="p">,</span><span class="w"> </span><span class="n">synchronous</span><span class="o">=</span><span class="kc">false</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">outputStreams</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamFork</span><span class="p">(</span><span class="n">inputStream</span><span class="p">,</span><span class="n">portCount</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">synchronous</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">outputStreams</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamFork</span><span class="p">(</span><span class="n">inputStream</span><span class="p">,</span><span class="n">portCount</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">synchronous</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -1858,9 +1873,9 @@ all output streams have processed each item regardlessly.</p>
 <p>A mux implementation for <code class="docutils literal notranslate"><span class="pre">Stream</span></code>.
 It takes a <code class="docutils literal notranslate"><span class="pre">select</span></code> signal and streams in <code class="docutils literal notranslate"><span class="pre">inputs</span></code>, and returns a <code class="docutils literal notranslate"><span class="pre">Stream</span></code> which is connected to one of the input streams specified by <code class="docutils literal notranslate"><span class="pre">select</span></code>.
 <code class="docutils literal notranslate"><span class="pre">StreamArbiter</span></code> is a facility works similar to this but is more powerful.</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inputStreams</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Vec</span><span class="p">(</span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">)),</span><span class="w"> </span><span class="n">portCount</span><span class="p">)</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">select</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="n">log2Up</span><span class="p">(</span><span class="n">inputStreams</span><span class="p">.</span><span class="n">length</span><span class="p">)</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">outputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamMux</span><span class="p">(</span><span class="n">select</span><span class="p">,</span><span class="w"> </span><span class="n">inputStreams</span><span class="p">)</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inputStreams</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Vec</span><span class="p">(</span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">)),</span><span class="w"> </span><span class="n">portCount</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">select</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="n">log2Up</span><span class="p">(</span><span class="n">inputStreams</span><span class="p">.</span><span class="n">length</span><span class="p">)</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">outputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamMux</span><span class="p">(</span><span class="n">select</span><span class="p">,</span><span class="w"> </span><span class="n">inputStreams</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -1874,20 +1889,20 @@ Use <code class="docutils literal notranslate"><span class="pre">Stream</span></
 <p>A demux implementation for <code class="docutils literal notranslate"><span class="pre">Stream</span></code>.
 It takes a <code class="docutils literal notranslate"><span class="pre">input</span></code>, a <code class="docutils literal notranslate"><span class="pre">select</span></code> and a <code class="docutils literal notranslate"><span class="pre">portCount</span></code> and returns a <code class="docutils literal notranslate"><span class="pre">Vec(Stream)</span></code> where the output stream specified by <code class="docutils literal notranslate"><span class="pre">select</span></code> is connected to <code class="docutils literal notranslate"><span class="pre">input</span></code>, the other output streams are inactive.
 For safe transaction, refer the notes above.</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">select</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="n">log2Up</span><span class="p">(</span><span class="n">portCount</span><span class="p">)</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">outputStreams</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamDemux</span><span class="p">(</span><span class="n">inputStream</span><span class="p">,</span><span class="w"> </span><span class="n">select</span><span class="p">,</span><span class="w"> </span><span class="n">portCount</span><span class="p">)</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">select</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="n">log2Up</span><span class="p">(</span><span class="n">portCount</span><span class="p">)</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">outputStreams</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamDemux</span><span class="p">(</span><span class="n">inputStream</span><span class="p">,</span><span class="w"> </span><span class="n">select</span><span class="p">,</span><span class="w"> </span><span class="n">portCount</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="streamdispatchersequencial">
 <h3>StreamDispatcherSequencial<a class="headerlink" href="#streamdispatchersequencial" title="Permalink to this heading"></a></h3>
 <p>This util take its input stream and routes it to <code class="docutils literal notranslate"><span class="pre">outputCount</span></code> stream in a sequential order.</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">dispatchedStreams</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamDispatcherSequencial</span><span class="p">(</span>
-<span class="w">  </span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">inputStream</span><span class="p">,</span>
-<span class="w">  </span><span class="n">outputCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span>
-<span class="p">)</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">dispatchedStreams</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamDispatcherSequencial</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">inputStream</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">outputCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -1895,15 +1910,15 @@ For safe transaction, refer the notes above.</p>
 <h3>StreamTransactionExtender<a class="headerlink" href="#streamtransactionextender" title="Permalink to this heading"></a></h3>
 <p>This utility will take one input transfer and generate several output transfers, it provides the facility to repeat the payload value <code class="docutils literal notranslate"><span class="pre">count+1</span></code> times into output transfers.
 The <code class="docutils literal notranslate"><span class="pre">count</span></code> is captured and registered each time inputStream fires for an individual payload.</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">outputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span>
-<span class="kd">val</span><span class="w"> </span><span class="n">extender</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamTransactionExtender</span><span class="p">(</span><span class="n">inputStream</span><span class="p">,</span><span class="w"> </span><span class="n">outputStream</span><span class="p">,</span><span class="w"> </span><span class="n">count</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">inputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">outputStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Stream</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">UInt</span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="n">bits</span><span class="p">)</span><span class="w"></span>
+<span class="kd">val</span><span class="w"> </span><span class="n">extender</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">StreamTransactionExtender</span><span class="p">(</span><span class="n">inputStream</span><span class="p">,</span><span class="w"> </span><span class="n">outputStream</span><span class="p">,</span><span class="w"> </span><span class="n">count</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">   </span><span class="c1">// id, is the 0-based index of total output transfers so far in the current input transaction.</span>
 <span class="w">   </span><span class="c1">// last, is the last transfer indication, same as the last signal for extender.</span>
 <span class="w">   </span><span class="c1">// the returned payload is allowed to be modified only based on id and last signals, other translation should be done outside of this.</span>
-<span class="w">    </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">payload</span><span class="p">,</span><span class="w"> </span><span class="n">last</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">payload</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">payload</span><span class="p">,</span><span class="w"> </span><span class="n">last</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">payload</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>This <code class="docutils literal notranslate"><span class="pre">extender</span></code> provides several status signals, such as <code class="docutils literal notranslate"><span class="pre">working</span></code>, <code class="docutils literal notranslate"><span class="pre">last</span></code>, <code class="docutils literal notranslate"><span class="pre">done</span></code> where <code class="docutils literal notranslate"><span class="pre">working</span></code> means there is one input transfer accepted and in-progress, <code class="docutils literal notranslate"><span class="pre">last</span></code> indicates the last output transfer is prepared and waiting to complete, <code class="docutils literal notranslate"><span class="pre">done</span></code> become valid represents the last output transfer is fireing and making the current input transaction process complete and ready to start another transaction.</p>
@@ -1948,7 +1963,7 @@ The <code class="docutils literal notranslate"><span class="pre">count</span></c
 <tr class="row-odd"><td><p>StreamDriver</p></td>
 <td><p>Testbench master side, drives values by calling function to apply value (if available). Function must return if value was available. Supports random delays.</p></td>
 </tr>
-<tr class="row-even"><td><p>StreamReadyRandmizer</p></td>
+<tr class="row-even"><td><p>StreamReadyRandomizer</p></td>
 <td><p>Randomizes <code class="docutils literal notranslate"><span class="pre">ready</span></code> for reception of data, testbench is the slave side.</p></td>
 </tr>
 <tr class="row-odd"><td><p>ScoreboardInOrder</p></td>
@@ -1961,36 +1976,36 @@ The <code class="docutils literal notranslate"><span class="pre">count</span></c
 <span class="k">import</span><span class="w"> </span><span class="nn">spinal</span><span class="p">.</span><span class="nn">lib</span><span class="p">.</span><span class="n">_</span>
 <span class="k">import</span><span class="w"> </span><span class="nn">spinal</span><span class="p">.</span><span class="nn">lib</span><span class="p">.</span><span class="nn">sim</span><span class="p">.{</span><span class="nc">StreamMonitor</span><span class="p">,</span><span class="w"> </span><span class="nc">StreamDriver</span><span class="p">,</span><span class="w"> </span><span class="nc">StreamReadyRandomizer</span><span class="p">,</span><span class="w"> </span><span class="nc">ScoreboardInOrder</span><span class="p">}</span>
 
-<span class="k">object</span><span class="w"> </span><span class="nc">Example</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">App</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">dut</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SimConfig</span><span class="p">.</span><span class="n">withWave</span><span class="p">.</span><span class="n">compile</span><span class="p">(</span><span class="nc">StreamFifo</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">),</span><span class="w"> </span><span class="mi">2</span><span class="p">))</span>
+<span class="k">object</span><span class="w"> </span><span class="nc">Example</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">App</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">dut</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SimConfig</span><span class="p">.</span><span class="n">withWave</span><span class="p">.</span><span class="n">compile</span><span class="p">(</span><span class="nc">StreamFifo</span><span class="p">(</span><span class="nc">Bits</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="n">bits</span><span class="p">),</span><span class="w"> </span><span class="mi">2</span><span class="p">))</span><span class="w"></span>
 
-<span class="w">  </span><span class="n">dut</span><span class="p">.</span><span class="n">doSim</span><span class="p">(</span><span class="s">&quot;simple test&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">dut</span><span class="w"> </span><span class="o">=&gt;</span>
-<span class="w">    </span><span class="nc">SimTimeout</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
+<span class="w">  </span><span class="n">dut</span><span class="p">.</span><span class="n">doSim</span><span class="p">(</span><span class="s">&quot;simple test&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">dut</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="nc">SimTimeout</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span><span class="w"></span>
 
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">scoreboard</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ScoreboardInOrder</span><span class="p">[</span><span class="nc">Int</span><span class="p">]()</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">scoreboard</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ScoreboardInOrder</span><span class="p">[</span><span class="nc">Int</span><span class="p">]()</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">dut</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">flush</span><span class="w"> </span><span class="o">#=</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">    </span><span class="n">dut</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">flush</span><span class="w"> </span><span class="o">#=</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
 
 <span class="w">    </span><span class="c1">// drive random data and add pushed data to scoreboard</span>
-<span class="w">    </span><span class="nc">StreamDriver</span><span class="p">(</span><span class="n">dut</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">push</span><span class="p">,</span><span class="w"> </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">payload</span><span class="w"> </span><span class="o">=&gt;</span>
-<span class="w">      </span><span class="n">payload</span><span class="p">.</span><span class="n">randomize</span><span class="p">()</span>
-<span class="w">      </span><span class="kc">true</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="nc">StreamMonitor</span><span class="p">(</span><span class="n">dut</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">push</span><span class="p">,</span><span class="w"> </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">payload</span><span class="w"> </span><span class="o">=&gt;</span>
-<span class="w">      </span><span class="n">scoreboard</span><span class="p">.</span><span class="n">pushRef</span><span class="p">(</span><span class="n">payload</span><span class="p">.</span><span class="n">toInt</span><span class="p">)</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="nc">StreamDriver</span><span class="p">(</span><span class="n">dut</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">push</span><span class="p">,</span><span class="w"> </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">payload</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"></span>
+<span class="w">      </span><span class="n">payload</span><span class="p">.</span><span class="n">randomize</span><span class="p">()</span><span class="w"></span>
+<span class="w">      </span><span class="kc">true</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="nc">StreamMonitor</span><span class="p">(</span><span class="n">dut</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">push</span><span class="p">,</span><span class="w"> </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">payload</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"></span>
+<span class="w">      </span><span class="n">scoreboard</span><span class="p">.</span><span class="n">pushRef</span><span class="p">(</span><span class="n">payload</span><span class="p">.</span><span class="n">toInt</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
 <span class="w">    </span><span class="c1">// randmize ready on the output and add popped data to scoreboard</span>
-<span class="w">    </span><span class="nc">StreamReadyRandomizer</span><span class="p">(</span><span class="n">dut</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">pop</span><span class="p">,</span><span class="w"> </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">)</span>
-<span class="w">    </span><span class="nc">StreamMonitor</span><span class="p">(</span><span class="n">dut</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">pop</span><span class="p">,</span><span class="w"> </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">payload</span><span class="w"> </span><span class="o">=&gt;</span>
-<span class="w">      </span><span class="n">scoreboard</span><span class="p">.</span><span class="n">pushDut</span><span class="p">(</span><span class="n">payload</span><span class="p">.</span><span class="n">toInt</span><span class="p">)</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="nc">StreamReadyRandomizer</span><span class="p">(</span><span class="n">dut</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">pop</span><span class="p">,</span><span class="w"> </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nc">StreamMonitor</span><span class="p">(</span><span class="n">dut</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">pop</span><span class="p">,</span><span class="w"> </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">payload</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"></span>
+<span class="w">      </span><span class="n">scoreboard</span><span class="p">.</span><span class="n">pushDut</span><span class="p">(</span><span class="n">payload</span><span class="p">.</span><span class="n">toInt</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">.</span><span class="n">forkStimulus</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="w">    </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">.</span><span class="n">forkStimulus</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">.</span><span class="n">waitActiveEdgeWhere</span><span class="p">(</span><span class="n">scoreboard</span><span class="p">.</span><span class="n">matches</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="n">dut</span><span class="p">.</span><span class="n">clockDomain</span><span class="p">.</span><span class="n">waitActiveEdgeWhere</span><span class="p">(</span><span class="n">scoreboard</span><span class="p">.</span><span class="n">matches</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -2025,7 +2040,7 @@ The <code class="docutils literal notranslate"><span class="pre">count</span></c
     <!-- source/_templates/footer.html -->
     
     <div class="doc-footer-current-version"><p>
-    Version: master git~c46473076 2024-06-15
+    Version: master git~1c16da1b5 2024-12-23
     </p></div>
     
 

@@ -420,7 +420,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-in-a-function">Composite in a function</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-chains">Composite chains</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-in-a-bundle-s-function">Composite in a Bundle’s function</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#unamed-signal-handling">Unamed signal handling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#unnamed-signal-handling">Unnamed signal handling</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#verilog-expression-splitting">Verilog expression splitting</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#verilog-long-expression-splitting">Verilog long expression splitting</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#when-statement-condition">When statement condition</a></li>
@@ -684,6 +684,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../fsm.html#statefsm">StateFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../fsm.html#stateparallelfsm">StateParallelFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../fsm.html#notes-about-the-entry-state">Notes about the entry state</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../fsm.html#notes-about-using-state-value">Notes about using state value</a></li>
 </ul>
 </li>
 </ul>
@@ -731,27 +732,27 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Bus/index.html">Bus</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Bus/amba3/ahblite3.html">AHB-Lite3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Bus/amba3/ahblite3.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Bus/amba3/ahblite3.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Bus/amba3/ahblite3.html#variations">Variations</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Bus/amba3/apb3.html">Apb3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Bus/amba3/apb3.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Bus/amba3/apb3.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Bus/amba3/apb3.html#functions-and-operators">Functions and operators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Bus/amba4/axi4.html">Axi4</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Bus/amba4/axi4.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Bus/amba4/axi4.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Bus/amba4/axi4.html#variations">Variations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Bus/amba4/axi4.html#functions-and-operators">Functions and operators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Bus/avalon/avalonmm.html">AvalonMM</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Bus/avalon/avalonmm.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Bus/avalon/avalonmm.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Bus/tilelink/tilelink.html">Tilelink</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Bus/tilelink/tilelink.html#configuration-and-instanciation">Configuration and instanciation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Bus/tilelink/tilelink.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../Bus/tilelink/tilelink_fabric.html">tilelink.fabric.Node</a><ul>
@@ -840,9 +841,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../Pipeline/introduction.html#your-custom-link">Your custom Link</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../Pipeline/introduction.html#builder">Builder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Pipeline/introduction.html#builders">Builders</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Pipeline/introduction.html#stagepipeline">StagePipeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Pipeline/introduction.html#stagectrlpipeline">StageCtrlPipeline</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../Pipeline/introduction.html#composability">Composability</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Pipeline/introduction.html#retiming-variable-lenth">Retiming / Variable lenth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Pipeline/introduction.html#retiming-variable-length">Retiming / Variable length</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Pipeline/introduction.html#simple-cpu-example">Simple CPU example</a></li>
 </ul>
 </li>
@@ -971,7 +976,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Examples/Simple%20ones/rgb_to_gray.html">RGB to gray</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Examples/Simple%20ones/sinus_rom.html">Sinus rom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Examples/Simple%20ones/sinus_rom.html">Sinus ROM</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Examples/Intermediates%20ones/index.html">Intermediates ones</a><ul>
@@ -1123,6 +1128,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/bus_slave_factory_impl.html#conclusion">Conclusion</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html">How to use a local SpinalHDL clone as project dependency</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#create-local-git-clone-of-spinalhdl">Create local git clone of SpinalHDL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-buildsystem">Configure buildsystem</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-sbt-update-build-sbt">Configure sbt (update <code class="docutils literal notranslate"><span class="pre">build.sbt</span></code>)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-mill-update-build-sc">Configure mill (update <code class="docutils literal notranslate"><span class="pre">build.sc</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#done">Done</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../Developers%20area/howtodocument.html">How to HACK this documentation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howtodocument.html#title-convention">Title convention</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howtodocument.html#wavedrom-integration">Wavedrom integration</a></li>
@@ -1235,7 +1250,7 @@ you may instead want to compose its hardware by using some sorts of Plugins. Thi
 <ul class="simple">
 <li><p>You can extend the features of your component by adding new plugins in its parameters. For instance adding Floating point support in a CPU.</p></li>
 <li><p>You can swap various implementations of the same functionality just by using another set of plugins. For instance one implementation of a CPU multiplier may fit well on some FPGA, while others may fit well on ASIC.</p></li>
-<li><p>It avoid the very very very large hand written toplevel syndrom where everything has to be connected manualy. Instead plugins can discover their neighborhood by looking/using the software interface of other plugins.</p></li>
+<li><p>It avoid the very very very large hand written toplevel syndrome where everything has to be connected manually. Instead plugins can discover their neighborhood by looking/using the software interface of other plugins.</p></li>
 </ul>
 <p>VexRiscv and NaxRiscv projects are an example of this. Their are CPUs which have a mostly empty toplevel,
 and their hardware parts are injected using plugins. For instance :</p>
@@ -1247,7 +1262,7 @@ and their hardware parts are injected using plugins. For instance :</p>
 <li><p>IntAluPlugin</p></li>
 <li><p>…</p></li>
 </ul>
-<p>And those plugins will then negociate/propagate/interconnect to each others via their pool of services.</p>
+<p>And those plugins will then negotiate/propagate/interconnect to each others via their pool of services.</p>
 <p>While VexRiscv use a strict synchronous 2 phase system (setup/build callback), NaxRiscv uses a more flexible approach which uses the spinal.core.fiber API to fork elaboration threads which can interlock each others in order to ensure a workable elaboration ordering.</p>
 <p>The Plugin API provide a NaxRiscv like system to define composable components using plugins.</p>
 </section>
@@ -1255,23 +1270,23 @@ and their hardware parts are injected using plugins. For instance :</p>
 <h2>Execution order<a class="headerlink" href="#execution-order" title="Permalink to this heading"></a></h2>
 <p>The main idea is that you have multiple 2 executions phases :</p>
 <ul class="simple">
-<li><p>Setup phase, in which plugins can lock/retain each others. The idea is not to start negociation / elaboration yet.</p></li>
-<li><p>Build phase, in which plugins can negociation / elaboration hardware.</p></li>
+<li><p>Setup phase, in which plugins can lock/retain each others. The idea is not to start negotiation / elaboration yet.</p></li>
+<li><p>Build phase, in which plugins can negotiation / elaboration hardware.</p></li>
 </ul>
 <p>The build phase will not start before all FiberPlugin are done with their setup phase.</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyPlugin</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">FiberPlugin</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">setup</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyPlugin</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">FiberPlugin</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">setup</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// Here we are executing code in the setup phase</span>
-<span class="w">    </span><span class="n">awaitBuild</span><span class="p">()</span>
+<span class="w">    </span><span class="n">awaitBuild</span><span class="p">()</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// Here we are executing code in the build phase</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="k">class</span><span class="w"> </span><span class="nc">MyPlugin2</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">FiberPlugin</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyPlugin2</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">FiberPlugin</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// Here we are executing code in the build phase</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -1282,63 +1297,63 @@ and their hardware parts are injected using plugins. For instance :</p>
 <span class="k">import</span><span class="w"> </span><span class="nn">spinal</span><span class="p">.</span><span class="nn">lib</span><span class="p">.</span><span class="nn">misc</span><span class="p">.</span><span class="nn">plugin</span><span class="p">.</span><span class="n">_</span>
 
 <span class="c1">// Let&#39;s define a Component with a PluginHost instance</span>
-<span class="k">class</span><span class="w"> </span><span class="nc">SubComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">PluginHost</span><span class="p">()</span>
-<span class="p">}</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">SubComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">PluginHost</span><span class="p">()</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
 <span class="c1">// Let&#39;s define a plugin which create a register</span>
-<span class="k">class</span><span class="w"> </span><span class="nc">StatePlugin</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">FiberPlugin</span><span class="w"> </span><span class="p">{</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">StatePlugin</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">FiberPlugin</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="c1">// during build new Area { body } will run the body of code in the Fiber build phase, in the context of the PluginHost</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">signal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="mi">32</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">signal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="mi">32</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
 <span class="c1">// Let&#39;s define a plugin which will make the StatePlugin&#39;s register increment</span>
-<span class="k">class</span><span class="w"> </span><span class="nc">DriverPlugin</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">FiberPlugin</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="c1">// We define how to get the instance of StatePlugin.logic from the PluginHost. It is a lazy val, because we can&#39;t evaluate it until the plugin is binded to its host.</span>
-<span class="w">  </span><span class="k">lazy</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="n">sp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">host</span><span class="p">[</span><span class="nc">StatePlugin</span><span class="p">].</span><span class="n">logic</span><span class="p">.</span><span class="n">get</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">DriverPlugin</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">FiberPlugin</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// We define how to get the instance of StatePlugin.logic from the PluginHost. It is a lazy val, because we can&#39;t evaluate it until the plugin is bound to its host.</span>
+<span class="w">  </span><span class="k">lazy</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="n">sp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">host</span><span class="p">[</span><span class="nc">StatePlugin</span><span class="p">].</span><span class="n">logic</span><span class="p">.</span><span class="n">get</span><span class="w"></span>
 
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// Generate the increment hardware</span>
-<span class="w">    </span><span class="n">sp</span><span class="p">.</span><span class="n">signal</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">sp</span><span class="p">.</span><span class="n">signal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="n">sp</span><span class="p">.</span><span class="n">signal</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">sp</span><span class="p">.</span><span class="n">signal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="k">class</span><span class="w"> </span><span class="nc">TopLevel</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">sub</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">SubComponent</span><span class="p">()</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">TopLevel</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">sub</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">SubComponent</span><span class="p">()</span><span class="w"></span>
 
 <span class="w">  </span><span class="c1">// Here we create plugins and embed them in sub.host</span>
-<span class="w">  </span><span class="k">new</span><span class="w"> </span><span class="nc">DriverPlugin</span><span class="p">().</span><span class="n">setHost</span><span class="p">(</span><span class="n">sub</span><span class="p">.</span><span class="n">host</span><span class="p">)</span>
-<span class="w">  </span><span class="k">new</span><span class="w"> </span><span class="nc">StatePlugin</span><span class="p">().</span><span class="n">setHost</span><span class="p">(</span><span class="n">sub</span><span class="p">.</span><span class="n">host</span><span class="p">)</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="k">new</span><span class="w"> </span><span class="nc">DriverPlugin</span><span class="p">().</span><span class="n">setHost</span><span class="p">(</span><span class="n">sub</span><span class="p">.</span><span class="n">host</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="k">new</span><span class="w"> </span><span class="nc">StatePlugin</span><span class="p">().</span><span class="n">setHost</span><span class="p">(</span><span class="n">sub</span><span class="p">.</span><span class="n">host</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Such TopLevel would generate the following Verilog code :</p>
-<div class="highlight-verilog notranslate"><div class="highlight"><pre><span></span><span class="k">module</span><span class="w"> </span><span class="n">TopLevel</span><span class="w"> </span><span class="p">(</span>
-<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">clk</span><span class="p">,</span>
-<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">reset</span>
-<span class="p">);</span>
+<div class="highlight-verilog notranslate"><div class="highlight"><pre><span></span><span class="k">module</span><span class="w"> </span><span class="n">TopLevel</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">clk</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">reset</span><span class="w"></span>
+<span class="p">);</span><span class="w"></span>
 
 
-<span class="w">  </span><span class="n">SubComponent</span><span class="w"> </span><span class="n">sub</span><span class="w"> </span><span class="p">(</span>
-<span class="w">    </span><span class="p">.</span><span class="n">clk</span><span class="w">   </span><span class="p">(</span><span class="n">clk</span><span class="w">  </span><span class="p">),</span><span class="w"> </span><span class="c1">//i</span>
-<span class="w">    </span><span class="p">.</span><span class="n">reset</span><span class="w"> </span><span class="p">(</span><span class="n">reset</span><span class="p">)</span><span class="w">  </span><span class="c1">//i</span>
-<span class="w">  </span><span class="p">);</span>
+<span class="w">  </span><span class="n">SubComponent</span><span class="w"> </span><span class="n">sub</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">clk</span><span class="w">   </span><span class="p">(</span><span class="n">clk</span><span class="w">  </span><span class="p">),</span><span class="w"> </span><span class="c1">// i</span>
+<span class="w">    </span><span class="p">.</span><span class="n">reset</span><span class="w"> </span><span class="p">(</span><span class="n">reset</span><span class="p">)</span><span class="w">  </span><span class="c1">// i</span>
+<span class="w">  </span><span class="p">);</span><span class="w"></span>
 
-<span class="k">endmodule</span>
+<span class="k">endmodule</span><span class="w"></span>
 
-<span class="k">module</span><span class="w"> </span><span class="n">SubComponent</span><span class="w"> </span><span class="p">(</span>
-<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">clk</span><span class="p">,</span>
-<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">reset</span>
-<span class="p">);</span>
+<span class="k">module</span><span class="w"> </span><span class="n">SubComponent</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">clk</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">reset</span><span class="w"></span>
+<span class="p">);</span><span class="w"></span>
 
-<span class="w">  </span><span class="kt">reg</span><span class="w">        </span><span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span><span class="w">   </span><span class="n">StatePlugin_logic_signal</span><span class="p">;</span><span class="w"> </span><span class="c1">//Created by StatePlugin</span>
+<span class="w">  </span><span class="kt">reg</span><span class="w">        </span><span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span><span class="w">   </span><span class="n">StatePlugin_logic_signal</span><span class="p">;</span><span class="w"> </span><span class="c1">// Created by StatePlugin</span>
 
-<span class="w">  </span><span class="k">always</span><span class="w"> </span><span class="p">@(</span><span class="k">posedge</span><span class="w"> </span><span class="n">clk</span><span class="p">)</span><span class="w"> </span><span class="k">begin</span>
-<span class="w">    </span><span class="n">StatePlugin_logic_signal</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="p">(</span><span class="n">StatePlugin_logic_signal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mh">32&#39;h00000001</span><span class="p">);</span><span class="w"> </span><span class="c1">//incremented by DriverPlugin</span>
-<span class="w">  </span><span class="k">end</span>
-<span class="k">endmodule</span>
+<span class="w">  </span><span class="k">always</span><span class="w"> </span><span class="p">@(</span><span class="k">posedge</span><span class="w"> </span><span class="n">clk</span><span class="p">)</span><span class="w"> </span><span class="k">begin</span><span class="w"></span>
+<span class="w">    </span><span class="n">StatePlugin_logic_signal</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="p">(</span><span class="n">StatePlugin_logic_signal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mh">32&#39;h00000001</span><span class="p">);</span><span class="w"> </span><span class="c1">// incremented by DriverPlugin</span>
+<span class="w">  </span><span class="k">end</span><span class="w"></span>
+<span class="k">endmodule</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Note each “during build” fork an elaboration thread, the DriverPlugin.logic thread execution will be blocked on the “sp” evaluation until the StatePlugin.logic execution is done.</p>
@@ -1354,94 +1369,94 @@ the SetupPlugin uses the DriverPlugin.retain/release functions.</p>
 <span class="k">import</span><span class="w"> </span><span class="nn">spinal</span><span class="p">.</span><span class="nn">lib</span><span class="p">.</span><span class="nn">misc</span><span class="p">.</span><span class="nn">plugin</span><span class="p">.</span><span class="n">_</span>
 <span class="k">import</span><span class="w"> </span><span class="nn">spinal</span><span class="p">.</span><span class="nn">core</span><span class="p">.</span><span class="nn">fiber</span><span class="p">.</span><span class="n">_</span>
 
-<span class="k">class</span><span class="w"> </span><span class="nc">SubComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">PluginHost</span><span class="p">()</span>
-<span class="p">}</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">SubComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">PluginHost</span><span class="p">()</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="k">class</span><span class="w"> </span><span class="nc">StatePlugin</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">FiberPlugin</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">signal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="mi">32</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">StatePlugin</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">FiberPlugin</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">signal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Reg</span><span class="p">(</span><span class="nc">UInt</span><span class="p">(</span><span class="mi">32</span><span class="w"> </span><span class="n">bits</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="k">class</span><span class="w"> </span><span class="nc">DriverPlugin</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">FiberPlugin</span><span class="w"> </span><span class="p">{</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">DriverPlugin</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">FiberPlugin</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="c1">// incrementBy will be set by others plugin at elaboration time</span>
-<span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="n">incrementBy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="n">incrementBy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
 <span class="w">  </span><span class="c1">// retainer allows other plugins to create locks, on which this plugin will wait before using incrementBy</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">retainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Retainer</span><span class="p">()</span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">retainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Retainer</span><span class="p">()</span><span class="w"></span>
 
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">sp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">host</span><span class="p">[</span><span class="nc">StatePlugin</span><span class="p">].</span><span class="n">logic</span><span class="p">.</span><span class="n">get</span>
-<span class="w">    </span><span class="n">retainer</span><span class="p">.</span><span class="n">await</span><span class="p">()</span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">sp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">host</span><span class="p">[</span><span class="nc">StatePlugin</span><span class="p">].</span><span class="n">logic</span><span class="p">.</span><span class="n">get</span><span class="w"></span>
+<span class="w">    </span><span class="n">retainer</span><span class="p">.</span><span class="n">await</span><span class="p">()</span><span class="w"></span>
 
 <span class="w">    </span><span class="c1">// Generate the incrementer hardware</span>
-<span class="w">    </span><span class="n">sp</span><span class="p">.</span><span class="n">signal</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">sp</span><span class="p">.</span><span class="n">signal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">incrementBy</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="n">sp</span><span class="p">.</span><span class="n">signal</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">sp</span><span class="p">.</span><span class="n">signal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">incrementBy</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
 <span class="c1">// Let&#39;s define a plugin which will modify the DriverPlugin.incrementBy variable because letting it elaborate its hardware</span>
-<span class="k">class</span><span class="w"> </span><span class="nc">SetupPlugin</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">FiberPlugin</span><span class="w"> </span><span class="p">{</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">SetupPlugin</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">FiberPlugin</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="c1">// during setup { body } will spawn the body of code in the Fiber setup phase (it is before the Fiber build phase)</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">setup</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">logic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">setup</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">Area</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// *** Setup phase code ***</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">dp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">host</span><span class="p">[</span><span class="nc">DriverPlugin</span><span class="p">]</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">dp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">host</span><span class="p">[</span><span class="nc">DriverPlugin</span><span class="p">]</span><span class="w"></span>
 
 <span class="w">    </span><span class="c1">// Prevent the DriverPlugin from executing its build&#39;s body (until release() is called)</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">lock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dp</span><span class="p">.</span><span class="n">retainer</span><span class="p">()</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="n">lock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dp</span><span class="p">.</span><span class="n">retainer</span><span class="p">()</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// Wait until the fiber phase reached build phase</span>
-<span class="w">    </span><span class="n">awaitBuild</span><span class="p">()</span>
+<span class="w">    </span><span class="n">awaitBuild</span><span class="p">()</span><span class="w"></span>
 
 <span class="w">    </span><span class="c1">// *** Build phase code ***</span>
 <span class="w">    </span><span class="c1">// Let&#39;s mutate DriverPlugin.incrementBy</span>
-<span class="w">    </span><span class="n">dp</span><span class="p">.</span><span class="n">incrementBy</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">    </span><span class="n">dp</span><span class="p">.</span><span class="n">incrementBy</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
 
 <span class="w">    </span><span class="c1">// Allows the DriverPlugin to execute its build&#39;s body</span>
-<span class="w">    </span><span class="n">lock</span><span class="p">.</span><span class="n">release</span><span class="p">()</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="n">lock</span><span class="p">.</span><span class="n">release</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="k">class</span><span class="w"> </span><span class="nc">TopLevel</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">sub</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">SubComponent</span><span class="p">()</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">TopLevel</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nc">Component</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="n">sub</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nc">SubComponent</span><span class="p">()</span><span class="w"></span>
 
-<span class="w">  </span><span class="n">sub</span><span class="p">.</span><span class="n">host</span><span class="p">.</span><span class="n">asHostOf</span><span class="p">(</span>
-<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nc">DriverPlugin</span><span class="p">(),</span>
-<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nc">StatePlugin</span><span class="p">(),</span>
-<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nc">SetupPlugin</span><span class="p">(),</span>
-<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nc">SetupPlugin</span><span class="p">()</span><span class="w"> </span><span class="c1">//Let&#39;s add a second SetupPlugin, because we can</span>
-<span class="w">  </span><span class="p">)</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="n">sub</span><span class="p">.</span><span class="n">host</span><span class="p">.</span><span class="n">asHostOf</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nc">DriverPlugin</span><span class="p">(),</span><span class="w"></span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nc">StatePlugin</span><span class="p">(),</span><span class="w"></span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nc">SetupPlugin</span><span class="p">(),</span><span class="w"></span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nc">SetupPlugin</span><span class="p">()</span><span class="w"> </span><span class="c1">// Let&#39;s add a second SetupPlugin, because we can</span>
+<span class="w">  </span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Here is the generated verilog</p>
-<div class="highlight-verilog notranslate"><div class="highlight"><pre><span></span><span class="k">module</span><span class="w"> </span><span class="n">TopLevel</span><span class="w"> </span><span class="p">(</span>
-<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">clk</span><span class="p">,</span>
-<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">reset</span>
-<span class="p">);</span>
+<div class="highlight-verilog notranslate"><div class="highlight"><pre><span></span><span class="k">module</span><span class="w"> </span><span class="n">TopLevel</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">clk</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">reset</span><span class="w"></span>
+<span class="p">);</span><span class="w"></span>
 
 
-<span class="w">  </span><span class="n">SubComponent</span><span class="w"> </span><span class="n">sub</span><span class="w"> </span><span class="p">(</span>
-<span class="w">    </span><span class="p">.</span><span class="n">clk</span><span class="w">   </span><span class="p">(</span><span class="n">clk</span><span class="w">  </span><span class="p">),</span><span class="w"> </span><span class="c1">//i</span>
-<span class="w">    </span><span class="p">.</span><span class="n">reset</span><span class="w"> </span><span class="p">(</span><span class="n">reset</span><span class="p">)</span><span class="w">  </span><span class="c1">//i</span>
-<span class="w">  </span><span class="p">);</span>
+<span class="w">  </span><span class="n">SubComponent</span><span class="w"> </span><span class="n">sub</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">clk</span><span class="w">   </span><span class="p">(</span><span class="n">clk</span><span class="w">  </span><span class="p">),</span><span class="w"> </span><span class="c1">// i</span>
+<span class="w">    </span><span class="p">.</span><span class="n">reset</span><span class="w"> </span><span class="p">(</span><span class="n">reset</span><span class="p">)</span><span class="w">  </span><span class="c1">// i</span>
+<span class="w">  </span><span class="p">);</span><span class="w"></span>
 
-<span class="k">endmodule</span>
+<span class="k">endmodule</span><span class="w"></span>
 
-<span class="k">module</span><span class="w"> </span><span class="n">SubComponent</span><span class="w"> </span><span class="p">(</span>
-<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">clk</span><span class="p">,</span>
-<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">reset</span>
-<span class="p">);</span>
+<span class="k">module</span><span class="w"> </span><span class="n">SubComponent</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">clk</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="kt">wire</span><span class="w">          </span><span class="n">reset</span><span class="w"></span>
+<span class="p">);</span><span class="w"></span>
 
-<span class="w">  </span><span class="kt">reg</span><span class="w">        </span><span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span><span class="w">   </span><span class="n">StatePlugin_logic_signal</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">reg</span><span class="w">        </span><span class="p">[</span><span class="mh">31</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span><span class="w">   </span><span class="n">StatePlugin_logic_signal</span><span class="p">;</span><span class="w"></span>
 
-<span class="w">  </span><span class="k">always</span><span class="w"> </span><span class="p">@(</span><span class="k">posedge</span><span class="w"> </span><span class="n">clk</span><span class="p">)</span><span class="w"> </span><span class="k">begin</span>
+<span class="w">  </span><span class="k">always</span><span class="w"> </span><span class="p">@(</span><span class="k">posedge</span><span class="w"> </span><span class="n">clk</span><span class="p">)</span><span class="w"> </span><span class="k">begin</span><span class="w"></span>
 <span class="w">    </span><span class="n">StatePlugin_logic_signal</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="p">(</span><span class="n">StatePlugin_logic_signal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mh">32&#39;h00000002</span><span class="p">);</span><span class="w"> </span><span class="c1">// + 2 as we have two SetupPlugin</span>
-<span class="w">  </span><span class="k">end</span>
-<span class="k">endmodule</span>
+<span class="w">  </span><span class="k">end</span><span class="w"></span>
+<span class="k">endmodule</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Clearly, those examples are overkilled for what they do, the idea in general is more about :</p>
 <ul class="simple">
-<li><p>Negociate / create interfaces between plugins (ex jump / flush ports)</p></li>
+<li><p>Negotiate / create interfaces between plugins (ex jump / flush ports)</p></li>
 <li><p>Schedule the elaboration (ex decode / dispatch specification)</p></li>
 <li><p>Provide a distributed framework which can scale up (minimal hardcoding)</p></li>
 </ul>
@@ -1477,7 +1492,7 @@ the SetupPlugin uses the DriverPlugin.retain/release functions.</p>
     <!-- source/_templates/footer.html -->
     
     <div class="doc-footer-current-version"><p>
-    Version: master git~c46473076 2024-06-15
+    Version: master git~1c16da1b5 2024-12-23
     </p></div>
     
 

@@ -421,7 +421,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-in-a-function">函数中的复合区（Composite）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-chains">复合区级联链</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-in-a-bundle-s-function">在一个线束（Bundle）的函数中的复合区</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#unamed-signal-handling">未命名信号处理</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#unnamed-signal-handling">Unnamed signal handling</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#verilog-expression-splitting">Verilog 表达式分割</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#verilog-long-expression-splitting">Verilog 长表达式分割</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#when-statement-condition">When 语句条件</a></li>
@@ -685,6 +685,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#statefsm">StateFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#stateparallelfsm">StateParallelFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#notes-about-the-entry-state">关于入口状态的注释</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#notes-about-using-state-value">使用状态值的注意事项</a></li>
 </ul>
 </li>
 </ul>
@@ -732,27 +733,27 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Libraries/Bus/index.html">总线</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html">AHB-Lite3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html#variations">变体</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html">Apb3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html#functions-and-operators">函数和运算符</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html">Axi4</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#variations">变体</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#functions-and-operators">函数和运算符</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/avalon/avalonmm.html">AvalonMM</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/avalon/avalonmm.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/avalon/avalonmm.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink.html">Tilelink</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink_fabric.html">tilelink.fabric.Node</a><ul>
@@ -841,9 +842,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#your-custom-link">您的自定义链接</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#builder">Builder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#builders">Builders</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#stagepipeline">StagePipeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#stagectrlpipeline">StageCtrlPipeline</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#composability">组合能力（Composability）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#retiming-variable-lenth">重定时/可变长度</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#retiming-variable-length">重定时/可变长度</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#simple-cpu-example">简单的CPU示例</a></li>
 </ul>
 </li>
@@ -972,7 +977,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Examples/Simple%20ones/rgb_to_gray.html">RGB信号转灰度信号</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Examples/Simple%20ones/sinus_rom.html">正弦rom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Examples/Simple%20ones/sinus_rom.html">正弦 ROM</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Examples/Intermediates%20ones/index.html">中级示例</a><ul>
@@ -1124,6 +1129,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/bus_slave_factory_impl.html#conclusion">结论</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html">项目中如何使用本地的SpinalHDL克隆作为依赖</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#create-local-git-clone-of-spinalhdl">创建本地的SpinalHDL git 克隆</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-buildsystem">配置构建系统</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-sbt-update-build-sbt">配置 sbt (更新 <code class="docutils literal notranslate"><span class="pre">build.sbt</span></code>)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-mill-update-build-sc">配置 mill (更新 <code class="docutils literal notranslate"><span class="pre">build.sc</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#done">完成</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../Developers%20area/howtodocument.html">如何修改本文档</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howtodocument.html#title-convention">标题约定</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howtodocument.html#wavedrom-integration">Wavedrom 的集成</a></li>
@@ -1223,7 +1238,7 @@
 <section id="scala">
 <h2>Scala<a class="headerlink" href="#scala" title="此标题的永久链接"></a></h2>
 <p>不要忘记在 <code class="docutils literal notranslate"><span class="pre">build.sbt</span></code> 文件中添加以下内容：</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">fork</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="kc">true</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">fork</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
 <p>你总是需要在Scala测试平台中加入以下导入代码：</p>
@@ -1235,18 +1250,18 @@
 <section id="linux">
 <h2>Linux<a class="headerlink" href="#linux" title="此标题的永久链接"></a></h2>
 <p>您还需要安装最新版本的 Verilator：</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>make<span class="w"> </span>autoconf<span class="w"> </span>g++<span class="w"> </span>flex<span class="w"> </span>bison<span class="w">  </span><span class="c1"># First time prerequisites</span>
-git<span class="w"> </span>clone<span class="w"> </span>http://git.veripool.org/git/verilator<span class="w">   </span><span class="c1"># Only first time</span>
-unsetenv<span class="w"> </span>VERILATOR_ROOT<span class="w">  </span><span class="c1"># For csh; ignore error if on bash</span>
-<span class="nb">unset</span><span class="w"> </span>VERILATOR_ROOT<span class="w">  </span><span class="c1"># For bash</span>
-<span class="nb">cd</span><span class="w"> </span>verilator
-git<span class="w"> </span>pull<span class="w">             </span><span class="c1"># Make sure we&#39;re up-to-date</span>
-git<span class="w"> </span>checkout<span class="w"> </span>v4.218<span class="w">  </span><span class="c1"># Can use newer v4.228 and v5.xxx</span>
-autoconf<span class="w">             </span><span class="c1"># Create ./configure script</span>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo apt-get install git make autoconf g++ flex bison  <span class="c1"># First time prerequisites</span>
+git clone http://git.veripool.org/git/verilator   <span class="c1"># Only first time</span>
+unsetenv VERILATOR_ROOT  <span class="c1"># For csh; ignore error if on bash</span>
+<span class="nb">unset</span> VERILATOR_ROOT  <span class="c1"># For bash</span>
+<span class="nb">cd</span> verilator
+git pull             <span class="c1"># Make sure we&#39;re up-to-date</span>
+git checkout v4.218  <span class="c1"># Can use newer v4.228 and v5.xxx</span>
+autoconf             <span class="c1"># Create ./configure script</span>
 ./configure
-make<span class="w"> </span>-j<span class="k">$(</span>nproc<span class="k">)</span>
-sudo<span class="w"> </span>make<span class="w"> </span>install
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;DONE&quot;</span>
+make -j<span class="k">$(</span>nproc<span class="k">)</span>
+sudo make install
+<span class="nb">echo</span> <span class="s2">&quot;DONE&quot;</span>
 </pre></div>
 </div>
 </section>
@@ -1263,14 +1278,14 @@ sudo<span class="w"> </span>make<span class="w"> </span>install
 <p>从全新安装 MSYS2 MinGW 64 位开始，您必须在 MSYS2 MinGW 64 位 shell 中运行以下命令：</p>
 <section id="from-the-mingw-package-manager">
 <h3>从 MinGW 包管理器安装<a class="headerlink" href="#from-the-mingw-package-manager" title="此标题的永久链接"></a></h3>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pacman<span class="w"> </span>-Syuu
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pacman -Syuu
 <span class="c1"># Close the MSYS2 shell once you&#39;re asked to</span>
-pacman<span class="w"> </span>-Syuu
-pacman<span class="w"> </span>-S<span class="w"> </span>--needed<span class="w"> </span>base-devel<span class="w"> </span>mingw-w64-x86_64-toolchain<span class="w"> </span><span class="se">\</span>
-<span class="w">                   </span>git<span class="w"> </span>flex<span class="se">\</span>
-<span class="w">                   </span>mingw-w64-x86_64-cmake
+pacman -Syuu
+pacman -S --needed base-devel mingw-w64-x86_64-toolchain <span class="se">\</span>
+                   git flex<span class="se">\</span>
+                   mingw-w64-x86_64-cmake
 
-pacman<span class="w"> </span>-U<span class="w"> </span>http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-verilator-4.032-1-any.pkg.tar.xz
+pacman -U http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-verilator-4.032-1-any.pkg.tar.xz
 
 <span class="c1"># Add C:\msys64\usr\bin;C:\msys64\mingw64\bin to your Windows PATH</span>
 </pre></div>
@@ -1278,27 +1293,27 @@ pacman<span class="w"> </span>-U<span class="w"> </span>http://repo.msys2.org/mi
 </section>
 <section id="from-source">
 <h3>从源码安装<a class="headerlink" href="#from-source" title="此标题的永久链接"></a></h3>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pacman<span class="w"> </span>-Syuu
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pacman -Syuu
 <span class="c1"># Close the MSYS2 shell once you&#39;re asked to</span>
-pacman<span class="w"> </span>-Syuu
-pacman<span class="w"> </span>-S<span class="w"> </span>--needed<span class="w"> </span>base-devel<span class="w"> </span>mingw-w64-x86_64-toolchain<span class="w"> </span><span class="se">\</span>
-<span class="w">                   </span>git<span class="w"> </span>flex<span class="se">\</span>
-<span class="w">                   </span>mingw-w64-x86_64-cmake
+pacman -Syuu
+pacman -S --needed base-devel mingw-w64-x86_64-toolchain <span class="se">\</span>
+                   git flex<span class="se">\</span>
+                   mingw-w64-x86_64-cmake
 
-git<span class="w"> </span>clone<span class="w"> </span>http://git.veripool.org/git/verilator
-<span class="nb">unset</span><span class="w"> </span>VERILATOR_ROOT
-<span class="nb">cd</span><span class="w"> </span>verilator
-git<span class="w"> </span>pull
-git<span class="w"> </span>checkout<span class="w"> </span>v4.218<span class="w">   </span><span class="c1"># Can use newer v4.228 and v5.xxx</span>
+git clone http://git.veripool.org/git/verilator
+<span class="nb">unset</span> VERILATOR_ROOT
+<span class="nb">cd</span> verilator
+git pull
+git checkout v4.218   <span class="c1"># Can use newer v4.228 and v5.xxx</span>
 autoconf
 ./configure
-<span class="nb">export</span><span class="w"> </span><span class="nv">CPLUS_INCLUDE_PATH</span><span class="o">=</span>/usr/include:<span class="nv">$CPLUS_INCLUDE_PATH</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>/usr/bin/core_perl:<span class="nv">$PATH</span>
-cp<span class="w"> </span>/usr/include/FlexLexer.h<span class="w"> </span>./src
+<span class="nb">export</span> <span class="nv">CPLUS_INCLUDE_PATH</span><span class="o">=</span>/usr/include:<span class="nv">$CPLUS_INCLUDE_PATH</span>
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>/usr/bin/core_perl:<span class="nv">$PATH</span>
+cp /usr/include/FlexLexer.h ./src
 
-make<span class="w"> </span>-j<span class="k">$(</span>nproc<span class="k">)</span>
-make<span class="w"> </span>install
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;DONE&quot;</span>
+make -j<span class="k">$(</span>nproc<span class="k">)</span>
+make install
+<span class="nb">echo</span> <span class="s2">&quot;DONE&quot;</span>
 <span class="c1"># Add C:\msys64\usr\bin;C:\msys64\mingw64\bin to your Windows PATH</span>
 </pre></div>
 </div>
@@ -1308,7 +1323,8 @@ make<span class="w"> </span>install
 </div>
 <div class="admonition important">
 <p class="admonition-title">重要</p>
-<p>将 MSYS2 <code class="docutils literal notranslate"><span class="pre">bin</span></code> 文件夹添加到 Windows <code class="docutils literal notranslate"><span class="pre">PATH</span></code> 可能会产生一些副作用。这就是为什么将它们添加为 <code class="docutils literal notranslate"><span class="pre">PATH</span></code> 的最后一个元素以降低其优先级，这样会更安全。</p>
+<p>Adding the MSYS2 <code class="docutils literal notranslate"><span class="pre">bin</span></code> folders into your windows <code class="docutils literal notranslate"><span class="pre">PATH</span></code> could potentially have some side effects.
+This is why it is safer to add them as the last elements of the <code class="docutils literal notranslate"><span class="pre">PATH</span></code> to reduce their priority.</p>
 </div>
 </section>
 </section>

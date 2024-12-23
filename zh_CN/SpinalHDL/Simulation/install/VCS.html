@@ -421,7 +421,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-in-a-function">函数中的复合区（Composite）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-chains">复合区级联链</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#composite-in-a-bundle-s-function">在一个线束（Bundle）的函数中的复合区</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#unamed-signal-handling">未命名信号处理</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Structuring/naming.html#unnamed-signal-handling">Unnamed signal handling</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#verilog-expression-splitting">Verilog 表达式分割</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#verilog-long-expression-splitting">Verilog 长表达式分割</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Structuring/naming.html#when-statement-condition">When 语句条件</a></li>
@@ -685,6 +685,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#statefsm">StateFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#stateparallelfsm">StateParallelFsm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#notes-about-the-entry-state">关于入口状态的注释</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/fsm.html#notes-about-using-state-value">使用状态值的注意事项</a></li>
 </ul>
 </li>
 </ul>
@@ -732,27 +733,27 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Libraries/Bus/index.html">总线</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html">AHB-Lite3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/ahblite3.html#variations">变体</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html">Apb3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba3/apb3.html#functions-and-operators">函数和运算符</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html">Axi4</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#variations">变体</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/amba4/axi4.html#functions-and-operators">函数和运算符</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/avalon/avalonmm.html">AvalonMM</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/avalon/avalonmm.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/avalon/avalonmm.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink.html">Tilelink</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink.html#configuration-and-instanciation">配置和实例化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink.html#configuration-and-instantiation">Configuration and instantiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Bus/tilelink/tilelink_fabric.html">tilelink.fabric.Node</a><ul>
@@ -841,9 +842,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#your-custom-link">您的自定义链接</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#builder">Builder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#builders">Builders</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#stagepipeline">StagePipeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#stagectrlpipeline">StageCtrlPipeline</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#composability">组合能力（Composability）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#retiming-variable-lenth">重定时/可变长度</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#retiming-variable-length">重定时/可变长度</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Libraries/Pipeline/introduction.html#simple-cpu-example">简单的CPU示例</a></li>
 </ul>
 </li>
@@ -972,7 +977,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Examples/Simple%20ones/rgb_to_gray.html">RGB信号转灰度信号</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Examples/Simple%20ones/sinus_rom.html">正弦rom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Examples/Simple%20ones/sinus_rom.html">正弦 ROM</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../Examples/Intermediates%20ones/index.html">中级示例</a><ul>
@@ -1124,6 +1129,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/bus_slave_factory_impl.html#conclusion">结论</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html">项目中如何使用本地的SpinalHDL克隆作为依赖</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#create-local-git-clone-of-spinalhdl">创建本地的SpinalHDL git 克隆</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-buildsystem">配置构建系统</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-sbt-update-build-sbt">配置 sbt (更新 <code class="docutils literal notranslate"><span class="pre">build.sbt</span></code>)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#configure-mill-update-build-sc">配置 mill (更新 <code class="docutils literal notranslate"><span class="pre">build.sc</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howotuselocalspinalclone.html#done">完成</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../Developers%20area/howtodocument.html">如何修改本文档</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howtodocument.html#title-convention">标题约定</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Developers%20area/howtodocument.html#wavedrom-integration">Wavedrom 的集成</a></li>
@@ -1222,11 +1237,11 @@
 <li><p>将 <code class="docutils literal notranslate"><span class="pre">$VCS_HOME/bin</span></code> 和 <code class="docutils literal notranslate"><span class="pre">$VERDI_HOME/bin</span></code> 添加到你的 <code class="docutils literal notranslate"><span class="pre">PATH</span></code> 中。</p></li>
 </ul>
 <p>将以下路径添加到 <code class="docutils literal notranslate"><span class="pre">LD_LIBRARY_PATH</span></code> 变量的前部以启用 PLI 功能。</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$VERDI_HOME</span>/share/PLI/VCS/LINUX64:<span class="nv">$LD_LIBRARY_PATH</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$VERDI_HOME</span>/share/PLI/IUS/LINUX64:<span class="nv">$LD_LIBRARY_PATH</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$VERDI_HOME</span>/share/PLI/lib/LINUX64:<span class="nv">$LD_LIBRARY_PATH</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$VERDI_HOME</span>/share/PLI/Ius/LINUX64:<span class="nv">$LD_LIBRARY_PATH</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$VERDI_HOME</span>/share/PLI/MODELSIM/LINUX64:<span class="nv">$LD_LIBRARY_PATH</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$VERDI_HOME</span>/share/PLI/VCS/LINUX64:<span class="nv">$LD_LIBRARY_PATH</span>
+<span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$VERDI_HOME</span>/share/PLI/IUS/LINUX64:<span class="nv">$LD_LIBRARY_PATH</span>
+<span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$VERDI_HOME</span>/share/PLI/lib/LINUX64:<span class="nv">$LD_LIBRARY_PATH</span>
+<span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$VERDI_HOME</span>/share/PLI/Ius/LINUX64:<span class="nv">$LD_LIBRARY_PATH</span>
+<span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$VERDI_HOME</span>/share/PLI/MODELSIM/LINUX64:<span class="nv">$LD_LIBRARY_PATH</span>
 </pre></div>
 </div>
 <p>如果您遇到 <code class="docutils literal notranslate"><span class="pre">Compilation</span> <span class="pre">of</span> <span class="pre">SharedMemIface.cpp</span> <span class="pre">failed</span></code> 错误，请确保您已正确安装 C++ boost 库。头文件和库文件路径应分别添加到 <code class="docutils literal notranslate"><span class="pre">CPLUS_INCLUDE_PATH</span></code>、 <code class="docutils literal notranslate"><span class="pre">LIBRARY_PATH</span></code> 和 <code class="docutils literal notranslate"><span class="pre">LD_LIBRARY_PATH</span></code> 中。</p>
@@ -1234,15 +1249,15 @@
 <section id="user-defined-environment-setup">
 <h2>用户定义的环境设置<a class="headerlink" href="#user-defined-environment-setup" title="此标题的永久链接"></a></h2>
 <p>有时需要 VCS 环境设置文件 <cite>synopsys_sim.setup</cite> 来运行 VCS 仿真。此外，您可能希望在 VCS 开始编译之前运行一些脚本或代码来设置环境。您可以通过 <cite>withVCSSimSetup</cite> 来完成此操作。</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">simConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SimConfig</span>
-<span class="w">  </span><span class="p">.</span><span class="n">withVCS</span>
-<span class="w">  </span><span class="p">.</span><span class="n">withVCSSimSetup</span><span class="p">(</span>
-<span class="w">    </span><span class="n">setupFile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;~/work/myproj/sim/synopsys_sim.setup&quot;</span><span class="p">,</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">simConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SimConfig</span><span class="w"></span>
+<span class="w">  </span><span class="p">.</span><span class="n">withVCS</span><span class="w"></span>
+<span class="w">  </span><span class="p">.</span><span class="n">withVCSSimSetup</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">setupFile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;~/work/myproj/sim/synopsys_sim.setup&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="n">beforeAnalysis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// this code block will be run before VCS analysis step.</span>
-<span class="w">      </span><span class="s">&quot;pwd&quot;</span><span class="p">.</span><span class="o">!</span>
-<span class="w">      </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello, VCS&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">)</span>
+<span class="w">      </span><span class="s">&quot;pwd&quot;</span><span class="p">.</span><span class="o">!</span><span class="w"></span>
+<span class="w">      </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello, VCS&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 <p>此方法将您自己的 <cite>synopsys_sim.setup</cite> 文件复制到 <cite>workspacePath</cite> （默认为 <cite>simWorkspace</cite> ）目录下的VCS工作目录，并运行脚本。</p>
@@ -1285,19 +1300,19 @@
 </tbody>
 </table>
 <p>例如，您将 <code class="docutils literal notranslate"><span class="pre">-kdb</span></code> 标志传递给编译步骤和细化步骤，以进行 Verdi 调试，</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">VCSFlags</span><span class="p">(</span>
-<span class="w">    </span><span class="n">compileFlags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">List</span><span class="p">(</span><span class="s">&quot;-kdb&quot;</span><span class="p">),</span>
-<span class="w">    </span><span class="n">elaborateFlags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">List</span><span class="p">(</span><span class="s">&quot;-kdb&quot;</span><span class="p">)</span>
-<span class="p">)</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">VCSFlags</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">compileFlags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">List</span><span class="p">(</span><span class="s">&quot;-kdb&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">    </span><span class="n">elaborateFlags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">List</span><span class="p">(</span><span class="s">&quot;-kdb&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
 
-<span class="kd">val</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">=</span>
-<span class="w">  </span><span class="nc">SimConfig</span>
-<span class="w">    </span><span class="p">.</span><span class="n">withVCS</span><span class="p">(</span><span class="n">flags</span><span class="p">)</span>
-<span class="w">    </span><span class="p">.</span><span class="n">withFSDBWave</span>
-<span class="w">    </span><span class="p">.</span><span class="n">workspacePath</span><span class="p">(</span><span class="s">&quot;tb&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="p">.</span><span class="n">compile</span><span class="p">(</span><span class="nc">UIntAdder</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
+<span class="kd">val</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="nc">SimConfig</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">withVCS</span><span class="p">(</span><span class="n">flags</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">withFSDBWave</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">workspacePath</span><span class="p">(</span><span class="s">&quot;tb&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">compile</span><span class="p">(</span><span class="nc">UIntAdder</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span><span class="w"></span>
 
-<span class="p">...</span>
+<span class="p">...</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -1331,7 +1346,8 @@
 </section>
 <section id="simulation-with-blackbox">
 <h2><code class="docutils literal notranslate"><span class="pre">Blackbox</span></code> 仿真<a class="headerlink" href="#simulation-with-blackbox" title="此标题的永久链接"></a></h2>
-<p>有时，您希望将 IP 供应商为您提供的一些 Verilog/VHDL 格式的设计实体集成到您的 SpinalHDL 设计中。可以通过以下两种方式完成：</p>
+<p>Sometimes, IP vendors will provide you with some design entities in Verilog/VHDL format and you want to integrate them into your SpinalHDL design.
+The integration can done by following two ways:</p>
 <ol class="arabic simple">
 <li><p>在 <code class="docutils literal notranslate"><span class="pre">Blackbox</span></code> 定义中，使用 <code class="docutils literal notranslate"><span class="pre">addRTLPath(path:</span> <span class="pre">String)</span></code> 将外部 Verilog/VHDL 文件分配给该黑盒。</p></li>
 <li><p>使用 <code class="docutils literal notranslate"><span class="pre">SpinalReport</span></code> 的 <code class="docutils literal notranslate"><span class="pre">mergeRTLSource(fileName:</span> <span class="pre">String=null)</span></code> 方法。</p></li>
