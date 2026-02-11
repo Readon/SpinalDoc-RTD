@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:00+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,12 +41,12 @@ msgid "*IP instantiation*\\ , using either existing VHDL or Verilog component."
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:18
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:160
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:161
 msgid "Assignments"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:19
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:229
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:230
 msgid "When / Switch"
 msgstr ""
 
@@ -55,7 +55,7 @@ msgid "Component hierarchy"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:21
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:328
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:329
 msgid "Area"
 msgstr ""
 
@@ -120,94 +120,94 @@ msgid "Clock configuration"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:72
-msgid "In addition to the constructor parameters given :ref:`here <core_componets_clock_constructor>` , the following elements of each clock domain are configurable via a ``ClockDomainConfig`` class :"
-msgstr ""
-
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:78
-msgid "Property"
+msgid "In addition to the constructor parameters given :ref:`here <core_components_clock_constructor>` , the following elements of each clock domain are configurable via a ``ClockDomainConfig`` class :"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:79
-msgid "Valid values"
+msgid "Property"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:80
-msgid "``clockEdge``"
+msgid "Valid values"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:81
-msgid "``RISING``\\ , ``FALLING``"
+msgid "``clockEdge``"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:82
-msgid "``ResetKind``"
+msgid "``RISING``\\ , ``FALLING``"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:83
-msgid "``ASYNC``\\ , ``SYNC``"
+msgid "``ResetKind``"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:84
-msgid "``resetActiveHigh``"
+msgid "``ASYNC``\\ , ``SYNC``"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:85
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:87
-msgid "``true``\\ , ``false``"
+msgid "``resetActiveHigh``"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:86
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:88
+msgid "``true``\\ , ``false``"
+msgstr ""
+
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:87
 msgid "``clockEnableActiveHigh``"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:112
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:113
 msgid "By default, a ClockDomain is applied to the whole design. The configuration of this one is :"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:115
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:116
 msgid "clock : rising edge"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:116
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:117
 msgid "reset: asynchronous, active high"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:117
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:118
 msgid "no enable signal"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:120
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:121
 msgid "External clock"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:122
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:123
 msgid "You can define everywhere a clock domain which is driven by the outside. It will then automatically add clock and reset signal from the top level inputs to all synchronous elements."
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:140
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:141
 msgid "Cross Clock Domain"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:142
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:143
 msgid "SpinalHDL checks at compile time that there is no unwanted/unspecified cross clock domain signal reads. If you want to read a signal that is emitted by another ``ClockDomain`` area, you should add the ``crossClockDomain`` tag to the destination signal as depicted in the following example:"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:162
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:163
 msgid "There are multiple assignment operator :"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:168
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:169
 msgid "Symbol"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:169
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:204
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:307
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:488
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:170
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:205
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:308
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:489
 msgid "Description"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:170
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:171
 msgid ":="
 msgstr ""
 
@@ -219,7 +219,7 @@ msgstr ""
 msgid "last assignment win, value updated at next delta cycle"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:173
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:174
 msgid "/="
 msgstr ""
 
@@ -231,7 +231,7 @@ msgstr ""
 msgid "value updated instantly"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:176
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:177
 msgid "<>"
 msgstr ""
 
@@ -243,169 +243,169 @@ msgstr ""
 msgid "Similar behavioral than :="
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:197
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:198
 msgid "SpinalHDL check that bitcount of left and right assignment side match. There is multiple ways to adapt bitcount of BitVector (Bits, UInt, SInt) :"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:203
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:204
 msgid "Resizing ways"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:205
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:206
 msgid "x := y.resized"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:206
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:207
 msgid "Assign x wit a resized copy of y, resize value is automatically inferred to match x"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:207
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:208
 msgid "x := y.resize(newWidth)"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:208
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:209
 msgid "Assign x with a resized copy of y, size is manually calculated"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:211
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:212
 msgid "There are 2 cases where spinal automatically resize things :"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:217
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:218
 msgid "Assignment"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:218
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:219
 msgid "Problem"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:219
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:220
 msgid "SpinalHDL action"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:220
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:221
 msgid "myUIntOf_8bit := U(3)"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:221
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:222
 msgid "U(3) create an UInt of 2 bits, which don't match with left side"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:222
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:223
 msgid "Because  U(3) is a \"weak\" bit inferred signal, SpinalHDL resize it automatically"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:223
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:224
 msgid "myUIntOf_8bit := U(2 -> False default -> true)"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:224
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:225
 msgid "The right part infer a 3 bit UInt, which doesn't match with the left part"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:225
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:226
 msgid "SpinalHDL reapply the default value to bit that are missing"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:231
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:232
 msgid "As VHDL and Verilog, signals and registers can be conditionally assigned by using when and switch syntaxes"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:255
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:256
 msgid "You can also define new signals into a when/switch statement. It's useful if you want to calculate an intermediate value."
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:272
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:273
 msgid "Component/Hierarchy"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:274
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:275
 msgid "Like in VHDL and Verilog, you can define components that could be used to build a design hierarchy.  But unlike them, you don't need to bind them at instantiation."
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:300
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:301
 msgid "Syntax to define in/out is the following :"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:306
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:487
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:307
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:488
 msgid "Syntax"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:308
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:489
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:309
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:490
 msgid "Return"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:309
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:310
 msgid "in/out(x : Data)"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:310
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:311
 msgid "Set x an input/output"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:311
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:312
 msgid "x"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:312
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:313
 msgid "in/out Bool()"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:313
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:314
 msgid "Create an input/output Bool"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:314
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:315
 msgid "Bool"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:315
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:316
 msgid "in/out Bits/UInt/SInt(x bits)"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:316
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:317
 msgid "Create an input/output of the corresponding type"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:317
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:318
 msgid "T"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:320
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:321
 msgid "There is some rules about component interconnection :"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:323
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:324
 msgid "Components can only read outputs/inputs signals of children components"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:324
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:325
 msgid "Components can read outputs/inputs ports values"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:325
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:326
 msgid "If for some reason, you need to read a signals from far away in the hierarchy (debug, temporal patch) you can do it by using the value returned by some.where.else.theSignal.pull()."
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:330
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:331
 msgid "Sometime, creating a component to define some logic is overkill and to much verbose. For this kind of cases you can use Area :"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:360
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:361
 msgid "Function"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:362
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:363
 msgid "The ways you can use Scala functions to generate hardware are radically different than VHDL/Verilog for many reasons:"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:365
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:366
 msgid "You can instantiate register, combinatorial logic and component inside them."
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:366
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:367
 msgid "You don't have to play with ``process``\\ /\\ ``@always`` that limit the scope of assignment of signals"
 msgstr ""
 
@@ -421,70 +421,70 @@ msgstr ""
 msgid "You can also return a Component, a Bus, are anything else from scala the scala world."
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:372
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:373
 msgid "RGB to gray"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:374
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:375
 msgid "For example if you want to convert a Red/Green/Blue color into a gray one by using coefficient, you can use functions to apply them :"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:390
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:391
 msgid "Valid Ready Payload bus"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:392
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:393
 msgid "For instance if you define a simple Valid Ready Payload bus, you can then define useful function inside it."
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:417
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:418
 msgid "VHDL generation"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:419
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:420
 msgid "There is a small component and a ``main`` that generate the corresponding VHDL."
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:448
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:449
 msgid "Instantiate VHDL and Verilog IP"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:450
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:451
 msgid "In some cases, it could be useful to instantiate a VHDL or a Verilog component into a SpinalHDL design. To do that, you need to define BlackBox which is like a Component, but its internal implementation should be provided by a separate VHDL/Verilog file to the simulator/synthesis tool."
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:479
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:480
 msgid "Utils"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:481
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:482
 msgid "The SpinalHDL core contain some utils :"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:490
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:491
 msgid "log2Up(x : BigInt)"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:491
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:492
 msgid "Return the number of bit needed to represent x states"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:492
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:493
 msgid "Int"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:493
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:494
 msgid "isPow2(x : BigInt)"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:494
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:495
 msgid "Return true if x is a power of two"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:495
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:496
 msgid "Boolean"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/core/core_components.rst:498
+#: ../../SpinalHDL/miscelenea/core/core_components.rst:499
 msgid "Much more tool and utils are present in spinal.lib"
 msgstr ""

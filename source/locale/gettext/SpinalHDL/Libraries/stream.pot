@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:00+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -831,58 +831,58 @@ msgstr ""
 msgid "This utility will take one input transfer and generate several output transfers, it provides the facility to repeat the payload value ``count+1`` times into output transfers. The ``count`` is captured and registered each time inputStream fires for an individual payload."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/stream.rst:597
+#: ../../SpinalHDL/Libraries/stream.rst:598
 msgid "This ``extender`` provides several status signals, such as ``working``, ``last``, ``done`` where ``working`` means there is one input transfer accepted and in-progress, ``last`` indicates the last output transfer is prepared and waiting to complete, ``done`` become valid represents the last output transfer is firing and making the current input transaction process complete and ready to start another transaction."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/stream.rst:618
+#: ../../SpinalHDL/Libraries/stream.rst:619
 msgid "If only count for output stream is required then use ``StreamTransactionCounter`` instead."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/stream.rst:621
+#: ../../SpinalHDL/Libraries/stream.rst:622
 msgid "Simulation support"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/stream.rst:623
+#: ../../SpinalHDL/Libraries/stream.rst:624
 msgid "For simulation master and slave implementations are available:"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/stream.rst:629
+#: ../../SpinalHDL/Libraries/stream.rst:630
 msgid "Class"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/stream.rst:630
+#: ../../SpinalHDL/Libraries/stream.rst:631
 msgid "Usage"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/stream.rst:631
+#: ../../SpinalHDL/Libraries/stream.rst:632
 msgid "StreamMonitor"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/stream.rst:632
+#: ../../SpinalHDL/Libraries/stream.rst:633
 msgid "Used for both master and slave sides, calls function with payload if Stream fires."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/stream.rst:633
+#: ../../SpinalHDL/Libraries/stream.rst:634
 msgid "StreamDriver"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/stream.rst:634
+#: ../../SpinalHDL/Libraries/stream.rst:635
 msgid "Testbench master side, drives values by calling function to apply value (if available). Function must return if value was available. Supports random delays."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/stream.rst:635
+#: ../../SpinalHDL/Libraries/stream.rst:636
 msgid "StreamReadyRandomizer"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/stream.rst:636
+#: ../../SpinalHDL/Libraries/stream.rst:637
 msgid "Randomizes ``ready`` for reception of data, testbench is the slave side."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/stream.rst:637
+#: ../../SpinalHDL/Libraries/stream.rst:638
 msgid "ScoreboardInOrder"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/stream.rst:638
+#: ../../SpinalHDL/Libraries/stream.rst:639
 msgid "Often used to compare reference/dut data"
 msgstr ""

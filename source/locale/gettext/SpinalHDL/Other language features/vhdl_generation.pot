@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-14 10:16+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,48 +32,48 @@ msgstr ""
 msgid "Generating Verilog is exactly the same, but with ``SpinalVerilog`` in place of ``SpinalVHDL``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:40
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:41
 msgid "``SpinalVhdl`` and ``SpinalVerilog`` may need to create multiple instances of your component class, therefore the first argument is not a ``Component`` reference, but a function that returns a new component."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:43
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:44
 msgid "The ``SpinalVerilog`` implementation began the 5th of June, 2016. This backend successfully passes the same regression tests as the VHDL one (RISCV CPU, Multicore and pipelined mandelbrot, UART RX/TX, Single clock fifo, Dual clock fifo, Gray counter, ...)."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:46
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:47
 msgid "If you have any issues with this new backend, please make a `Github issue <https://github.com/SpinalHDL/SpinalHDL/issues>`_ describing the problem."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:49
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:50
 msgid "Parametrization from Scala"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:55
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:56
 msgid "Argument name"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:56
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:57
 msgid "Type"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:57
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:58
 msgid "Default"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:58
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:370
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:59
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:371
 msgid "Description"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:59
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:60
 msgid "``mode``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:60
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:61
 msgid "SpinalMode"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:61
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:62
 msgid "null"
 msgstr ""
 
@@ -85,11 +85,11 @@ msgstr ""
 msgid "Can be set to ``VHDL`` or ``Verilog``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:64
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:65
 msgid "``defaultConfigForClockDomains``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:65
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:66
 msgid "ClockDomainConfig"
 msgstr ""
 
@@ -109,31 +109,12 @@ msgstr ""
 msgid "ClockEnableActiveHigh"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:70
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:71
 msgid "Set the clock configuration that will be used as the default value for all new ``ClockDomain``."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:71
-msgid "``onlyStdLogicVectorAtTopLevelIo``"
-msgstr ""
-
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:72
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:84
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:96
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:100
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:108
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:112
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:116
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:120
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:124
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:128
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:132
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:136
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:140
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:144
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:152
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:156
-msgid "Boolean"
+msgid "``onlyStdLogicVectorAtTopLevelIo``"
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:73
@@ -143,365 +124,384 @@ msgstr ""
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:109
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:113
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:117
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:121
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:125
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:129
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:133
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:137
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:141
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:145
-msgid "false"
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:153
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:157
+msgid "Boolean"
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:74
-msgid "Change all unsigned/signed toplevel io into std_logic_vector."
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:86
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:98
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:102
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:110
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:114
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:118
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:126
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:130
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:134
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:142
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:146
+msgid "false"
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:75
-msgid "``defaultClockDomainFrequency``"
+msgid "Change all unsigned/signed toplevel io into std_logic_vector."
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:76
-msgid "IClockDomainFrequency"
+msgid "``defaultClockDomainFrequency``"
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:77
-msgid "UnknownFrequency"
+msgid "IClockDomainFrequency"
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:78
-msgid "Default clock frequency."
+msgid "UnknownFrequency"
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:79
-msgid "``targetDirectory``"
+msgid "Default clock frequency."
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:80
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:88
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:92
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:104
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:148
-msgid "String"
+msgid "``targetDirectory``"
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:81
-msgid "Current directory"
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:89
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:93
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:105
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:149
+msgid "String"
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:82
-msgid "Directory where files are generated."
+msgid "Current directory"
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/vhdl_generation.rst:83
+msgid "Directory where files are generated."
+msgstr ""
+
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:84
 msgid "``oneFilePerComponent``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:86
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:87
 msgid "Instead of generating one big VHDL/Verilog file, every component will get its own VHDL/Verilog file."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:87
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:88
 msgid "``netlistFileName``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:89
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:90
 msgid "ToplevelClassName.(vhd|v)"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:90
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:91
 msgid "Allow to change the name of the generated VHDL/Verilog."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:91
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:92
 msgid "``globalPrefix``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:93
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:94
 msgid "\"\""
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:94
-msgid "Will add the given prefix in the front of every global symboles in the VHDL/Verilog (components/modules/enums). This allows to avoid naming conflict between multiple generated file."
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:95
+msgid "Will add the given prefix in the front of every global symbols in the VHDL/Verilog (components/modules/enums). This allows to avoid naming conflict between multiple generated file."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:95
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:96
 msgid "``privateNamespace``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:98
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:99
 msgid "Every generated Component/Modules names will get prefixed with the toplevel Component/Module name (excepted for the toplevel). This allows to avoid naming conflict between multiple generated file."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:99
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:100
 msgid "``formalAsserts``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:102
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:103
 msgid "Enable the generation of the formal assertions in the VHDL/Verilog."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:103
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:104
 msgid "``anonymSignalPrefix``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:105
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:106
 msgid "\"zz\\_\""
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:106
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:107
 msgid "Set the prefix added to unnamed signals."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:107
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:108
 msgid "``inlineRom``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:110
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:111
 msgid "Configure the Verilog backend to incorporate the ROM values initialization in the verilog itself instead of an bin file."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:111
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:112
 msgid "``caseRom``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:114
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:115
 msgid "Generate the ROM as a big switch case."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:115
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:116
 msgid "``mergeAsyncProcess``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:118
-msgid "Will merge process/always blocks for combinatorial signal which share at least one conditional assignement (if/switch statment)"
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:119
+msgid "Will merge process/always blocks for combinatorial signal which share at least one conditional assignment (if/switch statement)"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:119
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:120
 msgid "``mergeSyncProcess``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:121
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:137
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:122
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:138
 msgid "true"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:122
-msgid "Will merge process/always blocks for flip-flops which use the same clock domain (if/switch statment)"
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:123
+msgid "Will merge process/always blocks for flip-flops which use the same clock domain (if/switch statement)"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:123
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:124
 msgid "``genLineComments``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:126
-msgid "For each hardware assignment in the generated VHDL/Verilog code, will attach a comment which specifies in which scala file, at which line, the assignement happend. Ex : a = 1'b1; // @ MyDesign.scala l1135"
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:127
+msgid "For each hardware assignment in the generated VHDL/Verilog code, will attach a comment which specifies in which scala file, at which line, the assignment happened. Ex : a = 1'b1; // @ MyDesign.scala l1135"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:127
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:128
 msgid "``noAssert``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:130
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:131
 msgid "Remove all the asserts from the generated code"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:131
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:132
 msgid "``headerWithDate``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:134
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:135
 msgid "Add the date at which the VHDL/Verilog was generated in its header."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:135
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:136
 msgid "``headerWithRepoHash``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:138
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:139
 msgid "Add the current directory git hash in the generated VHDL/Verilog header."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:139
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:140
 msgid "``dontCareGenAsZero``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:142
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:143
 msgid "Replace mySignal.assignDontCare() by mySignal := 0"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:143
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:144
 msgid "``obfuscateNames``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:146
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:147
 msgid "Will obfuscate the generated components and signal names."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:147
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:148
 msgid "``rtlHeader``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:149
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:150
 msgid "disabled"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:150
-msgid "Allow to manualy specify the VHDL/Verilog file header"
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:151
+msgid "Allow to manually specify the VHDL/Verilog file header"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:151
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:152
 msgid "``withTimescale``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:153
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:154
 msgid "True"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:154
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:155
 msgid "Enable the addition of the timescale in the generated Verilog"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:155
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:156
 msgid "``normalizeComponentClockDomainName``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:157
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:158
 msgid "False"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:158
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:159
 msgid "When enabled, in each component, the pulled clockdomain's signals of the implicit clockdomain will be named clk/reset/enable instead of their original name."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:161
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:162
 msgid "And this is the syntax to specify them:"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:174
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:175
 msgid "Parametrization from shell"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:176
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:177
 msgid "You can also specify generation parameters by using command line arguments."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:184
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:185
 msgid "The syntax for command line arguments is:"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:200
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:201
 msgid "Generated VHDL and Verilog"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:202
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:203
 msgid "How a SpinalHDL RTL description is translated into VHDL and Verilog is important:"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:204
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:205
 msgid "Names in Scala are preserved in VHDL and Verilog."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:205
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:206
 msgid "``Component`` hierarchy in Scala is preserved in VHDL and Verilog."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:206
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:207
 msgid "``when`` statements in Scala are emitted as if statements in VHDL and Verilog."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:207
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:208
 msgid "``switch`` statements in Scala are emitted as case statements in VHDL and Verilog in all standard cases."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:210
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:211
 msgid "Organization"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:212
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:213
 msgid "When you use the VHDL generator, all modules are generated into a single file which contain three sections:"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:214
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:215
 msgid "A package that contains the definition of all Enums"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:215
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:216
 msgid "A package that contains functions used by the architectural elements"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:216
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:217
 msgid "All components needed by your design"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:218
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:219
 msgid "When you use the Verilog generation, all modules are generated into a single file which contains two sections:"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:220
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:221
 msgid "All enumeration definitions used"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:221
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:222
 msgid "All modules needed by your design"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:224
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:225
 msgid "Combinational logic"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:226
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:289
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:227
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:290
 msgid "Scala:"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:254
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:314
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:255
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:315
 msgid "VHDL:"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:287
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:288
 msgid "Sequential logic"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:359
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:360
 msgid "VHDL and Verilog attributes"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:361
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:362
 msgid "In some situations, it is useful to give attributes for some signals in a design to modify how they are synthesized."
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:363
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:364
 msgid "To do that, you can call the following functions on any signals or memories in the design:"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:369
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:370
 msgid "Syntax"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:371
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:372
 msgid "``addAttribute(name)``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:372
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:373
 msgid "Add a boolean attribute with the given ``name`` set to true"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:373
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:374
 msgid "``addAttribute(name, value)``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:374
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:375
 msgid "Add a string attribute with the given ``name`` set to ``value``"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:377
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:378
 msgid "Example:"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:384
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:385
 msgid "Produced declaration in VHDL:"
 msgstr ""
 
-#: ../../SpinalHDL/Other language features/vhdl_generation.rst:392
+#: ../../SpinalHDL/Other language features/vhdl_generation.rst:393
 msgid "Produced declaration in Verilog:"
 msgstr ""

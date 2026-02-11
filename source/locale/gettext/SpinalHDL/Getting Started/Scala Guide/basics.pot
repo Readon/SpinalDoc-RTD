@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:00+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -141,7 +141,7 @@ msgid "The ``return`` keyword is not necessary. In absence of it, Scala takes th
 msgstr ""
 
 #: ../../SpinalHDL/Getting Started/Scala Guide/basics.rst:101
-msgid "Return type inferation"
+msgid "Return type inference"
 msgstr ""
 
 #: ../../SpinalHDL/Getting Started/Scala Guide/basics.rst:103

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:00+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,58 +29,58 @@ msgid "Exception in thread \"main\" java.lang.NullPointerException"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/frequent_errors.rst:14
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:39
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:87
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:114
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:44
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:92
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:119
 msgid "**Console symptoms :**"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/frequent_errors.rst:20
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:45
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:93
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:120
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:50
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:98
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:125
 msgid "**Code Example :**"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/frequent_errors.rst:27
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:80
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:107
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:139
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:85
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:112
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:144
 msgid "**Issue explanation :**"
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/frequent_errors.rst:29
-msgid "SpinalHDL is not a language, it is an Scala library, which mean, it obey to the same rules than the Scala general purpose programming language. When you run your SpinalHDL hardware description to generate the corresponding VHDL/Verilog RTL, your SpinalHDL hardware description will be executed as a Scala programm, and b will be a ``null`` reference until the programm execution come to that line, and it's why you can't use it before."
-msgstr ""
-
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:32
-msgid "Hierarchy violation"
-msgstr ""
-
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:34
-msgid "The SpinalHDL compiler check that all your assignments are legal from an hierarchy perspective. Multiple cases are elaborated in following chapters"
+msgid "SpinalHDL is not a language, it is an Scala library, which mean, it obey to the same rules than the Scala general purpose programming language. When you run your SpinalHDL hardware description to generate the corresponding VHDL/Verilog RTL, your SpinalHDL hardware description will be executed as a Scala program, and b will be a ``null`` reference until the program execution comes to that line, and it's why you can't use it before."
 msgstr ""
 
 #: ../../SpinalHDL/miscelenea/frequent_errors.rst:37
+msgid "Hierarchy violation"
+msgstr ""
+
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:39
+msgid "The SpinalHDL compiler check that all your assignments are legal from an hierarchy perspective. Multiple cases are elaborated in following chapters"
+msgstr ""
+
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:42
 msgid "Signal X can't be assigned by Y"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:82
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:87
 msgid "You can only assign input signals of subcomponents, else there is an hierarchy violation. If this issue happened, you probably forgot to specify the X signal's direction."
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:85
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:90
 msgid "Input signal X can't be assigned by Y"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:109
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:114
 msgid "You can only assign an input signals from the parent component, else there is an hierarchy violation. If this issue happened, you probably mixed signals direction declaration."
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:112
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:117
 msgid "Output signal X can't be assigned by Y"
 msgstr ""
 
-#: ../../SpinalHDL/miscelenea/frequent_errors.rst:141
+#: ../../SpinalHDL/miscelenea/frequent_errors.rst:146
 msgid "You can only assign output signals of a component from the inside of it, else there is an hierarchy violation. If this issue happened, you probably mixed signals direction declaration."
 msgstr ""

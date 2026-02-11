@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:00+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgid "Build phase, in which plugins can negotiation / elaboration hardware."
 msgstr ""
 
 #: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:41
-msgid "The build phase will not start before all FiberPlugin are done with their setup phase."
+msgid "The build phase will not start before all ``FiberPlugin`` are done with their setup phase."
 msgstr ""
 
 #: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:61
@@ -108,42 +108,42 @@ msgstr ""
 msgid "Here is a simple dummy example with a SubComponent which will be composed using 2 plugins :"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:102
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:105
 msgid "Such TopLevel would generate the following Verilog code :"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:131
-msgid "Note each \"during build\" fork an elaboration thread, the DriverPlugin.logic thread execution will be blocked on the \"sp\" evaluation until the StatePlugin.logic execution is done."
-msgstr ""
-
 #: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:135
-msgid "Interlocking / Ordering"
-msgstr ""
-
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:137
-msgid "Plugins can interlock each others using Retainer instances. Each plugin instance has a built in lock which can be controlled using retain/release functions."
+msgid "Note each ``during build`` fork an elaboration thread, the ``DriverPlugin.logic`` thread execution will be blocked on the \"sp\" evaluation until the ``StatePlugin.logic`` execution is done."
 msgstr ""
 
 #: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:140
-msgid "Here is an example based on the above `Simple example` but that time, the DriverPlugin will increment the StatePlugin.logic.signal by an amount set by other plugins (SetupPlugin in our case). And to ensure that the DriverPlugin doesn't generate the hardware too early, the SetupPlugin uses the DriverPlugin.retain/release functions."
+msgid "Interlocking / Ordering"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:207
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:142
+msgid "Plugins can interlock each others using ``Retainer`` instances. Each plugin instance has a built in lock which can be controlled using ``retain``/``release`` functions."
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:145
+msgid "Here is an example based on the above `Simple example` but that time, the ``DriverPlugin`` will increment ``the StatePlugin.logic.signal`` by an amount set by other plugins (``SetupPlugin`` in our case). And to ensure that the ``DriverPlugin`` doesn't generate the hardware too early, the ``SetupPlugin`` uses the ``DriverPlugin.retain``/``release`` functions."
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:215
 msgid "Here is the generated verilog"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:236
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:245
 msgid "Clearly, those examples are overkilled for what they do, the idea in general is more about :"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:238
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:247
 msgid "Negotiate / create interfaces between plugins (ex jump / flush ports)"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:239
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:248
 msgid "Schedule the elaboration (ex decode / dispatch specification)"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:240
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:249
 msgid "Provide a distributed framework which can scale up (minimal hardcoding)"
 msgstr ""

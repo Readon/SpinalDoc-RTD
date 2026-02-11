@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:00+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,21 +47,21 @@ msgstr ""
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:24
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:53
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:133
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:218
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:219
 msgid "Name"
 msgstr ""
 
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:25
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:54
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:134
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:219
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:220
 msgid "Type"
 msgstr ""
 
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:26
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:55
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:135
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:220
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:221
 msgid "Description"
 msgstr ""
 
@@ -92,17 +92,17 @@ msgid "Port used by the system to give transmission order to the controller"
 msgstr ""
 
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:33
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:227
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:228
 msgid "read"
 msgstr ""
 
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:34
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:228
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:229
 msgid "Flow[Bits]"
 msgstr ""
 
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:35
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:229
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:230
 msgid "Port used by the controller to notify the system about a successfully received frame"
 msgstr ""
 
@@ -239,12 +239,12 @@ msgid "The interfaces of this ``Component`` are the following :"
 msgstr ""
 
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:136
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:221
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:222
 msgid "configFrame"
 msgstr ""
 
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:137
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:222
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:223
 msgid "UartCtrlFrameConfig"
 msgstr ""
 
@@ -253,19 +253,19 @@ msgid "Contains data bit width count and party/stop bits configurations"
 msgstr ""
 
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:139
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:224
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:225
 msgid "samplingTick"
 msgstr ""
 
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:140
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:146
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:225
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:231
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:226
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:232
 msgid "Bool"
 msgstr ""
 
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:141
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:226
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:227
 msgid "Time reference that pulses ``rxSamplePerBit`` times per UART baud"
 msgstr ""
 
@@ -282,7 +282,7 @@ msgid "UART txd pin"
 msgstr ""
 
 #: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:150
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:235
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:236
 msgid "Let's define the enumeration that will be used to store the state of ``UartCtrlTx``\\ :"
 msgstr ""
 
@@ -290,99 +290,99 @@ msgstr ""
 msgid "Let's define the skeleton of ``UartCtrlTx``\\ :"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:202
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:296
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:203
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:301
 msgid "And here is the complete implementation:"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:210
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:211
 msgid "UartCtrlRx"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:212
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:213
 msgid "The interfaces of this ``Component`` are the following:"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:223
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:224
 msgid "Contains data bit width and party/stop bits configurations"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:230
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:231
 msgid "rxd"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:232
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:233
 msgid "UART rxd pin, not synchronized with the current clock domain"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:244
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:245
 msgid "Let's define the skeleton of the UartCtrlRx :"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:304
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:309
 msgid "UartCtrl"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:306
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:311
 msgid "Let's write ``UartCtrl`` that instantiates the ``UartCtrlRx`` and ``UartCtrlTx`` parts, generate the clock divider logic, and connect them to each other."
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:313
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:318
 msgid "To make it easier to use the UART with fixed settings, we introduce an companion object for ``UartCtrl``. It allows us to provide additional ways of instantiating a UartCtrl component with different sets of parameters. Here we define a ``UartCtrlInitConfig`` holding the settings for a component that is not runtime configurable. Note that it is still possible to instantiate the UartCtrl manually like all other components, which one would do if a runtime-configurable UART is needed (via ``val uart = new UartCtrl()``)."
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:325
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:330
 msgid "Simple usage"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:327
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:332
 msgid "To synthesize a ``UartCtrl`` as ``115200-N-8-1``:"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:334
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:339
 msgid "If you are using ``txd`` pin only, add:"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:341
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:346
 msgid "On the contrary, if you are using ``rxd`` pin only:"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:349
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:354
 msgid "Example with test bench"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:351
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:356
 msgid "Here is a top level example that does the followings things:"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:354
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:359
 msgid "Instantiate ``UartCtrl`` and set its configuration to 921600 baud/s, no parity, 1 stop bit."
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:355
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:360
 msgid "Each time a byte is received from the UART, it writes it on the leds output."
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:356
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:361
 msgid "Every 2000 cycles, it sends the switches input value to the UART."
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:363
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:368
 msgid "`Here <https://github.com/SpinalHDL/SpinalHDL/blob/master/tester/src/test/resources/UartCtrlUsageExample_tb.vhd>`_ you can get a simple VHDL testbench for this small ``UartCtrlUsageExample``."
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:366
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:371
 msgid "Bonus: Having fun with Stream"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:368
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:373
 msgid "If you want to queue data received from the UART:"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:375
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:380
 msgid "If you want to add a queue on the write interface and do some flow control:"
 msgstr ""
 
-#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:382
+#: ../../SpinalHDL/Examples/Intermediates ones/uart.rst:387
 msgid "If you want to send a 0x55 header before sending the value of switches, you can replace the write generator of the preceding example by:"
 msgstr ""

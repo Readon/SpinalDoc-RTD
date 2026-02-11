@@ -10,7 +10,7 @@ msgstr ""
 "+0800PO-Revision-Date:YEAR-MO-DA HO:MI+ZONELast-Translator:FULL NAME "
 "<EMAIL@ADDRESS>Language-Team:LANGUAGE <LL@li.org>MIME-Version:1.0Content-"
 "Type:text/plain; charset=UTF-8\n"
-"POT-Creation-Date: 2025-03-26 20:06+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: 2024-01-27 15:40+0000\n"
 "Last-Translator: Readon <xydarcher@qq.com>\n"
 "Language: zh_CN\n"
@@ -20,7 +20,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../SpinalHDL/Data types/AFix.rst:5
 msgid "AFix"
@@ -70,13 +70,13 @@ msgstr "``AFix.U(12 bits)`` 可表示的范围是 0 to 4095。"
 #: ../../SpinalHDL/Data types/AFix.rst:46
 #, fuzzy
 msgid ""
-"``AFix.SQ(8 bits, 4 bits)`` will have a range of -256 (internaly "
-"-4096*2^-4) to 255.9375 (internaly 4095*2^-4)"
+"``AFix.SQ(8 bits, 4 bits)`` will have a range of -256 (internally "
+"-4096*2^-4) to 255.9375 (internally 4095*2^-4)"
 msgstr "``AFix.SQ(8 bits, 4 bits)`` 的范围为 -4096 (-256) 到 4095 (255.9375)"
 
 #: ../../SpinalHDL/Data types/AFix.rst:48
 #, fuzzy
-msgid "``AFix.U(8 exp, 4 exp)`` will have a range of 0 to 240 (internaly 15*2^4)"
+msgid "``AFix.U(8 exp, 4 exp)`` will have a range of 0 to 240 (internally 15*2^4)"
 msgstr "``AFix.U(8 exp, 4 exp)`` 的范围为 0 到 256"
 
 #: ../../SpinalHDL/Data types/AFix.rst:51

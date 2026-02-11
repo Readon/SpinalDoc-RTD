@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:00+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,7 +103,7 @@ msgid "``Cat(x: Iterable[Data])``"
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/utils.rst:35
-msgid "Conactenate arguments, from LSB to MSB, see `Cat`_"
+msgid "Concatenate arguments, from LSB to MSB, see `Cat`_"
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/utils.rst:40
@@ -127,7 +127,7 @@ msgid "This seeming difference comes mostly from the convention that ``Bits`` ar
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/utils.rst:65
-msgid "Cloning hardware datatypes"
+msgid "Cloning hardware data types"
 msgstr ""
 
 #: ../../SpinalHDL/Other language features/utils.rst:67
