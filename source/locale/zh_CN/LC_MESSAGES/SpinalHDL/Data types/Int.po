@@ -11,8 +11,8 @@ msgstr ""
 "<EMAIL@ADDRESS>Language-Team:LANGUAGE <LL@li.org>MIME-Version:1.0Content-"
 "Type:text/plain; charset=UTF-8\n"
 "POT-Creation-Date: 2025-05-01 09:36+0000\n"
-"PO-Revision-Date: 2024-01-13 05:06+0000\n"
-"Last-Translator: tsy0123 <675526215@qq.com>\n"
+"PO-Revision-Date: 2026-02-11 21:00+0800\n"
+"Last-Translator: CatalpaEel\n"
 "Language: zh_CN\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
 "/spinaldoc-rtd/spinalhdldata-typesint/zh_Hans/>\n"
@@ -330,13 +330,12 @@ msgid "Set all bits to the given Bool value"
 msgstr "将所有位设置为给定的布尔值（Spinal Bool）"
 
 #: ../../SpinalHDL/Data types/Int.rst:142
-#, fuzzy
 msgid ""
 "Notice the difference in behavior between ``x >> 2`` (result 2 bit "
 "narrower than x) and ``x >> U(2)`` (keeping width) due to the Scala type "
 "of :code:`y`."
 msgstr ""
-"请注意由于 :code:`y` 的 Scala 类型原因， ``x >> 2`` （结果比 x 窄 2 位）和 ``x >> "
+"请注意由于 :code:`y` 的 Scala 类型不同， ``x >> 2`` （结果比 x 窄 2 位）和 ``x >> "
 "U(2)``（保持宽度）之间的行为有差异。"
 
 #: ../../SpinalHDL/Data types/Int.rst:145
@@ -696,9 +695,8 @@ msgid "Static bit access of y-th bit"
 msgstr "静态访问第 y 位"
 
 #: ../../SpinalHDL/Data types/Int.rst:383
-#, fuzzy
 msgid "x(y: UInt)"
-msgstr "x(y: Int)"
+msgstr "x(y: UInt)"
 
 #: ../../SpinalHDL/Data types/Int.rst:384
 msgid "Variable bit access of y-th bit"
@@ -1014,16 +1012,14 @@ msgid "About Rounding: https://en.wikipedia.org/wiki/Rounding"
 msgstr "关于舍入运算: https://en.wikipedia.org/wiki/Rounding"
 
 #: ../../SpinalHDL/Data types/Int.rst
-#, fuzzy
 msgid "Spinal HDL"
-msgstr "SpinalHDL"
+msgstr "Spinal HDL"
 
 #: ../../SpinalHDL/Data types/Int.rst
 msgid "name"
 msgstr ""
 
 #: ../../SpinalHDL/Data types/Int.rst
-#, fuzzy
 msgid "Wikipedia"
 msgstr "维基百科中的名称"
 
@@ -1032,24 +1028,20 @@ msgid "API"
 msgstr "API"
 
 #: ../../SpinalHDL/Data types/Int.rst
-#, fuzzy
 msgid "Mathematic"
-msgstr "算术运算"
+msgstr "数学运算"
 
 #: ../../SpinalHDL/Data types/Int.rst
-#, fuzzy
 msgid "Algorithm"
-msgstr "算术运算"
+msgstr "算法"
 
 #: ../../SpinalHDL/Data types/Int.rst
-#, fuzzy
 msgid "return"
 msgstr "返回类型"
 
 #: ../../SpinalHDL/Data types/Int.rst
-#, fuzzy
 msgid "(align=false)"
-msgstr "返回类型（align=false）"
+msgstr "（align=false）"
 
 #: ../../SpinalHDL/Data types/Int.rst
 msgid "Sup-"
@@ -1252,20 +1244,18 @@ msgid ""
 "different programming languages may be different."
 msgstr ""
 "你会发现 "
-"`ROUNDUP`、`ROUNDDOWN`、`ROUNDTOZERO`、`ROUNDTOINF`、`ROUNDTOEVEN`、`ROUNTOODD`"
+"`ROUNDUP`、`ROUNDDOWN`、`ROUNDTOZERO`、`ROUNDTOINF`、`ROUNDTOEVEN`、`ROUNDTOODD`"
 " 在行为上非常接近，`ROUNDTOINF` 是最常见的。不同编程语言中的舍入行为可能不同。"
 
 #: ../../SpinalHDL/Data types/Int.rst:594
-#, fuzzy
 msgid "language"
-msgstr "范围"
+msgstr "语言"
 
 #: ../../SpinalHDL/Data types/Int.rst:594
 msgid "default-RoundType"
 msgstr "默认舍入类型"
 
 #: ../../SpinalHDL/Data types/Int.rst:594
-#, fuzzy
 msgid "example"
 msgstr "示例"
 
@@ -1295,7 +1285,7 @@ msgstr "python2"
 
 #: ../../SpinalHDL/Data types/Int.rst:600
 msgid "python3"
-msgstr "蟒蛇3"
+msgstr "python3"
 
 #: ../../SpinalHDL/Data types/Int.rst
 msgid "``round(1.5) == round(2.5) == 2``"

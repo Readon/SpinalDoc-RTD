@@ -233,7 +233,6 @@ msgid ""
 msgstr "对于 Verilator 后端，可以使用 ``SimConfig.setTestPath(path)`` 函数设置测试文件夹位置。"
 
 #: ../../SpinalHDL/Simulation/bootstraps.rst:165
-#, fuzzy
 msgid ""
 "You can retrieve the location of the test path during simulation by "
 "calling the currentTestPath() function."

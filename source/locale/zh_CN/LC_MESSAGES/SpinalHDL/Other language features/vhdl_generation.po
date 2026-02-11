@@ -8,8 +8,8 @@ msgstr ""
 "Type:text/plain; charset=UTF-8\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2026-02-11 09:50+0000\n"
-"PO-Revision-Date: 2024-01-13 05:06+0000\n"
-"Last-Translator: tsy0123 <675526215@qq.com>\n"
+"PO-Revision-Date: 2026-02-11 22:31+0800\n"
+"Last-Translator: CatalpaEel\n"
 "Language: zh_CN\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
 "/spinaldoc-rtd/spinalhdlother-language-featuresvhdl_generation/zh_Hans/>"
@@ -207,206 +207,207 @@ msgstr "生成文件的目录。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:84 language
 msgid "``oneFilePerComponent``"
-msgstr ""
+msgstr "``oneFilePerComponent``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:87 language
 msgid ""
 "Instead of generating one big VHDL/Verilog file, every component will get"
 " its own VHDL/Verilog file."
-msgstr ""
+msgstr "不为每个组件生成单一的 VHDL/Verilog 大文件，而是为每个组件分别生成独立的 VHDL/Verilog 文件。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:88 language
 msgid "``netlistFileName``"
-msgstr ""
+msgstr "``netlistFileName``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:90 language
 msgid "ToplevelClassName.(vhd|v)"
-msgstr ""
+msgstr "顶层类名.(vhd|v)"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:91 language
 msgid "Allow to change the name of the generated VHDL/Verilog."
-msgstr ""
+msgstr "允许更改生成的 VHDL/Verilog 文件名。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:92 language
 msgid "``globalPrefix``"
-msgstr ""
+msgstr "``globalPrefix``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:94 language
 msgid "\"\""
-msgstr ""
+msgstr "\"\""
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:95 language
 msgid ""
 "Will add the given prefix in the front of every global symbols in the "
 "VHDL/Verilog (components/modules/enums). This allows to avoid naming "
 "conflict between multiple generated file."
-msgstr ""
+msgstr "在 VHDL/Verilog 中所有全局符号（组件/模块/枚举）前添加指定前缀。"
+"这有助于避免多个生成文件之间的命名冲突。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:96 language
 msgid "``privateNamespace``"
-msgstr ""
+msgstr "``privateNamespace``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:99 language
 msgid ""
 "Every generated Component/Modules names will get prefixed with the "
 "toplevel Component/Module name (excepted for the toplevel). This allows "
 "to avoid naming conflict between multiple generated file."
-msgstr ""
+msgstr "所有生成的组件/模块名称（顶层除外）都将以顶层组件/模块名为前缀。"
+"这有助于避免多个生成文件之间的命名冲突。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:100 language
 msgid "``formalAsserts``"
-msgstr ""
+msgstr "``formalAsserts``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:103 language
 msgid "Enable the generation of the formal assertions in the VHDL/Verilog."
-msgstr ""
+msgstr "启用 VHDL/Verilog 中形式化断言的生成。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:104 language
 msgid "``anonymSignalPrefix``"
-msgstr ""
+msgstr "``anonymSignalPrefix``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:106 language
 msgid "\"zz\\_\""
-msgstr ""
+msgstr "\"zz\\_\""
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:107 language
 msgid "Set the prefix added to unnamed signals."
-msgstr ""
+msgstr "设置添加到未命名信号的前缀。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:108 language
 msgid "``inlineRom``"
-msgstr ""
+msgstr "``inlineRom``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:111 language
 msgid ""
 "Configure the Verilog backend to incorporate the ROM values "
 "initialization in the verilog itself instead of an bin file."
-msgstr ""
+msgstr "配置 Verilog 后端，将 ROM 初始化值内嵌于 Verilog 代码中，而非生成独立的二进制文件。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:112 language
 msgid "``caseRom``"
-msgstr ""
+msgstr "``caseRom``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:115 language
 msgid "Generate the ROM as a big switch case."
-msgstr ""
+msgstr "以大型 switch case 语句形式生成 ROM。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:116 language
 msgid "``mergeAsyncProcess``"
-msgstr ""
+msgstr "``mergeAsyncProcess``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:119 language
 msgid ""
 "Will merge process/always blocks for combinatorial signal which share at "
 "least one conditional assignment (if/switch statement)"
-msgstr ""
+msgstr "合并至少共享一个条件赋值（if/switch 语句）的组合逻辑信号的 process/always 块。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:120 language
 msgid "``mergeSyncProcess``"
-msgstr ""
+msgstr "``mergeSyncProcess``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:122
 #: features/vhdl_generation.rst:138 language
 msgid "true"
-msgstr ""
+msgstr "true"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:123 language
 msgid ""
 "Will merge process/always blocks for flip-flops which use the same clock "
 "domain (if/switch statement)"
-msgstr ""
+msgstr "合并使用相同时钟域的触发器（flip-flop）的 process/always 块（if/switch 语句）。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:124 language
 msgid "``genLineComments``"
-msgstr ""
+msgstr "``genLineComments``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:127 language
 msgid ""
 "For each hardware assignment in the generated VHDL/Verilog code, will "
 "attach a comment which specifies in which scala file, at which line, the "
 "assignment happened. Ex : a = 1'b1; // @ MyDesign.scala l1135"
-msgstr ""
+msgstr "为生成的 VHDL/Verilog 代码中的每项硬件赋值附加注释，标明该赋值所在的 Scala 文件及行号。"
+"例如：a = 1'b1; // @ MyDesign.scala l1135"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:128 language
-#, fuzzy
 msgid "``noAssert``"
-msgstr "``mode``"
+msgstr "``noAssert``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:131 language
 msgid "Remove all the asserts from the generated code"
-msgstr ""
+msgstr "从生成的代码中移除所有断言"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:132 language
 msgid "``headerWithDate``"
-msgstr ""
+msgstr "``headerWithDate``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:135 language
 msgid "Add the date at which the VHDL/Verilog was generated in its header."
-msgstr ""
+msgstr "在 VHDL/Verilog 文件头中添加生成日期。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:136 language
 msgid "``headerWithRepoHash``"
-msgstr ""
+msgstr "``headerWithRepoHash``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:139 language
 msgid "Add the current directory git hash in the generated VHDL/Verilog header."
-msgstr ""
+msgstr "在生成的 VHDL/Verilog 文件头中添加当前目录的 Git 哈希值。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:140 language
 msgid "``dontCareGenAsZero``"
-msgstr ""
+msgstr "``dontCareGenAsZero``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:143 language
 msgid "Replace mySignal.assignDontCare() by mySignal := 0"
-msgstr ""
+msgstr "将 mySignal.assignDontCare() 替换为 mySignal := 0"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:144 language
 msgid "``obfuscateNames``"
-msgstr ""
+msgstr "``obfuscateNames``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:147 language
 msgid "Will obfuscate the generated components and signal names."
-msgstr ""
+msgstr "混淆生成的组件名与信号名。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:148 language
 msgid "``rtlHeader``"
-msgstr ""
+msgstr "``rtlHeader``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:150 language
 msgid "disabled"
-msgstr ""
+msgstr "disabled"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:151 language
 msgid "Allow to manually specify the VHDL/Verilog file header"
-msgstr ""
+msgstr "允许手动指定 VHDL/Verilog 文件头"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:152 language
 msgid "``withTimescale``"
-msgstr ""
+msgstr "``withTimescale``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:154 language
 msgid "True"
-msgstr ""
+msgstr "True"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:155 language
 msgid "Enable the addition of the timescale in the generated Verilog"
-msgstr ""
+msgstr "在生成的 Verilog 代码中添加时间尺度（timescale）"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:156 language
 msgid "``normalizeComponentClockDomainName``"
-msgstr ""
+msgstr "``normalizeComponentClockDomainName``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:158 language
-#, fuzzy
 msgid "False"
-msgstr "false"
+msgstr "False"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:159 language
 msgid ""
 "When enabled, in each component, the pulled clockdomain's signals of the "
 "implicit clockdomain will be named clk/reset/enable instead of their "
 "original name."
-msgstr ""
+msgstr "启用后，在每个组件中，隐式时钟域所引出的时钟域信号将被命名为 clk/reset/enable，而非其原始名称。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:162 language
 msgid "And this is the syntax to specify them:"

@@ -51,19 +51,17 @@ msgid "WhenBuilder"
 msgstr "WhenBuilder"
 
 #: ../../SpinalHDL/Semantic/when_switch.rst:46
-#, fuzzy
 msgid ""
 "Sometimes we need to generate some parameters for the when condition, and"
 " the original structure of ``when``/``otherwise`` is not very suitable. "
 "Therefore, we provide a 'whenBuilder' method to achieve this goal:"
-msgstr "有时需要为when条件生成一些参数，而when else结构并不太合适。因此，我们提供了一个'whenBuilder'方法来实现这个目标"
+msgstr "有时需要为when条件生成一些参数，而 ``when``/ ``otherwise`` 结构并不太合适。因此，我们提供了一个'whenBuilder'方法来实现这个目标"
 
 #: ../../SpinalHDL/Semantic/when_switch.rst:73
-#, fuzzy
 msgid ""
 "Compared to the ``when``/``elsewhen``/``otherwise`` approach, it might be"
 " more convenient for parameterization. we can also use like this:"
-msgstr "与when/elsewhen/otherwise方法相比，它可能更方便于参数化。我们也可以这样使用"
+msgstr "与 ``when``/``elsewhen``/``otherwise`` 方法相比，它可能更方便于参数化。我们也可以这样使用"
 
 #: ../../SpinalHDL/Semantic/when_switch.rst:94
 msgid ""

@@ -111,7 +111,6 @@ msgid "``Cat(x: Iterable[Data])``"
 msgstr "``Cat(x: Iterable[Data])``"
 
 #: ../../SpinalHDL/Other features/utils.rst:35 language
-#, fuzzy
 msgid "Concatenate arguments, from LSB to MSB, see `Cat`_"
 msgstr "连接参数, 从 LSB 到 MSB, 参见 `Cat`_"
 
@@ -156,7 +155,6 @@ msgstr ""
 "将索引 0 放置在 LSB 处。"
 
 #: ../../SpinalHDL/Other features/utils.rst:65 language
-#, fuzzy
 msgid "Cloning hardware data types"
 msgstr "克隆硬件数据类型"
 

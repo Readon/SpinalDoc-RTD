@@ -52,7 +52,6 @@ msgid "Linux"
 msgstr "Linux"
 
 #: ../../SpinalHDL/Simulation/install/Icarus Verilog.rst:20
-#, fuzzy
 msgid ""
 "Also the openjdk package that corresponds to your Java version has to be "
 "installed. Refer to "

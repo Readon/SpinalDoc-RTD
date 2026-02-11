@@ -41,7 +41,6 @@ msgid ""
 msgstr "换句话说，它是全局变量、scala 隐式变量、线程本地变量（ThreadLocal） 的替代品。"
 
 #: ../../SpinalHDL/Other features/scope_property.rst:10 language
-#, fuzzy
 msgid ""
 "To compare with global variable, It allow to run multiple thread running "
 "the same code independently"

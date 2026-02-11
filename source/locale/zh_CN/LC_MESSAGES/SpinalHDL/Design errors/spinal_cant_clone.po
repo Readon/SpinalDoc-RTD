@@ -59,7 +59,6 @@ msgid "Example 2"
 msgstr "例子2"
 
 #: ../../SpinalHDL/Design errors/spinal_cant_clone.rst:72
-#, fuzzy
 msgid "raises an exception:"
 msgstr "报错："
 

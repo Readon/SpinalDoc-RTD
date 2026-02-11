@@ -62,7 +62,6 @@ msgid ":ref:`Floating-point <Floating>` numbers (experimental support)"
 msgstr ":ref:`Floating-point <Floating>` 浮点小数（实验性支持）"
 
 #: ../../SpinalHDL/Data types/index.rst:22
-#, fuzzy
 msgid ""
 "Additionally, if you want to assign a don't care value to some hardware, "
 "for instance, to provide a default value, you can use the assignDontCare "

@@ -24,7 +24,6 @@ msgid "tilelink.fabric.Node"
 msgstr "tilelink.fabric.Node"
 
 #: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:5
-#, fuzzy
 msgid ""
 "tilelink.fabric.Node is an additional layer over the regular tilelink "
 "hardware instantiation which handle negotiation and parameters "
@@ -32,7 +31,6 @@ msgid ""
 msgstr "tilelink.fabric.Node是常规tilelink硬件实例之上的附加层，用于处理SoC级别的协调和参数传递。"
 
 #: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:7
-#, fuzzy
 msgid ""
 "It is mostly based on the Fiber API, which allows to create elaboration "
 "time fibers (user-space threads), allowing to schedule future parameter "
@@ -85,16 +83,15 @@ msgid "m2s.parameter : Handle[tilelink.M2sParameter] : The final bus parameter"
 msgstr "m2s.parameter : Handle[tilelink.M2sParameter]: 最终的总线参数"
 
 #: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:22
-#, fuzzy
 msgid ""
 "You can note that they all are Handles. Handle is a way in SpinalHDL to "
 "share a value between fibers. If a fiber read a Handle while this one has"
 " no value yet, it will block the execution of that fiber until another "
 "fiber provide a value to the Handle."
-msgstr "您可以注意到它们都是句柄。Handle是SpinalHDL中在纤程之间共享值的一种方式。如果一个纤程读取一个句柄，而这个句柄还没有值，它将阻止该纤程的执行，直到另一个纤程向该句柄提供一个值。"
+msgstr "您可以注意到它们都是句柄。Handle是SpinalHDL中在纤程之间共享值的一种方式。"
+"如果一个纤程读取一个句柄，而这个句柄还没有值，它将阻塞该纤程的执行，直到另一个纤程向该句柄提供一个值。"
 
 #: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:24
-#, fuzzy
 msgid ""
 "There is also a set of attributes like m2s, but reversed (named s2m) "
 "which specify the parameters for the transactions initiated by the slave "
@@ -137,39 +134,36 @@ msgid "Example GpioFiber"
 msgstr "GPIOFiber示例"
 
 #: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:76
-#, fuzzy
 msgid ""
 "``GpioFiber`` is a simple tilelink peripheral which can read / drive a 32"
 " bits tristate array."
-msgstr "GpioFiber是一个简单的tilelink外设，可以读取/驱动32位三态阵列。"
+msgstr "``GpioFiber`` 是一个简单的tilelink外设，可以读取/驱动32位三态阵列。"
 
 #: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:121
 msgid "Example RamFiber"
 msgstr "RamFiber示例"
 
 #: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:123
-#, fuzzy
 msgid "``RamFiber`` is the integration layer of a regular tilelink Ram component."
-msgstr "RamFiber是常规tilelink Ram组件的集成层。"
+msgstr "``RamFiber`` 是常规tilelink Ram组件的集成层。"
 
 #: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:154
 msgid "Example CpuFiber"
 msgstr "CpuFiber示例"
 
 #: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:156
-#, fuzzy
 msgid "``CpuFiber`` is an fictive example of a master integration."
-msgstr "CpuFiber是一个虚拟的主端集成的示例。"
+msgstr "``CpuFiber`` 是一个虚拟的主端集成的示例。"
 
 #: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:204
-#, fuzzy
 msgid ""
 "One particularity of Tilelink, is that it assumes a master will not emit "
 "requests to a unmapped memory space. To allow a master to identify what "
 "memory access it is allowed to do, you can use the "
 "``spinal.lib.system.tag.MemoryConnection.getMemoryTransfers`` tool as "
 "following :"
-msgstr "Tilelink的一个特殊性是，它假设主端不会向未映射的内存空间发出请求。为了让主机识别允许访问哪些内存，您可以使用spinal.lib.system.tag.MemoryConnection.getMemoryTransfers工具，如下所示："
+msgstr "Tilelink的一个特性是，它假设主端不会向未映射的内存空间发出请求。"
+"为了让主机识别允许访问哪些内存，您可以使用 ``spinal.lib.system.tag.MemoryConnection.getMemoryTransfers`` 工具，如下所示："
 
 #: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:217
 msgid "If you run this in the Cpu's fiber, in the following soc :"
@@ -194,7 +188,6 @@ msgid "\"OT\" means OffsetTransformer(offset)"
 msgstr "\"OT\" 表示OffsetTransformer(offset)"
 
 #: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:251
-#, fuzzy
 msgid ""
 "Note that you can also add PMA (Physical Memory Attributes) to nodes and "
 "retrieves them via this getMemoryTransfers utilities."

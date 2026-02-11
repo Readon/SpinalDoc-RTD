@@ -314,11 +314,10 @@ msgid "BufferCC(input : T)"
 msgstr "BufferCC(input : T)"
 
 #: ../../SpinalHDL/Libraries/utils.rst:111
-#, fuzzy
 msgid ""
 "Return the input signal synchronized with the current clock domain by "
 "using 2 flip-flops"
-msgstr "返回利用两个触发器同步到当前时钟域的同步输入信号"
+msgstr "通过两级触发器将输入信号同步至当前时钟域后返回"
 
 #: ../../SpinalHDL/Libraries/utils.rst:115
 msgid "Counter"
@@ -367,7 +366,6 @@ msgid "Starts at zero and ends at ``(1 << bitCount) - 1``"
 msgstr "从0开始到 ``(1 << bitCount) - 1`` 结束"
 
 #: ../../SpinalHDL/Libraries/utils.rst:134
-#, fuzzy
 msgid "A counter can be controlled by methods, and signals can be read:"
 msgstr "计数器可以通过方法控制，并且可以连线可以被读取："
 
@@ -444,15 +442,14 @@ msgid "asyncAssertSyncDeassert"
 msgstr "asyncAssertSyncDeassert"
 
 #: ../../SpinalHDL/Libraries/utils.rst:196
-#, fuzzy
 msgid ""
 "You can filter an asynchronous reset by using an asynchronously asserted "
 "synchronously deasserted logic. To do it you can use the "
 "``ResetCtrl.asyncAssertSyncDeassert`` function which will return you the "
 "filtered value."
 msgstr ""
-"您可以使用“异步有效同步无效”的逻辑来构造异步复位。为此，可以使用 ``ResetCtrl.asyncAssertSyncDeassert`` "
-"函数返回构造的复位信号。"
+"您可以使用异步置位、同步复位的逻辑来构造异步复位。为此，可以使用 ``ResetCtrl.asyncAssertSyncDeassert`` "
+"函数，该函数将返回过滤后的值。"
 
 #: ../../SpinalHDL/Libraries/utils.rst:202
 msgid "Argument name"

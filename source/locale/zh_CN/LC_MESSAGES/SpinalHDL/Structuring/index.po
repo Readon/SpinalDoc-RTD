@@ -43,7 +43,6 @@ msgid "handling of clock/reset domains"
 msgstr "时钟/复位域的处理"
 
 #: ../../SpinalHDL/Structuring/index.rst:10
-#, fuzzy
 msgid "instantiation of existing VHDL and Verilog IP"
 msgstr "现有 VHDL 和 Verilog IP 的实例化"
 

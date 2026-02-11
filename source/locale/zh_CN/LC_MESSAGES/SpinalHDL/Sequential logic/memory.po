@@ -395,18 +395,16 @@ msgid "Blackbox all memory."
 msgstr "黑盒化所有存储器。"
 
 #: ../../SpinalHDL/Sequential logic/memory.rst
-#, fuzzy
 msgid "Throw an error on unblackboxable memory."
-msgstr "对不可黑盒存储器抛出错误"
+msgstr "遇到无法黑盒化的存储器时抛出错误。"
 
 #: ../../SpinalHDL/Sequential logic/memory.rst:231
 msgid "``blackboxAllWhatsYouCan``"
 msgstr "``blackboxAllWhatsYouCan``"
 
 #: ../../SpinalHDL/Sequential logic/memory.rst:232
-#, fuzzy
 msgid "Blackbox every memory that is replaceable."
-msgstr "黑盒所有可黑盒的存储器"
+msgstr "黑盒化所有可黑盒的存储器"
 
 #: ../../SpinalHDL/Sequential logic/memory.rst:233
 msgid "``blackboxRequestedAndUninferable``"
@@ -423,14 +421,12 @@ msgid "``blackboxOnlyIfRequested``"
 msgstr "``blackboxOnlyIfRequested``"
 
 #: ../../SpinalHDL/Sequential logic/memory.rst
-#, fuzzy
 msgid "Blackbox memory specified by the user."
 msgstr "用户指定的黑盒存储器"
 
 #: ../../SpinalHDL/Sequential logic/memory.rst:239
-#, fuzzy
 msgid "``blackboxByteEnables``"
-msgstr "``blackboxAll``"
+msgstr "``blackboxByteEnables``"
 
 #: ../../SpinalHDL/Sequential logic/memory.rst
 msgid "Blackbox every memory which use write port with byte mask."

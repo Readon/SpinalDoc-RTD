@@ -255,12 +255,11 @@ msgid "The BitVector family - (``Bits``, ``UInt``, ``SInt``)"
 msgstr "BitVector 系列 - (``Bits``, ``UInt``, ``SInt``)"
 
 #: ../../SpinalHDL/Developers area/types.rst:120
-#, fuzzy
 msgid ""
 "``BitVector`` is a family of types for storing multiple bits of "
 "information in a single value. This type has three subtypes that can be "
 "used to model different behaviors:"
-msgstr "``BitVector`` 是一个系列的类型，用于在单个值中存储多位信息。该类型具有三个子类型，可用于描述不同的行为："
+msgstr "``BitVector`` 是一类用于在单个值中存储多位信息的类型。该类型具有三个子类型，可用于描述不同的行为："
 
 #: ../../SpinalHDL/Developers area/types.rst:121
 msgid ""
@@ -914,7 +913,6 @@ msgid ""
 msgstr "然后，您还可以根据需要将一个线束实例放置在另一个线束中（没有深度限制）："
 
 #: ../../SpinalHDL/Developers area/types.rst:494
-#, fuzzy
 msgid "And finally instantiate your Bundles inside the hardware :"
 msgstr "最后在硬件中实例化您的线束："
 
@@ -990,7 +988,6 @@ msgid "Use the VHDL enumeration system, this is the default encoding"
 msgstr "使用VHDL枚举系统，这是默认编码"
 
 #: ../../SpinalHDL/Developers area/types.rst:668
-#, fuzzy
 msgid "binarySequential"
 msgstr "二进制顺序"
 
@@ -1135,9 +1132,8 @@ msgid ""
 msgstr "字面量通常用作常量值。但您也可以使用它们一次完成两件事："
 
 #: ../../SpinalHDL/Developers area/types.rst:748
-#, fuzzy
 msgid "Define a signal which is assigned with a constant value"
-msgstr "定义一条分配有常量值的连线"
+msgstr "定义一个分配有常量值的信号"
 
 #: ../../SpinalHDL/Developers area/types.rst:749
 msgid "Setup inferred type: UInt(4 bits)"

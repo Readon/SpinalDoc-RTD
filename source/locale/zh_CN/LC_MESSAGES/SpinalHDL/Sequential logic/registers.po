@@ -11,8 +11,8 @@ msgstr ""
 "<EMAIL@ADDRESS>Language-Team:LANGUAGE <LL@li.org>MIME-Version:1.0Content-"
 "Type:text/plain; charset=UTF-8\n"
 "POT-Creation-Date: 2025-02-12 09:08+0000\n"
-"PO-Revision-Date: 2024-01-13 05:06+0000\n"
-"Last-Translator: tsy0123 <675526215@qq.com>\n"
+"PO-Revision-Date: 2026-02-11 22:41+0800\n"
+"Last-Translator: CatalpaEel\n"
 "Language: zh_CN\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
 "/spinaldoc-rtd/spinalhdlsequential-logicregisters/zh_Hans/>\n"
@@ -38,7 +38,6 @@ msgid ""
 msgstr "在 Spinal 中，没有 process/always 块。寄存器在声明时明确定义。这种与传统的事件驱动 HDL 的区别具有很大的影响："
 
 #: ../../SpinalHDL/Sequential logic/registers.rst:11
-#, fuzzy
 msgid ""
 "You can assign registers and signals in the same scope, meaning the code "
 "doesn't need to be split between process/always blocks"
@@ -176,7 +175,6 @@ msgid "Register vectors"
 msgstr "寄存器组"
 
 #: ../../SpinalHDL/Sequential logic/registers.rst:160
-#, fuzzy
 msgid ""
 "As for signals, it is possible to define a vector of registers with "
 "``Vec``."
@@ -195,12 +193,10 @@ msgid ""
 msgstr "如果由于初始化值未知而必须推迟初始化，请使用如下例所示的函数。"
 
 #: ../../SpinalHDL/Sequential logic/registers.rst:208
-#, fuzzy
 msgid "Transforming a signal into a register"
-msgstr "将线缆/信号转换为寄存器"
+msgstr "将信号转换为寄存器"
 
 #: ../../SpinalHDL/Sequential logic/registers.rst:210
-#, fuzzy
 msgid ""
 "Sometimes it is useful to transform an existing signal into a register. "
 "For instance, when you are using a ``Bundle``, if you want some outputs "
@@ -210,7 +206,7 @@ msgid ""
 "``io.myBundle.PORT := PORT``. To do this, you just need to use "
 "``.setAsReg()`` on the ports you want to control as registers:"
 msgstr ""
-"有时将现有的连线转换为寄存器很有用。例如，当您使用线束（Bundle）时，如果您希望线束的某些输出成为寄存器，您可能更愿意编写 "
+"有时将现有的连线转换为寄存器很有用。例如，在使用线束（Bundle）时，如果您希望线束的某些输出成为寄存器，您可能更愿意编写 "
 "``io.myBundle.PORT := newValue`` 而不用 ``val PORT = Reg( ...)`` 并将其输出连接到带有 "
 "``io.myBundle.PORT := PORT`` 的端口。为此，您只需在要实例化为寄存器的端口上使用 ``.setAsReg()``："
 
@@ -221,14 +217,12 @@ msgid ""
 msgstr "请注意，在上面的代码中，您还可以指定初始化值。"
 
 #: ../../SpinalHDL/Sequential logic/registers.rst:234
-#, fuzzy
 msgid ""
 "The register is created in the clock domain of the signal, and does not "
 "depend on the place where ``.setAsReg()`` is used."
-msgstr "该寄存器是在线路/信号的时钟域中创建的，并且不依赖于使用 ``.setAsReg()`` 的位置。"
+msgstr "该寄存器是在信号的时钟域中创建的，并且不依赖于使用 ``.setAsReg()`` 的位置。"
 
 #: ../../SpinalHDL/Sequential logic/registers.rst:237
-#, fuzzy
 msgid ""
 "In the example above, the signal is defined in the ``io`` Bundle, in the "
 "same clock domain as the component. Even if ``io.apb.PADDR.setAsReg()`` "
@@ -236,7 +230,7 @@ msgid ""
 "register would use the clock domain of the component and not the one of "
 "the ``ClockingArea``."
 msgstr ""
-"在上面的示例中，线路在 ``io`` 线束中定义，与组件位于同一时钟域中。即使 ``io.apb.PADDR.setAsReg()`` "
+"在上面的示例中，信号在 ``io`` 线束中定义，与组件位于同一时钟域中。即使 ``io.apb.PADDR.setAsReg()`` "
 "这条代码写在具有不同时钟域的 ``ClockingArea`` 中，寄存器也将使用组件的时钟域，而不是 ``ClockingArea`` "
 "的时钟域。"
 

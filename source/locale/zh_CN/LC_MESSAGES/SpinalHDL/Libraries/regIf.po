@@ -567,7 +567,6 @@ msgid "example1: clock gate software enable"
 msgstr "示例1：时钟门软件使能"
 
 #: ../../SpinalHDL/Libraries/regIf.rst:262
-#, fuzzy
 msgid "example2: interrupt raw reg with force interface for software"
 msgstr "示例2：使用软件的带强制(force)接口的中断原始(raw)状态寄存器"
 
@@ -651,9 +650,8 @@ msgstr "MASK"
 
 #: ../../SpinalHDL/Libraries/regIf.rst:414
 #: ../../SpinalHDL/Libraries/regIf.rst:433
-#, fuzzy
 msgid "int mask register, 1: off; 0: open; default 1 int off"
-msgstr "中断掩码寄存器，1：关闭；0：打开；默认1 中断关闭"
+msgstr "中断掩码寄存器，1：关闭；0：打开；默认 1 中断关闭"
 
 #: ../../SpinalHDL/Libraries/regIf.rst:415
 #: ../../SpinalHDL/Libraries/regIf.rst:434
@@ -747,7 +745,6 @@ msgstr ""
 "triggers: Bool*)``"
 
 #: ../../SpinalHDL/Libraries/regIf.rst:457
-#, fuzzy
 msgid "create RAW/FORCE/MASK(SET/CLR)/STATUS for pulse event at addrOffset"
 msgstr "在addrOffset处为脉冲事件创建RAW/FORCE/MASK(SET/CLR)/STATUS"
 
@@ -760,7 +757,6 @@ msgstr ""
 "String, levels: Bool*)``"
 
 #: ../../SpinalHDL/Libraries/regIf.rst:458
-#, fuzzy
 msgid "create RAW/FORCE/MASK(SET/CLR)/STATUS for level event at addrOffset"
 msgstr "在addrOffset处为电平事件创建RAW/FORCE/MASK(SET/CLR)/STATUS"
 
@@ -784,7 +780,6 @@ msgid "Developers Area"
 msgstr "开发者区域"
 
 #: ../../SpinalHDL/Libraries/regIf.rst:516
-#, fuzzy
 msgid "You can add your document Type by extending the `BusIfVisitor` Trait"
 msgstr "您可以通过扩展 `BusIfVistor` 特征来添加文档类型"
 
@@ -794,9 +789,8 @@ msgid "``case class Latex(fileName : String) extends BusIfVisitor{ ... }``"
 msgstr "``case class Latex(fileName : String) extends BusIfVisitor{ ... }``"
 
 #: ../../SpinalHDL/Libraries/regIf.rst:520
-#, fuzzy
 msgid "BusIfVisitor give access BusIf.RegInsts to do what you want"
-msgstr "BusIfVistor给予访问BusIf.RegInsts的权限来执行您想要的操作"
+msgstr "BusIfVisitor 给予访问 BusIf.RegInsts 的权限来执行您想要的操作"
 
 #~ msgid "Interrupt Design Spec"
 #~ msgstr "中断设计规范"

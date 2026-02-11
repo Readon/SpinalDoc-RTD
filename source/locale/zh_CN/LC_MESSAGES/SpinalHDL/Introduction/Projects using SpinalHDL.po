@@ -27,7 +27,6 @@ msgid "Projects using SpinalHDL"
 msgstr "使用 SpinalHDL 的项目"
 
 #: ../../SpinalHDL/Introduction/Projects SpinalHDL.rst:4 using
-#, fuzzy
 msgid "Note that the following lists are very incomplete."
 msgstr "请注意，以下列表非常不完整。"
 
@@ -56,9 +55,8 @@ msgstr ""
 "<https://github.com/SpinalHDL/SaxonSoc/tree/dev-0.3/bsp/digilent/ArtyA7SmpLinux>`_"
 
 #: ../../SpinalHDL/Introduction/Projects SpinalHDL.rst:15 using
-#, fuzzy
 msgid "`VexiiRiscv CPU <https://github.com/SpinalHDL/VexiiRiscv>`_"
-msgstr "`VexRiscv CPU 和 SoC <https://github.com/SpinalHDL/VexRiscv>`_"
+msgstr "VexiiRiscv CPU <https://github.com/SpinalHDL/VexiiRiscv>`_"
 
 #: ../../SpinalHDL/Introduction/Projects SpinalHDL.rst:16 using
 msgid "`open-rdma <https://github.com/datenlord/open-rdma>`_"

@@ -8,8 +8,8 @@ msgstr ""
 "Type:text/plain; charset=UTF-8\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-08-19 09:12+0000\n"
-"PO-Revision-Date: 2024-01-23 07:01+0000\n"
-"Last-Translator: Readon <xydarcher@qq.com>\n"
+"PO-Revision-Date: 2026-02-11 21:28+0800\n"
+"Last-Translator: CatalpaEel\n"
 "Language: zh_CN\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
 "/spinaldoc-rtd/spinalhdlexamplesintermediates-onesvga/zh_Hans/>\n"
@@ -99,7 +99,7 @@ msgstr "master"
 
 #: ../../SpinalHDL/Examples/Intermediates ones/vga.rst:40
 msgid "Vertical synchronization, indicate the beginning of a new frame"
-msgstr "垂直同步，表示新帧的开始"
+msgstr "场同步，表示新帧的开始"
 
 #: ../../SpinalHDL/Examples/Intermediates ones/vga.rst:41
 msgid "hSync"
@@ -107,7 +107,7 @@ msgstr "hSync"
 
 #: ../../SpinalHDL/Examples/Intermediates ones/vga.rst:43
 msgid "Horizontal synchronization, indicate the beginning of a new line"
-msgstr "水平同步，表示新行的开始"
+msgstr "行同步，表示新行的开始"
 
 #: ../../SpinalHDL/Examples/Intermediates ones/vga.rst:44
 msgid "colorEn"
@@ -145,7 +145,7 @@ msgstr "VGA接口使用8种不同的时序进行驱动。以下是一个能够�
 msgid ""
 "But this not a very good way to specify it because it is redundant for "
 "vertical and horizontal timings."
-msgstr "但这并不是一种很好的指定方式，因为在垂直和水平时序方面存在冗余。"
+msgstr "但这并不是一种很好的指定方式，因为在行场时序方面存在冗余。"
 
 #: ../../SpinalHDL/Examples/Intermediates ones/vga.rst:84
 msgid "Let's write it in a clearer way:"
@@ -187,7 +187,7 @@ msgstr "timings"
 
 #: ../../SpinalHDL/Examples/Intermediates ones/vga.rst:117
 msgid "Specify VGA horizontal and vertical timings"
-msgstr "指定 VGA 水平和垂直时序"
+msgstr "指定 VGA 行场时序参数"
 
 #: ../../SpinalHDL/Examples/Intermediates ones/vga.rst:118
 msgid "pixels"
@@ -254,24 +254,23 @@ msgstr ""
 
 #: ../../SpinalHDL/Examples/Intermediates ones/vga.rst:146
 msgid "Horizontal and vertical logic"
-msgstr "水平和垂直逻辑"
+msgstr "行场逻辑"
 
 #: ../../SpinalHDL/Examples/Intermediates ones/vga.rst:148
-#, fuzzy
 msgid ""
 "The logic that generates horizontal and vertical synchronization signals "
 "is quite the same. It kind of resembles ~PWM~. The horizontal one counts "
 "up each cycle, while the vertical one use the horizontal synchronization "
 "signal as to increment."
-msgstr "产生水平和垂直同步信号的逻辑完全相同，它有点类似于〜PWM〜。水平同步每周期计数一次，垂直同步则利用水平同步信号递增。"
+msgstr "产生行同步与场同步信号的逻辑基本一致，它有点类似于脉冲宽度调制（PWM）。"
+"行同步信号在每个时钟周期递增计数，而场同步信号则以行同步信号作为计数时钟进行递增。"
 
 #: ../../SpinalHDL/Examples/Intermediates ones/vga.rst:150
-#, fuzzy
 msgid ""
 "Let's define ``HVArea``\\ , which represents one ~PWM~ and then "
 "instantiate it two times: one for both horizontal and vertical "
 "synchronization."
-msgstr "让我们定义 ``HVArea`` ，它代表一个~PWM~，然后实例化它两次：一次用于水平同步，一次用于垂直同步。"
+msgstr "让我们定义 ``HVArea`` ，它代表单路脉冲宽度调制（PWM），然后实例化它两次：分别用于行同步与场同步。"
 
 #: ../../SpinalHDL/Examples/Intermediates ones/vga.rst:160
 msgid ""
@@ -287,7 +286,7 @@ msgstr "互连"
 msgid ""
 "Now that we have timing generators for horizontal and vertical "
 "synchronization, we need to drive the outputs."
-msgstr "现在我们有了水平和垂直同步的时序生成器，我们需要驱动输出。"
+msgstr "现在我们有了行同步与场同步的时序生成器，我们需要驱动输出。"
 
 #: ../../SpinalHDL/Examples/Intermediates ones/vga.rst:176
 msgid "Bonus"

@@ -27,7 +27,6 @@ msgid "QSysify"
 msgstr "QSysify"
 
 #: ../../SpinalHDL/Libraries/EDA/altera/qsysify.rst:5
-#, fuzzy
 msgid ""
 "QSysify is a tool which is able to generate a QSys IP (tcl script) from a"
 " SpinalHDL component by analyzing its IO definition. It currently "

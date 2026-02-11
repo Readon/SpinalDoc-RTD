@@ -147,7 +147,6 @@ msgid "Clock configuration"
 msgstr "时钟配置"
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:72
-#, fuzzy
 msgid ""
 "In addition to the constructor parameters given :ref:`here "
 "<core_components_clock_constructor>` , the following elements of each "
@@ -216,12 +215,11 @@ msgid "External clock"
 msgstr "外部时钟"
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:123
-#, fuzzy
 msgid ""
 "You can define everywhere a clock domain which is driven by the outside. "
 "It will then automatically add clock and reset signal from the top level "
 "inputs to all synchronous elements."
-msgstr "您可以在任何地方定义由外部驱动的时钟域。然后，它会自动将时钟和复位线从顶层输入添加到所有同步元件。"
+msgstr "您可以在任何地方定义由外部驱动的时钟域。该时钟域将自动从顶层输入引入时钟与复位信号，并连接至所有同步元件。"
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:141
 msgid "Cross Clock Domain"
@@ -243,7 +241,6 @@ msgid "There are multiple assignment operator :"
 msgstr "有多种赋值运算符："
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:169
-#, fuzzy
 msgid "Symbol"
 msgstr "符号"
 
@@ -289,7 +286,6 @@ msgid ""
 msgstr "2 个信号之间的自动连接。通过输入/输出设置推断信号方向"
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst
-#, fuzzy
 msgid "Similar behavioral than :="
 msgstr "与 := 类似的行为"
 
@@ -323,12 +319,10 @@ msgid "Assign x with a resized copy of y, size is manually calculated"
 msgstr "将 y 改变位宽后的副本分配给 x，大小是手动计算的"
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:212
-#, fuzzy
 msgid "There are 2 cases where spinal automatically resize things :"
 msgstr "有两种情况会导致spinal自动调整位宽："
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:218
-#, fuzzy
 msgid "Assignment"
 msgstr "赋值"
 
@@ -367,7 +361,6 @@ msgid "SpinalHDL reapply the default value to bit that are missing"
 msgstr "SpinalHDL 将默认值重新应用于丢失的位"
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:232
-#, fuzzy
 msgid ""
 "As VHDL and Verilog, signals and registers can be conditionally assigned "
 "by using when and switch syntaxes"
@@ -494,11 +487,10 @@ msgid "Everything work by reference, which allow many manipulation."
 msgstr "一切都按参考工作，这允许许多操作。"
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst
-#, fuzzy
 msgid ""
 "For example you can give to a function an bus as argument, then the "
 "function can internally read/write it."
-msgstr "例如，您可以为函数提供总线作为参数，然后可以在该函数内部读取/写入它。"
+msgstr "例如，您可以为函数提供总线作为参数，然后该函数便可在其内部对该总线进行读写操作。"
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst
 msgid ""

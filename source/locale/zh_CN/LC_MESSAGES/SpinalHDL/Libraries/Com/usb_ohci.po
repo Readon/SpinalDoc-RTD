@@ -31,7 +31,6 @@ msgid "Here exists a USB OHCi controller (host) in the SpinalHDL library."
 msgstr "SpinalHDL库中有USB OHCi控制器（主机）。"
 
 #: ../../SpinalHDL/Libraries/Com/usb_ohci.rst:7
-#, fuzzy
 msgid "A few bullet points to summarize support:"
 msgstr "用几个要点总结支持的功能："
 
@@ -48,7 +47,6 @@ msgid ""
 msgstr "它已经与上游的linux/uboot OHCI驱动兼容。（tinyUSB上也有OHCI驱动）"
 
 #: ../../SpinalHDL/Libraries/Com/usb_ohci.rst:11
-#, fuzzy
 msgid ""
 "This provides USB host full speed and low speed capabilities (12 Mbps and"
 " 1.5 Mbps)"
@@ -67,7 +65,6 @@ msgid "Bmb memory interface for DMA accesses"
 msgstr "用于DMA访问的Bmb存储器接口"
 
 #: ../../SpinalHDL/Libraries/Com/usb_ohci.rst:15
-#, fuzzy
 msgid "Bmb memory interface for the configuration"
 msgstr "用于配置的Bmb内存接口"
 

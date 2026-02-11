@@ -156,7 +156,6 @@ msgid ""
 msgstr "``return`` 关键字不是必需的。如果没有它，Scala 会将函数的最后一条语句作为返回值。"
 
 #: ../../SpinalHDL/Getting Guide/basics.rst:101 Started/Scala
-#, fuzzy
 msgid "Return type inference"
 msgstr "返回类型推断"
 

@@ -11,8 +11,8 @@ msgstr ""
 "<EMAIL@ADDRESS>Language-Team:LANGUAGE <LL@li.org>MIME-Version:1.0Content-"
 "Type:text/plain; charset=UTF-8\n"
 "POT-Creation-Date: 2024-08-19 09:12+0000\n"
-"PO-Revision-Date: 2024-01-12 04:06+0000\n"
-"Last-Translator: tsy0123 <675526215@qq.com>\n"
+"PO-Revision-Date: 2026-02-11 22:36+0800\n"
+"Last-Translator: CatalpaEel\n"
 "Language: zh_CN\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
 "/spinaldoc-rtd/spinalhdlsemanticrules/zh_Hans/>\n"
@@ -106,14 +106,14 @@ msgstr ""
 "运算符对组合信号或寄存器进行多次分配，则可能执行的最后一次赋值生效（因此可以将值设置为该状态的结果）。"
 
 #: ../../SpinalHDL/Semantic/rules.rst:46
-#, fuzzy
 msgid ""
 "It could be said that top to bottom evaluation occurs based on the state "
 "that exists at that time.  If your upstream signal inputs are driven from"
 " registers and so have synchronous behavior, then it could be said that "
 "at each clock cycle the assignments are re-evaluated based on the new "
 "state at the time."
-msgstr "可以说，自上而下的评估计算是根据当时的状态进行的。如果您的上游信号输入是从寄存器驱动的，因此具有同步行为，那么可以说，在每个时钟周期，都会根据当时的新状态重新计算、赋值。"
+msgstr "可以说，赋值语句的求值遵循自上而下的顺序，其结果基于求值时刻的当前状态。"
+"若上游信号输入由寄存器驱动，从而具有同步行为，则可以认为在每个时钟周期内，赋值操作都会根据该时刻的新状态被重新求值。"
 
 #: ../../SpinalHDL/Semantic/rules.rst:51
 msgid ""
@@ -123,13 +123,12 @@ msgid ""
 msgstr "在硬件中，赋值语句可能无法在本时钟周期执行的一些原因，可能是由于它被包装在 ``when(cond)`` 子句中。"
 
 #: ../../SpinalHDL/Semantic/rules.rst:54
-#, fuzzy
 msgid ""
 "Another reason maybe that the SpinalHDL code never made it through "
 "elaboration because the feature was parameterized and disabled during HDL"
 " code-generation, see ``paramIsFalse`` use below."
 msgstr ""
-"另一个原因，可能是 SpinalHDL 代码从未通过实力细化，因为该功能在 HDL 代码生成期间被参数化并禁用，请参阅下面 "
+"另一个可能的原因是，该功能因参数化配置而在 HDL 代码生成阶段被禁用，导致 SpinalHDL 代码未能完成细化过程。请参阅下面 "
 "``paramIsFalse`` 的案例。"
 
 #: ../../SpinalHDL/Semantic/rules.rst:58

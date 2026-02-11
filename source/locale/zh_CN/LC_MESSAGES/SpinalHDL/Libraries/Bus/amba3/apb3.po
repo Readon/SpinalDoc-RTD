@@ -31,7 +31,6 @@ msgid "The AMBA3-APB bus is commonly used to interface low bandwidth peripherals
 msgstr "AMBA3-APB总线通常用于连接低带宽外设。"
 
 #: ../../SpinalHDL/Libraries/Bus/amba3/apb3.rst:8
-#, fuzzy
 msgid "Configuration and instantiation"
 msgstr "配置和实例化"
 

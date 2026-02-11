@@ -36,11 +36,10 @@ msgid "Since SpinalHDL 1.4.4, the following syntax is also supported:"
 msgstr "从 SpinalHDL 1.4.4 开始，还支持以下语法："
 
 #: ../../SpinalHDL/Other features/report.rst:33 language
-#, fuzzy
 msgid ""
 "You can display the current simulation time using the `REPORT_TIME` "
 "object:"
-msgstr "可以使用 REPORT_TIME 对象显示当前仿真时间"
+msgstr "可以使用 REPORT_TIME 对象显示当前仿真时间："
 
 #: ../../SpinalHDL/Other features/report.rst:39 language
 msgid "will result in:"

@@ -24,7 +24,6 @@ msgid "Tilelink"
 msgstr "Tilelink"
 
 #: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink.rst:6
-#, fuzzy
 msgid "Configuration and instantiation"
 msgstr "配置和实例化"
 
