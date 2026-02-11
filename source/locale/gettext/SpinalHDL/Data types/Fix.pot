@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:00+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -269,7 +269,6 @@ msgid "x.resolution * y.resolution)"
 msgstr ""
 
 #: ../../SpinalHDL/Data types/Fix.rst:183
-#: ../../SpinalHDL/Data types/Fix.rst:281
 msgid "x.amplitude * y.amplitude"
 msgstr ""
 
@@ -315,7 +314,7 @@ msgstr ""
 
 #: ../../SpinalHDL/Data types/Fix.rst:195
 #: ../../SpinalHDL/Data types/Fix.rst:199
-#: ../../SpinalHDL/Data types/Fix.rst:280
+#: ../../SpinalHDL/Data types/Fix.rst:283
 msgid "x.resolution"
 msgstr ""
 
@@ -499,23 +498,39 @@ msgid "Name"
 msgstr ""
 
 #: ../../SpinalHDL/Data types/Fix.rst:274
-msgid "x.maxValue"
+msgid "x.minExp"
 msgstr ""
 
 #: ../../SpinalHDL/Data types/Fix.rst:275
-msgid "Return the maximum value storable"
+msgid "Return a negative number of bits used for the fractional part"
 msgstr ""
 
 #: ../../SpinalHDL/Data types/Fix.rst:276
-#: ../../SpinalHDL/Data types/Fix.rst:279
-#: ../../SpinalHDL/Data types/Fix.rst:282
-msgid "Double"
+msgid "Int"
 msgstr ""
 
 #: ../../SpinalHDL/Data types/Fix.rst:277
-msgid "x.minValue"
+msgid "x.maxValue"
 msgstr ""
 
 #: ../../SpinalHDL/Data types/Fix.rst:278
-msgid "Return the minimum value storable"
+msgid "Return the largest positive real number storable"
+msgstr ""
+
+#: ../../SpinalHDL/Data types/Fix.rst:279
+#: ../../SpinalHDL/Data types/Fix.rst:282
+#: ../../SpinalHDL/Data types/Fix.rst:285
+msgid "BigDecimal"
+msgstr ""
+
+#: ../../SpinalHDL/Data types/Fix.rst:280
+msgid "x.minValue"
+msgstr ""
+
+#: ../../SpinalHDL/Data types/Fix.rst:281
+msgid "Return the largest negative real number storable"
+msgstr ""
+
+#: ../../SpinalHDL/Data types/Fix.rst:284
+msgid "Return the smallest positive real number storable"
 msgstr ""

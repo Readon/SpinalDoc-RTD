@@ -10,7 +10,7 @@ msgstr ""
 "+0800PO-Revision-Date:YEAR-MO-DA HO:MI+ZONELast-Translator:FULL NAME "
 "<EMAIL@ADDRESS>Language-Team:LANGUAGE <LL@li.org>MIME-Version:1.0Content-"
 "Type:text/plain; charset=UTF-8\n"
-"POT-Creation-Date: 2025-02-12 09:08+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: 2024-01-12 04:06+0000\n"
 "Last-Translator: tsy0123 <675526215@qq.com>\n"
 "Language: zh_CN\n"
@@ -20,7 +20,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../SpinalHDL/Developers area/types.rst:3
 msgid "Types"
@@ -255,10 +255,11 @@ msgid "The BitVector family - (``Bits``, ``UInt``, ``SInt``)"
 msgstr "BitVector 系列 - (``Bits``, ``UInt``, ``SInt``)"
 
 #: ../../SpinalHDL/Developers area/types.rst:120
+#, fuzzy
 msgid ""
 "``BitVector`` is a family of types for storing multiple bits of "
 "information in a single value. This type has three subtypes that can be "
-"used to model different behaviours:"
+"used to model different behaviors:"
 msgstr "``BitVector`` 是一个系列的类型，用于在单个值中存储多位信息。该类型具有三个子类型，可用于描述不同的行为："
 
 #: ../../SpinalHDL/Developers area/types.rst:121
@@ -989,7 +990,8 @@ msgid "Use the VHDL enumeration system, this is the default encoding"
 msgstr "使用VHDL枚举系统，这是默认编码"
 
 #: ../../SpinalHDL/Developers area/types.rst:668
-msgid "binarySequancial"
+#, fuzzy
+msgid "binarySequential"
 msgstr "二进制顺序"
 
 #: ../../SpinalHDL/Developers area/types.rst:669

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:00+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,103 +92,103 @@ msgstr ""
 msgid "Here is an example of a simple counter and the corresponding formal testbench."
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:91
+#: ../../SpinalHDL/Formal verification/index.rst:94
 msgid "Internal assertions"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:93
+#: ../../SpinalHDL/Formal verification/index.rst:96
 msgid "If you want you can embed formal statements directly into the DUT:"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:120
+#: ../../SpinalHDL/Formal verification/index.rst:124
 msgid "External stimulus"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:122
+#: ../../SpinalHDL/Formal verification/index.rst:126
 msgid "If your DUT has inputs, you need to drive them from the testbench. You can use all the regular hardware statements to do it, but you can also use the formal `anyseq`, `anyconst`, `allseq`, `allconst` statement:"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:151
+#: ../../SpinalHDL/Formal verification/index.rst:155
 msgid "More assertions / past"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:153
+#: ../../SpinalHDL/Formal verification/index.rst:157
 msgid "For instance we can check that the value is counting up (if not already at 10):"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:169
+#: ../../SpinalHDL/Formal verification/index.rst:174
 msgid "Assuming memory content"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:171
+#: ../../SpinalHDL/Formal verification/index.rst:176
 msgid "Here is an example where we want to prevent the value ``1`` from ever being present in a memory :"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:207
+#: ../../SpinalHDL/Formal verification/index.rst:215
 msgid "Utilities and primitives"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:210
+#: ../../SpinalHDL/Formal verification/index.rst:218
 msgid "Assertions / clock / reset"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:212
+#: ../../SpinalHDL/Formal verification/index.rst:220
 msgid "Assertions are always clocked and disabled during resets. This also apply for assumes and covers."
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:214
+#: ../../SpinalHDL/Formal verification/index.rst:222
 msgid "If you want to keep your assertion enabled during reset you can do:"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:224
+#: ../../SpinalHDL/Formal verification/index.rst:232
 msgid "Specifying the initial value of a signal"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:226
-msgid "For instance, for the reset signal of the current clockdomain (useful at the top)"
+#: ../../SpinalHDL/Formal verification/index.rst:234
+msgid "For instance, for the reset signal of the current clock domain (useful at the top)"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:233
+#: ../../SpinalHDL/Formal verification/index.rst:241
 msgid "Specifying a initial assumption"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:240
+#: ../../SpinalHDL/Formal verification/index.rst:248
 msgid "Memory content (Mem)"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:242
+#: ../../SpinalHDL/Formal verification/index.rst:250
 msgid "If you have a Mem in your design, and you want to check its content, you can do it the following ways :"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:257
+#: ../../SpinalHDL/Formal verification/index.rst:265
 msgid "Specifying assertion in the reset scope"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:267
+#: ../../SpinalHDL/Formal verification/index.rst:275
 msgid "Formal primitives"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:273
+#: ../../SpinalHDL/Formal verification/index.rst:281
 msgid "Syntax"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:274
+#: ../../SpinalHDL/Formal verification/index.rst:282
 msgid "Returns"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:275
+#: ../../SpinalHDL/Formal verification/index.rst:283
 msgid "Description"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:276
+#: ../../SpinalHDL/Formal verification/index.rst:284
 msgid "``assert(Bool)``"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:279
+#: ../../SpinalHDL/Formal verification/index.rst:287
 msgid "``assume(Bool)``"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:282
+#: ../../SpinalHDL/Formal verification/index.rst:290
 msgid "``cover(Bool)``"
 msgstr ""
 
@@ -200,112 +200,112 @@ msgstr ""
 msgid "``past(that : T)``"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:287
+#: ../../SpinalHDL/Formal verification/index.rst:295
 msgid "T"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:288
+#: ../../SpinalHDL/Formal verification/index.rst:296
 msgid "Return ``that`` delayed by ``delay`` cycles. (default 1 cycle)"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:289
+#: ../../SpinalHDL/Formal verification/index.rst:297
 msgid "``rose(that : Bool)``"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:290
-#: ../../SpinalHDL/Formal verification/index.rst:293
-#: ../../SpinalHDL/Formal verification/index.rst:296
-#: ../../SpinalHDL/Formal verification/index.rst:299
-#: ../../SpinalHDL/Formal verification/index.rst:302
-#: ../../SpinalHDL/Formal verification/index.rst:305
-#: ../../SpinalHDL/Formal verification/index.rst:308
+#: ../../SpinalHDL/Formal verification/index.rst:298
+#: ../../SpinalHDL/Formal verification/index.rst:301
+#: ../../SpinalHDL/Formal verification/index.rst:304
+#: ../../SpinalHDL/Formal verification/index.rst:307
+#: ../../SpinalHDL/Formal verification/index.rst:310
+#: ../../SpinalHDL/Formal verification/index.rst:313
+#: ../../SpinalHDL/Formal verification/index.rst:316
 msgid "Bool"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:291
+#: ../../SpinalHDL/Formal verification/index.rst:299
 msgid "Return True when ``that`` transitioned from False to True"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:292
+#: ../../SpinalHDL/Formal verification/index.rst:300
 msgid "``fell(that : Bool)``"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:294
+#: ../../SpinalHDL/Formal verification/index.rst:302
 msgid "Return True when ``that`` transitioned from True to False"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:295
+#: ../../SpinalHDL/Formal verification/index.rst:303
 msgid "``changed(that : Bool)``"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:297
+#: ../../SpinalHDL/Formal verification/index.rst:305
 msgid "Return True when ``that`` current value changed between compared to the last cycle"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:298
+#: ../../SpinalHDL/Formal verification/index.rst:306
 msgid "``stable(that : Bool)``"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:300
+#: ../../SpinalHDL/Formal verification/index.rst:308
 msgid "Return True when ``that`` current value didn't changed between compared to the last cycle"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:301
+#: ../../SpinalHDL/Formal verification/index.rst:309
 msgid "``initstate()``"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:303
+#: ../../SpinalHDL/Formal verification/index.rst:311
 msgid "Return True the first cycle"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:304
+#: ../../SpinalHDL/Formal verification/index.rst:312
 msgid "``pastValid()``"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:306
+#: ../../SpinalHDL/Formal verification/index.rst:314
 msgid "Returns True when the past value is valid (False on the first cycle). Recommended to be used with each application of ``past``, ``rose``, ``fell``, ``changed`` and ``stable``."
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:307
+#: ../../SpinalHDL/Formal verification/index.rst:315
 msgid "``pastValidAfterReset()``"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:309
+#: ../../SpinalHDL/Formal verification/index.rst:317
 msgid "Similar to ``pastValid``, where only difference is that this would take reset into account. Can be understood as ``pastValid & past(!reset)``."
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:311
+#: ../../SpinalHDL/Formal verification/index.rst:319
 msgid "Note that you can use the init statement on past:"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:320
+#: ../../SpinalHDL/Formal verification/index.rst:328
 msgid "Limitations"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:322
+#: ../../SpinalHDL/Formal verification/index.rst:330
 msgid "There is no support for unclocked assertions. But their usage in third party formal verification examples seems mostly code style related."
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:326
+#: ../../SpinalHDL/Formal verification/index.rst:334
 msgid "Naming polices"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:328
+#: ../../SpinalHDL/Formal verification/index.rst:336
 msgid "All formal validation related functions return Area or Composite (preferred), and naming as formalXXXX. ``formalContext`` can be used to create formal related logic, there could be ``formalAsserts``, ``formalAssumes`` and ``formalCovers`` in it."
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:332
+#: ../../SpinalHDL/Formal verification/index.rst:340
 msgid "For Component"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:333
+#: ../../SpinalHDL/Formal verification/index.rst:341
 msgid "The minimum required assertions internally in a ``Component`` for \"prove\" can be named as ``formalAsserts``."
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:336
+#: ../../SpinalHDL/Formal verification/index.rst:344
 msgid "For interfaces implement IMasterSlave"
 msgstr ""
 
-#: ../../SpinalHDL/Formal verification/index.rst:337
+#: ../../SpinalHDL/Formal verification/index.rst:345
 msgid "There could be functions in name ``formalAssertsMaster``, ``formalAssertsSlave``, ``formalAssumesMaster``, ``formalAssumesSlave`` or ``formalCovers``. Master/Slave are target interface type, so that ``formalAssertsMaster`` can be understand as \"formal verification assertions for master interface\"."
 msgstr ""

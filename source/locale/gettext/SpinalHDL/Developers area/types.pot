@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:00+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -291,7 +291,7 @@ msgid "The BitVector family - (``Bits``, ``UInt``, ``SInt``)"
 msgstr ""
 
 #: ../../SpinalHDL/Developers area/types.rst:120
-msgid "``BitVector`` is a family of types for storing multiple bits of information in a single value. This type has three subtypes that can be used to model different behaviours:"
+msgid "``BitVector`` is a family of types for storing multiple bits of information in a single value. This type has three subtypes that can be used to model different behaviors:"
 msgstr ""
 
 #: ../../SpinalHDL/Developers area/types.rst:121
@@ -1011,7 +1011,7 @@ msgid "Use the VHDL enumeration system, this is the default encoding"
 msgstr ""
 
 #: ../../SpinalHDL/Developers area/types.rst:668
-msgid "binarySequancial"
+msgid "binarySequential"
 msgstr ""
 
 #: ../../SpinalHDL/Developers area/types.rst:669

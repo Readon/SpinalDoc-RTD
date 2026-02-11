@@ -10,7 +10,7 @@ msgstr ""
 "+0800PO-Revision-Date:YEAR-MO-DA HO:MI+ZONELast-Translator:FULL NAME "
 "<EMAIL@ADDRESS>Language-Team:LANGUAGE <LL@li.org>MIME-Version:1.0Content-"
 "Type:text/plain; charset=UTF-8\n"
-"POT-Creation-Date: 2024-08-19 09:12+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: 2024-03-12 16:01+0000\n"
 "Last-Translator: Readon <xydarcher@qq.com>\n"
 "Language: zh_CN\n"
@@ -20,7 +20,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../SpinalHDL/Libraries/regIf.rst:3
 msgid "RegIf"
@@ -61,6 +61,29 @@ msgstr "自动字段分配"
 #: ../../SpinalHDL/Libraries/regIf.rst:54
 msgid "conflict detection"
 msgstr "冲突检测"
+
+#: ../../SpinalHDL/Libraries/regIf.rst:58
+msgid ""
+"val M_REG1  = busif.newReg(doc=\"REG1\") val r1fd0 = M_REG1.field(Bits(16"
+" bits), RW, doc=\"fields 1\") val r1fd2 = M_REG1.field(Bits(18 bits), RW,"
+" doc=\"fields 1\")"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/regIf.rst:61
+#: ../../SpinalHDL/Libraries/regIf.rst:66
+msgid "..."
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/regIf.rst:62
+msgid ""
+"cause Exception val M_REG1  = busif.newReg(doc=\"REG1\") val r1fd0 = "
+"M_REG1.field(Bits(16 bits), RW, doc=\"fields 1\") val r1fd2 = "
+"M_REG1.fieldAt(pos=10, Bits(2 bits), RW, doc=\"fields 1\")"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/regIf.rst:67
+msgid "cause Exception"
+msgstr ""
 
 #: ../../SpinalHDL/Libraries/regIf.rst:70
 msgid "28 Access Types"
@@ -766,6 +789,7 @@ msgid "You can add your document Type by extending the `BusIfVisitor` Trait"
 msgstr "您可以通过扩展 `BusIfVistor` 特征来添加文档类型"
 
 #: ../../SpinalHDL/Libraries/regIf.rst:518
+#, python-brace-format
 msgid "``case class Latex(fileName : String) extends BusIfVisitor{ ... }``"
 msgstr "``case class Latex(fileName : String) extends BusIfVisitor{ ... }``"
 

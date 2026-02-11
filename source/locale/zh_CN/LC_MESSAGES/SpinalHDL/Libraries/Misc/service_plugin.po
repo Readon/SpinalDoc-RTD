@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  SpinalHDL\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 09:12+0000\n"
+"POT-Creation-Date: 2026-02-11 09:50+0000\n"
 "PO-Revision-Date: 2024-01-23 07:01+0000\n"
 "Last-Translator: tsy0123 <675526215@qq.com>\n"
 "Language: zh_CN\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:5
 msgid "Plugin"
@@ -131,9 +131,10 @@ msgid "Build phase, in which plugins can negotiation / elaboration hardware."
 msgstr "构建(Build)环节，在此环节插件可以协调/实例化硬件。"
 
 #: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:41
+#, fuzzy
 msgid ""
-"The build phase will not start before all FiberPlugin are done with their"
-" setup phase."
+"The build phase will not start before all ``FiberPlugin`` are done with "
+"their setup phase."
 msgstr "构建环节将不会在所有FiberPlugin完成其设置环节前启动。"
 
 #: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:61
@@ -146,59 +147,62 @@ msgid ""
 " using 2 plugins :"
 msgstr "这是一个简单的虚设示例，其中包含一个将使用两个插件组合的SubComponent："
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:102
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:105
 msgid "Such TopLevel would generate the following Verilog code :"
 msgstr "该TopLevel会生成以下Verilog代码："
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:131
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:135
+#, fuzzy
 msgid ""
-"Note each \"during build\" fork an elaboration thread, the "
-"DriverPlugin.logic thread execution will be blocked on the \"sp\" "
-"evaluation until the StatePlugin.logic execution is done."
+"Note each ``during build`` fork an elaboration thread, the "
+"``DriverPlugin.logic`` thread execution will be blocked on the \"sp\" "
+"evaluation until the ``StatePlugin.logic`` execution is done."
 msgstr "请注意，每次在“构建期间”分叉一个实例化线程时，DriverPlugin.logic线程的执行将在“sp”评估上被阻塞，直到StatePlugin.logic执行完成。"
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:135
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:140
 msgid "Interlocking / Ordering"
 msgstr "联锁/排序"
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:137
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:142
+#, fuzzy
 msgid ""
-"Plugins can interlock each others using Retainer instances. Each plugin "
-"instance has a built in lock which can be controlled using retain/release"
-" functions."
+"Plugins can interlock each others using ``Retainer`` instances. Each "
+"plugin instance has a built in lock which can be controlled using "
+"``retain``/``release`` functions."
 msgstr "插件可以通过Retainer实例相互联锁。每个插件实例都有一个内置锁，可以通过retain/release函数进行控制。"
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:140
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:145
+#, fuzzy
 msgid ""
 "Here is an example based on the above `Simple example` but that time, the"
-" DriverPlugin will increment the StatePlugin.logic.signal by an amount "
-"set by other plugins (SetupPlugin in our case). And to ensure that the "
-"DriverPlugin doesn't generate the hardware too early, the SetupPlugin "
-"uses the DriverPlugin.retain/release functions."
+" ``DriverPlugin`` will increment ``the StatePlugin.logic.signal`` by an "
+"amount set by other plugins (``SetupPlugin`` in our case). And to ensure "
+"that the ``DriverPlugin`` doesn't generate the hardware too early, the "
+"``SetupPlugin`` uses the ``DriverPlugin.retain``/``release`` functions."
 msgstr ""
 "这是一个基于上面的 `简单示例` "
 "的例子，但这次，DriverPlugin将通过由其他插件（在我们的例子中是SetupPlugin）设置的数量对StatePlugin.logic.signal递增。为了确保DriverPlugin不会过早生成硬件，SetupPlugin使用DriverPlugin.retain/release函数。"
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:207
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:215
 msgid "Here is the generated verilog"
 msgstr "这是生成的verilog"
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:236
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:245
 msgid ""
 "Clearly, those examples are overkilled for what they do, the idea in "
 "general is more about :"
 msgstr "显然，这些示例对于它们的功能来说有些过度，总体上的思路更多地是："
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:238
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:247
 #, fuzzy
 msgid "Negotiate / create interfaces between plugins (ex jump / flush ports)"
 msgstr "协调/创建插件之间的接口（例如跳转(jump)/刷新(flush)端口）"
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:239
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:248
 msgid "Schedule the elaboration (ex decode / dispatch specification)"
 msgstr "安排实例化（例如解码/调度规范）"
 
-#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:240
+#: ../../SpinalHDL/Libraries/Misc/service_plugin.rst:249
 msgid "Provide a distributed framework which can scale up (minimal hardcoding)"
 msgstr "提供一个可扩展的分布式框架（最小硬编码）"
 
