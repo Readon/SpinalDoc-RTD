@@ -587,7 +587,7 @@ About Rounding: https://en.wikipedia.org/wiki/Rounding
    The **RoundToEven** and **RoundToOdd** modes are very special, and are used in some big data statistical fields
    with high accuracy concerns, SpinalHDL doesn't support them yet.
 
-You will find ``ROUNDUP``, ``ROUNDDOWN``, ``ROUNDTOZERO``, ``ROUNDTOINF``, ``ROUNDTOEVEN``, ``ROUNTOODD`` are very close in behavior,
+You will find ``ROUNDUP``, ``ROUNDDOWN``, ``ROUNDTOZERO``, ``ROUNDTOINF``, ``ROUNDTOEVEN``, ``ROUNDTOODD`` are very close in behavior,
 ``ROUNDTOINF`` is the most common. The behavior of rounding in different programming languages may be different.
 
 ============= =================== ================================================= ====================
