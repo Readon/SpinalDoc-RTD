@@ -651,7 +651,7 @@ msgstr "MASK"
 #: ../../SpinalHDL/Libraries/regIf.rst:414
 #: ../../SpinalHDL/Libraries/regIf.rst:433
 msgid "int mask register, 1: off; 0: open; default 1 int off"
-msgstr "中断掩码寄存器，1：关闭；0：打开；默认 1 中断关闭"
+msgstr "中断掩码寄存器，1：关闭；0：打开；默认值为1，表示中断关闭"
 
 #: ../../SpinalHDL/Libraries/regIf.rst:415
 #: ../../SpinalHDL/Libraries/regIf.rst:434

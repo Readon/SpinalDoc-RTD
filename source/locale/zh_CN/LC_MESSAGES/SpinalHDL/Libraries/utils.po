@@ -317,7 +317,7 @@ msgstr "BufferCC(input : T)"
 msgid ""
 "Return the input signal synchronized with the current clock domain by "
 "using 2 flip-flops"
-msgstr "通过两级触发器将输入信号同步至当前时钟域后返回"
+msgstr "返回利用两个触发器将输入信号同步到当前时钟域后的新信号"
 
 #: ../../SpinalHDL/Libraries/utils.rst:115
 msgid "Counter"
@@ -448,7 +448,7 @@ msgid ""
 "``ResetCtrl.asyncAssertSyncDeassert`` function which will return you the "
 "filtered value."
 msgstr ""
-"您可以使用异步置位、同步复位的逻辑来构造异步复位。为此，可以使用 ``ResetCtrl.asyncAssertSyncDeassert`` "
+"您可以使用“异步有效同步无效”的逻辑来构造异步复位。为此，可以使用 ``ResetCtrl.asyncAssertSyncDeassert`` "
 "函数，该函数将返回过滤后的值。"
 
 #: ../../SpinalHDL/Libraries/utils.rst:202

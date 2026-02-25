@@ -235,7 +235,7 @@ msgid ""
 msgstr ""
 "没有 ``CombInit`` 的话，如果 ``c`` == false（而不是 ``c`` == true），``a1`` 和 ``a2`` "
 "会引用相同的信号，并且 ``a1`` 被赋值为零。有了 ``CombInit`` ，无论 ``c`` "
-"的值是多少，行为均保持一致。"
+"的值是多少，我们都有一致的行为（CombInit创建新的信号）。"
 
 #~ msgid ""
 #~ "It also supports Bundle assignment. "

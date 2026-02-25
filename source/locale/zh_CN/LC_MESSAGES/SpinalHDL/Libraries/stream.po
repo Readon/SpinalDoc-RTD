@@ -167,7 +167,7 @@ msgid ""
 "payload was acknowledged. This means ``valid`` can only toggle to 0 the "
 "cycle after a the slave did a read by asserting ``ready``."
 msgstr ""
-"当 ``valid`` 被置为有效后，它只有在当前负载被确认后才能被置为无效。这意味着 ``valid`` 只能在从端通过置高 ``ready``"
+"当 ``valid`` 被置为有效后，它只有在当前负载被使用后才能被置为无效。这意味着 ``valid`` 只能在从端通过置高 ``ready``"
 " 完成一次读取后的下一个周期，才可以切换到0。"
 
 #: ../../SpinalHDL/Libraries/stream.rst:83

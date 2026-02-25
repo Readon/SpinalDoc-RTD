@@ -213,7 +213,7 @@ msgstr "``oneFilePerComponent``"
 msgid ""
 "Instead of generating one big VHDL/Verilog file, every component will get"
 " its own VHDL/Verilog file."
-msgstr "不为每个组件生成单一的 VHDL/Verilog 大文件，而是为每个组件分别生成独立的 VHDL/Verilog 文件。"
+msgstr "没有该选项时，SpinalHDL生成一个囊括所有组件的顶层文件。使用该选项则会为每个组件分别生成一个文件。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:88 language
 msgid "``netlistFileName``"
@@ -344,7 +344,7 @@ msgstr "``headerWithDate``"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:135 language
 msgid "Add the date at which the VHDL/Verilog was generated in its header."
-msgstr "在 VHDL/Verilog 文件头中添加生成日期。"
+msgstr "在生成的 VHDL/Verilog 文件头中添加生成日期。"
 
 #: ../../SpinalHDL/Other features/vhdl_generation.rst:136 language
 msgid "``headerWithRepoHash``"

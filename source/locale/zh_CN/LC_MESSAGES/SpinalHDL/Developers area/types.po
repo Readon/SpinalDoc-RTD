@@ -259,7 +259,7 @@ msgid ""
 "``BitVector`` is a family of types for storing multiple bits of "
 "information in a single value. This type has three subtypes that can be "
 "used to model different behaviors:"
-msgstr "``BitVector`` 是一类用于在单个值中存储多位信息的类型。该类型具有三个子类型，可用于描述不同的行为："
+msgstr "``BitVector`` 是一类用于在单个对象中存储多位信息的类型。该类型具有三个子类型，可用于描述不同的行为："
 
 #: ../../SpinalHDL/Developers area/types.rst:121
 msgid ""

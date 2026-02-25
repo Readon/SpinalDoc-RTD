@@ -219,7 +219,7 @@ msgid ""
 "You can define everywhere a clock domain which is driven by the outside. "
 "It will then automatically add clock and reset signal from the top level "
 "inputs to all synchronous elements."
-msgstr "您可以在任何地方定义由外部驱动的时钟域。该时钟域将自动从顶层输入引入时钟与复位信号，并连接至所有同步元件。"
+msgstr "您可以在任何地方定义由外部驱动的时钟域。该时钟域将自动从顶层输入列表引入时钟与复位信号，并连接至所有同步元件。"
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst:141
 msgid "Cross Clock Domain"
@@ -490,7 +490,7 @@ msgstr "一切都按参考工作，这允许许多操作。"
 msgid ""
 "For example you can give to a function an bus as argument, then the "
 "function can internally read/write it."
-msgstr "例如，您可以为函数提供总线作为参数，然后该函数便可在其内部对该总线进行读写操作。"
+msgstr "例如，您可以为函数提供总线作为参数，然后可以在该函数内部读取/写入它。"
 
 #: ../../SpinalHDL/miscelenea/core/core_components.rst
 msgid ""

@@ -112,7 +112,7 @@ msgid ""
 " registers and so have synchronous behavior, then it could be said that "
 "at each clock cycle the assignments are re-evaluated based on the new "
 "state at the time."
-msgstr "可以说，赋值语句的求值遵循自上而下的顺序，其结果基于求值时刻的当前状态。"
+msgstr "可以说，自上而下的评估计算是根据当时的状态进行的。"
 "若上游信号输入由寄存器驱动，从而具有同步行为，则可以认为在每个时钟周期内，赋值操作都会根据该时刻的新状态被重新求值。"
 
 #: ../../SpinalHDL/Semantic/rules.rst:51
