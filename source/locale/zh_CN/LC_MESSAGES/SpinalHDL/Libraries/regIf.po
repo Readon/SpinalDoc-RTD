@@ -10,7 +10,7 @@ msgstr ""
 "+0800PO-Revision-Date:YEAR-MO-DA HO:MI+ZONELast-Translator:FULL NAME "
 "<EMAIL@ADDRESS>Language-Team:LANGUAGE <LL@li.org>MIME-Version:1.0Content-"
 "Type:text/plain; charset=UTF-8\n"
-"POT-Creation-Date: 2026-02-11 09:50+0000\n"
+"POT-Creation-Date: 2026-02-27 03:59+0000\n"
 "PO-Revision-Date: 2024-03-12 16:01+0000\n"
 "Last-Translator: Readon <xydarcher@qq.com>\n"
 "Language: zh_CN\n"
@@ -55,7 +55,7 @@ msgstr "自动地址分配"
 
 #: ../../SpinalHDL/Libraries/regIf.rst:39
 #, fuzzy
-msgid "Automatic filed allocation"
+msgid "Automatic field allocation"
 msgstr "自动字段分配"
 
 #: ../../SpinalHDL/Libraries/regIf.rst:54

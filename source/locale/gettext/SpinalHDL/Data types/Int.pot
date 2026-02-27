@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:00+0000\n"
+"POT-Creation-Date: 2026-02-27 03:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1245,7 +1245,7 @@ msgid "The **RoundToEven** and **RoundToOdd** modes are very special, and are us
 msgstr ""
 
 #: ../../SpinalHDL/Data types/Int.rst:590
-msgid "You will find ``ROUNDUP``, ``ROUNDDOWN``, ``ROUNDTOZERO``, ``ROUNDTOINF``, ``ROUNDTOEVEN``, ``ROUNTOODD`` are very close in behavior, ``ROUNDTOINF`` is the most common. The behavior of rounding in different programming languages may be different."
+msgid "You will find ``ROUNDUP``, ``ROUNDDOWN``, ``ROUNDTOZERO``, ``ROUNDTOINF``, ``ROUNDTOEVEN``, ``ROUNDTOODD`` are very close in behavior, ``ROUNDTOINF`` is the most common. The behavior of rounding in different programming languages may be different."
 msgstr ""
 
 #: ../../SpinalHDL/Data types/Int.rst:594
