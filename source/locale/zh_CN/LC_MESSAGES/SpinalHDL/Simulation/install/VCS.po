@@ -220,7 +220,6 @@ msgid "Simulation with ``Blackbox``"
 msgstr "``Blackbox`` 仿真"
 
 #: ../../SpinalHDL/Simulation/install/VCS.rst:125
-#, fuzzy
 msgid ""
 "Sometimes, IP vendors will provide you with some design entities in "
 "Verilog/VHDL format and you want to integrate them into your SpinalHDL "

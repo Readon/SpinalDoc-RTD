@@ -11,8 +11,8 @@ msgstr ""
 "<EMAIL@ADDRESS>Language-Team:LANGUAGE <LL@li.org>MIME-Version:1.0Content-"
 "Type:text/plain; charset=UTF-8\n"
 "POT-Creation-Date: 2026-02-11 09:50+0000\n"
-"PO-Revision-Date: 2023-12-14 06:03+0000\n"
-"Last-Translator: Readon <xydarcher@qq.com>\n"
+"PO-Revision-Date: 2026-02-11 20:49+0800\n"
+"Last-Translator: CatalpaEel\n"
 "Language: zh_CN\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
 "/spinaldoc-rtd/spinalhdldata-typesfix/zh_Hans/>\n"
@@ -508,27 +508,24 @@ msgid "Name"
 msgstr "名称"
 
 #: ../../SpinalHDL/Data types/Fix.rst:274
-#, fuzzy
 msgid "x.minExp"
-msgstr "x.minValue"
+msgstr "x.minExp"
 
 #: ../../SpinalHDL/Data types/Fix.rst:275
 msgid "Return a negative number of bits used for the fractional part"
 msgstr ""
 
 #: ../../SpinalHDL/Data types/Fix.rst:276
-#, fuzzy
 msgid "Int"
-msgstr "UInt"
+msgstr "Int"
 
 #: ../../SpinalHDL/Data types/Fix.rst:277
 msgid "x.maxValue"
 msgstr "x.maxValue"
 
 #: ../../SpinalHDL/Data types/Fix.rst:278
-#, fuzzy
 msgid "Return the largest positive real number storable"
-msgstr "返回可存储的最小值"
+msgstr "返回可存储的最大正实数"
 
 #: ../../SpinalHDL/Data types/Fix.rst:279 types/Fix.rst:282 types/Fix.rst:285
 msgid "BigDecimal"
@@ -539,14 +536,12 @@ msgid "x.minValue"
 msgstr "x.minValue"
 
 #: ../../SpinalHDL/Data types/Fix.rst:281
-#, fuzzy
 msgid "Return the largest negative real number storable"
-msgstr "返回可存储的最小值"
+msgstr "返回可存储的最大负实数"
 
 #: ../../SpinalHDL/Data types/Fix.rst:284
-#, fuzzy
 msgid "Return the smallest positive real number storable"
-msgstr "返回可存储的最小值"
+msgstr "返回可存储的最小正实数"
 
 #~ msgid "Return the maximum value storable"
 #~ msgstr "返回可存储的最大值"

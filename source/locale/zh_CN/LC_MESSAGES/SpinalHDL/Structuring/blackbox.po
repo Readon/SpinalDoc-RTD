@@ -81,7 +81,6 @@ msgid "Clock and reset mapping"
 msgstr "时钟和复位信号的映射"
 
 #: ../../SpinalHDL/Structuring/blackbox.rst:117
-#, fuzzy
 msgid ""
 "In your blackbox definition you have to explicitly define clock and reset"
 " signals. To map signals of a ``ClockDomain`` to corresponding inputs of "

@@ -24,7 +24,6 @@ msgid "AHB-Lite3"
 msgstr "AHB-Lite3"
 
 #: ../../SpinalHDL/Libraries/Bus/amba3/ahblite3.rst:6
-#, fuzzy
 msgid "Configuration and instantiation"
 msgstr "配置和实例化"
 

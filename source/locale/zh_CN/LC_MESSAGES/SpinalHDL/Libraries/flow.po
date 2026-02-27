@@ -132,7 +132,6 @@ msgid "x.m2sPipe()"
 msgstr "x.m2sPipe()"
 
 #: ../../SpinalHDL/Libraries/flow.rst
-#, fuzzy
 msgid "Return a Flow driven by x"
 msgstr "返回一个由 x 驱动的流"
 

@@ -28,7 +28,6 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../SpinalHDL/Legacy/pinsec/introduction.rst:10
-#, fuzzy
 msgid ""
 "This page only documents the SoC implemented with the first generation of"
 " RISC-V CPU created in SpinalHDL. This page does not document the "
@@ -38,7 +37,7 @@ msgid ""
 msgstr ""
 "本页仅记录使用SpinalHDL创造的第一代用RISC-V CPU实现的SoC。本页面未记录VexRiscV CPU，这是该 SoC（和 "
 "CPU）的第二代，可在 `这里 <https://github.com/SpinalHDL/VexRiscv>`__ "
-"获得，并提供更好的性能/面积/功能。"
+"获得，它在性能/面积/功能方面均有更有表现。"
 
 #: ../../SpinalHDL/Legacy/pinsec/introduction.rst:17
 msgid ""

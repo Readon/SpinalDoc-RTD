@@ -104,7 +104,6 @@ msgid "Here are some examples and ideas of the possibilities:"
 msgstr "以下是一些示例和可能的想法："
 
 #: ../../SpinalHDL/Structuring/parametrization.rst:46
-#, fuzzy
 msgid ""
 "Hardwired code and constants (not strictly parameter management at all "
 "but serves to highlight the most basic mechanism, a code change, not a "
@@ -201,7 +200,6 @@ msgstr ""
 "null。"
 
 #: ../../SpinalHDL/Structuring/parametrization.rst:111
-#, fuzzy
 msgid ""
 "This may be used in cases to help parameterize the SpinalHDL hardware "
 "description using an elaboration-time conditional expression.  Causing "
@@ -213,7 +211,6 @@ msgstr ""
 "中存在或不存在。generate函数可以看作是 SpinalHDL 语法糖，减少语言混乱。"
 
 #: ../../SpinalHDL/Structuring/parametrization.rst:116
-#, fuzzy
 msgid ""
 "Project SpinalHDL code referencing ``mySignal`` would need to ensure it "
 "handles the possibility of null gracefully.  This is usually not a "

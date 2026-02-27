@@ -36,7 +36,6 @@ msgstr ""
 " 但您需要激活 oss-cad-suite 环境。"
 
 #: ../../SpinalHDL/Simulation/install/GHDL.rst:9
-#, fuzzy
 msgid ""
 "Even though GHDL is generally available in linux distributions package "
 "system, SpinalHDL depends on bugfixes of GHDL codebase that were added "

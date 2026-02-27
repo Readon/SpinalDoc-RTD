@@ -102,19 +102,16 @@ msgid ""
 msgstr "此映射生成更轻量级的PLIC，但代价是缺少一些可选特性："
 
 #: ../../SpinalHDL/Libraries/Misc/PLIC/plic_mapper.rst:36
-#, fuzzy
 msgid "not reading the interrupt's priority"
 msgstr "不读取中断优先级"
 
 #: ../../SpinalHDL/Libraries/Misc/PLIC/plic_mapper.rst:37
-#, fuzzy
 msgid ""
 "not reading the interrupt's pending bit (must use the claim/complete "
 "mechanism)"
 msgstr "不读取中断的挂起位（必须使用声明(claim)/完成(complete)机制）"
 
 #: ../../SpinalHDL/Libraries/Misc/PLIC/plic_mapper.rst:38
-#, fuzzy
 msgid "not reading the target's threshold"
 msgstr "不读取目标的阈值"
 

@@ -8,8 +8,8 @@ msgstr ""
 "Type:text/plain; charset=UTF-8\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-02-12 09:08+0000\n"
-"PO-Revision-Date: 2023-12-15 15:56+0000\n"
-"Last-Translator: Readon <xydarcher@qq.com>\n"
+"PO-Revision-Date: 2026-02-11 21:31+0800\n"
+"Last-Translator: CatalpaEel\n"
 "Language: zh_CN\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
 "/spinaldoc-rtd/spinalhdlgetting-startedhelp-for-vhdl-"
@@ -79,15 +79,14 @@ msgid "Clock domains"
 msgstr "时钟域"
 
 #: ../../SpinalHDL/Getting Started/Help VHDL for people/vhdl_comp.rst:82
-#, fuzzy
 msgid ""
 "In VHDL, every time you want to define a bunch of registers, you need the"
 " carry the clock and the reset signal to them. In addition, you have to "
 "hardcode everywhere how those clock and reset signals should be used "
 "(clock edge, reset polarity, reset nature (async, sync))."
 msgstr ""
-"在 VHDL "
-"中，每次想要定义一堆寄存器时，都需要将时钟和复位信号传递给它们。此外，您必须在各处硬编码如何使用这些时钟和复位信号（包括它们的属性时钟沿、复位极性、复位性质（异步、同步））。"
+"在 VHDL 中，每当你需要定义一组寄存器时，都必须为其引入时钟和复位信号。"
+"此外，你还得在代码各处硬编码这些时钟与复位信号的使用方式（如时钟边沿、复位极性、复位类型（异步/同步））。"
 
 #: ../../SpinalHDL/Getting Started/Help VHDL for people/vhdl_comp.rst:84
 msgid ""

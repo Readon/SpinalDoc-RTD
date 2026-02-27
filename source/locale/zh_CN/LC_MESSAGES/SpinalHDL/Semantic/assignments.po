@@ -11,8 +11,8 @@ msgstr ""
 "<EMAIL@ADDRESS>Language-Team:LANGUAGE <LL@li.org>MIME-Version:1.0Content-"
 "Type:text/plain; charset=UTF-8\n"
 "POT-Creation-Date: 2025-02-12 09:08+0000\n"
-"PO-Revision-Date: 2023-12-18 09:29+0000\n"
-"Last-Translator: Readon <xydarcher@qq.com>\n"
+"PO-Revision-Date: 2026-02-11 22:35+0800\n"
+"Last-Translator: CatalpaEel\n"
 "Language: zh_CN\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
 "/spinaldoc-rtd/spinalhdlsemanticassignments/zh_Hans/>\n"
@@ -70,7 +70,6 @@ msgid ""
 msgstr "2 个信号或相同类型的两个信号线束之间的自动连接。通过使用信号定义（输入/输出）来推断方向。 （与 ``:=``\\ 类似的行为）"
 
 #: ../../SpinalHDL/Semantic/assignments.rst:19
-#, fuzzy
 msgid ""
 "When muxing (for instance using ``when``, see :doc:`when_switch`.), the "
 "last valid standard assignment ``:=`` wins. Else, assigning twice to the "
@@ -80,7 +79,7 @@ msgid ""
 "can be programmatically permitted on a case by case basis. (see "
 ":doc:`../Design errors/assignment_overlap`)."
 msgstr ""
-"当多路复用时（例如使用 ``when``，请参阅 :doc:`when_switch`。），最后一个有效的赋值 ``:=`` "
+"当多路复用时（例如使用 ``when`` ，请参阅 :doc:`when_switch` 。），最后一个有效的赋值 ``:=`` "
 "为准。否则，向同一范围内的同一信号赋值两次会导致重叠错误。 SpinalHDL "
 "默认情况下会假设这是一个无意的设计错误，并因错误而停止实例细化。对于特殊用例，可以根据具体情况以编程方式允许重叠赋值。 （参见 "
 ":doc:`../Design errors/assignment_overlap`）。"
@@ -215,12 +214,11 @@ msgid ""
 msgstr "``CombInit`` 可用于复制信号及其当前的组合逻辑赋值。主要用例是能够稍后覆盖复制后信号，而不影响原始信号。"
 
 #: ../../SpinalHDL/Semantic/assignments.rst:149
-#, fuzzy
 msgid ""
 "If we look at the resulting Verilog, ``b`` is not present. Since it is a "
 "copy of ``a`` by reference, these variables designate the same Verilog "
 "``wire``."
-msgstr "如果我们查看生成的 Verilog，会发现``b`` 不存在。由于它是引用的 ``a`` 的副本，因此这些变量指代相同的 Verilog 信号。"
+msgstr "如果我们查看生成的 Verilog，会发现 ``b`` 不存在。由于它是引用的 ``a`` 的副本，因此这些变量指代相同的 Verilog ``wire`` 。"
 
 #: ../../SpinalHDL/Semantic/assignments.rst:168
 msgid ""
@@ -229,7 +227,6 @@ msgid ""
 msgstr "``CombInit`` 在辅助函数中特别有用，可确保返回值不引用输入。"
 
 #: ../../SpinalHDL/Semantic/assignments.rst:181
-#, fuzzy
 msgid ""
 "Without ``CombInit``, if ``c`` == false (but not if ``c`` == true), "
 "``a1`` and ``a2`` reference the same signal and the zero assignment is "

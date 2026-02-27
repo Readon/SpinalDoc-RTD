@@ -188,16 +188,14 @@ msgid ""
 msgstr "与 ``waitRisingEdge`` 相同，但针对 ``ClockDomainConfig`` 指定的边沿类型"
 
 #: ../../SpinalHDL/Simulation/clock.rst:57
-#, fuzzy
 msgid "``waitInactiveEdge([cyclesCount])``"
-msgstr "``waitActiveEdge([cyclesCount])``"
+msgstr "``waitInactiveEdge([cyclesCount])``"
 
 #: ../../SpinalHDL/Simulation/clock.rst:58
-#, fuzzy
 msgid ""
 "Same as ``waitFallingEdge`` but for the edge level specified by the "
 "``ClockDomainConfig``"
-msgstr "与 ``waitRisingEdge`` 相同，但针对 ``ClockDomainConfig`` 指定的边沿类型"
+msgstr "与 ``waitFallingEdge`` 相同，但针对 ``ClockDomainConfig`` 指定的边沿类型"
 
 #: ../../SpinalHDL/Simulation/clock.rst:59
 msgid "``waitRisingEdgeWhere(condition)``"
@@ -228,16 +226,14 @@ msgid ""
 msgstr "与 ``waitRisingEdgeWhere`` 相同，但针对 ``ClockDomainConfig`` 指定的边沿类型"
 
 #: ../../SpinalHDL/Simulation/clock.rst:65
-#, fuzzy
 msgid "``waitInactiveEdgeWhere(condition)``"
-msgstr "``waitActiveEdgeWhere(condition)``"
+msgstr "``waitInactiveEdgeWhere(condition)``"
 
 #: ../../SpinalHDL/Simulation/clock.rst:66
-#, fuzzy
 msgid ""
 "Same as ``waitFallingEdgeWhere``, but for the edge level specified by the"
 " ``ClockDomainConfig``"
-msgstr "与 ``waitRisingEdgeWhere`` 相同，但针对 ``ClockDomainConfig`` 指定的边沿类型"
+msgstr "与 ``waitFallingEdgeWhere`` 相同，但针对 ``ClockDomainConfig`` 指定的边沿类型"
 
 #: ../../SpinalHDL/Simulation/clock.rst:67
 msgid "``waitSamplingWhere(condition) : Boolean``"

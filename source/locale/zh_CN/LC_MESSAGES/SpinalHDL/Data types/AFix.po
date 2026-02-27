@@ -11,8 +11,8 @@ msgstr ""
 "<EMAIL@ADDRESS>Language-Team:LANGUAGE <LL@li.org>MIME-Version:1.0Content-"
 "Type:text/plain; charset=UTF-8\n"
 "POT-Creation-Date: 2026-02-11 09:50+0000\n"
-"PO-Revision-Date: 2024-01-27 15:40+0000\n"
-"Last-Translator: Readon <xydarcher@qq.com>\n"
+"PO-Revision-Date: 2026-02-11 20:37+0800\n"
+"Last-Translator: CatalpaEel\n"
 "Language: zh_CN\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
 "/spinaldoc-rtd/spinalhdldata-typesafix/zh_Hans/>\n"
@@ -68,16 +68,14 @@ msgid "``AFix.U(12 bits)`` will have a range of 0 to 4095."
 msgstr "``AFix.U(12 bits)`` 可表示的范围是 0 to 4095。"
 
 #: ../../SpinalHDL/Data types/AFix.rst:46
-#, fuzzy
 msgid ""
 "``AFix.SQ(8 bits, 4 bits)`` will have a range of -256 (internally "
 "-4096*2^-4) to 255.9375 (internally 4095*2^-4)"
-msgstr "``AFix.SQ(8 bits, 4 bits)`` 的范围为 -4096 (-256) 到 4095 (255.9375)"
+msgstr "``AFix.SQ(8 bits, 4 bits)`` 的范围为 -256 （内部值为-4096*2^-4） 到 255.9375（内部值为4095*2^-4）"
 
 #: ../../SpinalHDL/Data types/AFix.rst:48
-#, fuzzy
 msgid "``AFix.U(8 exp, 4 exp)`` will have a range of 0 to 240 (internally 15*2^4)"
-msgstr "``AFix.U(8 exp, 4 exp)`` 的范围为 0 到 256"
+msgstr "``AFix.U(8 exp, 4 exp)`` 的范围为 0 到 240 （内部值为 15*2^4）"
 
 #: ../../SpinalHDL/Data types/AFix.rst:51
 msgid ""

@@ -3,14 +3,13 @@
 # This file is distributed under the same license as the SpinalHDL package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-11 09:50+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-02-11 21:51+0800\n"
+"Last-Translator: CatalpaEel\n"
 "Language: zh_CN\n"
 "Language-Team: zh_CN <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -21,49 +20,49 @@ msgstr ""
 
 #: ../../SpinalHDL/Libraries/Misc/Plru.rst:5
 msgid "Plru"
-msgstr ""
+msgstr "伪最近最少使用逻辑（Plru）"
 
 #: ../../SpinalHDL/Libraries/Misc/Plru.rst:8
 msgid "Introduction"
-msgstr ""
+msgstr "简介"
 
 #: ../../SpinalHDL/Libraries/Misc/Plru.rst:9
 msgid "Pseudo least recently used combinatorial logic"
-msgstr ""
+msgstr "伪最近最少使用组合逻辑"
 
 #: ../../SpinalHDL/Libraries/Misc/Plru.rst:10
 msgid "io.context.state need to be handled externally."
-msgstr ""
+msgstr "io.context.state 需由外部逻辑处理。"
 
 #: ../../SpinalHDL/Libraries/Misc/Plru.rst:11
 msgid ""
 "When you want to specify a access to a entry, you can use the io.update "
 "interface to get the new state value."
-msgstr ""
+msgstr "当需要指定对某表项的访问时，可通过 io.update 接口获取新的状态值。"
 
 #: ../../SpinalHDL/Libraries/Misc/Plru.rst:12
 msgid "plru.io.evict.id tells you the id of the next block to be evicted"
-msgstr ""
+msgstr "plru.io.evict.id 指示下一个将被淘汰的块 ID"
 
 #: ../../SpinalHDL/Libraries/Misc/Plru.rst:13
 msgid "plru.io.update.id lets you update what you recently used"
-msgstr ""
+msgstr "plru.io.update.id 用于更新最近使用的表项"
 
 #: ../../SpinalHDL/Libraries/Misc/Plru.rst:16
 msgid "PLRU Code"
-msgstr ""
+msgstr "伪LRU 代码"
 
 #: ../../SpinalHDL/Libraries/Misc/Plru.rst:40
 msgid "Example usage in a cache"
-msgstr ""
+msgstr "缓存中使用示例"
 
 #: ../../SpinalHDL/Libraries/Misc/Plru.rst:54
 msgid "Get the ID of the way to evict from"
-msgstr ""
+msgstr "获取待淘汰路（way）的ID"
 
 #: ../../SpinalHDL/Libraries/Misc/Plru.rst:60
 msgid "Update recently used way"
-msgstr ""
+msgstr "更新最近使用的路"
 
 #~ msgid "io.context.state need to be handled externaly."
 #~ msgstr ""

@@ -270,7 +270,6 @@ msgid "0"
 msgstr "0"
 
 #: ../../SpinalHDL/Examples/Advanced ones/timer.rst:126
-#, fuzzy
 msgid ""
 "Each ``ticks`` bool can be activated if the corresponding ``ticksEnable``"
 " bit is high."
@@ -289,7 +288,6 @@ msgid "16"
 msgstr "16"
 
 #: ../../SpinalHDL/Examples/Advanced ones/timer.rst:132
-#, fuzzy
 msgid ""
 "Each ``clears`` bool can be activated if the corresponding "
 "``clearsEnable`` bit is high."

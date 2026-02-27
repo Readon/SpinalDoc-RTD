@@ -112,15 +112,13 @@ msgstr ""
 "这样的实用工具，它会迭代 *myExpression* 中使用的所有表达式，并将它们替换为您提供的表达式。"
 
 #: ../../SpinalHDL/Developers area/spinalhdl_datamodel.rst:44
-#, fuzzy
 msgid ""
 "More generally, most of the graph checks and transformations done by "
 "SpinalHDL are located in "
 "<https://github.com/SpinalHDL/SpinalHDL/blob/dev/core/src/main/scala/spinal/core/internals/Phase.scala>"
 msgstr ""
 "通常来说，SpinalHDL 完成的大多数图(graph)关系检查和转换都位于 "
-"<https://github.com/SpinalHDL/SpinalHDL/blob/dev/core/src/main/scala/spinal/core/internals/Phase.scala"
-" >"
+"<https://github.com/SpinalHDL/SpinalHDL/blob/dev/core/src/main/scala/spinal/core/internals/Phase.scala>"
 
 #: ../../SpinalHDL/Developers area/spinalhdl_datamodel.rst:47
 msgid "Exploring the datamodel"
@@ -200,9 +198,8 @@ msgid ""
 msgstr "mySignal.removeAssignments ：将删除所有先前对给定信号的赋值 `:=`"
 
 #: ../../SpinalHDL/Developers area/spinalhdl_datamodel.rst:159
-#, fuzzy
 msgid "mySignal.removeStatement : Will void the existence of the signal"
-msgstr "mySignal.removeStatement：将消除存在的信号"
+msgstr "mySignal.removeStatement：将移除信号"
 
 #: ../../SpinalHDL/Developers area/spinalhdl_datamodel.rst:160
 msgid ""
@@ -243,13 +240,13 @@ msgid "You can use the code in the following manner: :"
 msgstr "您可以通过以下方式使用该代码："
 
 #: ../../SpinalHDL/Developers area/spinalhdl_datamodel.rst:197
-#, fuzzy
 msgid ""
 "Here is a function that enables you to execute the body code as if the "
 "current component's context did not exist. This can be particularly "
 "useful for defining new signals without the influence of the current "
 "conditional scope (such as `when` or `switch`)."
-msgstr "这是一个函数，使您能够执行主体代码，就好像当前组件的上下文不存在一样。这对于定义新信号特别有用，这样信号不受当前条件范围（例如when或switch）的影响。"
+msgstr "这个函数使您能够执行主体代码，就好像当前组件的上下文不存在一样。"
+"这在定义新信号特别有用，这样信号不受当前条件范围（例如 `when` 或 `switch`）的影响。"
 
 #: ../../SpinalHDL/Developers area/spinalhdl_datamodel.rst:238
 msgid ""

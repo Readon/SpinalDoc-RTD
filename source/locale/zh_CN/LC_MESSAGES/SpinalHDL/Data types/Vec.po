@@ -70,9 +70,8 @@ msgid "This constructor supports mixed element width."
 msgstr "此构造函数支持混合宽度的元素。"
 
 #: ../../SpinalHDL/Data types/Vec.rst:31
-#, fuzzy
 msgid "Vec.fill(n1, n2, ...)(type: Data)"
-msgstr "Vec.fill(size: Int)(type: Data)"
+msgstr "Vec.fill(n1, n2, ...)(type: Data)"
 
 #: ../../SpinalHDL/Data types/Vec.rst:32
 msgid "Create a multi-dimensional vector. Supports up to 5 dimensions"
@@ -175,7 +174,6 @@ msgid "x.sCount(condition: T => Bool)"
 msgstr "x.sCount(condition: T => Bool)"
 
 #: ../../SpinalHDL/Data types/Vec.rst:166
-#, fuzzy
 msgid "Count the number of occurrence matching a given condition in the Vec."
 msgstr "计算 Vec 中与给定条件匹配的次数。"
 
@@ -188,7 +186,6 @@ msgid "x.sCount(value: T)"
 msgstr "x.sCount(value: T)"
 
 #: ../../SpinalHDL/Data types/Vec.rst:169
-#, fuzzy
 msgid "Count the number of occurrence of a value in the Vec."
 msgstr "计算 Vec 中某个值出现的次数。"
 

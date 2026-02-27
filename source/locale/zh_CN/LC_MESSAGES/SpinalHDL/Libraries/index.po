@@ -53,7 +53,6 @@ msgid "Provide some example to get the spirit of spinal"
 msgstr "提供一些例子以理解spinal的精髓"
 
 #: ../../SpinalHDL/Libraries/index.rst:14
-#, fuzzy
 msgid "Provide some tools and facilities (latency analyzer, QSys converter, ...)"
 msgstr "提供一些工具和功能（延迟分析器、QSys转换器……）"
 

@@ -11,8 +11,8 @@ msgstr ""
 "<EMAIL@ADDRESS>Language-Team:LANGUAGE <LL@li.org>MIME-Version:1.0Content-"
 "Type:text/plain; charset=UTF-8\n"
 "POT-Creation-Date: 2025-02-12 09:08+0000\n"
-"PO-Revision-Date: 2024-01-13 05:06+0000\n"
-"Last-Translator: tsy0123 <675526215@qq.com>\n"
+"PO-Revision-Date: 2026-02-11 20:47+0800\n"
+"Last-Translator: CatalpaEel\n"
 "Language: zh_CN\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
 "/spinaldoc-rtd/spinalhdldata-typesbool/zh_Hans/>\n"
@@ -37,18 +37,16 @@ msgid "Description"
 msgstr "描述"
 
 #: ../../SpinalHDL/Data types/bool.rst:9
-#, fuzzy
 msgid ""
 "The ``Bool`` type corresponds to a boolean value (True or False) or a "
 "single bit/signal used in a hardware design.  While named similarly it "
 "should not be confused with Scala `Boolean` type which does not describe "
 "hardware but truth values in the Scala generator code."
 msgstr ""
-"``Bool`` 类型对应于硬件设计中使用的布尔值（True 或 False）或单个位/线。虽然名称类似，但不应与 Scala `Boolean`"
+"``Bool`` 类型对应于硬件设计中使用的布尔值（True 或 False）或单个比特/信号。虽然名称类似，但不应与 Scala `Boolean`"
 " 类型混淆，后者不描述硬件，而是描述 Scala 生成器代码中的真值。"
 
 #: ../../SpinalHDL/Data types/bool.rst:14
-#, fuzzy
 msgid ""
 "An important concept and rule-of-thumb to understand is that the Scala "
 "`Boolean` type is used in places where elaboration-time HDL code-"
@@ -56,8 +54,8 @@ msgid ""
 "program it affects execution of the Scala program that is SpinalHDL at "
 "the time the program is being run to perform HDL code generation."
 msgstr ""
-"需要理解的一个重要概念和经验是，Scala `Boolean` 类型用于在实例细化时决定如何生成 HDL 代码。与任何常规程序一样，在运行 "
-"SpinalHDL 程序以执行 HDL 代码生成时，它会影响 Scala 程序的执行。"
+"需要理解的一个重要概念和经验是，Scala `Boolean` 类型用于在实例细化时决定如何生成 HDL 代码。与任何常规程序一样，"
+"它会影响 SpinalHDL 这一 Scala 程序在运行以执行 HDL 代码生成时的执行过程。"
 
 #: ../../SpinalHDL/Data types/bool.rst:20
 msgid ""
@@ -99,7 +97,6 @@ msgstr ""
 "实例指示它是给定赋值的源（提供状态）还是接收器（捕获状态）。"
 
 #: ../../SpinalHDL/Data types/bool.rst:37
-#, fuzzy
 msgid ""
 "Multiple uses of the assignment operator are allowed, such that it is "
 "normal for a signal to act as a source (provides a value to drive HDL "
@@ -315,7 +312,6 @@ msgid ""
 msgstr "所有边缘检测函数都将通过 :ref:`RegNext <regnext>` 实例化一个附加寄存器，以获取相关 ``Bool`` 的延迟值（一拍）。"
 
 #: ../../SpinalHDL/Data types/bool.rst:178
-#, fuzzy
 msgid ""
 "This feature does not reconfigure a D-type flip-flop to use an "
 "alternative CLK source, it uses two D-type flip-flop in series chain "
@@ -323,7 +319,7 @@ msgid ""
 "combinational logic to perform edge detection based on the output Q "
 "states."
 msgstr ""
-"此功能不会重新配置 D 型触发器以使用其他 CLK 时钟，它使用串联链中的两个 D 型触发器（两个 CLK 引脚都继承默认的 "
+"此功能不会重新配置 D 型触发器以使用其他 CLK 时钟，而是采用两个 D 型触发器串联（两者 CLK 引脚都继承默认的 "
 "ClockDomain）。它具有组合逻辑，可根据输出 Q 状态进行边缘检测。"
 
 #: ../../SpinalHDL/Data types/bool.rst:190

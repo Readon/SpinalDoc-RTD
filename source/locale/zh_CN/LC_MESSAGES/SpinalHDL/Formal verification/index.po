@@ -177,11 +177,10 @@ msgid "Specifying the initial value of a signal"
 msgstr "指定信号的初始值"
 
 #: ../../SpinalHDL/Formal verification/index.rst:234
-#, fuzzy
 msgid ""
 "For instance, for the reset signal of the current clock domain (useful at"
 " the top)"
-msgstr "例如，对于当前时钟域的复位信号（在顶部有用）"
+msgstr "例如，对于当前时钟域的复位信号（在顶层模块尤为有用）"
 
 #: ../../SpinalHDL/Formal verification/index.rst:241
 msgid "Specifying a initial assumption"

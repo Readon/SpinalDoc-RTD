@@ -11,8 +11,8 @@ msgstr ""
 "<EMAIL@ADDRESS>Language-Team:LANGUAGE <LL@li.org>MIME-Version:1.0Content-"
 "Type:text/plain; charset=UTF-8\n"
 "POT-Creation-Date: 2025-05-01 09:36+0000\n"
-"PO-Revision-Date: 2024-06-15 00:17+0000\n"
-"Last-Translator: Readon <xydarcher@qq.com>\n"
+"PO-Revision-Date: 2026-02-11 22:17+0800\n"
+"Last-Translator: CatalpaEel\n"
 "Language: zh_CN\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
 "/spinaldoc-rtd/spinalhdllibrariesstream/zh_Hans/>\n"
@@ -162,7 +162,6 @@ msgid "When manually reading/driving the signals of a Stream keep in mind that:"
 msgstr "当手动读取/驱动反压流的信号时，请记住："
 
 #: ../../SpinalHDL/Libraries/stream.rst:82
-#, fuzzy
 msgid ""
 "After being asserted, ``valid`` may only be deasserted once the current "
 "payload was acknowledged. This means ``valid`` can only toggle to 0 the "
@@ -261,9 +260,8 @@ msgid "Return True when a transaction is stall on the bus (valid && ! ready)"
 msgstr "当总线上的传输停滞时返回True(valid && ! ready)"
 
 #: ../../SpinalHDL/Libraries/stream.rst:116
-#, fuzzy
 msgid "x.isFree"
-msgstr "x.fire"
+msgstr "x.isFree"
 
 #: ../../SpinalHDL/Libraries/stream.rst:117
 msgid "Return True when the bus isn't stuck with a transaction (!isStall)"
@@ -290,7 +288,6 @@ msgid "x.stage()"
 msgstr "x.stage()"
 
 #: ../../SpinalHDL/Libraries/stream.rst
-#, fuzzy
 msgid "Return a Stream driven by x"
 msgstr "返回由x驱动的Stream反压流"
 
@@ -299,9 +296,8 @@ msgid "through a register stage that cut valid/payload paths"
 msgstr "通过寄存器，切断valid/payload路径"
 
 #: ../../SpinalHDL/Libraries/stream.rst
-#, fuzzy
 msgid "Cost = (payload width + 1) flip-flops"
-msgstr "Cost = (payload width + 1) 触发器"
+msgstr "开销 = (负载位宽 + 1) 个触发器"
 
 #: ../../SpinalHDL/Libraries/stream.rst:130
 #: ../../SpinalHDL/Libraries/stream.rst:142
@@ -319,9 +315,8 @@ msgid "ready paths is cut by a register stage"
 msgstr "通过寄存器级断开ready路径"
 
 #: ../../SpinalHDL/Libraries/stream.rst
-#, fuzzy
 msgid "Cost = payload width * (mux2 + 1 flip-flops)"
-msgstr "Cost = payload width * (mux2 + 1 flip flop)"
+msgstr "开销 = 负载位宽 * (2选1选择器 + 1 个触发器)"
 
 #: ../../SpinalHDL/Libraries/stream.rst:136
 #: ../../SpinalHDL/Libraries/stream.rst:147
@@ -342,9 +337,8 @@ msgid "valid/ready/payload paths are cut by some register"
 msgstr "valid/ready/payload路径通过一些寄存器分割"
 
 #: ../../SpinalHDL/Libraries/stream.rst
-#, fuzzy
 msgid "Cost = (payload width + 2) flip-flops, bandwidth divided by two"
-msgstr "成本 = (payload位宽 + 2)个触发器，带宽除以二"
+msgstr "开销 = (负载位宽 + 2) 个触发器，带宽除以二"
 
 #: ../../SpinalHDL/Libraries/stream.rst
 msgid "x << y"
@@ -475,9 +469,8 @@ msgstr ""
 
 #: ../../SpinalHDL/Libraries/stream.rst:233
 #: ../../SpinalHDL/Libraries/stream.rst:249
-#, fuzzy
 msgid "Name"
-msgstr "io名称"
+msgstr "名称"
 
 #: ../../SpinalHDL/Libraries/stream.rst:236
 #: ../../SpinalHDL/Libraries/stream.rst:316
@@ -559,9 +552,8 @@ msgid "Use an ``Vec`` of register instead of a Mem to store the content"
 msgstr ""
 
 #: ../../SpinalHDL/Libraries/stream.rst:264
-#, fuzzy
 msgid "initPayload"
-msgstr "payload"
+msgstr "initPayload"
 
 #: ../../SpinalHDL/Libraries/stream.rst:265
 msgid "``None``"
@@ -809,7 +801,6 @@ msgid "sequentialOrder"
 msgstr "sequentialOrder"
 
 #: ../../SpinalHDL/Libraries/stream.rst
-#, fuzzy
 msgid "Could be used to retrieve transaction in a sequential order"
 msgstr "可用于按顺序遍历任务"
 
@@ -882,7 +873,6 @@ msgid "StreamFork"
 msgstr "StreamFork"
 
 #: ../../SpinalHDL/Libraries/stream.rst:514
-#, fuzzy
 msgid ""
 "A StreamFork will clone each incoming data to all its output streams. If "
 "synchronous is true, all output streams will always fire together, which "
@@ -890,7 +880,10 @@ msgid ""
 "synchronous is false, output streams may be ready one at a time, at the "
 "cost of an additional flip-flop (1 bit per output). The input stream will"
 " block until all output streams have processed each item regardlessly."
-msgstr "StreamFork会将每个传入数据克隆到其所有输出流。如果synchronous为true，则所有输出流将始终一起触发，这意味着直到所有输出流准备就绪前该流将都将暂停。如果synchronous为false，那么一次可能只有一个输出流准备就绪，但需要一个额外的触发器（每个输出1位）。直到所有输出流都处理完每个项目前，输入流将阻塞。"
+msgstr "StreamFork会将每个传入数据克隆到其所有输出流。"
+"如果synchronous为true，则所有输出流将始终一起触发，这意味着直到所有输出流准备就绪前该流将都将暂停。"
+"如果synchronous为false，那么一次可能只有一个输出流准备就绪，但需要一个额外的触发器（每路输出1位）。"
+"无论采用何种模式，输入流都将阻塞，直至所有输出流完成对每个数据项的处理。"
 
 #: ../../SpinalHDL/Libraries/stream.rst:526
 msgid "or"
@@ -961,7 +954,6 @@ msgstr ""
 "次到输出传输的功能。每当为单个负载而触发inputStream时，都会捕获并寄存 ``count`` 。"
 
 #: ../../SpinalHDL/Libraries/stream.rst:597
-#, fuzzy
 msgid ""
 "This ``extender`` provides several status signals, such as ``working``, "
 "``last``, ``done`` where ``working`` means there is one input transfer "
@@ -971,8 +963,8 @@ msgid ""
 "process complete and ready to start another transaction."
 msgstr ""
 "该 ``extender`` 提供了多种状态信号，例如 ``working`` 、 ``last`` 、``done`` ，其中 "
-"``working`` 表示有一个输入传输已接受并正在进行中， ``last`` 表示最后一个输出传输已准备好并等待完成，``done`` "
-"变为有效表示最后一个输出传输正在触发，并使当前输入传输任务处理完成且准备好启动另一个传输。"
+"``working`` 表示有一个输入传输已接受并正在进行中， ``last`` 表示最后一个输出传输已就绪并等待完成，``done`` "
+"变为有效表示最后一个输出传输正在触发，标志着当前输入事务处理完成，并可开始新的事务。"
 
 #: ../../SpinalHDL/Libraries/stream.rst:618
 msgid ""
@@ -1018,9 +1010,8 @@ msgid ""
 msgstr "Testbench中主端通过调用函数来应用值（如果可用）以驱动值。如果值可用，则函数必须返回。支持随机的延迟。"
 
 #: ../../SpinalHDL/Libraries/stream.rst:635
-#, fuzzy
 msgid "StreamReadyRandomizer"
-msgstr "StreamReadyRandmizer"
+msgstr "StreamReadyRandomizer"
 
 #: ../../SpinalHDL/Libraries/stream.rst:636
 msgid "Randomizes ``ready`` for reception of data, testbench is the slave side."

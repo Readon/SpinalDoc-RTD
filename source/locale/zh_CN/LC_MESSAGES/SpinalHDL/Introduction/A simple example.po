@@ -88,16 +88,14 @@ msgid "Types:"
 msgstr "类型："
 
 #: ../../SpinalHDL/Introduction/A example.rst:78 simple
-#, fuzzy
 msgid "``cond0``, ``cond1`` and ``flag`` are 1 bit each (as 3 individual signals)"
-msgstr "``cond0``、``cond1`` 和 ``flag`` 各为一个比特（3 条单独的线）"
+msgstr "``cond0`` 、``cond1`` 和 ``flag`` 各为一个比特（3 条独立的信号）"
 
 #: ../../SpinalHDL/Introduction/A example.rst:79 simple
-#, fuzzy
 msgid ""
 "``state`` is an 8-bit unsigned integer (a bus of 8 signals representing "
 "an unsigned integer)"
-msgstr "``state`` 是一个8位无符号整数（用一组8根线来表示一个无符号整数）"
+msgstr "``state`` 是一个8位无符号整数（用一组8个信号来表示一个无符号整数）"
 
 #: ../../SpinalHDL/Introduction/A example.rst:84 simple
 msgid ""

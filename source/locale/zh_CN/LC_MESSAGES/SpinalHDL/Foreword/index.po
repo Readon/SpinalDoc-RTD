@@ -43,7 +43,6 @@ msgid ""
 msgstr "为了简洁，我们假设SystemVerilog是Verilog的最新版本。"
 
 #: ../../SpinalHDL/Foreword/index.rst:12
-#, fuzzy
 msgid ""
 "When reading this, we should not underestimate how much our attachment "
 "for our favorite HDL will bias our judgement."

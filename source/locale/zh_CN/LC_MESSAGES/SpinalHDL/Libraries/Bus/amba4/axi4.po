@@ -31,7 +31,6 @@ msgid "The AXI4 is a high bandwidth bus defined by ARM."
 msgstr "AXI4是ARM定义的高带宽总线。"
 
 #: ../../SpinalHDL/Libraries/Bus/amba4/axi4.rst:7
-#, fuzzy
 msgid "Configuration and instantiation"
 msgstr "配置和实例化"
 

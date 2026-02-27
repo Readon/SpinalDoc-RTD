@@ -3,14 +3,13 @@
 # This file is distributed under the same license as the SpinalHDL package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-11 09:50+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-02-11 22:06+0800\n"
+"Last-Translator: CatalpaEel\n"
 "Language: zh_CN\n"
 "Language-Team: zh_CN <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -21,7 +20,7 @@ msgstr ""
 
 #: ../../SpinalHDL/Libraries/logic.rst:2
 msgid "Logic Simplification Utilities and Decoder"
-msgstr ""
+msgstr "逻辑化简工具与解码器"
 
 #: ../../SpinalHDL/Libraries/logic.rst:4
 #, python-format
@@ -29,80 +28,82 @@ msgid ""
 "A minimal Boolean simplification and decode-table utility for decoders "
 "using the `Quine–McCluskey algorithm "
 "<https://en.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm>`_."
-msgstr ""
+msgstr "一个基于 `奎因-麦克拉斯基算法 <https://en.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm>`._ "
+"的最小化布尔化简与解码表生成工具。"
 
 #: ../../SpinalHDL/Libraries/logic.rst:7
 msgid ""
 "Provides masked pattern matching, Quine–McCluskey style logic reduction, "
 "and a high-level decode-table builder."
-msgstr ""
+msgstr "提供掩码模式匹配、奎因-麦克拉斯基式逻辑化简以及高层级解码表构建器。"
 
 #: ../../SpinalHDL/Libraries/logic.rst:11
 msgid "`Masked`"
-msgstr ""
+msgstr "掩码模式"
 
 #: ../../SpinalHDL/Libraries/logic.rst:13
 msgid ""
 "Represents a bit pattern with care (significant) and don't-care bits. - "
 "`value` = bit values - `care` = which bits must match (1 = match, 0 = "
 "don't care)"
-msgstr ""
+msgstr "表示具有有效位与无关位的比特模式。- `value` = 比特值 - `care` = 需匹配的位掩码（1=需匹配，0=无关）"
 
 #: ../../SpinalHDL/Libraries/logic.rst:17
 #: ../../SpinalHDL/Libraries/logic.rst:47
 msgid "Example:"
-msgstr ""
+msgstr "示例："
 
 #: ../../SpinalHDL/Libraries/logic.rst:25
 msgid "e.g RISC-V instructions:"
-msgstr ""
+msgstr "例如 RISC-V 指令："
 
 #: ../../SpinalHDL/Libraries/logic.rst:32
 msgid "Used to define instruction encodings for decode tables."
-msgstr ""
+msgstr "用于定义解码表的指令编码。"
 
 #: ../../SpinalHDL/Libraries/logic.rst:35
 msgid "`DecodingSpec`"
-msgstr ""
+msgstr "解码规格"
 
 #: ../../SpinalHDL/Libraries/logic.rst:37
 msgid "High-level builder for decode tables using `Masked` patterns."
-msgstr ""
+msgstr "基于 `Masked` 模式的高层级解码表构建器。"
 
 #: ../../SpinalHDL/Libraries/logic.rst:43
 msgid "Methods:"
-msgstr ""
+msgstr "方法："
 
 #: ../../SpinalHDL/Libraries/logic.rst:40
 msgid "`addNeeds(key : Masked, value : Masked)`"
-msgstr ""
+msgstr "`addNeeds(key : Masked, value : Masked)`"
 
 #: ../../SpinalHDL/Libraries/logic.rst:41
 msgid "`addNeeds(keys : Seq[Masked], value : Masked)`"
-msgstr ""
+msgstr "`addNeeds(keys : Seq[Masked], value : Masked)`"
 
 #: ../../SpinalHDL/Libraries/logic.rst:42
 msgid "`build(sel, coverAll)`"
-msgstr ""
+msgstr "`build(sel, coverAll)`"
 
 #: ../../SpinalHDL/Libraries/logic.rst:43
 msgid "`setDefault(value : Masked)`"
-msgstr ""
+msgstr "`setDefault(value : Masked)`"
 
 #: ../../SpinalHDL/Libraries/logic.rst:45
 msgid "This generate simplified decode logic."
-msgstr ""
+msgstr "该方法生成化简后的解码逻辑。"
 
 #: ../../SpinalHDL/Libraries/logic.rst:56
 msgid "Generates minimized combinational decode logic."
-msgstr ""
+msgstr "生成最小化的组合解码逻辑。"
 
 #: ../../SpinalHDL/Libraries/logic.rst:58
 msgid ""
 "The practical use is to define bit patterns as `Masked` and feed them "
 "into `DecodingSpec` to build compact decode logic (e.g., RISC-V). The "
 "output hardware is then minimized (fewer LUTs / simpler gates)."
-msgstr ""
+msgstr "实际应用中，先将比特模式定义为 `Masked`，再将其送入 `DecodingSpec` "
+"以构建紧凑的解码逻辑（例如 RISC-V）。最终生成的硬件经过最小化优化（占用更少的查找表、逻辑门更简洁）。"
 
 #~ msgid ""
 #~ "A minimal Boolean simplification and "

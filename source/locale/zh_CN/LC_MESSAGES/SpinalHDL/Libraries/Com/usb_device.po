@@ -31,7 +31,6 @@ msgid "Here exists a USB device controller in the SpinalHDL library."
 msgstr "SpinalHDL库中存在一个USB设备控制器。"
 
 #: ../../SpinalHDL/Libraries/Com/usb_device.rst:7
-#, fuzzy
 msgid "A few bullet points to summarize support:"
 msgstr "用几个要点总结支持的功能："
 
@@ -46,12 +45,10 @@ msgid ""
 msgstr "存储端点状态和事务描述符的内部RAM"
 
 #: ../../SpinalHDL/Libraries/Com/usb_device.rst:11
-#, fuzzy
 msgid "Up to 16 endpoints (for virtually no price)"
-msgstr "多达6个端点（几乎没有额外开销）"
+msgstr "最多支持16个端点（几乎没有额外开销）"
 
 #: ../../SpinalHDL/Libraries/Com/usb_device.rst:12
-#, fuzzy
 msgid "Support USB host full speed (12 Mbps)"
 msgstr "支持全速USB主机（12Mbps）"
 
@@ -62,7 +59,6 @@ msgid ""
 msgstr "在Linux上使用自己的驱动程序进行测试(https://github.com/SpinalHDL/linux/blob/dev/drivers/usb/gadget/udc/spinal_udc.c)"
 
 #: ../../SpinalHDL/Libraries/Com/usb_device.rst:14
-#, fuzzy
 msgid "Bmb memory interface for the configuration"
 msgstr "用于配置的Bmb内存接口"
 
@@ -249,7 +245,6 @@ msgid "6-0"
 msgstr "6-0"
 
 #: ../../SpinalHDL/Libraries/Com/usb_device.rst:68
-#, fuzzy
 msgid ""
 "The device will only listen at tokens with the specified address This "
 "field is automatically cleared on usb reset events"
@@ -278,14 +273,12 @@ msgid "9"
 msgstr "9"
 
 #: ../../SpinalHDL/Libraries/Com/usb_device.rst:73
-#, fuzzy
 msgid ""
 "Set the enable (see above) on the next EP0 IN token completion Cleared by"
 " the hardware after any EP0 completion"
 msgstr "在下一个EP0 IN令牌完成时置位enable（见上文），在任何EP0完成后由硬件清零"
 
 #: ../../SpinalHDL/Libraries/Com/usb_device.rst:77
-#, fuzzy
 msgid ""
 "The idea here is to keep the whole register cleared until a USB "
 "SET_ADDRESS setup packet is received on EP0. At that moment, you can set "
@@ -294,8 +287,9 @@ msgid ""
 "will then automatically turn on the address filtering at the completion "
 "of that descriptor."
 msgstr ""
-"这里的想法是在EP0上收到USB "
-"SET_ADDRESS的设置(setup)数据包前，保持整个寄存器清零。此时，您可以设置地址和触发字段，然后向EP0提供IN零长度描述符以完成SET_ADDRESS序列。控制器将在该描述符完成时自动打开地址过滤。"
+"这里的想法是，在EP0上收到USB "
+"SET_ADDRESS的设置(setup)数据包前，保持整个寄存器清零。"
+"此时，您可以设置地址和触发字段，然后向EP0提供IN零长度描述符以完成SET_ADDRESS序列。控制器将在该描述符完成时自动打开地址过滤。"
 
 #: ../../SpinalHDL/Libraries/Com/usb_device.rst:82
 msgid "INTERRUPT (0xFF08)"
@@ -522,7 +516,6 @@ msgid "ENDPOINTS (0x0000 - 0x003F)"
 msgstr "端点ENDPOINTS (0x0000 - 0x003F)"
 
 #: ../../SpinalHDL/Libraries/Com/usb_device.rst:147
-#, fuzzy
 msgid ""
 "The endpoints status are stored at the beginning of the internal ram over"
 " one 32 bits word each."
@@ -539,7 +532,6 @@ msgid "RW"
 msgstr "RW"
 
 #: ../../SpinalHDL/Libraries/Com/usb_device.rst:152
-#, fuzzy
 msgid "If not set, the endpoint will ignore all the traffic"
 msgstr "如果不设置，端点将忽略所有流量"
 
@@ -741,7 +733,6 @@ msgid ""
 msgstr "请注意，如果控制器接收到IN/OUT与描述符IN/OUT不匹配的帧，那么该帧将被忽略。"
 
 #: ../../SpinalHDL/Libraries/Com/usb_device.rst:220
-#, fuzzy
 msgid "Also, to initialize a descriptor, the CPU should set the code field to 0xF"
 msgstr "此外，要初始化描述符，CPU应将代码字段设置为0xF"
 

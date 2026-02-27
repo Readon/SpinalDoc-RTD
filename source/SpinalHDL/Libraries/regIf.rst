@@ -36,7 +36,7 @@ Automatic address allocation
 
 .. image:: /asset/image/regif/reg-auto-allocate.gif
 
-Automatic filed allocation
+Automatic field allocation
 
 .. code:: scala
 

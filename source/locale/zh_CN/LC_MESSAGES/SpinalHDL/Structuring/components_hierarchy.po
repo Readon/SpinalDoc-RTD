@@ -11,8 +11,8 @@ msgstr ""
 "<EMAIL@ADDRESS>Language-Team:LANGUAGE <LL@li.org>MIME-Version:1.0Content-"
 "Type:text/plain; charset=UTF-8\n"
 "POT-Creation-Date: 2025-02-12 09:08+0000\n"
-"PO-Revision-Date: 2023-12-24 15:38+0000\n"
-"Last-Translator: Readon <xydarcher@qq.com>\n"
+"PO-Revision-Date: 2026-02-11 22:48+0800\n"
+"Last-Translator: CatalpaEel\n"
 "Language: zh_CN\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
 "/spinaldoc-rtd/spinalhdlstructuringcomponents_hierarchy/zh_Hans/>\n"
@@ -34,9 +34,8 @@ msgid ""
 msgstr "像在VHDL和Verilog中一样，可以使用组件构建设计层次结构。然而，在SpinalHDL中，不需要在实例化时绑定它们的端口："
 
 #: ../../SpinalHDL/Structuring/components_hierarchy.rst
-#, fuzzy, python-brace-format
 msgid "``val io = new Bundle { ... }``"
-msgstr "``val io = new Bundle { ... }``"
+msgstr "``val io = new Bundle { ... }``"
 
 #: ../../SpinalHDL/Structuring/components_hierarchy.rst
 msgid ""
@@ -178,7 +177,6 @@ msgid "Pruned signals"
 msgstr "裁剪信号"
 
 #: ../../SpinalHDL/Structuring/components_hierarchy.rst:92
-#, fuzzy
 msgid ""
 "SpinalHDL will generate all the named signals and their dependencies, "
 "while all the useless anonymous / zero width ones are removed from the "

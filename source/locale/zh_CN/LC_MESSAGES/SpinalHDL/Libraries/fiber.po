@@ -27,20 +27,18 @@ msgid "Fiber framework"
 msgstr "纤程框架"
 
 #: ../../SpinalHDL/Libraries/fiber.rst:10
-#, fuzzy
 msgid ""
 "This framework is not expected to be used for general RTL generation and "
 "targets large system design management and code generation. It is "
 "currently used as toplevel integration tool in SaxonSoC and VexiiRiscv."
-msgstr "该框架设计目标不是用于一般 RTL 生成，而是针对大型系统设计管理和代码生成。它目前在 SaxonSoC 中用作顶级集成工具。"
+msgstr "该框架设计目标不是用于一般 RTL 生成，而是针对大型系统设计管理和代码生成。"
+"它目前在 SaxonSoC 和 VexiiRiscv 中用作顶级集成工具。"
 
 #: ../../SpinalHDL/Libraries/fiber.rst:14
-#, fuzzy
 msgid "Currently in development."
 msgstr "目前正在开发中。"
 
 #: ../../SpinalHDL/Libraries/fiber.rst:16
-#, fuzzy
 msgid ""
 "Fiber is a framework to run the hardware elaboration in an out of order "
 "manner, a bit similarly to Makefile, where you can define rules and "
@@ -57,7 +55,6 @@ msgid ""
 msgstr "使用这个框架可能会使简单的事情复杂化，但为复杂的情况提供了一些强大的功能："
 
 #: ../../SpinalHDL/Libraries/fiber.rst:22
-#, fuzzy
 msgid ""
 "You can define things before even knowing all their requirements, for "
 "example : instantiating an interruption controller, before knowing how "
@@ -65,19 +62,17 @@ msgid ""
 msgstr "您甚至可以在知道所有要求之前就定义事物，例如：在知道需要多少中断信号线之前实例化中断控制器"
 
 #: ../../SpinalHDL/Libraries/fiber.rst:24
-#, fuzzy
 msgid ""
 "Abstract/lazy/partial SoC architecture definition allowing the creation "
 "of SoC template for further specializations"
-msgstr "抽象/懒惰化/部分化SoC架构定义，允许创建SoC模板以供进一步专门化"
+msgstr "抽象/延迟/部分SoC架构定义，允许创建SoC模板以供进一步专门化"
 
 #: ../../SpinalHDL/Libraries/fiber.rst:26
-#, fuzzy
 msgid ""
 "Automatic requirement negotiation between multiple agents in a "
 "decentralized way, for example : between masters and slaves of a memory "
 "bus"
-msgstr "以分散方式在多个代理之间自动进行需求协商，例如：内存总线的主设备和从设备之间"
+msgstr "以去中心化方式在多个代理之间自动进行需求协商，例如：内存总线的主设备和从设备之间"
 
 #: ../../SpinalHDL/Libraries/fiber.rst:29
 msgid "The framework is mainly composed of :"
@@ -88,11 +83,10 @@ msgid "``Handle[T]``, which can be used later to store a value of type ``T``."
 msgstr "``Handle[T]``，稍后可用于存储 ``T`` 类型的值。"
 
 #: ../../SpinalHDL/Libraries/fiber.rst:32
-#, fuzzy
 msgid ""
 "``handle.load``, which allow to set the value of a handle (will "
 "reschedule all tasks waiting on it)"
-msgstr "``handle.load`` 允许设置句柄的值（将启动等待它的所有任务）"
+msgstr "``handle.load`` 允许设置句柄的值（将重新调度所有等待它的任务）"
 
 #: ../../SpinalHDL/Libraries/fiber.rst:33
 msgid ""
@@ -118,7 +112,6 @@ msgid "Simple dummy example"
 msgstr "简单的示例"
 
 #: ../../SpinalHDL/Libraries/fiber.rst:44
-#, fuzzy
 msgid "Here is a simple example :"
 msgstr "这是一个简单的例子："
 
@@ -180,7 +173,6 @@ msgid "soon(handle)"
 msgstr "soon(handle)"
 
 #: ../../SpinalHDL/Libraries/fiber.rst:104
-#, fuzzy
 msgid ""
 "In order to maintain a proper graph of dependencies between tasks and "
 "Handle, a task can specify in advance that it will load a given handle. "
